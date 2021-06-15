@@ -166,6 +166,12 @@
     <Compile Include="Hostel.Designer.cs">
       <DependentUpon>Hostel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
     </Compile>
