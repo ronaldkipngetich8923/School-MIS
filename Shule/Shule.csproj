@@ -154,6 +154,18 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
+    <Compile Include="formw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formw.Designer.cs">
+      <DependentUpon>formw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hostel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hostel.Designer.cs">
+      <DependentUpon>Hostel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Library.cs">
       <SubType>Form</SubType>
     </Compile>
