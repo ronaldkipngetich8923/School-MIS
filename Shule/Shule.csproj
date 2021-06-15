@@ -237,6 +237,9 @@
     <EmbeddedResource Include="Dispensary.resx">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formw.resx">
+      <DependentUpon>formw.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="school.resx">
       <DependentUpon>school.cs</DependentUpon>
     </EmbeddedResource>
