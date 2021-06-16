@@ -163,6 +163,36 @@
     <Compile Include="Finance.Designer.cs">
       <DependentUpon>Finance.cs</DependentUpon>
     </Compile>
+    <Compile Include="hostel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel.Designer.cs">
+      <DependentUpon>hostel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostelclearence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostelclearence.Designer.cs">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="library.Designer.cs">
+      <DependentUpon>library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newshelf.Designer.cs">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeshelf.Designer.cs">
+      <DependentUpon>removeshelf.cs</DependentUpon>
+    </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +218,18 @@
     </Compile>
     <Compile Include="AddVehicle.Designer.cs">
       <DependentUpon>AddVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateshelf.Designer.cs">
+      <DependentUpon>updateshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooksinshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewbooksinshelf.Designer.cs">
+      <DependentUpon>viewbooksinshelf.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.cs</DependentUpon>
@@ -234,6 +276,24 @@
     <EmbeddedResource Include="Dispensary.resx">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finance.resx">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel.resx">
+      <DependentUpon>hostel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostelclearence.resx">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library.resx">
+      <DependentUpon>library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newshelf.resx">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeshelf.resx">
+      <DependentUpon>removeshelf.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="school.resx">
       <DependentUpon>school.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +315,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateshelf.resx">
+      <DependentUpon>updateshelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewbooksinshelf.resx">
+      <DependentUpon>viewbooksinshelf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -293,16 +359,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bill.png" />
+    <None Include="Resources\web-adjustment-1.png" />
     <None Include="Resources\caretdown.png" />
     <None Include="Resources\caretside.png" />
     <None Include="Resources\careup.png" />
     <None Include="Resources\caret2.png" />
     <None Include="Resources\caret.png" />
+    <None Include="Resources\bill1.png" />
     <Content Include="Resources\icons8-add-24.png" />
     <Content Include="Resources\magnifying-glass.png" />
     <Content Include="Resources\money-transfer-icon.jpg" />
     <Content Include="Resources\search-interface-symbol.png" />
     <Content Include="Resources\transfer-bank-money-transf.png" />
+    <None Include="Resources\transfer-bank-money-transf1.png" />
+    <None Include="Resources\transfer-bank-money-transf2.png" />
     <Content Include="Resources\web-adjustment-.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
