@@ -181,6 +181,12 @@
     <Compile Include="library.Designer.cs">
       <DependentUpon>library.cs</DependentUpon>
     </Compile>
+    <Compile Include="Newrooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newrooms.Designer.cs">
+      <DependentUpon>Newrooms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Newshelf.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="library.resx">
       <DependentUpon>library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newrooms.resx">
+      <DependentUpon>Newrooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Newshelf.resx">
       <DependentUpon>Newshelf.cs</DependentUpon>

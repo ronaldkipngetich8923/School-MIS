@@ -16,7 +16,7 @@ namespace Shule
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Newshelf());
+            Application.Run(new hostel());
         }
     }
 }
