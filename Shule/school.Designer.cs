@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.admission = new System.Windows.Forms.TabControl();
             this.studentsTab = new System.Windows.Forms.TabPage();
@@ -314,6 +314,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Discipline = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.AdmissionPanel.SuspendLayout();
             this.admission.SuspendLayout();
             this.studentsTab.SuspendLayout();
@@ -2361,6 +2362,7 @@
             // SetupParameter
             // 
             this.SetupParameter.BackColor = System.Drawing.Color.White;
+            this.SetupParameter.Controls.Add(this.button13);
             this.SetupParameter.Controls.Add(this.button12);
             this.SetupParameter.Controls.Add(this.guna2Panel1);
             this.SetupParameter.Controls.Add(this.button41);
@@ -3223,14 +3225,14 @@
             // dataGridView3StudentsDetails
             // 
             this.dataGridView3StudentsDetails.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView3StudentsDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3StudentsDetails.Location = new System.Drawing.Point(38, 224);
             this.dataGridView3StudentsDetails.Name = "dataGridView3StudentsDetails";
@@ -3360,6 +3362,18 @@
             this.button12.TabIndex = 10;
             this.button12.Text = "Add Ranks";
             this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.LightBlue;
+            this.button13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(819, 208);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(187, 80);
+            this.button13.TabIndex = 11;
+            this.button13.Text = "Hostels";
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // Home
             // 
@@ -3744,6 +3758,7 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel Discipline;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
     }
 }
 
