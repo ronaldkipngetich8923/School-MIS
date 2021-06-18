@@ -163,23 +163,11 @@
     <Compile Include="Finance.Designer.cs">
       <DependentUpon>Finance.cs</DependentUpon>
     </Compile>
-    <Compile Include="hostel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hostel.Designer.cs">
-      <DependentUpon>hostel.cs</DependentUpon>
-    </Compile>
     <Compile Include="hostelclearence.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="hostelclearence.Designer.cs">
       <DependentUpon>hostelclearence.cs</DependentUpon>
-    </Compile>
-    <Compile Include="library.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="library.Designer.cs">
-      <DependentUpon>library.cs</DependentUpon>
     </Compile>
     <Compile Include="Newrooms.cs">
       <SubType>Form</SubType>
@@ -210,18 +198,6 @@
     </Compile>
     <Compile Include="formw.Designer.cs">
       <DependentUpon>formw.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Hostel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hostel.Designer.cs">
-      <DependentUpon>Hostel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Library.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Library.Designer.cs">
-      <DependentUpon>Library.cs</DependentUpon>
     </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
@@ -312,14 +288,8 @@
     <EmbeddedResource Include="Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hostel.resx">
-      <DependentUpon>hostel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="hostelclearence.resx">
       <DependentUpon>hostelclearence.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="library.resx">
-      <DependentUpon>library.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Newrooms.resx">
       <DependentUpon>Newrooms.cs</DependentUpon>
