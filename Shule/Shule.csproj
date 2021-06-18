@@ -154,6 +154,72 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance.Designer.cs">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostelclearence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostelclearence.Designer.cs">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newrooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newrooms.Designer.cs">
+      <DependentUpon>Newrooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newshelf.Designer.cs">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeshelf.Designer.cs">
+      <DependentUpon>removeshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees.Designer.cs">
+      <DependentUpon>Fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formw.Designer.cs">
+      <DependentUpon>formw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees.Designer.cs">
+      <DependentUpon>Fees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formw.Designer.cs">
+      <DependentUpon>formw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hostel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hostel.Designer.cs">
+      <DependentUpon>Hostel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,29 +267,53 @@
     <EmbeddedResource Include="AddStudentTransport.resx">
       <DependentUpon>AddStudentTransport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSubjects.resx">
-      <DependentUpon>AddSubjects.cs</DependentUpon>
+    <EmbeddedResource Include="formw.resx">
+      <DependentUpon>formw.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSupplier.resx">
-      <DependentUpon>AddSupplier.cs</DependentUpon>
+    <EmbeddedResource Include="Finance.resx">
+      <DependentUpon>Finance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSurbodinateStaff.resx">
-      <DependentUpon>AddSurbodinateStaff.cs</DependentUpon>
+    <EmbeddedResource Include="hostelclearence.resx">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddUsers.resx">
-      <DependentUpon>AddUsers.cs</DependentUpon>
+    <EmbeddedResource Include="Newrooms.resx">
+      <DependentUpon>Newrooms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AttendancePortal.resx">
-      <DependentUpon>AttendancePortal.cs</DependentUpon>
+    <EmbeddedResource Include="Newshelf.resx">
+      <DependentUpon>Newshelf.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stream.resx">
-      <DependentUpon>Stream.cs</DependentUpon>
+    <EmbeddedResource Include="removeshelf.resx">
+      <DependentUpon>removeshelf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DisciplineForm.resx">
       <DependentUpon>DisciplineForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dispensary.resx">
       <DependentUpon>Dispensary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formw.resx">
+      <DependentUpon>formw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finance.resx">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel.resx">
+      <DependentUpon>hostel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostelclearence.resx">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library.resx">
+      <DependentUpon>library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newrooms.resx">
+      <DependentUpon>Newrooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newshelf.resx">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeshelf.resx">
+      <DependentUpon>removeshelf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="school.resx">
       <DependentUpon>school.cs</DependentUpon>
