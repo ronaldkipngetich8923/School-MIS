@@ -113,5 +113,18 @@ namespace Shule
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM hostelclearence", con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "hostelclearence");
+            dataGridView1.DataSource = ds.Tables["hostelclearence"].DefaultView;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

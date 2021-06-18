@@ -50,14 +50,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.textBoxhostel);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.buttonSearch);
@@ -81,7 +84,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(849, 448);
+            this.panel2.Size = new System.Drawing.Size(817, 526);
             this.panel2.TabIndex = 21;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -126,7 +129,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 66);
+            this.panel1.Size = new System.Drawing.Size(815, 66);
             this.panel1.TabIndex = 17;
             // 
             // label7
@@ -254,6 +257,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "View Cleared Students";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -265,11 +269,20 @@
             this.button1.Text = "SEARCH BY ADMNO.";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(40, 397);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(745, 116);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // hostelclearence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 448);
+            this.ClientSize = new System.Drawing.Size(817, 526);
             this.Controls.Add(this.panel2);
             this.Name = "hostelclearence";
             this.Text = "hostelclearence";
@@ -277,6 +290,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,5 +319,6 @@
         private System.Windows.Forms.TextBox textBoxsearch;
         private System.Windows.Forms.TextBox textBoxhostel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

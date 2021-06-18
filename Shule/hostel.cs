@@ -160,37 +160,22 @@ namespace Shule
         private void comboBoxhostelvailable_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            //string str = "server = MUNESH\\SQL2008R2;Database=datastore;UID=sa;Password=123;";
-           // SqlConnection con = new SqlConnection(str);
-            string query = "SELECT * from hostel where hostelname = '" + comboBoxhostelvailable.Text + "' ";
-            cmd = new SqlCommand(query, con);
-            //sqldatareader dbr;
-
-
-            try
+            con.Open();
+            string str = "select * from hostel where hostelname='" + comboBoxhostelvailable.Text + "'";
+            cmd = new SqlCommand(str, con);
+            // SqlDataReader dr = cmd.ExecuteReader();
+            sqlReader = cmd.ExecuteReader();
+            if (sqlReader.Read())
             {
-                con.Open();
-                sqlReader = cmd.ExecuteReader();
-                while (sqlReader.Read())
-                {
-
-                    string sname = (string)sqlReader["hostelconde"];
-
-                    textBoxhostelcode.Text = sname;
-
-                }
-                con.Close();
+                textBoxhostelcode.Text = sqlReader["hostelcode"].ToString();//column name should be that you want to show on textbox
+                
             }
-            catch (Exception es)
-            {
-                MessageBox.Show(es.Message);
-            }
+
+            con.Close();
+
+
+
         }
-
-
-
-
-    
 
         private void button4_Click(object sender, EventArgs e)
         {
