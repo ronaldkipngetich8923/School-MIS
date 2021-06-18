@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Shule
 {
-    public partial class AddStream : Form
+    public partial class StudentsDetails : Form
     {
-        public AddStream()
+        public StudentsDetails()
         {
             InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

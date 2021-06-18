@@ -1,6 +1,6 @@
 ﻿namespace Shule
 {
-    partial class AddClass
+    partial class Stream
     {
         /// <summary>
         /// Required designer variable.
@@ -33,10 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnClassesRefresh = new Guna.UI2.WinForms.Guna2Button();
-            this.btnClassesSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnClassesReset = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStreamsSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStreamsReset = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1Classes = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtClassName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtStreamName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,19 +49,18 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2Panel1.Controls.Add(this.btnClassesRefresh);
-            this.guna2Panel1.Controls.Add(this.btnClassesSave);
-            this.guna2Panel1.Controls.Add(this.btnClassesReset);
+            this.guna2Panel1.Controls.Add(this.btnStreamsSave);
+            this.guna2Panel1.Controls.Add(this.btnStreamsReset);
             this.guna2Panel1.Controls.Add(this.guna2DataGridView1Classes);
-            this.guna2Panel1.Controls.Add(this.txtClassName);
+            this.guna2Panel1.Controls.Add(this.txtStreamName);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(921, 450);
-            this.guna2Panel1.TabIndex = 1;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            this.guna2Panel1.Size = new System.Drawing.Size(931, 450);
+            this.guna2Panel1.TabIndex = 2;
             // 
             // btnClassesRefresh
             // 
@@ -82,45 +81,44 @@
             this.btnClassesRefresh.TabIndex = 9;
             this.btnClassesRefresh.Text = "Refresh";
             // 
-            // btnClassesSave
+            // btnStreamsSave
             // 
-            this.btnClassesSave.CheckedState.Parent = this.btnClassesSave;
-            this.btnClassesSave.CustomImages.Parent = this.btnClassesSave;
-            this.btnClassesSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClassesSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClassesSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClassesSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClassesSave.DisabledState.Parent = this.btnClassesSave;
-            this.btnClassesSave.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClassesSave.ForeColor = System.Drawing.Color.White;
-            this.btnClassesSave.HoverState.Parent = this.btnClassesSave;
-            this.btnClassesSave.Location = new System.Drawing.Point(284, 364);
-            this.btnClassesSave.Name = "btnClassesSave";
-            this.btnClassesSave.ShadowDecoration.Parent = this.btnClassesSave;
-            this.btnClassesSave.Size = new System.Drawing.Size(180, 45);
-            this.btnClassesSave.TabIndex = 8;
-            this.btnClassesSave.Text = "Save Records";
-            this.btnClassesSave.Click += new System.EventHandler(this.btnClassesSave_Click);
+            this.btnStreamsSave.CheckedState.Parent = this.btnStreamsSave;
+            this.btnStreamsSave.CustomImages.Parent = this.btnStreamsSave;
+            this.btnStreamsSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStreamsSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStreamsSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStreamsSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStreamsSave.DisabledState.Parent = this.btnStreamsSave;
+            this.btnStreamsSave.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStreamsSave.ForeColor = System.Drawing.Color.White;
+            this.btnStreamsSave.HoverState.Parent = this.btnStreamsSave;
+            this.btnStreamsSave.Location = new System.Drawing.Point(291, 355);
+            this.btnStreamsSave.Name = "btnStreamsSave";
+            this.btnStreamsSave.ShadowDecoration.Parent = this.btnStreamsSave;
+            this.btnStreamsSave.Size = new System.Drawing.Size(180, 45);
+            this.btnStreamsSave.TabIndex = 8;
+            this.btnStreamsSave.Text = "Save Records";
+            this.btnStreamsSave.Click += new System.EventHandler(this.btnStreamsSave_Click);
             // 
-            // btnClassesReset
+            // btnStreamsReset
             // 
-            this.btnClassesReset.CheckedState.Parent = this.btnClassesReset;
-            this.btnClassesReset.CustomImages.Parent = this.btnClassesReset;
-            this.btnClassesReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClassesReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClassesReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClassesReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClassesReset.DisabledState.Parent = this.btnClassesReset;
-            this.btnClassesReset.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClassesReset.ForeColor = System.Drawing.Color.White;
-            this.btnClassesReset.HoverState.Parent = this.btnClassesReset;
-            this.btnClassesReset.Location = new System.Drawing.Point(12, 364);
-            this.btnClassesReset.Name = "btnClassesReset";
-            this.btnClassesReset.ShadowDecoration.Parent = this.btnClassesReset;
-            this.btnClassesReset.Size = new System.Drawing.Size(180, 45);
-            this.btnClassesReset.TabIndex = 7;
-            this.btnClassesReset.Text = "Reset Fields";
-            this.btnClassesReset.Click += new System.EventHandler(this.btnClassesReset_Click);
+            this.btnStreamsReset.CheckedState.Parent = this.btnStreamsReset;
+            this.btnStreamsReset.CustomImages.Parent = this.btnStreamsReset;
+            this.btnStreamsReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnStreamsReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnStreamsReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnStreamsReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnStreamsReset.DisabledState.Parent = this.btnStreamsReset;
+            this.btnStreamsReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStreamsReset.ForeColor = System.Drawing.Color.White;
+            this.btnStreamsReset.HoverState.Parent = this.btnStreamsReset;
+            this.btnStreamsReset.Location = new System.Drawing.Point(23, 364);
+            this.btnStreamsReset.Name = "btnStreamsReset";
+            this.btnStreamsReset.ShadowDecoration.Parent = this.btnStreamsReset;
+            this.btnStreamsReset.Size = new System.Drawing.Size(180, 45);
+            this.btnStreamsReset.TabIndex = 7;
+            this.btnStreamsReset.Text = "Reset Fields";
             // 
             // guna2DataGridView1Classes
             // 
@@ -150,11 +148,11 @@
             this.guna2DataGridView1Classes.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1Classes.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1Classes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Classes.Location = new System.Drawing.Point(502, 117);
+            this.guna2DataGridView1Classes.Location = new System.Drawing.Point(525, 140);
             this.guna2DataGridView1Classes.Name = "guna2DataGridView1Classes";
             this.guna2DataGridView1Classes.RowHeadersVisible = false;
             this.guna2DataGridView1Classes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1Classes.Size = new System.Drawing.Size(403, 222);
+            this.guna2DataGridView1Classes.Size = new System.Drawing.Size(378, 221);
             this.guna2DataGridView1Classes.TabIndex = 6;
             this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -178,28 +176,28 @@
             this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // txtClassName
+            // txtStreamName
             // 
-            this.txtClassName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtClassName.DefaultText = "";
-            this.txtClassName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtClassName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtClassName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtClassName.DisabledState.Parent = this.txtClassName;
-            this.txtClassName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtClassName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClassName.FocusedState.Parent = this.txtClassName;
-            this.txtClassName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtClassName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtClassName.HoverState.Parent = this.txtClassName;
-            this.txtClassName.Location = new System.Drawing.Point(268, 151);
-            this.txtClassName.Name = "txtClassName";
-            this.txtClassName.PasswordChar = '\0';
-            this.txtClassName.PlaceholderText = "";
-            this.txtClassName.SelectedText = "";
-            this.txtClassName.ShadowDecoration.Parent = this.txtClassName;
-            this.txtClassName.Size = new System.Drawing.Size(212, 36);
-            this.txtClassName.TabIndex = 5;
+            this.txtStreamName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStreamName.DefaultText = "";
+            this.txtStreamName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStreamName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStreamName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStreamName.DisabledState.Parent = this.txtStreamName;
+            this.txtStreamName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStreamName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStreamName.FocusedState.Parent = this.txtStreamName;
+            this.txtStreamName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStreamName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStreamName.HoverState.Parent = this.txtStreamName;
+            this.txtStreamName.Location = new System.Drawing.Point(268, 151);
+            this.txtStreamName.Name = "txtStreamName";
+            this.txtStreamName.PasswordChar = '\0';
+            this.txtStreamName.PlaceholderText = "";
+            this.txtStreamName.SelectedText = "";
+            this.txtStreamName.ShadowDecoration.Parent = this.txtStreamName;
+            this.txtStreamName.Size = new System.Drawing.Size(212, 36);
+            this.txtStreamName.TabIndex = 5;
             // 
             // label3
             // 
@@ -208,9 +206,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(103, 163);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 24);
+            this.label3.Size = new System.Drawing.Size(136, 24);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Class Name";
+            this.label3.Text = "Stream Name";
             // 
             // panel1
             // 
@@ -219,7 +217,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(921, 57);
+            this.panel1.Size = new System.Drawing.Size(931, 57);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -228,20 +226,20 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(409, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 31);
+            this.label1.Size = new System.Drawing.Size(181, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Classes";
+            this.label1.Text = "Add Streams";
             // 
-            // AddClass
+            // Stream
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 450);
+            this.ClientSize = new System.Drawing.Size(931, 450);
             this.Controls.Add(this.guna2Panel1);
-            this.Name = "AddClass";
+            this.Name = "Stream";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddClass";
-            this.Load += new System.EventHandler(this.AddClass_Load);
+            this.Text = "Classes";
+            this.Load += new System.EventHandler(this.Stream_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Classes)).EndInit();
@@ -255,10 +253,10 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnClassesRefresh;
-        private Guna.UI2.WinForms.Guna2Button btnClassesSave;
-        private Guna.UI2.WinForms.Guna2Button btnClassesReset;
+        private Guna.UI2.WinForms.Guna2Button btnStreamsSave;
+        private Guna.UI2.WinForms.Guna2Button btnStreamsReset;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1Classes;
-        private Guna.UI2.WinForms.Guna2TextBox txtClassName;
+        private Guna.UI2.WinForms.Guna2TextBox txtStreamName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

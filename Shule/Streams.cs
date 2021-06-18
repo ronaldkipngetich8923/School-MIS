@@ -11,23 +11,18 @@ using System.Data.SqlClient;
 
 namespace Shule
 {
-    public partial class AddClass : Form
+    public partial class Streams : Form
     {
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        public AddClass()
+        public Streams()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnClassesSave_Click(object sender, EventArgs e)
-        {
-            string cmdStr = "INSERT INTO Classes VALUES( '" + txtClassName.Text + "')";
+            string cmdStr = "INSERT INTO Streams VALUES( '" + txtStreamName.Text + "')";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
@@ -35,7 +30,7 @@ namespace Shule
                 sqlConnection.Open();
                 int rows = sqlCommand.ExecuteNonQuery();
 
-                MessageBox.Show(rows + " Class inserted successfully.");
+                MessageBox.Show(rows + " Stream inserted successfully.");
             }
             catch (Exception ex)
             {
@@ -43,21 +38,12 @@ namespace Shule
             }
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void AddClass_Load(object sender, EventArgs e)
+        private void Streams_Load(object sender, EventArgs e)
         {
             string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
         }
-
-        private void btnClassesReset_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+    }
+
 

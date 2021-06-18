@@ -32,8 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
@@ -48,7 +46,6 @@
             this.Exam_Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Calculated_Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Set_By = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Issue_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,15 +60,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1098, 57);
+            this.panel1.Size = new System.Drawing.Size(1219, 57);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(348, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(161, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Set  Exams";
             // 
@@ -91,25 +89,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(214, 195);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 4;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Calculated Weight(%)";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBox3
             // 
@@ -186,14 +165,13 @@
             this.Exam_Type,
             this.Category,
             this.Weight,
-            this.Calculated_Weight,
             this.Subject,
             this.Set_By,
             this.Issue_Date,
             this.Class});
-            this.dataGridView1.Location = new System.Drawing.Point(123, 280);
+            this.dataGridView1.Location = new System.Drawing.Point(214, 277);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(843, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(745, 150);
             this.dataGridView1.TabIndex = 13;
             // 
             // comboBox7
@@ -228,11 +206,6 @@
             this.Weight.HeaderText = "Weight";
             this.Weight.Name = "Weight";
             // 
-            // Calculated_Weight
-            // 
-            this.Calculated_Weight.HeaderText = "Calculated Weight(%)";
-            this.Calculated_Weight.Name = "Calculated_Weight";
-            // 
             // Subject
             // 
             this.Subject.HeaderText = "Subject";
@@ -257,7 +230,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1098, 450);
+            this.ClientSize = new System.Drawing.Size(1219, 450);
             this.Controls.Add(this.comboBox7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
@@ -269,8 +242,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -290,8 +261,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox4;
@@ -301,15 +270,14 @@
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Exam_Type;
         private System.Windows.Forms.DataGridViewTextBoxColumn Category;
         private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Calculated_Weight;
         private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
         private System.Windows.Forms.DataGridViewTextBoxColumn Set_By;
         private System.Windows.Forms.DataGridViewTextBoxColumn Issue_Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Class;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.Label label8;
     }
 }

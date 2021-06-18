@@ -100,12 +100,6 @@
     <Compile Include="AddSchoolInfo.Designer.cs">
       <DependentUpon>AddSchoolInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStream.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddStream.Designer.cs">
-      <DependentUpon>AddStream.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddStudentTransport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +136,12 @@
     <Compile Include="AttendancePortal.Designer.cs">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stream.Designer.cs">
+      <DependentUpon>Stream.cs</DependentUpon>
+    </Compile>
     <Compile Include="DisciplineForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,18 +153,6 @@
     </Compile>
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formw.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formw.Designer.cs">
-      <DependentUpon>formw.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Hostel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hostel.Designer.cs">
-      <DependentUpon>Hostel.cs</DependentUpon>
     </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
@@ -210,9 +198,6 @@
     <EmbeddedResource Include="AddSchoolInfo.resx">
       <DependentUpon>AddSchoolInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddStream.resx">
-      <DependentUpon>AddStream.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddStudentTransport.resx">
       <DependentUpon>AddStudentTransport.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,14 +216,14 @@
     <EmbeddedResource Include="AttendancePortal.resx">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Stream.resx">
+      <DependentUpon>Stream.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DisciplineForm.resx">
       <DependentUpon>DisciplineForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dispensary.resx">
       <DependentUpon>Dispensary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formw.resx">
-      <DependentUpon>formw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="school.resx">
       <DependentUpon>school.cs</DependentUpon>
@@ -304,10 +289,23 @@
     <None Include="Resources\careup.png" />
     <None Include="Resources\caret2.png" />
     <None Include="Resources\caret.png" />
+    <Content Include="Resources\classes.png" />
+    <None Include="Resources\classes1.png" />
+    <None Include="Resources\classes2.png" />
+    <None Include="Resources\classes3.png" />
+    <None Include="Resources\feess.png" />
     <Content Include="Resources\icons8-add-24.png" />
     <Content Include="Resources\magnifying-glass.png" />
     <Content Include="Resources\money-transfer-icon.jpg" />
+    <None Include="Resources\schoolinfo.png" />
+    <None Include="Resources\schoolstream.png" />
     <Content Include="Resources\search-interface-symbol.png" />
+    <Content Include="Resources\streams.png" />
+    <None Include="Resources\streams1.png" />
+    <None Include="Resources\streams2.png" />
+    <Content Include="Resources\studentss.png" />
+    <None Include="Resources\subjects.png" />
+    <Content Include="Resources\teacher.png" />
     <Content Include="Resources\transfer-bank-money-transf.png" />
     <Content Include="Resources\web-adjustment-.png" />
   </ItemGroup>
