@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Shule
 {
-    public partial class library : Form
+    public partial class Finance : Form
     {
-        public library()
+        public Finance()
         {
             InitializeComponent();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void guna2Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
         }

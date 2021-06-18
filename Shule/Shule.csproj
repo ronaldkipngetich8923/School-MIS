@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.props" Condition="Exists('..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.props')" />
+  <Import Project="..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.props" Condition="Exists('..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.props')" />
+  <Import Project="..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -154,6 +157,48 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance.Designer.cs">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostel.Designer.cs">
+      <DependentUpon>hostel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostelclearence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostelclearence.Designer.cs">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="library.Designer.cs">
+      <DependentUpon>library.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newrooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newrooms.Designer.cs">
+      <DependentUpon>Newrooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newshelf.Designer.cs">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeshelf.Designer.cs">
+      <DependentUpon>removeshelf.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +249,18 @@
     <Compile Include="AddVehicle.Designer.cs">
       <DependentUpon>AddVehicle.cs</DependentUpon>
     </Compile>
+    <Compile Include="updateshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateshelf.Designer.cs">
+      <DependentUpon>updateshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewbooksinshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewbooksinshelf.Designer.cs">
+      <DependentUpon>viewbooksinshelf.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +309,27 @@
     <EmbeddedResource Include="formw.resx">
       <DependentUpon>formw.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Finance.resx">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostel.resx">
+      <DependentUpon>hostel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostelclearence.resx">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library.resx">
+      <DependentUpon>library.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newrooms.resx">
+      <DependentUpon>Newrooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newshelf.resx">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="removeshelf.resx">
+      <DependentUpon>removeshelf.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="school.resx">
       <DependentUpon>school.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +351,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateshelf.resx">
+      <DependentUpon>updateshelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewbooksinshelf.resx">
+      <DependentUpon>viewbooksinshelf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -311,16 +395,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bill.png" />
+    <None Include="Resources\web-adjustment-1.png" />
     <None Include="Resources\caretdown.png" />
     <None Include="Resources\caretside.png" />
     <None Include="Resources\careup.png" />
     <None Include="Resources\caret2.png" />
     <None Include="Resources\caret.png" />
+    <None Include="Resources\bill1.png" />
     <Content Include="Resources\icons8-add-24.png" />
     <Content Include="Resources\magnifying-glass.png" />
     <Content Include="Resources\money-transfer-icon.jpg" />
     <Content Include="Resources\search-interface-symbol.png" />
     <Content Include="Resources\transfer-bank-money-transf.png" />
+    <None Include="Resources\transfer-bank-money-transf1.png" />
+    <None Include="Resources\transfer-bank-money-transf2.png" />
     <Content Include="Resources\web-adjustment-.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -330,5 +418,14 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.4.1.0\build\MaterialDesignThemes.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.targets" Condition="Exists('..\packages\Microsoft.Build.Tasks.Git.1.0.0\build\Microsoft.Build.Tasks.Git.targets')" />
+  <Import Project="..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.targets" Condition="Exists('..\packages\Microsoft.SourceLink.Common.1.0.0\build\Microsoft.SourceLink.Common.targets')" />
+  <Import Project="..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.targets" Condition="Exists('..\packages\Microsoft.SourceLink.GitHub.1.0.0\build\Microsoft.SourceLink.GitHub.targets')" />
 </Project>

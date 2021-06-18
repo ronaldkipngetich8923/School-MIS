@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Shule
 {
-    public partial class library : Form
+    public partial class removeshelf : Form
     {
-        public library()
+        public removeshelf()
         {
             InitializeComponent();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

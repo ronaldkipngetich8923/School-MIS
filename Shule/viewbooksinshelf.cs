@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Shule
 {
-    public partial class library : Form
+    public partial class viewbooksinshelf : Form
     {
-        public library()
+        public viewbooksinshelf()
         {
             InitializeComponent();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
