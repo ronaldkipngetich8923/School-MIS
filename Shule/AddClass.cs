@@ -58,6 +58,19 @@ namespace Shule
         {
 
         }
+
+        private void guna2Button1ViewRecords_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Close();
+            string query = "SELECT * FROM Classes";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            guna2DataGridView1Classes.DataSource = dt;
+
+            sqlConnection.Open();
+
+        }
     }
 }
 

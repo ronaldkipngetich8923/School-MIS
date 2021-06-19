@@ -11,19 +11,18 @@ using System.Data.SqlClient;
 
 namespace Shule
 {
-    public partial class Stream : Form
+    public partial class StaffType : Form
     {
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        public Stream()
+        public StaffType()
         {
             InitializeComponent();
         }
 
-        private void btnStreamsSave_Click(object sender, EventArgs e)
+        private void btnStaffInfoSave_Click(object sender, EventArgs e)
         {
-
-            string cmdStr = "INSERT INTO Streams  VALUES( '" + txtStreamCode.Text + "','" + txtStreamName.Text + "')";
+            string cmdStr = "INSERT INTO StaffDescription(StaffCode,StaffDescription) VALUES('" + txtStaffCode.Text + "', '" + txtStaffDescription.Text + "')";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
@@ -31,7 +30,7 @@ namespace Shule
                 sqlConnection.Open();
                 int rows = sqlCommand.ExecuteNonQuery();
 
-                MessageBox.Show(rows + " Streams inserted successfully.");
+                MessageBox.Show(rows + " StaffType inserted successfully.");
             }
             catch (Exception ex)
             {
@@ -39,27 +38,23 @@ namespace Shule
             }
         }
 
-        private void Stream_Load(object sender, EventArgs e)
-        {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
-        }
-
-        private void guna2Button1ViewClass_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             sqlConnection.Close();
-            string query = "SELECT * FROM Streams";
+            string query = "SELECT * FROM StaffDescription";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
-            guna2DataGridView1Streams.DataSource = dt;
+            guna2DataGridView1StaffType.DataSource = dt;
 
             sqlConnection.Open();
+
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        private void StaffType_Load(object sender, EventArgs e)
         {
-
+            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            sqlConnection = new SqlConnection(connStr);
         }
     }
 }

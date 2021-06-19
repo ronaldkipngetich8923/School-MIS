@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1ViewRecords = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Classes)).BeginInit();
             this.panel1.SuspendLayout();
@@ -48,6 +49,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.guna2Button1ViewRecords);
             this.guna2Panel1.Controls.Add(this.btnClassesRefresh);
             this.guna2Panel1.Controls.Add(this.btnClassesSave);
             this.guna2Panel1.Controls.Add(this.btnClassesReset);
@@ -232,6 +234,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Classes";
             // 
+            // guna2Button1ViewRecords
+            // 
+            this.guna2Button1ViewRecords.CheckedState.Parent = this.guna2Button1ViewRecords;
+            this.guna2Button1ViewRecords.CustomImages.Parent = this.guna2Button1ViewRecords;
+            this.guna2Button1ViewRecords.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1ViewRecords.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1ViewRecords.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1ViewRecords.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1ViewRecords.DisabledState.Parent = this.guna2Button1ViewRecords;
+            this.guna2Button1ViewRecords.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1ViewRecords.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1ViewRecords.HoverState.Parent = this.guna2Button1ViewRecords;
+            this.guna2Button1ViewRecords.Location = new System.Drawing.Point(527, 364);
+            this.guna2Button1ViewRecords.Name = "guna2Button1ViewRecords";
+            this.guna2Button1ViewRecords.ShadowDecoration.Parent = this.guna2Button1ViewRecords;
+            this.guna2Button1ViewRecords.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1ViewRecords.TabIndex = 10;
+            this.guna2Button1ViewRecords.Text = "View Records";
+            this.guna2Button1ViewRecords.Click += new System.EventHandler(this.guna2Button1ViewRecords_Click);
+            // 
             // AddClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,5 +284,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1ViewRecords;
     }
 }

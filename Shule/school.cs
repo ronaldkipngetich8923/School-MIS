@@ -726,10 +726,8 @@ namespace Shule
 
         private void guna2Button1TeachersRecords_Click(object sender, EventArgs e)
         {
-            string qur = "INSERT INTO TeachersTable VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudname.Text + "','" + dateTimePickerDob.Text + "','" + comboBoxGender.SelectedItem + "','" + comboBoxCounty.SelectedItem + "'," +
-                "'" + textBoxPrimarySch.Text + "','" + textBoxKCPEMarks.Text + "','" + comboBoxDisability.SelectedItem + "','" + richTextBoxDisabilityDescription.Text + "'," +
-                "'" + comboBoxClass.SelectedItem + "','" + comboBoxStream.SelectedItem + "','" + dateTimePicker1AdmDate.Text + "','" + textBoxParentname.Text + "'," +
-                "'" + textBoxPhoneNo.Text + "','" + textBoxEmail.Text + "','" + richTextBoxPostalAddress.Text + "','" + textBoxTown.Text + "')";
+            string qur = "INSERT INTO TeachersTable VALUES ('" + txtStaffId.Text + "','" + comboBoxStaffType.SelectedItem + "','" + txtFullName.Text + "','" + txtPhone.Text+ "','" + txtEmail.Text+ "'," +
+                "'" + guna2DateTimePicker1DateOfRecruit.Text + "','" + txtPayrollNo.Text + "','" + txtSalary.Text + "','" + comboBoxDepartmentAssigned.Text + "')";
             SqlCommand cmd = new SqlCommand(qur, sqlConnection);
             try
             {
@@ -737,7 +735,7 @@ namespace Shule
                 sqlConnection.Open();
                 int rows = cmd.ExecuteNonQuery();
 
-                MessageBox.Show(rows + "  row inserted successfully.");
+                MessageBox.Show(rows + " Staff Member inserted successfully.");
             }
             catch (Exception ex)
             {
@@ -877,6 +875,52 @@ namespace Shule
         }
 
         private void SetupParameter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnStaffType_Click(object sender, EventArgs e)
+        {
+            StaffType st = new StaffType();
+            st.Show();
+
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Close();
+            string query = "SELECT * FROM TeachersTable";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            dataGridView3StaffDetails.DataSource = dt;
+
+            sqlConnection.Open();
+        }
+
+        private void comboBoxStaffType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSetExams_Click(object sender, EventArgs e)
+        {
+            SetExam sr = new SetExam();
+           sr.Show();
+        }
+
+        private void button45_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button46_Click(object sender, EventArgs e)
         {
 
         }

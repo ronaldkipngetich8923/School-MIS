@@ -35,23 +35,29 @@
             this.btnClassesRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnStreamsSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnStreamsReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1Classes = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2DataGridView1Streams = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtStreamName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1ViewClass = new Guna.UI2.WinForms.Guna2Button();
+            this.txtStreamCode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Classes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Streams)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.txtStreamCode);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Controls.Add(this.guna2Button1ViewClass);
             this.guna2Panel1.Controls.Add(this.btnClassesRefresh);
             this.guna2Panel1.Controls.Add(this.btnStreamsSave);
             this.guna2Panel1.Controls.Add(this.btnStreamsReset);
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1Classes);
+            this.guna2Panel1.Controls.Add(this.guna2DataGridView1Streams);
             this.guna2Panel1.Controls.Add(this.txtStreamName);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.panel1);
@@ -120,15 +126,15 @@
             this.btnStreamsReset.TabIndex = 7;
             this.btnStreamsReset.Text = "Reset Fields";
             // 
-            // guna2DataGridView1Classes
+            // guna2DataGridView1Streams
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Classes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1Classes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1Classes.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Classes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1Classes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1Classes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1Streams.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.guna2DataGridView1Streams.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.guna2DataGridView1Streams.BackgroundColor = System.Drawing.Color.White;
+            this.guna2DataGridView1Streams.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.guna2DataGridView1Streams.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1Streams.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -136,8 +142,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1Classes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1Classes.ColumnHeadersHeight = 4;
+            this.guna2DataGridView1Streams.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.guna2DataGridView1Streams.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -145,36 +151,36 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1Classes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1Classes.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1Classes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Classes.Location = new System.Drawing.Point(525, 140);
-            this.guna2DataGridView1Classes.Name = "guna2DataGridView1Classes";
-            this.guna2DataGridView1Classes.RowHeadersVisible = false;
-            this.guna2DataGridView1Classes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1Classes.Size = new System.Drawing.Size(378, 221);
-            this.guna2DataGridView1Classes.TabIndex = 6;
-            this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Classes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Classes.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Classes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Classes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Classes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1Classes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1Classes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Classes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1Classes.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1Classes.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Classes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1Streams.DefaultCellStyle = dataGridViewCellStyle3;
+            this.guna2DataGridView1Streams.EnableHeadersVisualStyles = false;
+            this.guna2DataGridView1Streams.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1Streams.Location = new System.Drawing.Point(529, 117);
+            this.guna2DataGridView1Streams.Name = "guna2DataGridView1Streams";
+            this.guna2DataGridView1Streams.RowHeadersVisible = false;
+            this.guna2DataGridView1Streams.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.guna2DataGridView1Streams.Size = new System.Drawing.Size(378, 221);
+            this.guna2DataGridView1Streams.TabIndex = 6;
+            this.guna2DataGridView1Streams.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1Streams.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridView1Streams.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1Streams.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1Streams.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridView1Streams.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1Streams.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1Streams.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1Streams.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1Streams.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1Streams.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridView1Streams.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridView1Streams.ThemeStyle.HeaderStyle.Height = 4;
+            this.guna2DataGridView1Streams.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridView1Streams.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // txtStreamName
             // 
@@ -190,10 +196,10 @@
             this.txtStreamName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtStreamName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtStreamName.HoverState.Parent = this.txtStreamName;
-            this.txtStreamName.Location = new System.Drawing.Point(268, 151);
+            this.txtStreamName.Location = new System.Drawing.Point(257, 197);
             this.txtStreamName.Name = "txtStreamName";
             this.txtStreamName.PasswordChar = '\0';
-            this.txtStreamName.PlaceholderText = "";
+            this.txtStreamName.PlaceholderText = "Enter Stream Name";
             this.txtStreamName.SelectedText = "";
             this.txtStreamName.ShadowDecoration.Parent = this.txtStreamName;
             this.txtStreamName.Size = new System.Drawing.Size(212, 36);
@@ -204,7 +210,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(103, 163);
+            this.label3.Location = new System.Drawing.Point(94, 197);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 24);
             this.label3.TabIndex = 4;
@@ -230,6 +236,61 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Streams";
             // 
+            // guna2Button1ViewClass
+            // 
+            this.guna2Button1ViewClass.CheckedState.Parent = this.guna2Button1ViewClass;
+            this.guna2Button1ViewClass.CustomImages.Parent = this.guna2Button1ViewClass;
+            this.guna2Button1ViewClass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1ViewClass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1ViewClass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1ViewClass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1ViewClass.DisabledState.Parent = this.guna2Button1ViewClass;
+            this.guna2Button1ViewClass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1ViewClass.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1ViewClass.HoverState.Parent = this.guna2Button1ViewClass;
+            this.guna2Button1ViewClass.Location = new System.Drawing.Point(541, 355);
+            this.guna2Button1ViewClass.Name = "guna2Button1ViewClass";
+            this.guna2Button1ViewClass.ShadowDecoration.Parent = this.guna2Button1ViewClass;
+            this.guna2Button1ViewClass.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1ViewClass.TabIndex = 10;
+            this.guna2Button1ViewClass.Text = "View Records";
+            this.guna2Button1ViewClass.Click += new System.EventHandler(this.guna2Button1ViewClass_Click);
+            // 
+            // txtStreamCode
+            // 
+            this.txtStreamCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStreamCode.DefaultText = "";
+            this.txtStreamCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStreamCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStreamCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStreamCode.DisabledState.Parent = this.txtStreamCode;
+            this.txtStreamCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStreamCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStreamCode.FocusedState.Parent = this.txtStreamCode;
+            this.txtStreamCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStreamCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStreamCode.HoverState.Parent = this.txtStreamCode;
+            this.txtStreamCode.Location = new System.Drawing.Point(257, 118);
+            this.txtStreamCode.Name = "txtStreamCode";
+            this.txtStreamCode.PasswordChar = '\0';
+            this.txtStreamCode.PlaceholderText = "Enter Stream Code";
+            this.txtStreamCode.SelectedText = "";
+            this.txtStreamCode.ShadowDecoration.Parent = this.txtStreamCode;
+            this.txtStreamCode.Size = new System.Drawing.Size(212, 36);
+            this.txtStreamCode.TabIndex = 12;
+            this.txtStreamCode.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(94, 130);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 24);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Stream Code";
+            // 
             // Stream
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,7 +303,7 @@
             this.Load += new System.EventHandler(this.Stream_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Classes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Streams)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -255,10 +316,13 @@
         private Guna.UI2.WinForms.Guna2Button btnClassesRefresh;
         private Guna.UI2.WinForms.Guna2Button btnStreamsSave;
         private Guna.UI2.WinForms.Guna2Button btnStreamsReset;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1Classes;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1Streams;
         private Guna.UI2.WinForms.Guna2TextBox txtStreamName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1ViewClass;
+        private Guna.UI2.WinForms.Guna2TextBox txtStreamCode;
+        private System.Windows.Forms.Label label2;
     }
 }

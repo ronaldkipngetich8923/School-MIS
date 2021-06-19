@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.admission = new System.Windows.Forms.TabControl();
             this.studentsTab = new System.Windows.Forms.TabPage();
@@ -111,18 +111,6 @@
             this.CatsTab = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.AdmNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Form = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.English = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Math = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kiswahili = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.History = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Business = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Physics = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CAT_TYPE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TOTAL_SCORE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -137,33 +125,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button29 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
             this.label74 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.button18 = new System.Windows.Forms.Button();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
@@ -192,35 +157,17 @@
             this.Payroll = new System.Windows.Forms.Panel();
             this.ManageStaff = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button24 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button23 = new System.Windows.Forms.Button();
             this.Teachingstaff = new System.Windows.Forms.Panel();
             this.TeachingStaffTabControl = new System.Windows.Forms.TabControl();
             this.AddTeacher = new System.Windows.Forms.TabPage();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.dataGridView3StaffDetails = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -228,7 +175,6 @@
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1TeachersRecords = new Guna.UI2.WinForms.Guna2Button();
             this.panelmDropDown = new System.Windows.Forms.Panel();
@@ -239,16 +185,12 @@
             this.button11 = new System.Windows.Forms.Button();
             this.subordinatestaff = new System.Windows.Forms.Panel();
             this.SetupParameter = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.btnRanks = new System.Windows.Forms.Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.Transport = new System.Windows.Forms.Panel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
@@ -265,40 +207,31 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDropDownForAdmission = new System.Windows.Forms.Panel();
             this.button26 = new System.Windows.Forms.Button();
-            this.AdmissionBtn = new System.Windows.Forms.Button();
-            this.btnAcademic = new System.Windows.Forms.Button();
             this.panelAcademic = new System.Windows.Forms.Panel();
             this.button46 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.btnFinance = new System.Windows.Forms.Button();
+            this.btnSetExams = new System.Windows.Forms.Button();
             this.panelDropFinance = new System.Windows.Forms.Panel();
             this.button48 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnManage = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.panelDropDispensary = new System.Windows.Forms.Panel();
             this.button43 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnLibrary = new System.Windows.Forms.Button();
             this.panelDropLibrary = new System.Windows.Forms.Panel();
             this.button50 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.panelDropHostel = new System.Windows.Forms.Panel();
             this.button53 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.panelDropTransport = new System.Windows.Forms.Panel();
             this.button54 = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataSetStd = new System.Data.DataSet();
@@ -311,10 +244,58 @@
             this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Discipline = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.btnStaffType = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.comboBoxTerm = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxYear = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtAdmNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.comboBoxExamType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxExamCategory = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxSubjects = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.comboBoxStudentScore = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtStudname = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.comboBoxStreams = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.comboBoxForm = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.txtWeight = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dataGridView1StudentsScores = new System.Windows.Forms.DataGridView();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtStaffId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.comboBoxStaffType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2DateTimePicker1DateOfRecruit = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtPayrollNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSalary = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRank = new Guna.UI2.WinForms.Guna2TextBox();
+            this.comboBoxDepartmentAssigned = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.AdmissionBtn = new System.Windows.Forms.Button();
+            this.btnAcademic = new System.Windows.Forms.Button();
+            this.btnFinance = new System.Windows.Forms.Button();
+            this.btnManage = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.btnLibrary = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.AdmissionPanel.SuspendLayout();
             this.admission.SuspendLayout();
             this.studentsTab.SuspendLayout();
@@ -331,19 +312,15 @@
             this.CatsTab.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.GradingTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.ManageStaff.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Teachingstaff.SuspendLayout();
             this.TeachingStaffTabControl.SuspendLayout();
             this.AddTeacher.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3StaffDetails)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.panelmDropDown.SuspendLayout();
             this.SetupParameter.SuspendLayout();
@@ -359,12 +336,15 @@
             this.panelDropHostel.SuspendLayout();
             this.panelDropTransport.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStd)).BeginInit();
             this.StudentsDetailsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3StudentsDetails)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1StudentsScores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // AdmissionPanel
@@ -1152,6 +1132,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.comboBox5);
+            this.groupBox3.Controls.Add(this.label51);
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Controls.Add(this.comboBox16);
             this.groupBox3.Controls.Add(this.label25);
@@ -1164,96 +1146,19 @@
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(624, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(590, 350);
+            this.groupBox3.Size = new System.Drawing.Size(590, 492);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "EXAMS ";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dataGridView1StudentsScores);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(6, 50);
+            this.panel2.Location = new System.Drawing.Point(0, 95);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 255);
+            this.panel2.Size = new System.Drawing.Size(556, 313);
             this.panel2.TabIndex = 46;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AdmNo,
-            this.FirstName,
-            this.Form,
-            this.English,
-            this.Math,
-            this.Kiswahili,
-            this.History,
-            this.Business,
-            this.Physics,
-            this.CAT_TYPE,
-            this.TOTAL_SCORE});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(556, 210);
-            this.dataGridView1.TabIndex = 22;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // AdmNo
-            // 
-            this.AdmNo.HeaderText = "AdmNo";
-            this.AdmNo.Name = "AdmNo";
-            // 
-            // FirstName
-            // 
-            this.FirstName.HeaderText = "Student Name";
-            this.FirstName.Name = "FirstName";
-            // 
-            // Form
-            // 
-            this.Form.HeaderText = "Form";
-            this.Form.Name = "Form";
-            // 
-            // English
-            // 
-            this.English.HeaderText = "English";
-            this.English.Name = "English";
-            // 
-            // Math
-            // 
-            this.Math.HeaderText = "Math";
-            this.Math.Name = "Math";
-            // 
-            // Kiswahili
-            // 
-            this.Kiswahili.HeaderText = "Kiswahili";
-            this.Kiswahili.Name = "Kiswahili";
-            // 
-            // History
-            // 
-            this.History.HeaderText = "History";
-            this.History.Name = "History";
-            // 
-            // Business
-            // 
-            this.Business.HeaderText = "Business";
-            this.Business.Name = "Business";
-            // 
-            // Physics
-            // 
-            this.Physics.HeaderText = "Physics";
-            this.Physics.Name = "Physics";
-            // 
-            // CAT_TYPE
-            // 
-            this.CAT_TYPE.HeaderText = "CAT_TYPE";
-            this.CAT_TYPE.Name = "CAT_TYPE";
-            // 
-            // TOTAL_SCORE
-            // 
-            this.TOTAL_SCORE.HeaderText = "TOTAL_SCORE";
-            this.TOTAL_SCORE.Name = "TOTAL_SCORE";
             // 
             // panel4
             // 
@@ -1318,7 +1223,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(336, 310);
+            this.button1.Location = new System.Drawing.Point(350, 428);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 34);
             this.button1.TabIndex = 41;
@@ -1344,7 +1249,7 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(13, 310);
+            this.button19.Location = new System.Drawing.Point(9, 440);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(137, 34);
             this.button19.TabIndex = 38;
@@ -1354,49 +1259,43 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button29);
-            this.groupBox2.Controls.Add(this.button28);
-            this.groupBox2.Controls.Add(this.textBox49);
-            this.groupBox2.Controls.Add(this.comboBox14);
-            this.groupBox2.Controls.Add(this.label74);
-            this.groupBox2.Controls.Add(this.textBox33);
-            this.groupBox2.Controls.Add(this.textBox32);
-            this.groupBox2.Controls.Add(this.textBox31);
-            this.groupBox2.Controls.Add(this.textBox30);
-            this.groupBox2.Controls.Add(this.textBox28);
-            this.groupBox2.Controls.Add(this.label53);
-            this.groupBox2.Controls.Add(this.label52);
-            this.groupBox2.Controls.Add(this.label51);
+            this.groupBox2.Controls.Add(this.txtWeight);
+            this.groupBox2.Controls.Add(this.label50);
+            this.groupBox2.Controls.Add(this.comboBoxStreams);
+            this.groupBox2.Controls.Add(this.comboBoxForm);
+            this.groupBox2.Controls.Add(this.txtStudname);
             this.groupBox2.Controls.Add(this.label49);
             this.groupBox2.Controls.Add(this.label38);
-            this.groupBox2.Controls.Add(this.textBox21);
-            this.groupBox2.Controls.Add(this.button18);
-            this.groupBox2.Controls.Add(this.comboBox9);
+            this.groupBox2.Controls.Add(this.comboBoxStudentScore);
             this.groupBox2.Controls.Add(this.label37);
-            this.groupBox2.Controls.Add(this.label36);
-            this.groupBox2.Controls.Add(this.textBox19);
-            this.groupBox2.Controls.Add(this.label34);
-            this.groupBox2.Controls.Add(this.textBox18);
-            this.groupBox2.Controls.Add(this.label33);
-            this.groupBox2.Controls.Add(this.textBox17);
+            this.groupBox2.Controls.Add(this.comboBoxSubjects);
+            this.groupBox2.Controls.Add(this.comboBoxExamCategory);
+            this.groupBox2.Controls.Add(this.comboBoxExamType);
+            this.groupBox2.Controls.Add(this.txtAdmNo);
+            this.groupBox2.Controls.Add(this.comboBoxYear);
             this.groupBox2.Controls.Add(this.label32);
-            this.groupBox2.Controls.Add(this.textBox16);
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.comboBoxTerm);
             this.groupBox2.Controls.Add(this.label31);
+            this.groupBox2.Controls.Add(this.button29);
+            this.groupBox2.Controls.Add(this.button28);
+            this.groupBox2.Controls.Add(this.label74);
+            this.groupBox2.Controls.Add(this.label36);
+            this.groupBox2.Controls.Add(this.label34);
+            this.groupBox2.Controls.Add(this.label33);
             this.groupBox2.Controls.Add(this.label30);
             this.groupBox2.Controls.Add(this.textBox14);
             this.groupBox2.Controls.Add(this.button16);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(7, 9);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(611, 344);
+            this.groupBox2.Size = new System.Drawing.Size(611, 486);
             this.groupBox2.TabIndex = 20;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CATS / EXAMS";
             // 
             // button29
             // 
-            this.button29.Location = new System.Drawing.Point(411, 289);
+            this.button29.Location = new System.Drawing.Point(383, 440);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(135, 35);
             this.button29.TabIndex = 57;
@@ -1405,7 +1304,7 @@
             // 
             // button28
             // 
-            this.button28.Location = new System.Drawing.Point(70, 289);
+            this.button28.Location = new System.Drawing.Point(74, 380);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(135, 35);
             this.button28.TabIndex = 56;
@@ -1413,235 +1312,46 @@
             this.button28.UseVisualStyleBackColor = true;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
-            // textBox49
-            // 
-            this.textBox49.Location = new System.Drawing.Point(317, 230);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(112, 21);
-            this.textBox49.TabIndex = 54;
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
-            "CAT 1",
-            "CAT 2",
-            "END TERM EXAM"});
-            this.comboBox14.Location = new System.Drawing.Point(441, 66);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(69, 23);
-            this.comboBox14.TabIndex = 53;
-            // 
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(324, 69);
+            this.label74.Location = new System.Drawing.Point(265, 93);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(110, 15);
             this.label74.TabIndex = 52;
             this.label74.Text = "EXAM CATEGORY";
             // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(346, 167);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(49, 21);
-            this.textBox33.TabIndex = 51;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(346, 128);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(49, 21);
-            this.textBox32.TabIndex = 50;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(509, 132);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(48, 21);
-            this.textBox31.TabIndex = 49;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(508, 166);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(49, 21);
-            this.textBox30.TabIndex = 48;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(346, 96);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(49, 21);
-            this.textBox28.TabIndex = 46;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(260, 101);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(47, 15);
-            this.label53.TabIndex = 45;
-            this.label53.Text = "English";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(419, 139);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(54, 15);
-            this.label52.TabIndex = 44;
-            this.label52.Text = "Business";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(419, 103);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(40, 15);
-            this.label51.TabIndex = 43;
-            this.label51.Text = "Maths";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(259, 131);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(58, 15);
-            this.label49.TabIndex = 41;
-            this.label49.Text = "Kiswahili";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(260, 172);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(46, 15);
-            this.label38.TabIndex = 19;
-            this.label38.Text = "History";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(508, 97);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(49, 21);
-            this.textBox21.TabIndex = 39;
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(236, 229);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
-            this.button18.TabIndex = 38;
-            this.button18.Text = "WEIGHT";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            "CAT 1",
-            "CAT 2",
-            "END TERM EXAM"});
-            this.comboBox9.Location = new System.Drawing.Point(441, 38);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(69, 23);
-            this.comboBox9.TabIndex = 36;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(419, 172);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(46, 15);
-            this.label37.TabIndex = 35;
-            this.label37.Text = "Physics";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(324, 41);
+            this.label36.Location = new System.Drawing.Point(265, 47);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(74, 15);
             this.label36.TabIndex = 34;
             this.label36.Text = "EXAM TYPE";
             // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(117, 177);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(112, 21);
-            this.textBox19.TabIndex = 33;
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(6, 181);
+            this.label34.Location = new System.Drawing.Point(6, 189);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(46, 15);
             this.label34.TabIndex = 32;
             this.label34.Text = "Stream";
             // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(117, 135);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(112, 21);
-            this.textBox18.TabIndex = 31;
-            // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 139);
+            this.label33.Location = new System.Drawing.Point(6, 138);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(73, 15);
             this.label33.TabIndex = 30;
             this.label33.Text = "Form / Class";
             // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(118, 95);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(111, 21);
-            this.textBox17.TabIndex = 29;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 99);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(56, 15);
-            this.label32.TabIndex = 28;
-            this.label32.Text = "Surname";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(120, 63);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(109, 21);
-            this.textBox16.TabIndex = 27;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(120, 35);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(109, 21);
-            this.textBox15.TabIndex = 26;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(6, 66);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(66, 15);
-            this.label31.TabIndex = 25;
-            this.label31.Text = "First Name";
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 38);
+            this.label30.Location = new System.Drawing.Point(5, 48);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(80, 15);
             this.label30.TabIndex = 24;
@@ -1860,17 +1570,6 @@
             this.linkLabel2.Text = "Subordinate Staff";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Shule.Properties.Resources.teachers_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(504, 87);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(146, 93);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // button24
             // 
             this.button24.BackColor = System.Drawing.Color.White;
@@ -1895,17 +1594,6 @@
             this.linkLabel1.Text = "Teaching Staff";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Shule.Properties.Resources.teachers_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(143, 83);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(146, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // button23
             // 
             this.button23.BackColor = System.Drawing.Color.White;
@@ -1917,6 +1605,8 @@
             // 
             // Teachingstaff
             // 
+            this.Teachingstaff.AutoScroll = true;
+            this.Teachingstaff.AutoSize = true;
             this.Teachingstaff.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.Teachingstaff.Controls.Add(this.TeachingStaffTabControl);
             this.Teachingstaff.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1939,10 +1629,8 @@
             // AddTeacher
             // 
             this.AddTeacher.Controls.Add(this.guna2Button1);
-            this.AddTeacher.Controls.Add(this.dataGridView3);
-            this.AddTeacher.Controls.Add(this.groupBox8);
+            this.AddTeacher.Controls.Add(this.dataGridView3StaffDetails);
             this.AddTeacher.Controls.Add(this.groupBox7);
-            this.AddTeacher.Controls.Add(this.guna2Button3);
             this.AddTeacher.Controls.Add(this.guna2Button2);
             this.AddTeacher.Controls.Add(this.guna2Button1TeachersRecords);
             this.AddTeacher.Location = new System.Drawing.Point(4, 22);
@@ -1950,7 +1638,7 @@
             this.AddTeacher.Padding = new System.Windows.Forms.Padding(3);
             this.AddTeacher.Size = new System.Drawing.Size(1237, 668);
             this.AddTeacher.TabIndex = 0;
-            this.AddTeacher.Text = "ADD TEACHER";
+            this.AddTeacher.Text = "ADD STAFF";
             this.AddTeacher.UseVisualStyleBackColor = true;
             // 
             // guna2Button1
@@ -1965,100 +1653,43 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(622, 214);
+            this.guna2Button1.Location = new System.Drawing.Point(536, 549);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(136, 45);
             this.guna2Button1.TabIndex = 29;
             this.guna2Button1.Text = "View Records";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // dataGridView3
+            // dataGridView3StaffDetails
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 267);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1108, 200);
-            this.dataGridView3.TabIndex = 28;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.comboBox1);
-            this.groupBox8.Controls.Add(this.label21);
-            this.groupBox8.Controls.Add(this.label46);
-            this.groupBox8.Controls.Add(this.label47);
-            this.groupBox8.Controls.Add(this.comboBox2);
-            this.groupBox8.Controls.Add(this.comboBox4);
-            this.groupBox8.Location = new System.Drawing.Point(596, 10);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(512, 173);
-            this.groupBox8.TabIndex = 27;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "groupBox8";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(155, 94);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 21;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(24, 97);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 13);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "Teaching Subject";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(24, 62);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(40, 13);
-            this.label46.TabIndex = 19;
-            this.label46.Text = "Stream";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(23, 26);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(66, 13);
-            this.label47.TabIndex = 18;
-            this.label47.Text = "Form / Class";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(155, 59);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(155, 29);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 16;
+            this.dataGridView3StaffDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView3StaffDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3StaffDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataGridView3StaffDetails.Location = new System.Drawing.Point(62, 238);
+            this.dataGridView3StaffDetails.Name = "dataGridView3StaffDetails";
+            this.dataGridView3StaffDetails.RowHeadersWidth = 48;
+            this.dataGridView3StaffDetails.Size = new System.Drawing.Size(1121, 288);
+            this.dataGridView3StaffDetails.TabIndex = 28;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.textBox13);
+            this.groupBox7.Controls.Add(this.guna2Button3);
+            this.groupBox7.Controls.Add(this.comboBoxDepartmentAssigned);
+            this.groupBox7.Controls.Add(this.txtRank);
+            this.groupBox7.Controls.Add(this.txtSalary);
+            this.groupBox7.Controls.Add(this.txtPayrollNo);
+            this.groupBox7.Controls.Add(this.guna2DateTimePicker1DateOfRecruit);
+            this.groupBox7.Controls.Add(this.comboBoxStaffType);
+            this.groupBox7.Controls.Add(this.txtPhone);
+            this.groupBox7.Controls.Add(this.txtFullName);
+            this.groupBox7.Controls.Add(this.txtStaffId);
+            this.groupBox7.Controls.Add(this.txtEmail);
+            this.groupBox7.Controls.Add(this.label21);
             this.groupBox7.Controls.Add(this.label48);
-            this.groupBox7.Controls.Add(this.textBox6);
             this.groupBox7.Controls.Add(this.label35);
-            this.groupBox7.Controls.Add(this.dateTimePicker1);
-            this.groupBox7.Controls.Add(this.textBox7);
-            this.groupBox7.Controls.Add(this.textBox8);
-            this.groupBox7.Controls.Add(this.textBox9);
-            this.groupBox7.Controls.Add(this.textBox10);
-            this.groupBox7.Controls.Add(this.textBox11);
-            this.groupBox7.Controls.Add(this.textBox12);
             this.groupBox7.Controls.Add(this.label39);
             this.groupBox7.Controls.Add(this.label40);
             this.groupBox7.Controls.Add(this.label41);
@@ -2068,96 +1699,32 @@
             this.groupBox7.Controls.Add(this.label45);
             this.groupBox7.Location = new System.Drawing.Point(2, 3);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(544, 204);
+            this.groupBox7.Size = new System.Drawing.Size(1235, 227);
             this.groupBox7.TabIndex = 26;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "groupBox7";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(69, 160);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(127, 20);
-            this.textBox13.TabIndex = 36;
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(8, 164);
+            this.label48.Location = new System.Drawing.Point(601, 128);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(36, 13);
             this.label48.TabIndex = 35;
             this.label48.Text = " Rank";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(363, 63);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(117, 20);
-            this.textBox6.TabIndex = 34;
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(211, 64);
+            this.label35.Location = new System.Drawing.Point(602, 29);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(55, 13);
             this.label35.TabIndex = 33;
             this.label35.Text = "Payroll No";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(366, 25);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(116, 20);
-            this.dateTimePicker1.TabIndex = 32;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(363, 100);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(117, 20);
-            this.textBox7.TabIndex = 31;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(71, 132);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(124, 20);
-            this.textBox8.TabIndex = 30;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(72, 96);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(124, 20);
-            this.textBox9.TabIndex = 29;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(363, 135);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(125, 20);
-            this.textBox10.TabIndex = 28;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(71, 60);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(125, 20);
-            this.textBox11.TabIndex = 27;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(72, 28);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(125, 20);
-            this.textBox12.TabIndex = 26;
-            // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(208, 101);
+            this.label39.Location = new System.Drawing.Point(602, 83);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(72, 13);
             this.label39.TabIndex = 25;
@@ -2166,7 +1733,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(211, 28);
+            this.label40.Location = new System.Drawing.Point(285, 139);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(80, 13);
             this.label40.TabIndex = 24;
@@ -2175,7 +1742,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(11, 132);
+            this.label41.Location = new System.Drawing.Point(293, 79);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(32, 13);
             this.label41.TabIndex = 23;
@@ -2184,7 +1751,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(7, 94);
+            this.label42.Location = new System.Drawing.Point(290, 29);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(38, 13);
             this.label42.TabIndex = 22;
@@ -2193,7 +1760,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(201, 138);
+            this.label43.Location = new System.Drawing.Point(942, 27);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(108, 13);
             this.label43.TabIndex = 21;
@@ -2202,7 +1769,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(7, 58);
+            this.label44.Location = new System.Drawing.Point(8, 84);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(43, 13);
             this.label44.TabIndex = 20;
@@ -2217,25 +1784,6 @@
             this.label45.TabIndex = 19;
             this.label45.Text = "Full Name";
             // 
-            // guna2Button3
-            // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(280, 213);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(123, 45);
-            this.guna2Button3.TabIndex = 25;
-            this.guna2Button3.Text = "Reset Fields";
-            // 
             // guna2Button2
             // 
             this.guna2Button2.CheckedState.Parent = this.guna2Button2;
@@ -2248,7 +1796,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(876, 216);
+            this.guna2Button2.Location = new System.Drawing.Point(790, 551);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(120, 45);
@@ -2267,7 +1815,7 @@
             this.guna2Button1TeachersRecords.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1TeachersRecords.ForeColor = System.Drawing.Color.White;
             this.guna2Button1TeachersRecords.HoverState.Parent = this.guna2Button1TeachersRecords;
-            this.guna2Button1TeachersRecords.Location = new System.Drawing.Point(449, 217);
+            this.guna2Button1TeachersRecords.Location = new System.Drawing.Point(252, 551);
             this.guna2Button1TeachersRecords.Name = "guna2Button1TeachersRecords";
             this.guna2Button1TeachersRecords.ShadowDecoration.Parent = this.guna2Button1TeachersRecords;
             this.guna2Button1TeachersRecords.Size = new System.Drawing.Size(136, 45);
@@ -2281,7 +1829,7 @@
             this.panelmDropDown.Controls.Add(this.button42);
             this.panelmDropDown.Controls.Add(this.btnTeachingStaff);
             this.panelmDropDown.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelmDropDown.Location = new System.Drawing.Point(3, 526);
+            this.panelmDropDown.Location = new System.Drawing.Point(3, 511);
             this.panelmDropDown.Name = "panelmDropDown";
             this.panelmDropDown.Size = new System.Drawing.Size(125, 51);
             this.panelmDropDown.TabIndex = 26;
@@ -2315,7 +1863,7 @@
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(3, 1057);
+            this.button10.Location = new System.Drawing.Point(3, 1042);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(125, 35);
             this.button10.TabIndex = 10;
@@ -2329,7 +1877,7 @@
             this.btnSetup.FlatAppearance.BorderSize = 0;
             this.btnSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSetup.Location = new System.Drawing.Point(3, 1139);
+            this.btnSetup.Location = new System.Drawing.Point(3, 1124);
             this.btnSetup.Name = "btnSetup";
             this.btnSetup.Size = new System.Drawing.Size(125, 35);
             this.btnSetup.TabIndex = 12;
@@ -2342,7 +1890,7 @@
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(3, 1098);
+            this.button11.Location = new System.Drawing.Point(3, 1083);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(125, 35);
             this.button11.TabIndex = 11;
@@ -2362,8 +1910,9 @@
             // SetupParameter
             // 
             this.SetupParameter.BackColor = System.Drawing.Color.White;
+            this.SetupParameter.Controls.Add(this.btnStaffType);
             this.SetupParameter.Controls.Add(this.button13);
-            this.SetupParameter.Controls.Add(this.button12);
+            this.SetupParameter.Controls.Add(this.btnRanks);
             this.SetupParameter.Controls.Add(this.guna2Panel1);
             this.SetupParameter.Controls.Add(this.button41);
             this.SetupParameter.Controls.Add(this.button34);
@@ -2380,6 +1929,30 @@
             this.SetupParameter.TabIndex = 34;
             this.SetupParameter.Visible = false;
             this.SetupParameter.Paint += new System.Windows.Forms.PaintEventHandler(this.SetupParameter_Paint);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.LightBlue;
+            this.button13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(819, 208);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(187, 80);
+            this.button13.TabIndex = 11;
+            this.button13.Text = "Add Ranks";
+            this.button13.UseVisualStyleBackColor = false;
+            // 
+            // btnRanks
+            // 
+            this.btnRanks.BackColor = System.Drawing.Color.LightBlue;
+            this.btnRanks.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRanks.ForeColor = System.Drawing.Color.White;
+            this.btnRanks.Location = new System.Drawing.Point(819, 92);
+            this.btnRanks.Name = "btnRanks";
+            this.btnRanks.Size = new System.Drawing.Size(187, 80);
+            this.btnRanks.TabIndex = 10;
+            this.btnRanks.Text = "Add Ranks";
+            this.btnRanks.UseVisualStyleBackColor = false;
             // 
             // guna2Panel1
             // 
@@ -2403,38 +1976,6 @@
             this.guna2HtmlLabel1.TabIndex = 0;
             this.guna2HtmlLabel1.Text = "Application Setup Parameters";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.LightBlue;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.ForeColor = System.Drawing.Color.White;
-            this.button41.Image = global::Shule.Properties.Resources.feess;
-            this.button41.Location = new System.Drawing.Point(0, 207);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(187, 80);
-            this.button41.TabIndex = 8;
-            this.button41.Text = " Fee Structure ";
-            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button41.UseVisualStyleBackColor = false;
-            this.button41.Click += new System.EventHandler(this.button41_Click);
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.Color.LightBlue;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.White;
-            this.button34.Image = global::Shule.Properties.Resources.schoolinfo;
-            this.button34.Location = new System.Drawing.Point(0, 97);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(187, 80);
-            this.button34.TabIndex = 6;
-            this.button34.Text = "School Info";
-            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button34.UseVisualStyleBackColor = false;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button33
             // 
@@ -2463,70 +2004,6 @@
             this.button32.Text = "Hostels";
             this.button32.UseVisualStyleBackColor = false;
             this.button32.Click += new System.EventHandler(this.button32_Click);
-            // 
-            // button31
-            // 
-            this.button31.BackColor = System.Drawing.Color.LightBlue;
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.ForeColor = System.Drawing.Color.White;
-            this.button31.Image = global::Shule.Properties.Resources.schoolstream;
-            this.button31.Location = new System.Drawing.Point(626, 93);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(187, 80);
-            this.button31.TabIndex = 3;
-            this.button31.Text = "Add Streams";
-            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button31.UseVisualStyleBackColor = false;
-            this.button31.Click += new System.EventHandler(this.button31_Click);
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.Color.LightBlue;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Image = global::Shule.Properties.Resources.classes2;
-            this.button30.Location = new System.Drawing.Point(413, 93);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(187, 80);
-            this.button30.TabIndex = 2;
-            this.button30.Text = "Add Classes";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = false;
-            this.button30.Click += new System.EventHandler(this.button30_Click);
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.LightBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = global::Shule.Properties.Resources.subjects;
-            this.button15.Location = new System.Drawing.Point(626, 209);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(187, 80);
-            this.button15.TabIndex = 1;
-            this.button15.Text = "Add Subjects";
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LightBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Shule.Properties.Resources.Adduser;
-            this.button4.Location = new System.Drawing.Point(213, 96);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(187, 80);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "New User";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Transport
             // 
@@ -2728,102 +2205,58 @@
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
-            // AdmissionBtn
-            // 
-            this.AdmissionBtn.BackColor = System.Drawing.Color.White;
-            this.AdmissionBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AdmissionBtn.FlatAppearance.BorderSize = 0;
-            this.AdmissionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AdmissionBtn.Image = global::Shule.Properties.Resources.caretside;
-            this.AdmissionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdmissionBtn.Location = new System.Drawing.Point(0, 0);
-            this.AdmissionBtn.Name = "AdmissionBtn";
-            this.AdmissionBtn.Size = new System.Drawing.Size(125, 35);
-            this.AdmissionBtn.TabIndex = 13;
-            this.AdmissionBtn.Text = "Admission";
-            this.AdmissionBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.AdmissionBtn.UseVisualStyleBackColor = false;
-            this.AdmissionBtn.Click += new System.EventHandler(this.AdmissionBtn_Click);
-            // 
-            // btnAcademic
-            // 
-            this.btnAcademic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAcademic.FlatAppearance.BorderSize = 0;
-            this.btnAcademic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcademic.Image = global::Shule.Properties.Resources.caretside;
-            this.btnAcademic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAcademic.Location = new System.Drawing.Point(3, 185);
-            this.btnAcademic.Name = "btnAcademic";
-            this.btnAcademic.Size = new System.Drawing.Size(125, 35);
-            this.btnAcademic.TabIndex = 2;
-            this.btnAcademic.Text = "Academics";
-            this.btnAcademic.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAcademic.UseVisualStyleBackColor = true;
-            this.btnAcademic.Click += new System.EventHandler(this.button2_Click);
-            // 
             // panelAcademic
             // 
             this.panelAcademic.BackColor = System.Drawing.Color.Ivory;
             this.panelAcademic.Controls.Add(this.button46);
             this.panelAcademic.Controls.Add(this.button45);
-            this.panelAcademic.Controls.Add(this.button22);
+            this.panelAcademic.Controls.Add(this.btnSetExams);
             this.panelAcademic.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAcademic.Location = new System.Drawing.Point(3, 226);
-            this.panelAcademic.MaximumSize = new System.Drawing.Size(125, 100);
-            this.panelAcademic.MinimumSize = new System.Drawing.Size(125, 100);
+            this.panelAcademic.MaximumSize = new System.Drawing.Size(125, 85);
+            this.panelAcademic.MinimumSize = new System.Drawing.Size(125, 85);
             this.panelAcademic.Name = "panelAcademic";
-            this.panelAcademic.Size = new System.Drawing.Size(125, 100);
+            this.panelAcademic.Size = new System.Drawing.Size(125, 85);
             this.panelAcademic.TabIndex = 27;
             // 
             // button46
             // 
             this.button46.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button46.FlatAppearance.BorderSize = 0;
             this.button46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button46.Location = new System.Drawing.Point(0, 46);
             this.button46.Name = "button46";
             this.button46.Size = new System.Drawing.Size(125, 23);
             this.button46.TabIndex = 2;
-            this.button46.Text = "button46";
+            this.button46.Text = "Transcript";
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // button45
             // 
             this.button45.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button45.FlatAppearance.BorderSize = 0;
             this.button45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button45.Location = new System.Drawing.Point(0, 23);
             this.button45.Name = "button45";
             this.button45.Size = new System.Drawing.Size(125, 23);
             this.button45.TabIndex = 1;
-            this.button45.Text = "button45";
+            this.button45.Text = "Examinations";
             this.button45.UseVisualStyleBackColor = true;
+            this.button45.Click += new System.EventHandler(this.button45_Click);
             // 
-            // button22
+            // btnSetExams
             // 
-            this.button22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Location = new System.Drawing.Point(0, 0);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(125, 23);
-            this.button22.TabIndex = 0;
-            this.button22.Text = "button22";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // btnFinance
-            // 
-            this.btnFinance.BackColor = System.Drawing.Color.White;
-            this.btnFinance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFinance.FlatAppearance.BorderSize = 0;
-            this.btnFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinance.Image = global::Shule.Properties.Resources.caretside;
-            this.btnFinance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFinance.Location = new System.Drawing.Point(3, 332);
-            this.btnFinance.Name = "btnFinance";
-            this.btnFinance.Size = new System.Drawing.Size(125, 35);
-            this.btnFinance.TabIndex = 3;
-            this.btnFinance.Text = "Finance";
-            this.btnFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnFinance.UseVisualStyleBackColor = false;
-            this.btnFinance.Click += new System.EventHandler(this.button3_Click);
+            this.btnSetExams.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSetExams.FlatAppearance.BorderSize = 0;
+            this.btnSetExams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetExams.Location = new System.Drawing.Point(0, 0);
+            this.btnSetExams.Name = "btnSetExams";
+            this.btnSetExams.Size = new System.Drawing.Size(125, 23);
+            this.btnSetExams.TabIndex = 0;
+            this.btnSetExams.Text = "Set Exams";
+            this.btnSetExams.UseVisualStyleBackColor = true;
+            this.btnSetExams.Click += new System.EventHandler(this.btnSetExams_Click);
             // 
             // panelDropFinance
             // 
@@ -2832,7 +2265,7 @@
             this.panelDropFinance.Controls.Add(this.button47);
             this.panelDropFinance.Controls.Add(this.button2);
             this.panelDropFinance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropFinance.Location = new System.Drawing.Point(3, 373);
+            this.panelDropFinance.Location = new System.Drawing.Point(3, 358);
             this.panelDropFinance.Name = "panelDropFinance";
             this.panelDropFinance.Size = new System.Drawing.Size(125, 100);
             this.panelDropFinance.TabIndex = 28;
@@ -2871,47 +2304,13 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // btnManage
-            // 
-            this.btnManage.BackColor = System.Drawing.Color.White;
-            this.btnManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnManage.FlatAppearance.BorderSize = 0;
-            this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManage.Image = global::Shule.Properties.Resources.caretside;
-            this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnManage.Location = new System.Drawing.Point(3, 479);
-            this.btnManage.Name = "btnManage";
-            this.btnManage.Size = new System.Drawing.Size(125, 41);
-            this.btnManage.TabIndex = 14;
-            this.btnManage.Text = "Manage Staffs";
-            this.btnManage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnManage.UseVisualStyleBackColor = false;
-            this.btnManage.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = global::Shule.Properties.Resources.caretside;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(3, 583);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(125, 35);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Dispensary";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // panelDropDispensary
             // 
             this.panelDropDispensary.BackColor = System.Drawing.Color.Ivory;
             this.panelDropDispensary.Controls.Add(this.button43);
             this.panelDropDispensary.Controls.Add(this.button3);
             this.panelDropDispensary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropDispensary.Location = new System.Drawing.Point(3, 624);
+            this.panelDropDispensary.Location = new System.Drawing.Point(3, 609);
             this.panelDropDispensary.Name = "panelDropDispensary";
             this.panelDropDispensary.Size = new System.Drawing.Size(125, 50);
             this.panelDropDispensary.TabIndex = 29;
@@ -2938,22 +2337,6 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // btnLibrary
-            // 
-            this.btnLibrary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLibrary.FlatAppearance.BorderSize = 0;
-            this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLibrary.Image = global::Shule.Properties.Resources.caretside;
-            this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLibrary.Location = new System.Drawing.Point(3, 680);
-            this.btnLibrary.Name = "btnLibrary";
-            this.btnLibrary.Size = new System.Drawing.Size(125, 35);
-            this.btnLibrary.TabIndex = 5;
-            this.btnLibrary.Text = "Library";
-            this.btnLibrary.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLibrary.UseVisualStyleBackColor = true;
-            this.btnLibrary.Click += new System.EventHandler(this.button5_Click);
-            // 
             // panelDropLibrary
             // 
             this.panelDropLibrary.BackColor = System.Drawing.Color.Ivory;
@@ -2962,7 +2345,7 @@
             this.panelDropLibrary.Controls.Add(this.button44);
             this.panelDropLibrary.Controls.Add(this.button5);
             this.panelDropLibrary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropLibrary.Location = new System.Drawing.Point(3, 721);
+            this.panelDropLibrary.Location = new System.Drawing.Point(3, 706);
             this.panelDropLibrary.Name = "panelDropLibrary";
             this.panelDropLibrary.Size = new System.Drawing.Size(125, 100);
             this.panelDropLibrary.TabIndex = 26;
@@ -3011,22 +2394,6 @@
             this.button5.Text = "Available Books";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = global::Shule.Properties.Resources.caretside;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(3, 827);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(125, 35);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Hostels";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
             // panelDropHostel
             // 
             this.panelDropHostel.BackColor = System.Drawing.Color.Ivory;
@@ -3034,7 +2401,7 @@
             this.panelDropHostel.Controls.Add(this.button52);
             this.panelDropHostel.Controls.Add(this.button51);
             this.panelDropHostel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropHostel.Location = new System.Drawing.Point(3, 868);
+            this.panelDropHostel.Location = new System.Drawing.Point(3, 853);
             this.panelDropHostel.Name = "panelDropHostel";
             this.panelDropHostel.Size = new System.Drawing.Size(125, 70);
             this.panelDropHostel.TabIndex = 26;
@@ -3072,28 +2439,12 @@
             this.button51.Text = "Available Hostels";
             this.button51.UseVisualStyleBackColor = true;
             // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = global::Shule.Properties.Resources.caretside;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(3, 944);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(125, 35);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Transport";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // panelDropTransport
             // 
             this.panelDropTransport.BackColor = System.Drawing.Color.Ivory;
             this.panelDropTransport.Controls.Add(this.button54);
             this.panelDropTransport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropTransport.Location = new System.Drawing.Point(3, 985);
+            this.panelDropTransport.Location = new System.Drawing.Point(3, 970);
             this.panelDropTransport.Name = "panelDropTransport";
             this.panelDropTransport.Size = new System.Drawing.Size(125, 25);
             this.panelDropTransport.TabIndex = 30;
@@ -3113,7 +2464,7 @@
             // 
             this.btnAttendance.FlatAppearance.BorderSize = 0;
             this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.Location = new System.Drawing.Point(3, 1016);
+            this.btnAttendance.Location = new System.Drawing.Point(3, 1001);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(125, 35);
             this.btnAttendance.TabIndex = 31;
@@ -3148,17 +2499,6 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Logout";
             this.btnExit.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Shule.Properties.Resources.icon1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -3225,14 +2565,14 @@
             // dataGridView3StudentsDetails
             // 
             this.dataGridView3StudentsDetails.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView3StudentsDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3StudentsDetails.Location = new System.Drawing.Point(38, 224);
             this.dataGridView3StudentsDetails.Name = "dataGridView3StudentsDetails";
@@ -3330,6 +2670,657 @@
             this.label17.TabIndex = 1;
             this.label17.Text = "Student Details";
             // 
+            // Discipline
+            // 
+            this.Discipline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.Discipline.Location = new System.Drawing.Point(361, 194);
+            this.Discipline.Name = "Discipline";
+            this.Discipline.Size = new System.Drawing.Size(648, 360);
+            this.Discipline.TabIndex = 38;
+            this.Discipline.Visible = false;
+            // 
+            // btnStaffType
+            // 
+            this.btnStaffType.BackColor = System.Drawing.Color.LightBlue;
+            this.btnStaffType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaffType.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaffType.ForeColor = System.Drawing.Color.White;
+            this.btnStaffType.Location = new System.Drawing.Point(1013, 93);
+            this.btnStaffType.Name = "btnStaffType";
+            this.btnStaffType.Size = new System.Drawing.Size(187, 80);
+            this.btnStaffType.TabIndex = 12;
+            this.btnStaffType.Text = " Staff Type";
+            this.btnStaffType.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStaffType.UseVisualStyleBackColor = false;
+            this.btnStaffType.Click += new System.EventHandler(this.btnStaffType_Click);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(9, 250);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(35, 15);
+            this.label31.TabIndex = 58;
+            this.label31.Text = "Term";
+            // 
+            // comboBoxTerm
+            // 
+            this.comboBoxTerm.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxTerm.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxTerm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTerm.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxTerm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxTerm.FocusedState.Parent = this.comboBoxTerm;
+            this.comboBoxTerm.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxTerm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxTerm.HoverState.Parent = this.comboBoxTerm;
+            this.comboBoxTerm.ItemHeight = 30;
+            this.comboBoxTerm.ItemsAppearance.Parent = this.comboBoxTerm;
+            this.comboBoxTerm.Location = new System.Drawing.Point(100, 243);
+            this.comboBoxTerm.Name = "comboBoxTerm";
+            this.comboBoxTerm.ShadowDecoration.Parent = this.comboBoxTerm;
+            this.comboBoxTerm.Size = new System.Drawing.Size(140, 36);
+            this.comboBoxTerm.TabIndex = 59;
+            // 
+            // comboBoxYear
+            // 
+            this.comboBoxYear.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxYear.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxYear.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxYear.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxYear.FocusedState.Parent = this.comboBoxYear;
+            this.comboBoxYear.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxYear.HoverState.Parent = this.comboBoxYear;
+            this.comboBoxYear.ItemHeight = 30;
+            this.comboBoxYear.ItemsAppearance.Parent = this.comboBoxYear;
+            this.comboBoxYear.Location = new System.Drawing.Point(100, 297);
+            this.comboBoxYear.Name = "comboBoxYear";
+            this.comboBoxYear.ShadowDecoration.Parent = this.comboBoxYear;
+            this.comboBoxYear.Size = new System.Drawing.Size(140, 36);
+            this.comboBoxYear.TabIndex = 61;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(9, 305);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(31, 15);
+            this.label32.TabIndex = 60;
+            this.label32.Text = "Year";
+            // 
+            // txtAdmNo
+            // 
+            this.txtAdmNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAdmNo.DefaultText = "";
+            this.txtAdmNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAdmNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAdmNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAdmNo.DisabledState.Parent = this.txtAdmNo;
+            this.txtAdmNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAdmNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAdmNo.FocusedState.Parent = this.txtAdmNo;
+            this.txtAdmNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAdmNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAdmNo.HoverState.Parent = this.txtAdmNo;
+            this.txtAdmNo.Location = new System.Drawing.Point(100, 38);
+            this.txtAdmNo.Name = "txtAdmNo";
+            this.txtAdmNo.PasswordChar = '\0';
+            this.txtAdmNo.PlaceholderText = "";
+            this.txtAdmNo.SelectedText = "";
+            this.txtAdmNo.ShadowDecoration.Parent = this.txtAdmNo;
+            this.txtAdmNo.Size = new System.Drawing.Size(140, 33);
+            this.txtAdmNo.TabIndex = 62;
+            // 
+            // comboBoxExamType
+            // 
+            this.comboBoxExamType.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxExamType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxExamType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxExamType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxExamType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxExamType.FocusedState.Parent = this.comboBoxExamType;
+            this.comboBoxExamType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxExamType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxExamType.HoverState.Parent = this.comboBoxExamType;
+            this.comboBoxExamType.ItemHeight = 30;
+            this.comboBoxExamType.ItemsAppearance.Parent = this.comboBoxExamType;
+            this.comboBoxExamType.Location = new System.Drawing.Point(400, 35);
+            this.comboBoxExamType.Name = "comboBoxExamType";
+            this.comboBoxExamType.ShadowDecoration.Parent = this.comboBoxExamType;
+            this.comboBoxExamType.Size = new System.Drawing.Size(157, 36);
+            this.comboBoxExamType.TabIndex = 66;
+            // 
+            // comboBoxExamCategory
+            // 
+            this.comboBoxExamCategory.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxExamCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxExamCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxExamCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxExamCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxExamCategory.FocusedState.Parent = this.comboBoxExamCategory;
+            this.comboBoxExamCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxExamCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxExamCategory.HoverState.Parent = this.comboBoxExamCategory;
+            this.comboBoxExamCategory.ItemHeight = 30;
+            this.comboBoxExamCategory.ItemsAppearance.Parent = this.comboBoxExamCategory;
+            this.comboBoxExamCategory.Location = new System.Drawing.Point(400, 78);
+            this.comboBoxExamCategory.Name = "comboBoxExamCategory";
+            this.comboBoxExamCategory.ShadowDecoration.Parent = this.comboBoxExamCategory;
+            this.comboBoxExamCategory.Size = new System.Drawing.Size(162, 36);
+            this.comboBoxExamCategory.TabIndex = 67;
+            // 
+            // comboBoxSubjects
+            // 
+            this.comboBoxSubjects.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxSubjects.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxSubjects.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSubjects.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxSubjects.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxSubjects.FocusedState.Parent = this.comboBoxSubjects;
+            this.comboBoxSubjects.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxSubjects.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxSubjects.HoverState.Parent = this.comboBoxSubjects;
+            this.comboBoxSubjects.ItemHeight = 30;
+            this.comboBoxSubjects.ItemsAppearance.Parent = this.comboBoxSubjects;
+            this.comboBoxSubjects.Location = new System.Drawing.Point(400, 128);
+            this.comboBoxSubjects.Name = "comboBoxSubjects";
+            this.comboBoxSubjects.ShadowDecoration.Parent = this.comboBoxSubjects;
+            this.comboBoxSubjects.Size = new System.Drawing.Size(162, 36);
+            this.comboBoxSubjects.TabIndex = 68;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(268, 144);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(61, 15);
+            this.label37.TabIndex = 69;
+            this.label37.Text = "SUBJECT";
+            // 
+            // comboBoxStudentScore
+            // 
+            this.comboBoxStudentScore.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.comboBoxStudentScore.DefaultText = "";
+            this.comboBoxStudentScore.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.comboBoxStudentScore.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.comboBoxStudentScore.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.comboBoxStudentScore.DisabledState.Parent = this.comboBoxStudentScore;
+            this.comboBoxStudentScore.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.comboBoxStudentScore.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxStudentScore.FocusedState.Parent = this.comboBoxStudentScore;
+            this.comboBoxStudentScore.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.comboBoxStudentScore.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxStudentScore.HoverState.Parent = this.comboBoxStudentScore;
+            this.comboBoxStudentScore.Location = new System.Drawing.Point(400, 184);
+            this.comboBoxStudentScore.Name = "comboBoxStudentScore";
+            this.comboBoxStudentScore.PasswordChar = '\0';
+            this.comboBoxStudentScore.PlaceholderText = "";
+            this.comboBoxStudentScore.SelectedText = "";
+            this.comboBoxStudentScore.ShadowDecoration.Parent = this.comboBoxStudentScore;
+            this.comboBoxStudentScore.Size = new System.Drawing.Size(162, 33);
+            this.comboBoxStudentScore.TabIndex = 71;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(268, 190);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(109, 15);
+            this.label38.TabIndex = 72;
+            this.label38.Text = "STUDENT SCORE";
+            // 
+            // txtStudname
+            // 
+            this.txtStudname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStudname.DefaultText = "";
+            this.txtStudname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStudname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStudname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudname.DisabledState.Parent = this.txtStudname;
+            this.txtStudname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudname.FocusedState.Parent = this.txtStudname;
+            this.txtStudname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStudname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudname.HoverState.Parent = this.txtStudname;
+            this.txtStudname.Location = new System.Drawing.Point(100, 81);
+            this.txtStudname.Name = "txtStudname";
+            this.txtStudname.PasswordChar = '\0';
+            this.txtStudname.PlaceholderText = "";
+            this.txtStudname.SelectedText = "";
+            this.txtStudname.ShadowDecoration.Parent = this.txtStudname;
+            this.txtStudname.Size = new System.Drawing.Size(140, 33);
+            this.txtStudname.TabIndex = 74;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(6, 90);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(83, 15);
+            this.label49.TabIndex = 73;
+            this.label49.Text = "Student Name";
+            // 
+            // comboBoxStreams
+            // 
+            this.comboBoxStreams.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxStreams.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxStreams.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxStreams.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxStreams.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxStreams.FocusedState.Parent = this.comboBoxStreams;
+            this.comboBoxStreams.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxStreams.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxStreams.HoverState.Parent = this.comboBoxStreams;
+            this.comboBoxStreams.ItemHeight = 30;
+            this.comboBoxStreams.ItemsAppearance.Parent = this.comboBoxStreams;
+            this.comboBoxStreams.Location = new System.Drawing.Point(100, 188);
+            this.comboBoxStreams.Name = "comboBoxStreams";
+            this.comboBoxStreams.ShadowDecoration.Parent = this.comboBoxStreams;
+            this.comboBoxStreams.Size = new System.Drawing.Size(140, 36);
+            this.comboBoxStreams.TabIndex = 76;
+            // 
+            // comboBoxForm
+            // 
+            this.comboBoxForm.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxForm.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxForm.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxForm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxForm.FocusedState.Parent = this.comboBoxForm;
+            this.comboBoxForm.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxForm.HoverState.Parent = this.comboBoxForm;
+            this.comboBoxForm.ItemHeight = 30;
+            this.comboBoxForm.ItemsAppearance.Parent = this.comboBoxForm;
+            this.comboBoxForm.Location = new System.Drawing.Point(100, 134);
+            this.comboBoxForm.Name = "comboBoxForm";
+            this.comboBoxForm.ShadowDecoration.Parent = this.comboBoxForm;
+            this.comboBoxForm.Size = new System.Drawing.Size(140, 36);
+            this.comboBoxForm.TabIndex = 75;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Blue;
+            this.label50.Location = new System.Drawing.Point(263, 305);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(96, 24);
+            this.label50.TabIndex = 77;
+            this.label50.Text = "WEIGHT";
+            // 
+            // txtWeight
+            // 
+            this.txtWeight.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtWeight.DefaultText = "";
+            this.txtWeight.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtWeight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtWeight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtWeight.DisabledState.Parent = this.txtWeight;
+            this.txtWeight.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtWeight.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtWeight.FocusedState.Parent = this.txtWeight;
+            this.txtWeight.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtWeight.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtWeight.HoverState.Parent = this.txtWeight;
+            this.txtWeight.Location = new System.Drawing.Point(400, 300);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.PasswordChar = '\0';
+            this.txtWeight.PlaceholderText = "";
+            this.txtWeight.SelectedText = "";
+            this.txtWeight.ShadowDecoration.Parent = this.txtWeight;
+            this.txtWeight.Size = new System.Drawing.Size(162, 33);
+            this.txtWeight.TabIndex = 78;
+            // 
+            // dataGridView1StudentsScores
+            // 
+            this.dataGridView1StudentsScores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1StudentsScores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1StudentsScores.Location = new System.Drawing.Point(0, 45);
+            this.dataGridView1StudentsScores.Name = "dataGridView1StudentsScores";
+            this.dataGridView1StudentsScores.Size = new System.Drawing.Size(556, 268);
+            this.dataGridView1StudentsScores.TabIndex = 2;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(96, 52);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(135, 23);
+            this.comboBox5.TabIndex = 48;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(6, 57);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(61, 15);
+            this.label51.TabIndex = 47;
+            this.label51.Text = "SUBJECT";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(8, 129);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 13);
+            this.label21.TabIndex = 37;
+            this.label21.Text = "Staff Type";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.Parent = this.txtEmail;
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.FocusedState.Parent = this.txtEmail;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.HoverState.Parent = this.txtEmail;
+            this.txtEmail.Location = new System.Drawing.Point(375, 72);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PasswordChar = '\0';
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.ShadowDecoration.Parent = this.txtEmail;
+            this.txtEmail.Size = new System.Drawing.Size(202, 36);
+            this.txtEmail.TabIndex = 39;
+            // 
+            // txtStaffId
+            // 
+            this.txtStaffId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStaffId.DefaultText = "";
+            this.txtStaffId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStaffId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStaffId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStaffId.DisabledState.Parent = this.txtStaffId;
+            this.txtStaffId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStaffId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStaffId.FocusedState.Parent = this.txtStaffId;
+            this.txtStaffId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStaffId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStaffId.HoverState.Parent = this.txtStaffId;
+            this.txtStaffId.Location = new System.Drawing.Point(72, 75);
+            this.txtStaffId.Name = "txtStaffId";
+            this.txtStaffId.PasswordChar = '\0';
+            this.txtStaffId.PlaceholderText = "";
+            this.txtStaffId.SelectedText = "";
+            this.txtStaffId.ShadowDecoration.Parent = this.txtStaffId;
+            this.txtStaffId.Size = new System.Drawing.Size(200, 36);
+            this.txtStaffId.TabIndex = 40;
+            // 
+            // txtFullName
+            // 
+            this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFullName.DefaultText = "";
+            this.txtFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFullName.DisabledState.Parent = this.txtFullName;
+            this.txtFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFullName.FocusedState.Parent = this.txtFullName;
+            this.txtFullName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFullName.HoverState.Parent = this.txtFullName;
+            this.txtFullName.Location = new System.Drawing.Point(72, 21);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.PasswordChar = '\0';
+            this.txtFullName.PlaceholderText = "";
+            this.txtFullName.SelectedText = "";
+            this.txtFullName.ShadowDecoration.Parent = this.txtFullName;
+            this.txtFullName.Size = new System.Drawing.Size(200, 36);
+            this.txtFullName.TabIndex = 41;
+            // 
+            // txtPhone
+            // 
+            this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhone.DefaultText = "";
+            this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.DisabledState.Parent = this.txtPhone;
+            this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.FocusedState.Parent = this.txtPhone;
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhone.HoverState.Parent = this.txtPhone;
+            this.txtPhone.Location = new System.Drawing.Point(377, 16);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PasswordChar = '\0';
+            this.txtPhone.PlaceholderText = "";
+            this.txtPhone.SelectedText = "";
+            this.txtPhone.ShadowDecoration.Parent = this.txtPhone;
+            this.txtPhone.Size = new System.Drawing.Size(202, 36);
+            this.txtPhone.TabIndex = 43;
+            // 
+            // comboBoxStaffType
+            // 
+            this.comboBoxStaffType.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxStaffType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxStaffType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxStaffType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxStaffType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxStaffType.FocusedState.Parent = this.comboBoxStaffType;
+            this.comboBoxStaffType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxStaffType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxStaffType.HoverState.Parent = this.comboBoxStaffType;
+            this.comboBoxStaffType.ItemHeight = 30;
+            this.comboBoxStaffType.ItemsAppearance.Parent = this.comboBoxStaffType;
+            this.comboBoxStaffType.Location = new System.Drawing.Point(72, 127);
+            this.comboBoxStaffType.Name = "comboBoxStaffType";
+            this.comboBoxStaffType.ShadowDecoration.Parent = this.comboBoxStaffType;
+            this.comboBoxStaffType.Size = new System.Drawing.Size(197, 36);
+            this.comboBoxStaffType.TabIndex = 44;
+            this.comboBoxStaffType.SelectedIndexChanged += new System.EventHandler(this.comboBoxStaffType_SelectedIndexChanged);
+            // 
+            // guna2DateTimePicker1DateOfRecruit
+            // 
+            this.guna2DateTimePicker1DateOfRecruit.CheckedState.Parent = this.guna2DateTimePicker1DateOfRecruit;
+            this.guna2DateTimePicker1DateOfRecruit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1DateOfRecruit.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1DateOfRecruit.HoverState.Parent = this.guna2DateTimePicker1DateOfRecruit;
+            this.guna2DateTimePicker1DateOfRecruit.Location = new System.Drawing.Point(377, 129);
+            this.guna2DateTimePicker1DateOfRecruit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1DateOfRecruit.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1DateOfRecruit.Name = "guna2DateTimePicker1DateOfRecruit";
+            this.guna2DateTimePicker1DateOfRecruit.ShadowDecoration.Parent = this.guna2DateTimePicker1DateOfRecruit;
+            this.guna2DateTimePicker1DateOfRecruit.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1DateOfRecruit.TabIndex = 45;
+            this.guna2DateTimePicker1DateOfRecruit.Value = new System.DateTime(2021, 6, 19, 16, 19, 58, 941);
+            // 
+            // txtPayrollNo
+            // 
+            this.txtPayrollNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPayrollNo.DefaultText = "";
+            this.txtPayrollNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPayrollNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPayrollNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPayrollNo.DisabledState.Parent = this.txtPayrollNo;
+            this.txtPayrollNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPayrollNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPayrollNo.FocusedState.Parent = this.txtPayrollNo;
+            this.txtPayrollNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPayrollNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPayrollNo.HoverState.Parent = this.txtPayrollNo;
+            this.txtPayrollNo.Location = new System.Drawing.Point(731, 17);
+            this.txtPayrollNo.Name = "txtPayrollNo";
+            this.txtPayrollNo.PasswordChar = '\0';
+            this.txtPayrollNo.PlaceholderText = "";
+            this.txtPayrollNo.SelectedText = "";
+            this.txtPayrollNo.ShadowDecoration.Parent = this.txtPayrollNo;
+            this.txtPayrollNo.Size = new System.Drawing.Size(200, 36);
+            this.txtPayrollNo.TabIndex = 46;
+            // 
+            // txtSalary
+            // 
+            this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSalary.DefaultText = "";
+            this.txtSalary.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSalary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSalary.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSalary.DisabledState.Parent = this.txtSalary;
+            this.txtSalary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSalary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSalary.FocusedState.Parent = this.txtSalary;
+            this.txtSalary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSalary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSalary.HoverState.Parent = this.txtSalary;
+            this.txtSalary.Location = new System.Drawing.Point(731, 72);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.PasswordChar = '\0';
+            this.txtSalary.PlaceholderText = "";
+            this.txtSalary.SelectedText = "";
+            this.txtSalary.ShadowDecoration.Parent = this.txtSalary;
+            this.txtSalary.Size = new System.Drawing.Size(200, 36);
+            this.txtSalary.TabIndex = 47;
+            // 
+            // txtRank
+            // 
+            this.txtRank.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRank.DefaultText = "";
+            this.txtRank.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRank.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRank.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRank.DisabledState.Parent = this.txtRank;
+            this.txtRank.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRank.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRank.FocusedState.Parent = this.txtRank;
+            this.txtRank.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRank.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRank.HoverState.Parent = this.txtRank;
+            this.txtRank.Location = new System.Drawing.Point(731, 122);
+            this.txtRank.Name = "txtRank";
+            this.txtRank.PasswordChar = '\0';
+            this.txtRank.PlaceholderText = "";
+            this.txtRank.SelectedText = "";
+            this.txtRank.ShadowDecoration.Parent = this.txtRank;
+            this.txtRank.Size = new System.Drawing.Size(200, 36);
+            this.txtRank.TabIndex = 49;
+            // 
+            // comboBoxDepartmentAssigned
+            // 
+            this.comboBoxDepartmentAssigned.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxDepartmentAssigned.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxDepartmentAssigned.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDepartmentAssigned.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxDepartmentAssigned.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxDepartmentAssigned.FocusedState.Parent = this.comboBoxDepartmentAssigned;
+            this.comboBoxDepartmentAssigned.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxDepartmentAssigned.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxDepartmentAssigned.HoverState.Parent = this.comboBoxDepartmentAssigned;
+            this.comboBoxDepartmentAssigned.ItemHeight = 30;
+            this.comboBoxDepartmentAssigned.ItemsAppearance.Parent = this.comboBoxDepartmentAssigned;
+            this.comboBoxDepartmentAssigned.Location = new System.Drawing.Point(1058, 15);
+            this.comboBoxDepartmentAssigned.Name = "comboBoxDepartmentAssigned";
+            this.comboBoxDepartmentAssigned.ShadowDecoration.Parent = this.comboBoxDepartmentAssigned;
+            this.comboBoxDepartmentAssigned.Size = new System.Drawing.Size(171, 36);
+            this.comboBoxDepartmentAssigned.TabIndex = 50;
+            // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.Color.LightBlue;
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button41.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.ForeColor = System.Drawing.Color.White;
+            this.button41.Image = global::Shule.Properties.Resources.feess;
+            this.button41.Location = new System.Drawing.Point(0, 207);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(187, 80);
+            this.button41.TabIndex = 8;
+            this.button41.Text = " Fee Structure ";
+            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button41.UseVisualStyleBackColor = false;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // button34
+            // 
+            this.button34.BackColor = System.Drawing.Color.LightBlue;
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button34.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.ForeColor = System.Drawing.Color.White;
+            this.button34.Image = global::Shule.Properties.Resources.schoolinfo;
+            this.button34.Location = new System.Drawing.Point(0, 97);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(187, 80);
+            this.button34.TabIndex = 6;
+            this.button34.Text = "School Info";
+            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button34.UseVisualStyleBackColor = false;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button31
+            // 
+            this.button31.BackColor = System.Drawing.Color.LightBlue;
+            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button31.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.ForeColor = System.Drawing.Color.White;
+            this.button31.Image = global::Shule.Properties.Resources.schoolstream;
+            this.button31.Location = new System.Drawing.Point(626, 93);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(187, 80);
+            this.button31.TabIndex = 3;
+            this.button31.Text = "Add Streams";
+            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.Color.LightBlue;
+            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button30.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.ForeColor = System.Drawing.Color.White;
+            this.button30.Image = global::Shule.Properties.Resources.classes2;
+            this.button30.Location = new System.Drawing.Point(413, 93);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(187, 80);
+            this.button30.TabIndex = 2;
+            this.button30.Text = "Add Classes";
+            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.LightBlue;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = global::Shule.Properties.Resources.subjects;
+            this.button15.Location = new System.Drawing.Point(626, 209);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(187, 80);
+            this.button15.TabIndex = 1;
+            this.button15.Text = "Add Subjects";
+            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.LightBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::Shule.Properties.Resources.Adduser;
+            this.button4.Location = new System.Drawing.Point(213, 96);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(187, 80);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "New User";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::Shule.Properties.Resources.icon1;
@@ -3342,38 +3333,189 @@
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // Discipline
+            // pictureBox1
             // 
-            this.Discipline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Discipline.Location = new System.Drawing.Point(361, 194);
-            this.Discipline.Name = "Discipline";
-            this.Discipline.Size = new System.Drawing.Size(648, 360);
-            this.Discipline.TabIndex = 38;
-            this.Discipline.Visible = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Shule.Properties.Resources.icon1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
-            // button12
+            // pictureBox4
             // 
-            this.button12.BackColor = System.Drawing.Color.LightBlue;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(819, 92);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(187, 80);
-            this.button12.TabIndex = 10;
-            this.button12.Text = "Add Ranks";
-            this.button12.UseVisualStyleBackColor = false;
+            this.pictureBox4.Image = global::Shule.Properties.Resources.teachers_icon;
+            this.pictureBox4.Location = new System.Drawing.Point(504, 87);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(146, 93);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // button13
+            // pictureBox2
             // 
-            this.button13.BackColor = System.Drawing.Color.LightBlue;
-            this.button13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(819, 208);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(187, 80);
-            this.button13.TabIndex = 11;
-            this.button13.Text = "Hostels";
-            this.button13.UseVisualStyleBackColor = false;
+            this.pictureBox2.Image = global::Shule.Properties.Resources.teachers_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(143, 83);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(146, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // AdmissionBtn
+            // 
+            this.AdmissionBtn.BackColor = System.Drawing.Color.White;
+            this.AdmissionBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AdmissionBtn.FlatAppearance.BorderSize = 0;
+            this.AdmissionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AdmissionBtn.Image = global::Shule.Properties.Resources.caretside;
+            this.AdmissionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AdmissionBtn.Location = new System.Drawing.Point(0, 0);
+            this.AdmissionBtn.Name = "AdmissionBtn";
+            this.AdmissionBtn.Size = new System.Drawing.Size(125, 35);
+            this.AdmissionBtn.TabIndex = 13;
+            this.AdmissionBtn.Text = "Admission";
+            this.AdmissionBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.AdmissionBtn.UseVisualStyleBackColor = false;
+            this.AdmissionBtn.Click += new System.EventHandler(this.AdmissionBtn_Click);
+            // 
+            // btnAcademic
+            // 
+            this.btnAcademic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAcademic.FlatAppearance.BorderSize = 0;
+            this.btnAcademic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcademic.Image = global::Shule.Properties.Resources.caretside;
+            this.btnAcademic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAcademic.Location = new System.Drawing.Point(3, 185);
+            this.btnAcademic.Name = "btnAcademic";
+            this.btnAcademic.Size = new System.Drawing.Size(125, 35);
+            this.btnAcademic.TabIndex = 2;
+            this.btnAcademic.Text = "Academics";
+            this.btnAcademic.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAcademic.UseVisualStyleBackColor = true;
+            this.btnAcademic.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnFinance
+            // 
+            this.btnFinance.BackColor = System.Drawing.Color.White;
+            this.btnFinance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFinance.FlatAppearance.BorderSize = 0;
+            this.btnFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinance.Image = global::Shule.Properties.Resources.caretside;
+            this.btnFinance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFinance.Location = new System.Drawing.Point(3, 317);
+            this.btnFinance.Name = "btnFinance";
+            this.btnFinance.Size = new System.Drawing.Size(125, 35);
+            this.btnFinance.TabIndex = 3;
+            this.btnFinance.Text = "Finance";
+            this.btnFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnFinance.UseVisualStyleBackColor = false;
+            this.btnFinance.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnManage
+            // 
+            this.btnManage.BackColor = System.Drawing.Color.White;
+            this.btnManage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManage.FlatAppearance.BorderSize = 0;
+            this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManage.Image = global::Shule.Properties.Resources.caretside;
+            this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnManage.Location = new System.Drawing.Point(3, 464);
+            this.btnManage.Name = "btnManage";
+            this.btnManage.Size = new System.Drawing.Size(125, 41);
+            this.btnManage.TabIndex = 14;
+            this.btnManage.Text = "Manage Staffs";
+            this.btnManage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnManage.UseVisualStyleBackColor = false;
+            this.btnManage.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = global::Shule.Properties.Resources.caretside;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.Location = new System.Drawing.Point(3, 568);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(125, 35);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Dispensary";
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnLibrary
+            // 
+            this.btnLibrary.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLibrary.FlatAppearance.BorderSize = 0;
+            this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLibrary.Image = global::Shule.Properties.Resources.caretside;
+            this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLibrary.Location = new System.Drawing.Point(3, 665);
+            this.btnLibrary.Name = "btnLibrary";
+            this.btnLibrary.Size = new System.Drawing.Size(125, 35);
+            this.btnLibrary.TabIndex = 5;
+            this.btnLibrary.Text = "Library";
+            this.btnLibrary.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLibrary.UseVisualStyleBackColor = true;
+            this.btnLibrary.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::Shule.Properties.Resources.caretside;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.Location = new System.Drawing.Point(3, 812);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(125, 35);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Hostels";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = global::Shule.Properties.Resources.caretside;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.Location = new System.Drawing.Point(3, 929);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(125, 35);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Transport";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(528, 180);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(248, 45);
+            this.guna2Button3.TabIndex = 51;
+            this.guna2Button3.Text = "Reset Fields";
             // 
             // Home
             // 
@@ -3381,11 +3523,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.Teachingstaff);
             this.Controls.Add(this.SetupParameter);
             this.Controls.Add(this.Academic);
-            this.Controls.Add(this.AdmissionPanel);
-            this.Controls.Add(this.Teachingstaff);
             this.Controls.Add(this.StudentsDetailsPanel);
+            this.Controls.Add(this.AdmissionPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.ManageStaff);
             this.Controls.Add(this.Transport);
@@ -3424,7 +3566,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -3434,14 +3575,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ManageStaff.ResumeLayout(false);
             this.ManageStaff.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Teachingstaff.ResumeLayout(false);
             this.TeachingStaffTabControl.ResumeLayout(false);
             this.AddTeacher.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3StaffDetails)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.panelmDropDown.ResumeLayout(false);
@@ -3461,15 +3598,19 @@
             this.panelDropTransport.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStd)).EndInit();
             this.StudentsDetailsPanel.ResumeLayout(false);
             this.StudentsDetailsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3StudentsDetails)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1StudentsScores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -3512,34 +3653,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button button16;
@@ -3572,8 +3691,6 @@
         private System.Windows.Forms.TabControl TeachingStaffTabControl;
         private System.Windows.Forms.TabPage AddTeacher;
         private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.ComboBox comboBox14;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button1;
@@ -3601,7 +3718,6 @@
         private System.Windows.Forms.Button button41;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1TeachersRecords;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Button AdmissionBtn;
         private System.Windows.Forms.Panel panel_Sidenav;
         private System.Windows.Forms.Button button10;
@@ -3627,7 +3743,7 @@
         private System.Windows.Forms.Panel panelAcademic;
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button45;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button btnSetExams;
         private System.Windows.Forms.Button btnFinance;
         private System.Windows.Forms.Panel panelDropFinance;
         private System.Windows.Forms.Button button2;
@@ -3656,17 +3772,6 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AdmNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Form;
-        private System.Windows.Forms.DataGridViewTextBoxColumn English;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Math;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kiswahili;
-        private System.Windows.Forms.DataGridViewTextBoxColumn History;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Business;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Physics;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CAT_TYPE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TOTAL_SCORE;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -3729,26 +3834,10 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private System.Windows.Forms.Button btnExit;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.DataGridView dataGridView3StaffDetails;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
@@ -3757,8 +3846,41 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel Discipline;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnRanks;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button btnStaffType;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.DataGridView dataGridView1StudentsScores;
+        private Guna.UI2.WinForms.Guna2TextBox txtWeight;
+        private System.Windows.Forms.Label label50;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxStreams;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxForm;
+        private Guna.UI2.WinForms.Guna2TextBox txtStudname;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label38;
+        private Guna.UI2.WinForms.Guna2TextBox comboBoxStudentScore;
+        private System.Windows.Forms.Label label37;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxSubjects;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxExamCategory;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxExamType;
+        private Guna.UI2.WinForms.Guna2TextBox txtAdmNo;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxYear;
+        private System.Windows.Forms.Label label32;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxTerm;
+        private System.Windows.Forms.Label label31;
+        private Guna.UI2.WinForms.Guna2TextBox txtRank;
+        private Guna.UI2.WinForms.Guna2TextBox txtSalary;
+        private Guna.UI2.WinForms.Guna2TextBox txtPayrollNo;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1DateOfRecruit;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxStaffType;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhone;
+        private Guna.UI2.WinForms.Guna2TextBox txtFullName;
+        private Guna.UI2.WinForms.Guna2TextBox txtStaffId;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private System.Windows.Forms.Label label21;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxDepartmentAssigned;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }
 

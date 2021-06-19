@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 namespace Shule
 {
-    public partial class AddSubjects : Form
+    public partial class SetExam : Form
     {
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        public AddSubjects()
+        SqlDataAdapter sqlDataAdapter;
+        public SetExam()
         {
             InitializeComponent();
             CombosubjectFill();
-
+            ComboTeachersFill();
         }
         public void CombosubjectFill()
         {
@@ -38,7 +38,34 @@ namespace Shule
                 {
                     string sName = sqlDataReader["SubjectDescription"].ToString();
 
-                  //  conboBoxSetBy.Items.Add(sName);
+                    comboSubjects.Items.Add(sName);
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void ComboTeachersFill()
+        {
+            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            sqlConnection = new SqlConnection(connStr);
+            string cmdStr = " SELECT *  FROM TeachersTable";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
+            try
+            {
+
+                sqlConnection.Open();
+
+                sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["FullName"].ToString();
+
+                    conboBoxSetBy.Items.Add(sName);
 
 
                 }
@@ -49,27 +76,21 @@ namespace Shule
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+
+
+        private void btnSetExamsSave_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtSubjectCode_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSubjectInfoSave_Click(object sender, EventArgs e)
-        {
-            string cmdStr = "INSERT INTO Subject VALUES( '" + txtSubjectCode.Text + "','" + txtSubjectDescription.Text + "')";
-            SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
+            string qur = "INSERT INTO SetExams VALUES ('" + txtYear.Text + "','" + txtTerm.Text + "','" + txtExamCode.Text + "','" + comboExamType.SelectedItem + "','" + comboCategory.SelectedItem + "'," +
+              "'" + comboSubjects.SelectedItem + "','" + txtWeight.Text + "','" + conboBoxSetBy.SelectedItem + "','" + guna2DateTimePickerSetDate.Text + "','" + guna2DateTimePicker2IssueDate.Text + "')";
+            SqlCommand cmd = new SqlCommand(qur, sqlConnection);
             try
             {
                 sqlConnection.Close();
                 sqlConnection.Open();
-                int rows = sqlCommand.ExecuteNonQuery();
+                int rows = cmd.ExecuteNonQuery();
 
-                MessageBox.Show(rows + " Subject inserted successfully.");
+                MessageBox.Show(rows + " Exam added successfully.");
             }
             catch (Exception ex)
             {
@@ -77,22 +98,29 @@ namespace Shule
             }
         }
 
-        private void AddSubjects_Load(object sender, EventArgs e)
+        private void SetExam_Load(object sender, EventArgs e)
         {
             string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
+            conboBoxSetBy.SelectedIndex = 0;
+            comboSubjects.SelectedIndex = 0;
+
         }
 
         private void btnSubjectSave_Click(object sender, EventArgs e)
         {
             sqlConnection.Close();
-            string query = "SELECT * FROM Subject";
+            string query = "SELECT * FROM SetExams";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
-            guna2DataGridView1SubjectType.DataSource = dt;
+            dataGridView1SetExam.DataSource = dt;
 
             sqlConnection.Open();
         }
     }
+
+
 }
+    
+

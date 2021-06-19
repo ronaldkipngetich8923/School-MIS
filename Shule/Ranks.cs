@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Shule
 {
-    public partial class SetExams : Form
+    public partial class Ranks : Form
     {
-        public SetExams()
+        public Ranks()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
