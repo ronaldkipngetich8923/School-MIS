@@ -136,24 +136,6 @@
     <Compile Include="AttendancePortal.Designer.cs">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ranks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ranks.Designer.cs">
-      <DependentUpon>Ranks.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SetExam.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SetExam.Designer.cs">
-      <DependentUpon>SetExam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StaffType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StaffType.Designer.cs">
-      <DependentUpon>StaffType.cs</DependentUpon>
-    </Compile>
     <Compile Include="Stream.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +154,42 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finance.Designer.cs">
+      <DependentUpon>Finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostelclearence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostelclearence.Designer.cs">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newrooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newrooms.Designer.cs">
+      <DependentUpon>Newrooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newshelf.Designer.cs">
+      <DependentUpon>Newshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="removeshelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="removeshelf.Designer.cs">
+      <DependentUpon>removeshelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees.Designer.cs">
+      <DependentUpon>Fees.cs</DependentUpon>
+    </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +198,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetExams.cs" />
+    <Compile Include="SetExams.Designer.cs">
+      <DependentUpon>SetExams.cs</DependentUpon>
+    </Compile>
     <Compile Include="splashscreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,32 +235,20 @@
     <EmbeddedResource Include="AddStudentTransport.resx">
       <DependentUpon>AddStudentTransport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSubjects.resx">
-      <DependentUpon>AddSubjects.cs</DependentUpon>
+    <EmbeddedResource Include="Finance.resx">
+      <DependentUpon>Finance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSupplier.resx">
-      <DependentUpon>AddSupplier.cs</DependentUpon>
+    <EmbeddedResource Include="hostelclearence.resx">
+      <DependentUpon>hostelclearence.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSurbodinateStaff.resx">
-      <DependentUpon>AddSurbodinateStaff.cs</DependentUpon>
+    <EmbeddedResource Include="Newrooms.resx">
+      <DependentUpon>Newrooms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddUsers.resx">
-      <DependentUpon>AddUsers.cs</DependentUpon>
+    <EmbeddedResource Include="Newshelf.resx">
+      <DependentUpon>Newshelf.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AttendancePortal.resx">
-      <DependentUpon>AttendancePortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ranks.resx">
-      <DependentUpon>Ranks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SetExam.resx">
-      <DependentUpon>SetExam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StaffType.resx">
-      <DependentUpon>StaffType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Stream.resx">
-      <DependentUpon>Stream.cs</DependentUpon>
+    <EmbeddedResource Include="removeshelf.resx">
+      <DependentUpon>removeshelf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DisciplineForm.resx">
       <DependentUpon>DisciplineForm.cs</DependentUpon>
@@ -259,6 +269,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SetExams.resx">
+      <DependentUpon>SetExams.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="splashscreen.resx">
       <DependentUpon>splashscreen.cs</DependentUpon>
     </EmbeddedResource>
