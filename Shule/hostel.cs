@@ -171,6 +171,8 @@ namespace Shule
                 
             }
 
+
+
             con.Close();
 
 
@@ -181,6 +183,11 @@ namespace Shule
         {
             Newrooms nr = new Newrooms();
             nr.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -75,7 +75,7 @@ namespace Shule
                 con.Close();
                 MessageBox.Show("New Room Registered Successfully");
                 // DisplayData();
-                // ClearData();
+                // ClearData();s
                 textBoxRoomNo.Text = "";
                 textBoxOccupants.Text = "";
                 comboBoxhostelvailable.Text = "";
@@ -92,6 +92,16 @@ namespace Shule
         }
 
         private void textBoxRoomNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
         {
 
         }

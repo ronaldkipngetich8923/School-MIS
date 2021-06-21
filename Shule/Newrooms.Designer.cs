@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBoxhostelvailable = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxOccupants = new System.Windows.Forms.TextBox();
@@ -39,7 +40,8 @@
             this.textBoxRoomNo = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBoxhostelvailable = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +49,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.comboBoxhostelvailable);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.textBoxOccupants);
@@ -62,6 +66,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(596, 450);
             this.panel2.TabIndex = 25;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // comboBoxhostelvailable
+            // 
+            this.comboBoxhostelvailable.FormattingEnabled = true;
+            this.comboBoxhostelvailable.Location = new System.Drawing.Point(250, 145);
+            this.comboBoxhostelvailable.Name = "comboBoxhostelvailable";
+            this.comboBoxhostelvailable.Size = new System.Drawing.Size(139, 21);
+            this.comboBoxhostelvailable.TabIndex = 23;
+            this.comboBoxhostelvailable.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -85,7 +99,7 @@
             // 
             // textBoxOccupants
             // 
-            this.textBoxOccupants.Location = new System.Drawing.Point(261, 199);
+            this.textBoxOccupants.Location = new System.Drawing.Point(260, 233);
             this.textBoxOccupants.Name = "textBoxOccupants";
             this.textBoxOccupants.Size = new System.Drawing.Size(107, 20);
             this.textBoxOccupants.TabIndex = 19;
@@ -94,7 +108,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(117, 199);
+            this.label2.Location = new System.Drawing.Point(117, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 17);
             this.label2.TabIndex = 18;
@@ -149,6 +163,7 @@
             this.label19.Size = new System.Drawing.Size(122, 17);
             this.label19.TabIndex = 8;
             this.label19.Text = "Select Hostel Name";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label18
             // 
@@ -160,14 +175,22 @@
             this.label18.TabIndex = 7;
             this.label18.Text = "Room Number";
             // 
-            // comboBoxhostelvailable
+            // label3
             // 
-            this.comboBoxhostelvailable.FormattingEnabled = true;
-            this.comboBoxhostelvailable.Location = new System.Drawing.Point(250, 149);
-            this.comboBoxhostelvailable.Name = "comboBoxhostelvailable";
-            this.comboBoxhostelvailable.Size = new System.Drawing.Size(139, 21);
-            this.comboBoxhostelvailable.TabIndex = 23;
-            this.comboBoxhostelvailable.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(117, 193);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 17);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Hostel Code";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(250, 190);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(139, 20);
+            this.textBox1.TabIndex = 26;
             // 
             // Newrooms
             // 
@@ -199,5 +222,7 @@
         private System.Windows.Forms.TextBox textBoxRoomNo;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

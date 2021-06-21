@@ -83,7 +83,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(138, 446);
+            this.button4.Location = new System.Drawing.Point(20, 431);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(105, 30);
             this.button4.TabIndex = 26;
@@ -100,6 +100,7 @@
             this.button3.TabIndex = 25;
             this.button3.Text = "Search";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
             // 
@@ -113,7 +114,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(619, 130);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(555, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(555, 297);
             this.dataGridView1.TabIndex = 19;
             // 
             // panel1
@@ -139,18 +140,18 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(362, 446);
+            this.button8.Location = new System.Drawing.Point(179, 431);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(116, 29);
+            this.button8.Size = new System.Drawing.Size(116, 30);
             this.button8.TabIndex = 16;
             this.button8.Text = "Unoccupied Hostels";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(824, 446);
+            this.button6.Location = new System.Drawing.Point(464, 431);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(119, 29);
+            this.button6.Size = new System.Drawing.Size(119, 30);
             this.button6.TabIndex = 14;
             this.button6.Text = "View Hostels ";
             this.button6.UseVisualStyleBackColor = true;
@@ -158,9 +159,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(619, 446);
+            this.button5.Location = new System.Drawing.Point(324, 431);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 29);
+            this.button5.Size = new System.Drawing.Size(117, 30);
             this.button5.TabIndex = 13;
             this.button5.Text = "Clearance";
             this.button5.UseVisualStyleBackColor = true;
