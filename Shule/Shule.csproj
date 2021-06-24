@@ -228,12 +228,6 @@
     <Compile Include="AddSchoolInfo.Designer.cs">
       <DependentUpon>AddSchoolInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStream.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddStream.Designer.cs">
-      <DependentUpon>AddStream.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddStudentTransport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,23 +281,11 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
-    <Compile Include="Finance.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Finance.Designer.cs">
-      <DependentUpon>Finance.cs</DependentUpon>
-    </Compile>
     <Compile Include="GenerateFeeStructure.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GenerateFeeStructure.Designer.cs">
       <DependentUpon>GenerateFeeStructure.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hostel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hostel.Designer.cs">
-      <DependentUpon>hostel.cs</DependentUpon>
     </Compile>
     <Compile Include="hostelclearence.cs">
       <SubType>Form</SubType>
@@ -337,12 +319,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetExams.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SetExams.Designer.cs">
-      <DependentUpon>SetExams.cs</DependentUpon>
-    </Compile>
     <Compile Include="splashscreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,18 +330,6 @@
     </Compile>
     <Compile Include="AddVehicle.Designer.cs">
       <DependentUpon>AddVehicle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="updateshelf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="updateshelf.Designer.cs">
-      <DependentUpon>updateshelf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="viewbooksinshelf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="viewbooksinshelf.Designer.cs">
-      <DependentUpon>viewbooksinshelf.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.cs</DependentUpon>
@@ -384,9 +348,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddSchoolInfo.resx">
       <DependentUpon>AddSchoolInfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddStream.resx">
-      <DependentUpon>AddStream.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddStudentTransport.resx">
       <DependentUpon>AddStudentTransport.cs</DependentUpon>
@@ -413,14 +374,8 @@
       <DependentUpon>Dispensary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeeStructure.rdlc" />
-    <EmbeddedResource Include="Finance.resx">
-      <DependentUpon>Finance.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GenerateFeeStructure.resx">
       <DependentUpon>GenerateFeeStructure.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="hostel.resx">
-      <DependentUpon>hostel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hostelclearence.resx">
       <DependentUpon>hostelclearence.cs</DependentUpon>
@@ -447,20 +402,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SetExams.resx">
-      <DependentUpon>SetExams.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="splashscreen.resx">
       <DependentUpon>splashscreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="updateshelf.resx">
-      <DependentUpon>updateshelf.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="viewbooksinshelf.resx">
-      <DependentUpon>viewbooksinshelf.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSetFees.xsc">
       <DependentUpon>DataSetFees.xsd</DependentUpon>

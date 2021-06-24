@@ -386,8 +386,8 @@ namespace Shule
 
         private void button31_Click(object sender, EventArgs e)
         {
-            AddStream st = new AddStream();
-            st.Show();
+            //AddStream st = new AddStream();
+            //st.Show();
         }
 
         private void button15_Click(object sender, EventArgs e)
