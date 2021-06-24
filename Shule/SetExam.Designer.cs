@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dataGridView1SetExam = new System.Windows.Forms.DataGridView();
             this.comboExamType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2DateTimePicker2IssueDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -54,10 +55,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1SetExam = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1SetExam)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -94,6 +94,15 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1189, 545);
             this.guna2Panel1.TabIndex = 6;
+            // 
+            // dataGridView1SetExam
+            // 
+            this.dataGridView1SetExam.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1SetExam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1SetExam.Location = new System.Drawing.Point(780, 81);
+            this.dataGridView1SetExam.Name = "dataGridView1SetExam";
+            this.dataGridView1SetExam.Size = new System.Drawing.Size(397, 402);
+            this.dataGridView1SetExam.TabIndex = 32;
             // 
             // comboExamType
             // 
@@ -436,6 +445,7 @@
             this.btnSubjectReset.Size = new System.Drawing.Size(180, 45);
             this.btnSubjectReset.TabIndex = 7;
             this.btnSubjectReset.Text = "Reset Fields";
+            this.btnSubjectReset.Click += new System.EventHandler(this.btnSubjectReset_Click);
             // 
             // txtTerm
             // 
@@ -491,15 +501,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Set  Exams";
             // 
-            // dataGridView1SetExam
-            // 
-            this.dataGridView1SetExam.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1SetExam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1SetExam.Location = new System.Drawing.Point(780, 81);
-            this.dataGridView1SetExam.Name = "dataGridView1SetExam";
-            this.dataGridView1SetExam.Size = new System.Drawing.Size(397, 402);
-            this.dataGridView1SetExam.TabIndex = 32;
-            // 
             // SetExam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,9 +512,9 @@
             this.Load += new System.EventHandler(this.SetExam_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1SetExam)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1SetExam)).EndInit();
             this.ResumeLayout(false);
 
         }

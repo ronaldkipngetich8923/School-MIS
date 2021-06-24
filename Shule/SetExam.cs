@@ -118,9 +118,14 @@ namespace Shule
 
             sqlConnection.Open();
         }
+
+        private void btnSubjectReset_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
 }
-    
+
 

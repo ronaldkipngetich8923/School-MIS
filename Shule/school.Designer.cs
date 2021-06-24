@@ -110,6 +110,12 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.CatsTab = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.comboBoxRstream = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.comboBoxRForm = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.comboBoxRExamCode = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label52 = new System.Windows.Forms.Label();
             this.btnUpdateScore = new Guna.UI2.WinForms.Guna2Button();
             this.btnViewRecords = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -291,6 +297,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ExamsResults = new System.Windows.Forms.Panel();
             this.catsPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtAllStudentMarks = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label56 = new System.Windows.Forms.Label();
             this.dataGridView1ExamResults = new System.Windows.Forms.DataGridView();
             this.label51 = new System.Windows.Forms.Label();
             this.RcomboBoxYear = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -304,9 +312,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.RcomboBoxExamCode = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelExamsResults = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btnExams = new System.Windows.Forms.Button();
             this.btnCats = new System.Windows.Forms.Button();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label65 = new System.Windows.Forms.Label();
+            this.ExamTypecombo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnGenerateScore = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ComboBox5 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.GridExams = new System.Windows.Forms.DataGridView();
+            this.label57 = new System.Windows.Forms.Label();
+            this.txtERecords = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2TextBoxAVG = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBoxAdmNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.AdmissionPanel.SuspendLayout();
             this.admission.SuspendLayout();
             this.studentsTab.SuspendLayout();
@@ -360,6 +383,8 @@
             this.catsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1ExamResults)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            this.panelExamsResults.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridExams)).BeginInit();
             this.SuspendLayout();
             // 
             // AdmissionPanel
@@ -1147,16 +1172,110 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.comboBoxRstream);
+            this.groupBox3.Controls.Add(this.label55);
+            this.groupBox3.Controls.Add(this.comboBoxRForm);
+            this.groupBox3.Controls.Add(this.label53);
+            this.groupBox3.Controls.Add(this.comboBoxRExamCode);
+            this.groupBox3.Controls.Add(this.label52);
             this.groupBox3.Controls.Add(this.btnUpdateScore);
             this.groupBox3.Controls.Add(this.btnViewRecords);
             this.groupBox3.Controls.Add(this.panel2);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(624, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(590, 492);
+            this.groupBox3.Size = new System.Drawing.Size(590, 601);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "EXAMS ";
+            // 
+            // comboBoxRstream
+            // 
+            this.comboBoxRstream.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxRstream.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxRstream.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRstream.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxRstream.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxRstream.FocusedState.Parent = this.comboBoxRstream;
+            this.comboBoxRstream.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxRstream.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxRstream.HoverState.Parent = this.comboBoxRstream;
+            this.comboBoxRstream.ItemHeight = 30;
+            this.comboBoxRstream.ItemsAppearance.Parent = this.comboBoxRstream;
+            this.comboBoxRstream.Location = new System.Drawing.Point(304, 43);
+            this.comboBoxRstream.Name = "comboBoxRstream";
+            this.comboBoxRstream.ShadowDecoration.Parent = this.comboBoxRstream;
+            this.comboBoxRstream.Size = new System.Drawing.Size(127, 36);
+            this.comboBoxRstream.TabIndex = 86;
+            this.comboBoxRstream.SelectedIndexChanged += new System.EventHandler(this.comboBoxRstream_SelectedIndexChanged);
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(339, 15);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(57, 15);
+            this.label55.TabIndex = 85;
+            this.label55.Text = "STREAM";
+            // 
+            // comboBoxRForm
+            // 
+            this.comboBoxRForm.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxRForm.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxRForm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRForm.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxRForm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxRForm.FocusedState.Parent = this.comboBoxRForm;
+            this.comboBoxRForm.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxRForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxRForm.HoverState.Parent = this.comboBoxRForm;
+            this.comboBoxRForm.ItemHeight = 30;
+            this.comboBoxRForm.ItemsAppearance.Parent = this.comboBoxRForm;
+            this.comboBoxRForm.Location = new System.Drawing.Point(145, 44);
+            this.comboBoxRForm.Name = "comboBoxRForm";
+            this.comboBoxRForm.ShadowDecoration.Parent = this.comboBoxRForm;
+            this.comboBoxRForm.Size = new System.Drawing.Size(137, 36);
+            this.comboBoxRForm.TabIndex = 84;
+            this.comboBoxRForm.SelectedIndexChanged += new System.EventHandler(this.comboBoxRForm_SelectedIndexChanged);
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(186, 18);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(46, 15);
+            this.label53.TabIndex = 83;
+            this.label53.Text = "FORM ";
+            this.label53.Click += new System.EventHandler(this.label53_Click);
+            // 
+            // comboBoxRExamCode
+            // 
+            this.comboBoxRExamCode.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxRExamCode.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxRExamCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRExamCode.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxRExamCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxRExamCode.FocusedState.Parent = this.comboBoxRExamCode;
+            this.comboBoxRExamCode.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxRExamCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxRExamCode.HoverState.Parent = this.comboBoxRExamCode;
+            this.comboBoxRExamCode.ItemHeight = 30;
+            this.comboBoxRExamCode.ItemsAppearance.Parent = this.comboBoxRExamCode;
+            this.comboBoxRExamCode.Location = new System.Drawing.Point(6, 46);
+            this.comboBoxRExamCode.Name = "comboBoxRExamCode";
+            this.comboBoxRExamCode.ShadowDecoration.Parent = this.comboBoxRExamCode;
+            this.comboBoxRExamCode.Size = new System.Drawing.Size(97, 36);
+            this.comboBoxRExamCode.TabIndex = 82;
+            this.comboBoxRExamCode.SelectedIndexChanged += new System.EventHandler(this.comboBoxRExamCode_SelectedIndexChanged);
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(11, 18);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(79, 15);
+            this.label52.TabIndex = 81;
+            this.label52.Text = "EXAM CODE";
             // 
             // btnUpdateScore
             // 
@@ -1170,7 +1289,7 @@
             this.btnUpdateScore.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUpdateScore.ForeColor = System.Drawing.Color.White;
             this.btnUpdateScore.HoverState.Parent = this.btnUpdateScore;
-            this.btnUpdateScore.Location = new System.Drawing.Point(302, 440);
+            this.btnUpdateScore.Location = new System.Drawing.Point(323, 552);
             this.btnUpdateScore.Name = "btnUpdateScore";
             this.btnUpdateScore.ShadowDecoration.Parent = this.btnUpdateScore;
             this.btnUpdateScore.Size = new System.Drawing.Size(180, 45);
@@ -1190,7 +1309,7 @@
             this.btnViewRecords.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnViewRecords.ForeColor = System.Drawing.Color.White;
             this.btnViewRecords.HoverState.Parent = this.btnViewRecords;
-            this.btnViewRecords.Location = new System.Drawing.Point(14, 441);
+            this.btnViewRecords.Location = new System.Drawing.Point(6, 552);
             this.btnViewRecords.Name = "btnViewRecords";
             this.btnViewRecords.ShadowDecoration.Parent = this.btnViewRecords;
             this.btnViewRecords.Size = new System.Drawing.Size(180, 45);
@@ -1202,9 +1321,9 @@
             // 
             this.panel2.Controls.Add(this.dataGridView1StudentsScores);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(0, 19);
+            this.panel2.Location = new System.Drawing.Point(6, 114);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(556, 415);
+            this.panel2.Size = new System.Drawing.Size(556, 436);
             this.panel2.TabIndex = 46;
             // 
             // dataGridView1StudentsScores
@@ -1213,7 +1332,7 @@
             this.dataGridView1StudentsScores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1StudentsScores.Location = new System.Drawing.Point(0, 45);
             this.dataGridView1StudentsScores.Name = "dataGridView1StudentsScores";
-            this.dataGridView1StudentsScores.Size = new System.Drawing.Size(556, 370);
+            this.dataGridView1StudentsScores.Size = new System.Drawing.Size(556, 391);
             this.dataGridView1StudentsScores.TabIndex = 2;
             this.dataGridView1StudentsScores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1StudentsScores_CellContentClick);
             // 
@@ -1237,7 +1356,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(21, 10);
+            this.button6.Location = new System.Drawing.Point(31, 10);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(137, 28);
             this.button6.TabIndex = 39;
@@ -3517,6 +3636,7 @@
             // ExamsResults
             // 
             this.ExamsResults.BackColor = System.Drawing.Color.White;
+            this.ExamsResults.Controls.Add(this.panelExamsResults);
             this.ExamsResults.Controls.Add(this.catsPanel);
             this.ExamsResults.Controls.Add(this.guna2Panel2);
             this.ExamsResults.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3529,6 +3649,8 @@
             // catsPanel
             // 
             this.catsPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.catsPanel.Controls.Add(this.txtAllStudentMarks);
+            this.catsPanel.Controls.Add(this.label56);
             this.catsPanel.Controls.Add(this.dataGridView1ExamResults);
             this.catsPanel.Controls.Add(this.label51);
             this.catsPanel.Controls.Add(this.RcomboBoxYear);
@@ -3547,6 +3669,41 @@
             this.catsPanel.ShadowDecoration.Parent = this.catsPanel;
             this.catsPanel.Size = new System.Drawing.Size(1028, 700);
             this.catsPanel.TabIndex = 12;
+            // 
+            // txtAllStudentMarks
+            // 
+            this.txtAllStudentMarks.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAllStudentMarks.DefaultText = "";
+            this.txtAllStudentMarks.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAllStudentMarks.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAllStudentMarks.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAllStudentMarks.DisabledState.Parent = this.txtAllStudentMarks;
+            this.txtAllStudentMarks.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAllStudentMarks.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAllStudentMarks.FocusedState.Parent = this.txtAllStudentMarks;
+            this.txtAllStudentMarks.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAllStudentMarks.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAllStudentMarks.HoverState.Parent = this.txtAllStudentMarks;
+            this.txtAllStudentMarks.Location = new System.Drawing.Point(400, 169);
+            this.txtAllStudentMarks.Name = "txtAllStudentMarks";
+            this.txtAllStudentMarks.PasswordChar = '\0';
+            this.txtAllStudentMarks.PlaceholderText = "Search By AdmNo";
+            this.txtAllStudentMarks.SelectedText = "";
+            this.txtAllStudentMarks.ShadowDecoration.Parent = this.txtAllStudentMarks;
+            this.txtAllStudentMarks.Size = new System.Drawing.Size(200, 36);
+            this.txtAllStudentMarks.TabIndex = 20;
+            this.txtAllStudentMarks.TextChanged += new System.EventHandler(this.txtAllStudentMarks_TextChanged);
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.Blue;
+            this.label56.Location = new System.Drawing.Point(227, 176);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(160, 25);
+            this.label56.TabIndex = 19;
+            this.label56.Text = "Student Score";
             // 
             // dataGridView1ExamResults
             // 
@@ -3662,7 +3819,7 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(1028, 58);
             this.button12.TabIndex = 11;
-            this.button12.Text = "CONTINUOUS ASSESSMENTS TEST(CATS)";
+            this.button12.Text = "CONTINUOUS ASSESSMENTS TEST(CATS) / EXAMINATIONS";
             this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button12.UseVisualStyleBackColor = false;
             // 
@@ -3739,6 +3896,30 @@
             this.guna2Panel2.Size = new System.Drawing.Size(200, 700);
             this.guna2Panel2.TabIndex = 11;
             // 
+            // panelExamsResults
+            // 
+            this.panelExamsResults.BackColor = System.Drawing.Color.LightGreen;
+            this.panelExamsResults.Controls.Add(this.guna2TextBoxAdmNo);
+            this.panelExamsResults.Controls.Add(this.guna2Button4);
+            this.panelExamsResults.Controls.Add(this.guna2TextBoxAVG);
+            this.panelExamsResults.Controls.Add(this.txtERecords);
+            this.panelExamsResults.Controls.Add(this.label57);
+            this.panelExamsResults.Controls.Add(this.GridExams);
+            this.panelExamsResults.Controls.Add(this.guna2ComboBox3);
+            this.panelExamsResults.Controls.Add(this.guna2ComboBox5);
+            this.panelExamsResults.Controls.Add(this.btnGenerateScore);
+            this.panelExamsResults.Controls.Add(this.ExamTypecombo);
+            this.panelExamsResults.Controls.Add(this.label65);
+            this.panelExamsResults.Controls.Add(this.button14);
+            this.panelExamsResults.Controls.Add(this.label60);
+            this.panelExamsResults.Controls.Add(this.label63);
+            this.panelExamsResults.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelExamsResults.Location = new System.Drawing.Point(200, 0);
+            this.panelExamsResults.Name = "panelExamsResults";
+            this.panelExamsResults.Size = new System.Drawing.Size(1028, 700);
+            this.panelExamsResults.TabIndex = 19;
+            this.panelExamsResults.Paint += new System.Windows.Forms.PaintEventHandler(this.panelExamsResults_Paint);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightBlue;
@@ -3770,6 +3951,7 @@
             this.btnExams.Text = " EXAMS";
             this.btnExams.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExams.UseVisualStyleBackColor = false;
+            this.btnExams.Click += new System.EventHandler(this.btnExams_Click);
             // 
             // btnCats
             // 
@@ -3786,6 +3968,245 @@
             this.btnCats.Text = " CATS";
             this.btnCats.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCats.UseVisualStyleBackColor = false;
+            this.btnCats.Click += new System.EventHandler(this.btnCats_Click);
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.White;
+            this.label60.Location = new System.Drawing.Point(11, 121);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(60, 24);
+            this.label60.TabIndex = 38;
+            this.label60.Text = "Class";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.Color.White;
+            this.label63.Location = new System.Drawing.Point(11, 247);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(116, 24);
+            this.label63.TabIndex = 34;
+            this.label63.Text = "Exam Type";
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.LightBlue;
+            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Image = global::Shule.Properties.Resources.feess;
+            this.button14.Location = new System.Drawing.Point(0, 0);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(1028, 58);
+            this.button14.TabIndex = 46;
+            this.button14.Text = " EXAMINATIONS";
+            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button14.UseVisualStyleBackColor = false;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.White;
+            this.label65.Location = new System.Drawing.Point(11, 174);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(75, 24);
+            this.label65.TabIndex = 47;
+            this.label65.Text = "Stream";
+            // 
+            // ExamTypecombo
+            // 
+            this.ExamTypecombo.BackColor = System.Drawing.Color.Transparent;
+            this.ExamTypecombo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ExamTypecombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ExamTypecombo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ExamTypecombo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ExamTypecombo.FocusedState.Parent = this.ExamTypecombo;
+            this.ExamTypecombo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ExamTypecombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ExamTypecombo.HoverState.Parent = this.ExamTypecombo;
+            this.ExamTypecombo.ItemHeight = 30;
+            this.ExamTypecombo.ItemsAppearance.Parent = this.ExamTypecombo;
+            this.ExamTypecombo.Location = new System.Drawing.Point(149, 250);
+            this.ExamTypecombo.Name = "ExamTypecombo";
+            this.ExamTypecombo.ShadowDecoration.Parent = this.ExamTypecombo;
+            this.ExamTypecombo.Size = new System.Drawing.Size(161, 36);
+            this.ExamTypecombo.TabIndex = 49;
+            // 
+            // btnGenerateScore
+            // 
+            this.btnGenerateScore.CheckedState.Parent = this.btnGenerateScore;
+            this.btnGenerateScore.CustomImages.Parent = this.btnGenerateScore;
+            this.btnGenerateScore.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerateScore.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGenerateScore.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGenerateScore.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGenerateScore.DisabledState.Parent = this.btnGenerateScore;
+            this.btnGenerateScore.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGenerateScore.ForeColor = System.Drawing.Color.White;
+            this.btnGenerateScore.HoverState.Parent = this.btnGenerateScore;
+            this.btnGenerateScore.Location = new System.Drawing.Point(8, 340);
+            this.btnGenerateScore.Name = "btnGenerateScore";
+            this.btnGenerateScore.ShadowDecoration.Parent = this.btnGenerateScore;
+            this.btnGenerateScore.Size = new System.Drawing.Size(201, 35);
+            this.btnGenerateScore.TabIndex = 61;
+            this.btnGenerateScore.Text = "Generate Score";
+            this.btnGenerateScore.Click += new System.EventHandler(this.btnGenerateScore_Click);
+            // 
+            // guna2ComboBox5
+            // 
+            this.guna2ComboBox5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox5.FocusedState.Parent = this.guna2ComboBox5;
+            this.guna2ComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox5.HoverState.Parent = this.guna2ComboBox5;
+            this.guna2ComboBox5.ItemHeight = 30;
+            this.guna2ComboBox5.ItemsAppearance.Parent = this.guna2ComboBox5;
+            this.guna2ComboBox5.Location = new System.Drawing.Point(149, 120);
+            this.guna2ComboBox5.Name = "guna2ComboBox5";
+            this.guna2ComboBox5.ShadowDecoration.Parent = this.guna2ComboBox5;
+            this.guna2ComboBox5.Size = new System.Drawing.Size(161, 36);
+            this.guna2ComboBox5.TabIndex = 62;
+            // 
+            // guna2ComboBox3
+            // 
+            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.ItemHeight = 30;
+            this.guna2ComboBox3.Items.AddRange(new object[] {
+            "CATS",
+            "MID-EXAMS",
+            "END-EXAMS"});
+            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Location = new System.Drawing.Point(149, 175);
+            this.guna2ComboBox3.Name = "guna2ComboBox3";
+            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
+            this.guna2ComboBox3.Size = new System.Drawing.Size(161, 36);
+            this.guna2ComboBox3.TabIndex = 63;
+            // 
+            // GridExams
+            // 
+            this.GridExams.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridExams.Location = new System.Drawing.Point(360, 271);
+            this.GridExams.Name = "GridExams";
+            this.GridExams.Size = new System.Drawing.Size(562, 246);
+            this.GridExams.TabIndex = 64;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.White;
+            this.label57.Location = new System.Drawing.Point(11, 74);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(80, 24);
+            this.label57.TabIndex = 65;
+            this.label57.Text = "AdmNo";
+            // 
+            // txtERecords
+            // 
+            this.txtERecords.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtERecords.DefaultText = "";
+            this.txtERecords.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtERecords.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtERecords.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtERecords.DisabledState.Parent = this.txtERecords;
+            this.txtERecords.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtERecords.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtERecords.FocusedState.Parent = this.txtERecords;
+            this.txtERecords.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtERecords.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtERecords.HoverState.Parent = this.txtERecords;
+            this.txtERecords.Location = new System.Drawing.Point(149, 64);
+            this.txtERecords.Name = "txtERecords";
+            this.txtERecords.PasswordChar = '\0';
+            this.txtERecords.PlaceholderText = "";
+            this.txtERecords.SelectedText = "";
+            this.txtERecords.ShadowDecoration.Parent = this.txtERecords;
+            this.txtERecords.Size = new System.Drawing.Size(161, 36);
+            this.txtERecords.TabIndex = 66;
+            // 
+            // guna2TextBoxAVG
+            // 
+            this.guna2TextBoxAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxAVG.DefaultText = "";
+            this.guna2TextBoxAVG.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxAVG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxAVG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxAVG.DisabledState.Parent = this.guna2TextBoxAVG;
+            this.guna2TextBoxAVG.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxAVG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxAVG.FocusedState.Parent = this.guna2TextBoxAVG;
+            this.guna2TextBoxAVG.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBoxAVG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxAVG.HoverState.Parent = this.guna2TextBoxAVG;
+            this.guna2TextBoxAVG.Location = new System.Drawing.Point(712, 81);
+            this.guna2TextBoxAVG.Name = "guna2TextBoxAVG";
+            this.guna2TextBoxAVG.PasswordChar = '\0';
+            this.guna2TextBoxAVG.PlaceholderText = "";
+            this.guna2TextBoxAVG.SelectedText = "";
+            this.guna2TextBoxAVG.ShadowDecoration.Parent = this.guna2TextBoxAVG;
+            this.guna2TextBoxAVG.Size = new System.Drawing.Size(139, 36);
+            this.guna2TextBoxAVG.TabIndex = 67;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(564, 82);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(111, 35);
+            this.guna2Button4.TabIndex = 68;
+            this.guna2Button4.Text = "Average Score";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            // 
+            // guna2TextBoxAdmNo
+            // 
+            this.guna2TextBoxAdmNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxAdmNo.DefaultText = "";
+            this.guna2TextBoxAdmNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxAdmNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxAdmNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxAdmNo.DisabledState.Parent = this.guna2TextBoxAdmNo;
+            this.guna2TextBoxAdmNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxAdmNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxAdmNo.FocusedState.Parent = this.guna2TextBoxAdmNo;
+            this.guna2TextBoxAdmNo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBoxAdmNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxAdmNo.HoverState.Parent = this.guna2TextBoxAdmNo;
+            this.guna2TextBoxAdmNo.Location = new System.Drawing.Point(406, 82);
+            this.guna2TextBoxAdmNo.Name = "guna2TextBoxAdmNo";
+            this.guna2TextBoxAdmNo.PasswordChar = '\0';
+            this.guna2TextBoxAdmNo.PlaceholderText = "";
+            this.guna2TextBoxAdmNo.SelectedText = "";
+            this.guna2TextBoxAdmNo.ShadowDecoration.Parent = this.guna2TextBoxAdmNo;
+            this.guna2TextBoxAdmNo.Size = new System.Drawing.Size(139, 37);
+            this.guna2TextBoxAdmNo.TabIndex = 69;
             // 
             // Home
             // 
@@ -3836,6 +4257,7 @@
             this.tabControl1.ResumeLayout(false);
             this.CatsTab.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1StudentsScores)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -3885,6 +4307,9 @@
             this.catsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1ExamResults)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
+            this.panelExamsResults.ResumeLayout(false);
+            this.panelExamsResults.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridExams)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4168,6 +4593,29 @@
         private Guna.UI2.WinForms.Guna2ComboBox RcomboBoxYear;
         private System.Windows.Forms.Label label47;
         private Guna.UI2.WinForms.Guna2ComboBox RcomboBoxTerm;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxRExamCode;
+        private System.Windows.Forms.Label label52;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxRstream;
+        private System.Windows.Forms.Label label55;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxRForm;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Panel panelExamsResults;
+        private Guna.UI2.WinForms.Guna2TextBox txtAllStudentMarks;
+        private System.Windows.Forms.Label label56;
+        private Guna.UI2.WinForms.Guna2ComboBox ExamTypecombo;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label63;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox5;
+        private Guna.UI2.WinForms.Guna2Button btnGenerateScore;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.DataGridView GridExams;
+        private Guna.UI2.WinForms.Guna2TextBox txtERecords;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxAdmNo;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxAVG;
     }
 }
 

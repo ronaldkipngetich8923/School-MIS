@@ -15,7 +15,7 @@ namespace Shule
         SqlDataReader sqlDataReader;
         SqlDataAdapter sqlDataAdapter;
         private bool isCollapsed;
-        
+        //  SetExam sr = new SetExam();
 
 
 
@@ -38,6 +38,11 @@ namespace Shule
             // hideSubmenu();
         }
         int indexRow;
+
+        int Average;
+        int TotalScoreForCats;
+        int TotalScores;
+        int Grades;
 
         public void ComboTermFill()
         {
@@ -151,6 +156,7 @@ namespace Shule
 
                     comboBoxExamCode.Items.Add(sName);
                     RcomboBoxExamCode.Items.Add(sName);
+                    comboBoxRExamCode.Items.Add(sName);
 
 
                 }
@@ -188,6 +194,7 @@ namespace Shule
                     comboBoxStream.Items.Add(sName);
 
                     comboBoxStreams.Items.Add(sName);
+                    comboBoxRstream.Items.Add(sName);
                     //  RcomboBoxStream.Items.Add(sName);
 
                 }
@@ -220,6 +227,7 @@ namespace Shule
                     comboBoxExamType.Items.Add(sName);
                     comboBoxExamCategory.Items.Add(examcategory);
                     RcomboBoxExamCategory.Items.Add(examcategory);
+                    ExamTypecombo.Items.Add(sName);
 
 
 
@@ -251,6 +259,7 @@ namespace Shule
                     comboBoxClass.Items.Add(sName);
                     guna2ComboBox1.Items.Add(sName);
                     comboBoxForm.Items.Add(sName);
+                    comboBoxRForm.Items.Add(sName);
 
 
                 }
@@ -852,14 +861,14 @@ namespace Shule
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            sqlConnection.Open();
+            sqlConnection.Close();
             string query = "SELECT * FROM StudentMaster";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             StudentGridView.DataSource = dt;
 
-            sqlConnection.Close();
+            sqlConnection.Open();
 
 
         }
@@ -1071,8 +1080,8 @@ namespace Shule
 
         private void btnStaffType_Click(object sender, EventArgs e)
         {
-            StaffType st = new StaffType();
-            st.Show();
+            // StaffType st = new StaffType();
+            // st.Show();
 
 
         }
@@ -1109,6 +1118,7 @@ namespace Shule
         {
             ExamsResults.Visible = true;
             ExamsResults.BringToFront();
+            panelExamsResults.Visible = false;
         }
 
         private void button46_Click(object sender, EventArgs e)
@@ -1342,8 +1352,198 @@ namespace Shule
 
 
         }
+
+        private void comboBoxRExamCode_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxRExamCode.SelectedItem !=null)
+            {
+                sqlConnection.Close();
+                string query = "SELECT * FROM Exams WHERE ExamCode = '" + comboBoxRExamCode.Text + "' ";
+                SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+                dataGridView1StudentsScores.DataSource = dt;
+
+                sqlConnection.Open();
+
+            }  
+            else
+            {
+                MessageBox.Show("Subject Results Not Yet Recorded");
+            }
+           
+        }
+
+        private void label53_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxRForm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+              if (comboBoxRForm.SelectedItem != null)
+            {
+                sqlConnection.Close();
+                string query = "SELECT * FROM Exams WHERE Class = '" + comboBoxRForm.Text + "' ";
+                SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+                dataGridView1StudentsScores.DataSource = dt;
+
+                sqlConnection.Open();
+
+            }
+              else
+            {
+                MessageBox.Show("Form Results Not Yet Recorded");
+            }
+
+        }
+
+        private void comboBoxRstream_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxRstream.SelectedItem != null)
+            {
+                sqlConnection.Close();
+                string query = "SELECT * FROM Exams WHERE Stream = '" + comboBoxRstream.Text + "' ";
+                SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+                dataGridView1StudentsScores.DataSource = dt;
+
+                sqlConnection.Open();
+
+            }
+            else
+            {
+                MessageBox.Show("Stream Results Not Yet Recorded");
+            }
+
+        }
+
+        private void txtAllStudentMarks_TextChanged(object sender, EventArgs e)
+        {
+            string qur = "SELECT AdmNo,Studname,AGGREGATE_FUNCTION(Class),Stream,Term,Year,ExamCode,ExamType,ExamCategory,Subject,StudentScore  FROM Exams GROUP BY AdmNo,Studname  ";
+            SqlCommand cmd = new SqlCommand(qur, sqlConnection);
+            
+            try
+            {
+
+                sqlConnection.Open();
+                sqlConnection.Close();
+                sqlDataReader = cmd.ExecuteReader();
+                SqlDataAdapter SDA = new SqlDataAdapter(qur, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+                dataGridView1ExamResults.DataSource = dt;
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                MessageBox.Show("Student Marks does not Exist");
+
+            }
+
+
+        }
+
+        private void btnCats_Click(object sender, EventArgs e)
+        {
+            catsPanel.Visible = true;
+            catsPanel.BringToFront();
+            panelExamsResults.Visible = false;
+        }
+
+        private void btnExams_Click(object sender, EventArgs e)
+        {
+            panelExamsResults.Visible = true;
+            panelExamsResults.BringToFront();
+            catsPanel.Visible = false;
+            ExamsResults.Visible = true;
+            
+        }
+
+        private void comboExamType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelExamsResults_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnGenerateScore_Click(object sender, EventArgs e)
+        {
+
+
+            string avg = "SELECT * FROM Exams WHERE AdmNo IN (SELECT AdmNo FROM Exams GROUP BY AdmNo HAVING COUNT (distinct ExamCategory) > 1)";
+            // string exams = " SELECT AdmNo FROM  StudentMaster WHERE EXISTS (SELECT  Studname,Class,Stream,Category,Subject,StudentScore FROM Exams WHERE  ExamType='" + ExamTypecombo.SelectedItem + "'";
+          //  SqlCommand exe = new SqlCommand(avg, sqlConnection);
+
+            try
+            {
+                sqlConnection.Close();
+                sqlConnection.Open();
+               // sqlDataReader = exe.ExecuteReader();
+                SqlDataAdapter SDA = new SqlDataAdapter(avg, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+               GridExams.DataSource = dt;
+
+            }
+
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Student Marks does not Exist");
+
+
+
+            }
+           // for(int i =0;i<=20;i++)
+           // {
+           //     GridExams.Rows.Add("Total Score For Cats" +i.ToString),
+           // }
+
+        
+
+
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            //sqlConnection.Close();
+            //
+           // string avg= "SELECT AVG(StudentScore) From Exams where ExamType='CATS' AND AdmNo='"+ guna2TextBoxAdmNo.Text+ "'";
+           // SqlCommand exe = new SqlCommand(avg, sqlConnection);
+
+            //sqlDataReader = exe.ExecuteReader();
+            //sqlDataReader.Read();
+           // guna2TextBoxAVG.Text=
+
+            //sqlDataReader = exe.ExecuteReader();
+            //if (sqlDataReader.Read())
+            //{
+            //    guna2TextBoxAVG.Text = string,avg;
+
+            //}
+            //else
+            //{
+
+            //}
+
+
+
+        }
     }
-}
+    }
+
     
     
     

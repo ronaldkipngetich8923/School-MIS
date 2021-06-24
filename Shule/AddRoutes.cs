@@ -16,5 +16,10 @@ namespace Shule
         {
             InitializeComponent();
         }
+
+        private void AddRoutes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
