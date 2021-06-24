@@ -11,23 +11,19 @@ using System.Data.SqlClient;
 
 namespace Shule
 {
-    public partial class AddClass : Form
+    public partial class Stream : Form
     {
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        public AddClass()
+        public Stream()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnStreamsSave_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnClassesSave_Click(object sender, EventArgs e)
-        {
-            string cmdStr = "INSERT INTO Classes VALUES( '" + txtClassName.Text + "')";
+            string cmdStr = "INSERT INTO Streams  VALUES( '" + txtStreamCode.Text + "','" + txtStreamName.Text + "')";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
@@ -35,7 +31,7 @@ namespace Shule
                 sqlConnection.Open();
                 int rows = sqlCommand.ExecuteNonQuery();
 
-                MessageBox.Show(rows + " Class inserted successfully.");
+                MessageBox.Show(rows + " Streams inserted successfully.");
             }
             catch (Exception ex)
             {
@@ -43,34 +39,27 @@ namespace Shule
             }
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void AddClass_Load(object sender, EventArgs e)
+        private void Stream_Load(object sender, EventArgs e)
         {
             string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
         }
 
-        private void btnClassesReset_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1ViewRecords_Click(object sender, EventArgs e)
+        private void guna2Button1ViewClass_Click(object sender, EventArgs e)
         {
             sqlConnection.Close();
-            string query = "SELECT * FROM Classes";
+            string query = "SELECT * FROM Streams";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
-            guna2DataGridView1Classes.DataSource = dt;
+            guna2DataGridView1Streams.DataSource = dt;
 
             sqlConnection.Open();
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
 }
-

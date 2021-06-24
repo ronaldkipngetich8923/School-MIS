@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Shule
 {
-    public partial class AddStream : Form
+    public partial class Fees : Form
     {
-        public AddStream()
+        public Fees()
         {
             InitializeComponent();
         }
