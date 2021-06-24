@@ -12,7 +12,7 @@ namespace Shule
     public partial class Home : Form
     {
         SqlConnection sqlConnection;
-        SqlDataReader sqlDataReader;
+       // SqlDataReader sqlDataReader;
         private bool isCollapsed;
 
         public Home()

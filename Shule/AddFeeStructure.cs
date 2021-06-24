@@ -15,7 +15,7 @@ namespace Shule
     {
         SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
         SqlCommand cmd;
-        SqlDataReader sqlReader;
+       // SqlDataReader sqlReader;
         DataTable Fee_Set = new DataTable();
         int indexRow;
 
@@ -27,6 +27,8 @@ namespace Shule
       
         private void AddFeeStructure_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
+
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM fees_SetUp", con);
             DataSet ds = new DataSet();
             da.Fill(ds, "fees_SetUp");

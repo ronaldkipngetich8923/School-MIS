@@ -16,6 +16,7 @@ namespace Shule
         SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
         SqlCommand cmd;
         SqlDataReader sqlReader;
+        int ReceiptNo = 1;
 
         public Finance()
         {
@@ -84,6 +85,15 @@ namespace Shule
             transferfeepanel.Visible = false; ;
             feesadjustmentpanel.Visible = false;
             this.WindowState = FormWindowState.Maximized;
+
+
+            guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D5");
+            ReceiptNo = Convert.ToInt16(guna2TextBoxReceiptNo.Text);
+            ReceiptNo++;
+            guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D5");
+
+
+
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -110,7 +120,7 @@ namespace Shule
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-
+            //ReceiptNo++;
 
             if (guna2TextBoxAdmNoT.Text != "" && guna2TextBoxStudnameT.Text != "" && guna2TextBoxAmtAvaT.Text != "" && guna2TextBoxAmtTt.Text != "" && guna2TextBoxAdmNoTT.Text != "" && guna2TextBoxStudnameTT.Text != "" && textBoxAmtTt.Text != "" && richTextBoxReason.Text != "")
             {
@@ -162,6 +172,10 @@ namespace Shule
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D5");
+            ReceiptNo = Convert.ToInt16(guna2TextBoxReceiptNo.Text);
+            ReceiptNo++;
+            guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D5");
 
             con.Open();
             String selectQuery = "SELECT * FROM StudentMaster where AdmNo=" + int.Parse(guna2TextBoxsearch.Text);
@@ -180,13 +194,18 @@ namespace Shule
             }
             else
             {
-                MessageBox.Show("No such studentin hostel");
+                MessageBox.Show("No such student In School");
             }
 
             con.Close();
         }
 
         private void toppanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
         }
