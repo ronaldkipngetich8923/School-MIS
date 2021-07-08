@@ -27,7 +27,7 @@ namespace Shule
       
         private void AddFeeStructure_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
 
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM fees_SetUp", con);
             DataSet ds = new DataSet();
@@ -140,6 +140,13 @@ namespace Shule
             textBoxYear.Text = row.Cells[6].Value.ToString();
             guna2ComboBoxTerm.Text = row.Cells[7].Value.ToString();
             
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Fees_Structure fs = new Fees_Structure();
+            fs.Show();
         }
     }
 }

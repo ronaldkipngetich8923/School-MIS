@@ -281,11 +281,23 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenerateFeeStructure.cs">
+    <Compile Include="Fees_Structure.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenerateFeeStructure.Designer.cs">
-      <DependentUpon>GenerateFeeStructure.cs</DependentUpon>
+    <Compile Include="Fees_Structure.Designer.cs">
+      <DependentUpon>Fees_Structure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignFeesToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignFeesToClass.Designer.cs">
+      <DependentUpon>AssignFeesToClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Collections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee_Collections.Designer.cs">
+      <DependentUpon>Fee_Collections.cs</DependentUpon>
     </Compile>
     <Compile Include="hostelclearence.cs">
       <SubType>Form</SubType>
@@ -374,8 +386,14 @@
       <DependentUpon>Dispensary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeeStructure.rdlc" />
-    <EmbeddedResource Include="GenerateFeeStructure.resx">
-      <DependentUpon>GenerateFeeStructure.cs</DependentUpon>
+    <EmbeddedResource Include="Fees_Structure.resx">
+      <DependentUpon>Fees_Structure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignFeesToClass.resx">
+      <DependentUpon>AssignFeesToClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_Collections.resx">
+      <DependentUpon>Fee_Collections.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hostelclearence.resx">
       <DependentUpon>hostelclearence.cs</DependentUpon>
@@ -437,6 +455,7 @@
     <None Include="Resources\college-icons.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Fee_Structure.gif.crdownload" />
     <None Include="Resources\icon1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -456,6 +475,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bill.png" />
+    <None Include="Resources\web-adjustment-2.png" />
     <None Include="Resources\web-adjustment-1.png" />
     <None Include="Resources\caretdown.png" />
     <None Include="Resources\caretside.png" />
@@ -463,13 +483,21 @@
     <None Include="Resources\caret2.png" />
     <None Include="Resources\caret.png" />
     <None Include="Resources\bill1.png" />
+    <None Include="Resources\bill2.png" />
+    <None Include="Resources\fees.png" />
+    <None Include="Resources\fees preview.png" />
     <Content Include="Resources\icons8-add-24.png" />
     <Content Include="Resources\magnifying-glass.png" />
     <Content Include="Resources\money-transfer-icon.jpg" />
+    <None Include="Resources\MUST-Vector-Logo.jpg" />
     <Content Include="Resources\search-interface-symbol.png" />
+    <None Include="Resources\trans.PNG" />
+    <None Include="Resources\STRUCTURE FEES.png" />
     <Content Include="Resources\transfer-bank-money-transf.png" />
     <None Include="Resources\transfer-bank-money-transf1.png" />
     <None Include="Resources\transfer-bank-money-transf2.png" />
+    <None Include="Resources\transfer-bank-money-transf3.png" />
+    <None Include="Resources\update fees.png" />
     <Content Include="Resources\web-adjustment-.png" />
   </ItemGroup>
   <ItemGroup>

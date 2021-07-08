@@ -73,6 +73,16 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bill {
+            get {
+                object obj = ResourceManager.GetObject("bill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap caret {
             get {
                 object obj = ResourceManager.GetObject("caret", resourceCulture);
@@ -163,6 +173,36 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fee_Structure_gif {
+            get {
+                object obj = ResourceManager.GetObject("Fee_Structure.gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fees {
+            get {
+                object obj = ResourceManager.GetObject("fees", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fees_preview {
+            get {
+                object obj = ResourceManager.GetObject("fees preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap feess {
             get {
                 object obj = ResourceManager.GetObject("feess", resourceCulture);
@@ -186,6 +226,16 @@ namespace Shule.Properties {
         internal static System.Drawing.Bitmap img {
             get {
                 object obj = ResourceManager.GetObject("img", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MUST_Vector_Logo {
+            get {
+                object obj = ResourceManager.GetObject("MUST-Vector-Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +283,16 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap STRUCTURE_FEES {
+            get {
+                object obj = ResourceManager.GetObject("STRUCTURE FEES", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap students {
             get {
                 object obj = ResourceManager.GetObject("students", resourceCulture);
@@ -266,6 +326,46 @@ namespace Shule.Properties {
         internal static System.Drawing.Bitmap teachers_icon {
             get {
                 object obj = ResourceManager.GetObject("teachers icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trans {
+            get {
+                object obj = ResourceManager.GetObject("trans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap transfer_bank_money_transf {
+            get {
+                object obj = ResourceManager.GetObject("transfer-bank-money-transf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap update_fees {
+            get {
+                object obj = ResourceManager.GetObject("update fees", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap web_adjustment_ {
+            get {
+                object obj = ResourceManager.GetObject("web-adjustment-", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

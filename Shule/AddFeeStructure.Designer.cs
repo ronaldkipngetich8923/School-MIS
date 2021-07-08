@@ -51,6 +51,7 @@
             this.textBoxYear = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.labelfees = new System.Windows.Forms.Label();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -197,10 +198,10 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(133, 352);
+            this.guna2Button1.Location = new System.Drawing.Point(74, 352);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(140, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(107, 45);
             this.guna2Button1.TabIndex = 27;
             this.guna2Button1.Text = "Save Records";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -217,10 +218,10 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(306, 352);
+            this.guna2Button2.Location = new System.Drawing.Point(223, 352);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(129, 45);
+            this.guna2Button2.Size = new System.Drawing.Size(109, 45);
             this.guna2Button2.TabIndex = 28;
             this.guna2Button2.Text = "Update";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -296,7 +297,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(646, 100);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(563, 384);
+            this.panel1.Size = new System.Drawing.Size(563, 431);
             this.panel1.TabIndex = 33;
             // 
             // dataGridView1
@@ -305,7 +306,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(563, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(563, 431);
             this.dataGridView1.TabIndex = 34;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -321,10 +322,10 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(478, 352);
+            this.guna2Button3.Location = new System.Drawing.Point(496, 352);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(129, 45);
+            this.guna2Button3.Size = new System.Drawing.Size(111, 45);
             this.guna2Button3.TabIndex = 34;
             this.guna2Button3.Text = "View Records";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -355,11 +356,32 @@
             this.labelfees.Text = "Fees Set Id";
             this.labelfees.Visible = false;
             // 
+            // guna2Button4
+            // 
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(357, 352);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(116, 45);
+            this.guna2Button4.TabIndex = 38;
+            this.guna2Button4.Text = "Fees Structure";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            // 
             // AddFeeStructure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1209, 484);
+            this.ClientSize = new System.Drawing.Size(1209, 531);
+            this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.labelfees);
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.textBoxYear);
@@ -418,5 +440,6 @@
         private System.Windows.Forms.TextBox textBoxYear;
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.Label labelfees;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }
