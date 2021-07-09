@@ -16,7 +16,7 @@ namespace Shule
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Fee_Collections());
+            Application.Run(new Library());
         }
     }
 }

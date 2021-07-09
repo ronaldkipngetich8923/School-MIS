@@ -305,6 +305,12 @@
     <Compile Include="hostelclearence.Designer.cs">
       <DependentUpon>hostelclearence.cs</DependentUpon>
     </Compile>
+    <Compile Include="Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
+    </Compile>
     <Compile Include="Newrooms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +404,9 @@
     <EmbeddedResource Include="hostelclearence.resx">
       <DependentUpon>hostelclearence.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Newrooms.resx">
       <DependentUpon>Newrooms.cs</DependentUpon>
     </EmbeddedResource>
@@ -486,6 +495,11 @@
     <None Include="Resources\bill2.png" />
     <None Include="Resources\fees.png" />
     <None Include="Resources\fees preview.png" />
+    <None Include="Resources\Books.jpg" />
+    <None Include="Resources\Book Shelve Icon.png" />
+    <None Include="Resources\Books icon.png" />
+    <None Include="Resources\Books icon1.png" />
+    <None Include="Resources\bOOk.jpg" />
     <Content Include="Resources\icons8-add-24.png" />
     <Content Include="Resources\magnifying-glass.png" />
     <Content Include="Resources\money-transfer-icon.jpg" />
@@ -498,6 +512,7 @@
     <None Include="Resources\transfer-bank-money-transf2.png" />
     <None Include="Resources\transfer-bank-money-transf3.png" />
     <None Include="Resources\update fees.png" />
+    <None Include="Resources\users.png" />
     <Content Include="Resources\web-adjustment-.png" />
   </ItemGroup>
   <ItemGroup>

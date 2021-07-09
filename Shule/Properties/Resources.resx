@@ -124,8 +124,14 @@
   <data name="caretdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caretdown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="streams" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\streams1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="classes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="STRUCTURE FEES" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\STRUCTURE FEES.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,8 +139,8 @@
   <data name="students" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\students.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classes2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fees preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fees preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MUST-Vector-Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MUST-Vector-Logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +154,11 @@
   <data name="streams2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\streams2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Books icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Books icon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="classes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classes2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="subjects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\subjects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +196,9 @@
   <data name="college-icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\college-icons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Book Shelve Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Book Shelve Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="schoolstream" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\schoolstream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,8 +208,14 @@
   <data name="icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Books" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Books.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fee_Structure.gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fee_Structure.gif.crdownload;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Books icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Books icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fees" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,7 +226,7 @@
   <data name="caret2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caret2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fees preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fees preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bOOk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bOOk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
