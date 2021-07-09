@@ -84,7 +84,6 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
-
         }
 
         private void guna2PictureBox4_Click(object sender, EventArgs e)
@@ -187,15 +186,12 @@ namespace Shule
             menupanel.Visible = true;
         }
 
-       // int ReceiptNo ;
-
         public void receiptNumber()
         {
             ////guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D8");
             //ReceiptNo = Convert.ToInt16(guna2TextBoxReceiptNo.Text);
             //ReceiptNo++;
             //guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D8");
-
             con.Open();
             String selectQuery = "SELECT Max(ReceiptNo) FROM fee_receipts";
             cmd = new SqlCommand(selectQuery, con);
@@ -203,8 +199,9 @@ namespace Shule
 
             if (sqldataReader.Read())
             {
-                guna2TextBoxReceiptNo.Text = sqldataReader.GetValue(0).ToString() +1;
-                
+                decimal num = Convert.ToDecimal(sqldataReader.GetValue(0).ToString());
+                decimal num1 = 1;
+                guna2TextBoxReceiptNo.Text = Decimal.Add(num, num1).ToString();
             }
             else
             {
@@ -212,7 +209,6 @@ namespace Shule
             }
             sqldataReader.Close();
             con.Close(); ;
-
         }
 
         private void guna2Buttonsearch_Click(object sender, EventArgs e)
@@ -220,11 +216,6 @@ namespace Shule
             receiptNumber();
             try
             {
-                guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D8");
-                ReceiptNo = Convert.ToInt16(guna2TextBoxReceiptNo.Text);
-                ReceiptNo++;
-                guna2TextBoxReceiptNo.Text = ReceiptNo.ToString("D8");
-
                 con.Open();
                 String selectQuery = "SELECT AdmNo,Class,Stream,Year,Term,Total_Amount FROM Student_Term Where AdmNo='" + guna2TextBoxsearch.Text + "'";                
                 cmd = new SqlCommand(selectQuery, con);
@@ -251,6 +242,55 @@ namespace Shule
                 MessageBox.Show(emm1.Message);
 
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            decimal diff;
+            decimal overpayment;
+            if (guna2TextBoxAdmNo.Text != "" && guna2TextBoxYear.Text != "" && guna2TextBoxform.Text != "" && guna2TextBoxstream.Text != "" && guna2TextBoxbalance.Text != "" && guna2TextBoxAmount.Text != "" && guna2TextBoxReceivedBy.Text != "" && guna2TextBoxReceiptNo.Text != "")
+            {
+                cmd = new SqlCommand("insert into fee_receipts(ReceiptNo,AdmNo,Form,Stream,Year,Term,Balance,AmountReceived,Running_balance,DateReceived,ReceivedBy) values(@ReceiptNo,@AdmNo,@Form,@Stream,@Year,@Term,@Balance,@AmountReceived,@Running_balance,@DateReceived,@ReceivedBy)", con);
+                diff = Convert.ToDecimal(guna2TextBoxbalance.Text.ToString())- Convert.ToDecimal(guna2TextBoxAmount.Text.ToString());
+
+                if (diff > 0)
+                {
+                    overpayment = 0;
+                }
+                else
+                {
+                    overpayment = diff;
+                }
+                con.Open();
+                cmd.Parameters.AddWithValue("@ReceiptNo", guna2TextBoxReceiptNo.Text);
+                cmd.Parameters.AddWithValue("@AdmNo", guna2TextBoxAdmNo.Text);               
+                cmd.Parameters.AddWithValue("@Form", guna2TextBoxform.Text);
+                cmd.Parameters.AddWithValue("@Stream", guna2TextBoxstream.Text);
+                cmd.Parameters.AddWithValue("@Year", guna2TextBoxform.Text);
+                cmd.Parameters.AddWithValue("@Term", guna2TextBoxstream.Text);
+                cmd.Parameters.AddWithValue("@Balance", overpayment);
+                cmd.Parameters.AddWithValue("@AmountReceived", guna2TextBoxAmount.Text);
+                cmd.Parameters.AddWithValue("@Running_balance", diff);
+                cmd.Parameters.AddWithValue("@ReceivedBy", guna2TextBoxReceivedBy.Text);;
+                cmd.Parameters.AddWithValue("@DateReceived", dateTimePickerReceipt.Value);
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Fees Received Successfully");
+                SqlCommand cmd1 = new SqlCommand("Update Student_Term SET Total_Amount= (Select Running_balance From fee_receipts  Where AdmNo ='" + guna2TextBoxAdmNo.Text + "' AND ReceiptNo ='" + guna2TextBoxReceiptNo.Text + "' ) Where AdmNo ='" + guna2TextBoxAdmNo.Text + "'", con);
+                cmd1.ExecuteNonQuery();
+
+                guna2TextBoxsearch.Text = "";
+                guna2TextBoxAdmNo.Text = "";
+                guna2TextBoxform.Text = "";
+                guna2TextBoxstream.Text = "";
+                guna2TextBoxbalance.Text = "";
+                guna2TextBoxAmount.Text = "";              
+            }
+            else
+            {
+                MessageBox.Show("Please Provide All Details!");
+            }
+            con.Close();
         }
     }
 }

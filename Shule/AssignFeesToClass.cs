@@ -90,7 +90,7 @@ namespace Shule
                 if (guna2ComboBoxform.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "")
                 {
                     con.Open();
-                    cmd = new SqlCommand("Update Student_Term Set Total_Amount=(SELECT Total_Amount From fee_Structure Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "') Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "' ", con);
+                    cmd = new SqlCommand("Update Student_Term Set Total_Amount=(SELECT Total_Amount From fee_Structure Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "'),Term_Fees=(SELECT Total_Amount From fee_Structure Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "') Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "' ", con);
                     cmd.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Successfully Assigned.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);

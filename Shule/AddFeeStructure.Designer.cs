@@ -66,7 +66,7 @@
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1209, 100);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(1197, 100);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
             // label4
@@ -295,9 +295,9 @@
             // 
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(646, 100);
+            this.panel1.Location = new System.Drawing.Point(634, 100);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(563, 431);
+            this.panel1.Size = new System.Drawing.Size(563, 386);
             this.panel1.TabIndex = 33;
             // 
             // dataGridView1
@@ -306,7 +306,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(563, 431);
+            this.dataGridView1.Size = new System.Drawing.Size(563, 386);
             this.dataGridView1.TabIndex = 34;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -380,7 +380,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1209, 531);
+            this.ClientSize = new System.Drawing.Size(1197, 486);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.labelfees);
             this.Controls.Add(this.textBoxId);
