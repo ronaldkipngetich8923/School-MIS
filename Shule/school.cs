@@ -446,6 +446,7 @@ namespace Shule
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
             subordinatestaff.Visible = false;
+            HostelOccupancy.Visible = false;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -473,7 +474,7 @@ namespace Shule
         {
 
             showSubMenu(panelDropDispensary);
-
+            panelMedicines.Visible = false;
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
@@ -891,6 +892,20 @@ namespace Shule
             ds = new DataSet();
             sqlDataAdapter.Fill(ds);
             setLabel(ds, labelHostel);
+            //get Hostels Occupancy
+            String Hoccupied = "select count(AdmNo) from OccupiedHostel";
+            sqlDataAdapter = new SqlDataAdapter(Hoccupied, sqlConnection);
+            ds = new DataSet();
+            sqlDataAdapter.Fill(ds);
+            setLabel(ds, OccupiedLabel);
+
+            //get Admitted Students
+
+            String admit = "select count(AdmNo) from Dispensary";
+            sqlDataAdapter = new SqlDataAdapter(admit, sqlConnection);
+            ds = new DataSet();
+            sqlDataAdapter.Fill(ds);
+            setLabel(ds, labelAdmitted);
 
             //get Number of Suppliers
             //String Supplier = "select count(SupplierName) from Suppliers";
@@ -2569,7 +2584,8 @@ namespace Shule
 
         private void button53_Click(object sender, EventArgs e)
         {
-
+            HostelClearance hr = new HostelClearance();
+            hr.Show();
         }
 
         private void button52_Click(object sender, EventArgs e)
@@ -2581,6 +2597,25 @@ namespace Shule
 
         private void button1_Click(object sender, EventArgs e)
         {
+            HostelOccupancy.Visible = true;
+            HostelOccupancy.BringToFront();
+
+            string query = "SELECT Hostels.HostelCode,Hostels.HostelName,Hostels.Capacity,OccupiedHostel.AdmNo,OccupiedHostel.Studname,StudentMaster.AdmDate,StudentMaster.Class,StudentMaster.Stream,OccupiedHostel.DateAssigned FROM Hostels " +
+                "INNER JOIN OccupiedHostel ON Hostels.HostelCode = OccupiedHostel.HostelCode " +
+                "INNER JOIN StudentMaster ON OccupiedHostel.AdmNo =StudentMaster.AdmNo";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            GridHostelInfo.DataSource = dt;
+
+//            SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+//FROM Orders
+//INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+
+
+
+
 
         }
 
@@ -2593,7 +2628,109 @@ namespace Shule
 
         private void button43_Click(object sender, EventArgs e)
         {
+            ReferralForm rf = new ReferralForm();
+            rf.Show();
+        }
 
+        private void GridHostelInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void HostelHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+
+        }
+        //protected void dataGridMedicines_RowDataBound(object sender, GridViewRowEventArgs e)
+        //{
+        //    if (e.Row.RowIndex >= 0)
+        //    {
+        //        var DrugMDate = DateTime.Parse(e.Row.Cells[7].Text);
+        //        var DrugEDate = DateTime.Parse(e.Row.Cells[7].Text);
+
+        //        if (DrugMDate > DrugEDate)
+        //        {
+        //            e.Row.Cells[7].BackColor = Color.Red;
+        //            e.Row.Cells[7].ForeColor = Color.White;
+        //        }
+        //    }
+        //}
+
+        private void button28_Click_1(object sender, EventArgs e)
+        {
+
+
+            panelMedicines.Visible = true;
+            panelMedicines.BringToFront();
+            string query = "SELECT * FROM Drugs";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            dataGridMedicines.DataSource = dt;
+            
+
+
+            dataGridMedicines.Columns.Add("newColumnName", "Days To Expiry");
+
+
+
+            DateTime d1;
+            DateTime d2;
+            for (int i = 0; i < dataGridMedicines.RowCount; i++)
+            {
+                d1 = Convert.ToDateTime(dataGridMedicines.Rows[i].Cells[6].Value);
+                d2 = Convert.ToDateTime(dataGridMedicines.Rows[i].Cells[5].Value);
+                TimeSpan ts = d1 - d2;
+                dataGridMedicines.Rows[i].Cells[7].Value = ts.Days;
+            }
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnMedicCategories_Click(object sender, EventArgs e)
+        {
+            NewDrugCategory dr = new NewDrugCategory();
+            dr.Show();
+        }
+
+        private void btnNewMedicine_Click(object sender, EventArgs e)
+        {
+            NewMedicine nm = new NewMedicine();
+            nm.Show();
         }
     }
     }

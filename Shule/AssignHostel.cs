@@ -108,7 +108,7 @@ namespace Shule
             {
                 txtHostelName.Text = sqlDataReader["HostelName"].ToString();
                 txtHostelCapacity.Text = sqlDataReader["Capacity"].ToString();
-                    rooms.Text = sqlDataReader["Capacity"].ToString();
+                    rooms.Text = sqlDataReader["Rooms"].ToString();
 
             }
 
@@ -155,9 +155,10 @@ namespace Shule
 
         private void btnHostelSave_Click(object sender, EventArgs e)
         {
+
             if (comboHostelCode.Text != "" && comboHosteAdmNo.Text != "")
             {
-                string qur = "INSERT INTO OccupiedHostel (HostelCode,AdmNo,Studname,DateAssigned) VALUES ('" + comboHostelCode.SelectedItem + "','" + comboHosteAdmNo.SelectedItem + "','" + txtComboStudname.Text + "','" + guna2DateTimePicker1Hostel.Text + "')";
+                string qur = "INSERT INTO OccupiedHostel (HostelCode,HostelName,AdmNo,Studname,DateAssigned) VALUES ('" + comboHostelCode.SelectedItem + "','" + txtHostelName.Text + "','" + comboHosteAdmNo.SelectedItem + "','" + txtComboStudname.Text + "','" + guna2DateTimePicker1Hostel.Text + "')";
                 SqlCommand cmd = new SqlCommand(qur, sqlConnection);
                 try
                 {
@@ -167,24 +168,29 @@ namespace Shule
 
                     MessageBox.Show(" Hostel Assigned Successfully.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    //Update the new hostel capacity
+                    string quer = "UPDATE Hostels SET Rooms = Rooms - 1  where HostelCode = '" + comboHostelCode.SelectedItem + "'";
+                    SqlCommand cmdUpdate = new SqlCommand(quer,sqlConnection);
+                    cmdUpdate.ExecuteNonQuery();
+
+
                 }
 
-                
+
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+
                
-                //sqlConnection.Close();
-                //sqlConnection.Open();
-                //string query = "UPDATE Hostels SET Capacity = Capacity - 1  where HostelCode = '"+ comboHostelCode.SelectedItem + "'";
+                //string query = "UPDATE Hostels SET Capacity = Capacity - 1  where HostelCode = '" + comboHostelCode.SelectedItem + "'";
                 //SqlDataAdapter sqlData = new SqlDataAdapter(query, sqlConnection);
                 //SqlCommand cmd2 = new SqlCommand("Select  Capacity From Hostels ", sqlConnection);
-               
+
                 //sqlDataReader = cmd.ExecuteReader();
                 //if (sqlDataReader.Read())
                 //{
-                //     rooms.Text = sqlDataReader["Capacity"].ToString();
+                //    rooms.Text = sqlDataReader["Capacity"].ToString();
 
 
 
@@ -214,6 +220,25 @@ namespace Shule
             //sqlDataAdapter.Fill(dsx);
             //guna2DataGridView1HostelsAssign.DataSource = dsx;
 
+            //sqlConnection.Open();
+
+            //string query = "SELECT * FROM Subject  ";
+           
+            //SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            //DataTable dt = new DataTable();
+            //SDA.Fill(dt);
+            //guna2DataGridView1HostelsAssign.DataSource = dt;
+
+
+            //sqlConnection.Close();
+
+        }
+
+        private void btnHostelReset_Click(object sender, EventArgs e)
+        {
+            //txtHostelName.Clear();
+            comboHosteAdmNo.SelectedIndex = -1;
+            txtComboStudname.Clear();
         }
     }
     }

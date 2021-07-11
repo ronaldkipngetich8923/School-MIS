@@ -96,27 +96,38 @@ namespace Shule
 
         private void btnSearchMedic_Click(object sender, EventArgs e)
         {
-
-            sqlConnection.Open();
-            string query = "SELECT * FROM StudentMaster where AdmNo = '" + int.Parse(txtMedicAdm.Text) + "'";
-            cmd = new SqlCommand(query, sqlConnection);
-            sqlDataReader = cmd.ExecuteReader();
-            if (sqlDataReader.Read())
+            if (txtMedicAdm.Text != "")
             {
-                txtMedicAdmNo.Text = sqlDataReader.GetValue(0).ToString();
-                txtMedicName.Text = sqlDataReader.GetValue(1).ToString();
-                txtMedicForm.Text = sqlDataReader.GetValue(9).ToString();
-                txtMedicStream.Text = sqlDataReader.GetValue(10).ToString();
+                //sqlConnection.Close();
+                sqlConnection.Open();
+                string query = "SELECT * FROM StudentMaster where AdmNo = '" + txtMedicAdm.Text+ "'";
+                cmd = new SqlCommand(query, sqlConnection);
+                sqlDataReader = cmd.ExecuteReader();
+                if (sqlDataReader.Read())
+                {
+                    txtMedicAdmNo.Text = sqlDataReader.GetValue(0).ToString();
+                    txtMedicName.Text = sqlDataReader.GetValue(1).ToString();
+                    txtMedicForm.Text = sqlDataReader.GetValue(9).ToString();
+                    txtMedicStream.Text = sqlDataReader.GetValue(10).ToString();
+                }
+
+                else
+                {
+                    MessageBox.Show("Student Not Registered.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+                }
+               
             }
 
             else
             {
-                MessageBox.Show("Student Not Registered.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
+                MessageBox.Show("Search Box Is Empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
             sqlConnection.Close();
+
         }
 
         private void txtMedicStream_TextChanged(object sender, EventArgs e)
@@ -128,7 +139,7 @@ namespace Shule
         {
             if (txtMedicAdmNo.Text != "" && txtMedicAdm.Text != "")
             {
-                string qur = "INSERT INTO Dispensary (AdmNo,DateOfAdmit,Complain,Medication) VALUES ('" + txtMedicAdmNo.Text + "','" + txtMedicName.Text + "','" + txtMedicForm.Text + "','" + txtMedicStream.Text + "','" + guna2DateTimePicker1.Text + "','" + richTextBoxComplain.Text + "','" + richTextBox2Medication.Text + "')";
+                string qur = "INSERT INTO Dispensary (AdmNo,DateOfAdmit,Complain,Medication) VALUES ('" + txtMedicAdmNo.Text + "','" + guna2DateTimePicker1.Text + "','" + richTextBoxComplain.Text + "','" + richTextBox2Medication.Text + "')";
                 SqlCommand cmd = new SqlCommand(qur, sqlConnection);
                 try
                 {
@@ -145,7 +156,16 @@ namespace Shule
                 {
                     MessageBox.Show(ex.Message);
                 }
+               
             }
+            else
+            {
+                MessageBox.Show(" Field Admission Number Cannot be Empty.", "Warnig", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+
+            }
+            sqlConnection.Close();
         }
 
             private void guna2Panel1_Paint(object sender, PaintEventArgs e)

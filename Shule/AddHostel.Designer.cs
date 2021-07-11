@@ -52,6 +52,8 @@
             this.comboHostelTAssigned = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboHostelSassigned = new Guna.UI2.WinForms.Guna2ComboBox();
             this.UpdateHostel = new Guna.UI2.WinForms.Guna2Button();
+            this.txtRooms = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Hostels)).BeginInit();
             this.panel1.SuspendLayout();
@@ -60,6 +62,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.txtRooms);
+            this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.UpdateHostel);
             this.guna2Panel1.Controls.Add(this.comboHostelSassigned);
             this.guna2Panel1.Controls.Add(this.comboHostelTAssigned);
@@ -252,7 +256,7 @@
             this.txtHostelName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtHostelName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHostelName.HoverState.Parent = this.txtHostelName;
-            this.txtHostelName.Location = new System.Drawing.Point(209, 177);
+            this.txtHostelName.Location = new System.Drawing.Point(209, 153);
             this.txtHostelName.Name = "txtHostelName";
             this.txtHostelName.PasswordChar = '\0';
             this.txtHostelName.PlaceholderText = "Enter Hostel  Name";
@@ -267,7 +271,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(18, 177);
+            this.label3.Location = new System.Drawing.Point(18, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 24);
             this.label3.TabIndex = 4;
@@ -307,7 +311,7 @@
             this.txtHostelCapacity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtHostelCapacity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtHostelCapacity.HoverState.Parent = this.txtHostelCapacity;
-            this.txtHostelCapacity.Location = new System.Drawing.Point(209, 241);
+            this.txtHostelCapacity.Location = new System.Drawing.Point(209, 208);
             this.txtHostelCapacity.Name = "txtHostelCapacity";
             this.txtHostelCapacity.PasswordChar = '\0';
             this.txtHostelCapacity.PlaceholderText = "Enter Hostel Capacity";
@@ -321,7 +325,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(18, 241);
+            this.label4.Location = new System.Drawing.Point(18, 208);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 24);
             this.label4.TabIndex = 13;
@@ -332,7 +336,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(18, 297);
+            this.label5.Location = new System.Drawing.Point(18, 312);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(185, 24);
             this.label5.TabIndex = 15;
@@ -343,7 +347,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(18, 358);
+            this.label6.Location = new System.Drawing.Point(18, 368);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(145, 24);
             this.label6.TabIndex = 17;
@@ -355,7 +359,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(18, 417);
+            this.label7.Location = new System.Drawing.Point(18, 428);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(159, 24);
             this.label7.TabIndex = 19;
@@ -367,7 +371,7 @@
             this.guna2DateTimePicker1Hostel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1Hostel.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1Hostel.HoverState.Parent = this.guna2DateTimePicker1Hostel;
-            this.guna2DateTimePicker1Hostel.Location = new System.Drawing.Point(209, 417);
+            this.guna2DateTimePicker1Hostel.Location = new System.Drawing.Point(209, 428);
             this.guna2DateTimePicker1Hostel.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1Hostel.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1Hostel.Name = "guna2DateTimePicker1Hostel";
@@ -400,7 +404,7 @@
             this.comboHostelTAssigned.HoverState.Parent = this.comboHostelTAssigned;
             this.comboHostelTAssigned.ItemHeight = 30;
             this.comboHostelTAssigned.ItemsAppearance.Parent = this.comboHostelTAssigned;
-            this.comboHostelTAssigned.Location = new System.Drawing.Point(209, 297);
+            this.comboHostelTAssigned.Location = new System.Drawing.Point(209, 312);
             this.comboHostelTAssigned.Name = "comboHostelTAssigned";
             this.comboHostelTAssigned.ShadowDecoration.Parent = this.comboHostelTAssigned;
             this.comboHostelTAssigned.Size = new System.Drawing.Size(212, 36);
@@ -419,7 +423,7 @@
             this.comboHostelSassigned.HoverState.Parent = this.comboHostelSassigned;
             this.comboHostelSassigned.ItemHeight = 30;
             this.comboHostelSassigned.ItemsAppearance.Parent = this.comboHostelSassigned;
-            this.comboHostelSassigned.Location = new System.Drawing.Point(209, 358);
+            this.comboHostelSassigned.Location = new System.Drawing.Point(209, 368);
             this.comboHostelSassigned.Name = "comboHostelSassigned";
             this.comboHostelSassigned.ShadowDecoration.Parent = this.comboHostelSassigned;
             this.comboHostelSassigned.Size = new System.Drawing.Size(212, 36);
@@ -443,6 +447,40 @@
             this.UpdateHostel.Size = new System.Drawing.Size(180, 45);
             this.UpdateHostel.TabIndex = 24;
             this.UpdateHostel.Text = "Update Hostel";
+            // 
+            // txtRooms
+            // 
+            this.txtRooms.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRooms.DefaultText = "";
+            this.txtRooms.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRooms.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRooms.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRooms.DisabledState.Parent = this.txtRooms;
+            this.txtRooms.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRooms.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRooms.FocusedState.Parent = this.txtRooms;
+            this.txtRooms.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRooms.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRooms.HoverState.Parent = this.txtRooms;
+            this.txtRooms.Location = new System.Drawing.Point(209, 261);
+            this.txtRooms.Name = "txtRooms";
+            this.txtRooms.PasswordChar = '\0';
+            this.txtRooms.PlaceholderText = "No Of Rooms";
+            this.txtRooms.SelectedText = "";
+            this.txtRooms.ShadowDecoration.Parent = this.txtRooms;
+            this.txtRooms.Size = new System.Drawing.Size(212, 36);
+            this.txtRooms.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(18, 261);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 24);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "No of Rooms";
             // 
             // AddHostel
             // 
@@ -486,5 +524,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox comboHostelSassigned;
         private Guna.UI2.WinForms.Guna2ComboBox comboHostelTAssigned;
         private Guna.UI2.WinForms.Guna2Button UpdateHostel;
+        private Guna.UI2.WinForms.Guna2TextBox txtRooms;
+        private System.Windows.Forms.Label label9;
     }
 }

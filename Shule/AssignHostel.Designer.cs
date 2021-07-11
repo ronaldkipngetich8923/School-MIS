@@ -32,9 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.rooms = new System.Windows.Forms.Label();
             this.comboHostelCode = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtComboStudname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,8 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtComboStudname = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1HostelsAssign)).BeginInit();
@@ -87,6 +87,17 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1203, 563);
             this.guna2Panel1.TabIndex = 4;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(464, 223);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(127, 16);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Rooms Available";
             // 
             // rooms
             // 
@@ -135,6 +146,29 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Assign Hostel ";
+            // 
+            // txtComboStudname
+            // 
+            this.txtComboStudname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtComboStudname.DefaultText = "";
+            this.txtComboStudname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtComboStudname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtComboStudname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtComboStudname.DisabledState.Parent = this.txtComboStudname;
+            this.txtComboStudname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtComboStudname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtComboStudname.FocusedState.Parent = this.txtComboStudname;
+            this.txtComboStudname.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtComboStudname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtComboStudname.HoverState.Parent = this.txtComboStudname;
+            this.txtComboStudname.Location = new System.Drawing.Point(197, 85);
+            this.txtComboStudname.Name = "txtComboStudname";
+            this.txtComboStudname.PasswordChar = '\0';
+            this.txtComboStudname.PlaceholderText = "Student Name";
+            this.txtComboStudname.SelectedText = "";
+            this.txtComboStudname.ShadowDecoration.Parent = this.txtComboStudname;
+            this.txtComboStudname.Size = new System.Drawing.Size(212, 36);
+            this.txtComboStudname.TabIndex = 23;
             // 
             // label6
             // 
@@ -316,7 +350,7 @@
             this.btnHostelSave.ShadowDecoration.Parent = this.btnHostelSave;
             this.btnHostelSave.Size = new System.Drawing.Size(180, 45);
             this.btnHostelSave.TabIndex = 8;
-            this.btnHostelSave.Text = "Save Records";
+            this.btnHostelSave.Text = "Assign Hostel";
             this.btnHostelSave.Click += new System.EventHandler(this.btnHostelSave_Click);
             // 
             // btnHostelReset
@@ -337,6 +371,7 @@
             this.btnHostelReset.Size = new System.Drawing.Size(180, 45);
             this.btnHostelReset.TabIndex = 7;
             this.btnHostelReset.Text = "Reset Fields";
+            this.btnHostelReset.Click += new System.EventHandler(this.btnHostelReset_Click);
             // 
             // guna2DataGridView1HostelsAssign
             // 
@@ -411,7 +446,7 @@
             this.txtHostelName.Location = new System.Drawing.Point(209, 158);
             this.txtHostelName.Name = "txtHostelName";
             this.txtHostelName.PasswordChar = '\0';
-            this.txtHostelName.PlaceholderText = " Hostel Status";
+            this.txtHostelName.PlaceholderText = " Hostel Name";
             this.txtHostelName.SelectedText = "";
             this.txtHostelName.ShadowDecoration.Parent = this.txtHostelName;
             this.txtHostelName.Size = new System.Drawing.Size(212, 36);
@@ -448,40 +483,6 @@
             this.label1.Size = new System.Drawing.Size(194, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Assign Hostel";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(464, 223);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 16);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "Rooms Available";
-            // 
-            // txtComboStudname
-            // 
-            this.txtComboStudname.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtComboStudname.DefaultText = "";
-            this.txtComboStudname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtComboStudname.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtComboStudname.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtComboStudname.DisabledState.Parent = this.txtComboStudname;
-            this.txtComboStudname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtComboStudname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtComboStudname.FocusedState.Parent = this.txtComboStudname;
-            this.txtComboStudname.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtComboStudname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtComboStudname.HoverState.Parent = this.txtComboStudname;
-            this.txtComboStudname.Location = new System.Drawing.Point(197, 85);
-            this.txtComboStudname.Name = "txtComboStudname";
-            this.txtComboStudname.PasswordChar = '\0';
-            this.txtComboStudname.PlaceholderText = "";
-            this.txtComboStudname.SelectedText = "";
-            this.txtComboStudname.ShadowDecoration.Parent = this.txtComboStudname;
-            this.txtComboStudname.Size = new System.Drawing.Size(212, 36);
-            this.txtComboStudname.TabIndex = 23;
             // 
             // tab
             // 

@@ -179,11 +179,35 @@
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </Compile>
     <Compile Include="Function.cs" />
+    <Compile Include="HostelClearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostelClearance.Designer.cs">
+      <DependentUpon>HostelClearance.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewDrugCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewDrugCategory.Designer.cs">
+      <DependentUpon>NewDrugCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMedicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMedicine.Designer.cs">
+      <DependentUpon>NewMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReferralForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferralForm.Designer.cs">
+      <DependentUpon>ReferralForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SetExam.cs">
       <SubType>Form</SubType>
@@ -260,9 +284,11 @@
     <Compile Include="AddVehicle.Designer.cs">
       <DependentUpon>AddVehicle.cs</DependentUpon>
     </Compile>
-    <Compile Include="tab.cs" />
-    <Compile Include="tab.Designer.cs">
-      <DependentUpon>tab.cs</DependentUpon>
+    <Compile Include="AssignHostel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignHostel.Designer.cs">
+      <DependentUpon>AssignHostel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.cs</DependentUpon>
@@ -288,17 +314,29 @@
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HostelClearance.resx">
+      <DependentUpon>HostelClearance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hostelclearence.resx">
       <DependentUpon>hostelclearence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewDrugCategory.resx">
+      <DependentUpon>NewDrugCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMedicine.resx">
+      <DependentUpon>NewMedicine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Newrooms.resx">
       <DependentUpon>Newrooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Newshelf.resx">
       <DependentUpon>Newshelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferralForm.resx">
+      <DependentUpon>ReferralForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="removeshelf.resx">
       <DependentUpon>removeshelf.cs</DependentUpon>
@@ -331,8 +369,8 @@
     <EmbeddedResource Include="AddVehicle.resx">
       <DependentUpon>AddVehicle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tab.resx">
-      <DependentUpon>tab.cs</DependentUpon>
+    <EmbeddedResource Include="AssignHostel.resx">
+      <DependentUpon>AssignHostel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

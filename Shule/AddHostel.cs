@@ -134,26 +134,40 @@ namespace Shule
 
         private void btnStreamsReset_Click(object sender, EventArgs e)
         {
-
+            txtRooms.Clear();
+            txtHostelCapacity.Clear();
+            txtHostelCode.Clear();
+            txtHostelName.Clear();
+           
         }
 
         private void btnHostelSave_Click(object sender, EventArgs e)
         {
-            string qur = "INSERT INTO Hostels (HostelCode,HostelName,Capacity,TeacherAssigned,HostelCaptain,DateRegistered) VALUES ('" + txtHostelCode.Text + "','" + txtHostelName.Text + "','" + txtHostelCapacity.Text + "','" + comboHostelTAssigned.SelectedItem + "','" + comboHostelSassigned.SelectedItem + "'," +
-              "'" + guna2DateTimePicker1Hostel.Text + "')";
-            SqlCommand cmd = new SqlCommand(qur, sqlConnection);
-            try
+            if (txtHostelCode.Text != "" && txtHostelName.Text != "" && txtHostelCapacity.Text != "" && txtRooms.Text != "" && comboHostelTAssigned.Text != "" && comboHostelSassigned.Text != "")
             {
-                
-                sqlConnection.Open();
-                int rows = cmd.ExecuteNonQuery();
+                string qur = "INSERT INTO Hostels (HostelCode,HostelName,Capacity,Rooms,TeacherAssigned,HostelCaptain,DateRegistered) VALUES ('" + txtHostelCode.Text + "','" + txtHostelName.Text + "','" + txtHostelCapacity.Text + "','" + txtRooms.Text + "','" + comboHostelTAssigned.SelectedItem + "','" + comboHostelSassigned.SelectedItem + "'," +
+                  "'" + guna2DateTimePicker1Hostel.Text + "')";
+                SqlCommand cmd = new SqlCommand(qur, sqlConnection);
+                try
+                {
 
-                MessageBox.Show("New Hostel Recorded Successfully.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    sqlConnection.Open();
+                    int rows = cmd.ExecuteNonQuery();
 
+                    MessageBox.Show("New Hostel Recorded Successfully.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("All Fields Should be Filled.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+
             }
             sqlConnection.Close();
 
