@@ -92,7 +92,7 @@ namespace Shule
             Transport.Visible = false;
             Dispensary.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+          //  Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             subordinatestaff.Visible = false;
@@ -113,7 +113,7 @@ namespace Shule
             Hostel.Visible = false;
             Transport.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+          //  Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
@@ -133,7 +133,7 @@ namespace Shule
             Dispensary.Visible = false;
             Transport.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+          //  Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
@@ -154,7 +154,7 @@ namespace Shule
             Dispensary.Visible = false;
             Transport.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
@@ -175,7 +175,7 @@ namespace Shule
             Transport.Visible = false;
             Dispensary.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
@@ -195,7 +195,7 @@ namespace Shule
             Transport.Visible = true;
             Dispensary.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+          //  Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             subordinatestaff.Visible = false;
@@ -217,7 +217,7 @@ namespace Shule
             Transport.Visible = false;
             Dispensary.Visible = true;
             Payroll.Visible = false;
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
@@ -234,7 +234,7 @@ namespace Shule
             Transport.Visible = false;
             Dispensary.Visible = false;
             Payroll.Visible = true;
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             subordinatestaff.Visible = false;
@@ -251,7 +251,7 @@ namespace Shule
             Transport.Visible = false;
             Dispensary.Visible = false;
             Payroll.Visible = false;
-            Discipline.Visible = true;
+          //  Discipline.Visible = true;
             SetupParameter.Visible = false;
             ManageStaff.Visible = false;
             Teachingstaff.Visible = false;
@@ -261,7 +261,7 @@ namespace Shule
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
             Finance.Visible = false;
@@ -297,7 +297,7 @@ namespace Shule
 
 
 
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
             Finance.Visible = false;
@@ -329,7 +329,7 @@ namespace Shule
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
             Finance.Visible = false;
@@ -352,7 +352,7 @@ namespace Shule
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
             Finance.Visible = false;
@@ -485,26 +485,26 @@ namespace Shule
             {
                 AdmissionBtn.Image = Resources.caretdown;            
 
-                panelDropDown.Height += 10;
+               //panelDropDown.Height += 10;
                 
-                if (panelDropDown.Size == panelDropDown.MaximumSize)
+               // if (panelDropDown.Size == panelDropDown.MaximumSize)
                     
-                        {
-                    timer1.Stop();
-                    isCollapsed = false;
-                }
+               //         {
+               //     timer1.Stop();
+               //     isCollapsed = false;
+               // }
             }
             else
             {
                 AdmissionBtn.Image = Resources.caretside;
                 
-                panelDropDown.Height -= 10;
+                //panelDropDown.Height -= 10;
                
-                if (panelDropDown.Size == panelDropDown.MinimumSize)
-                { 
-                    timer1.Stop();
-                    isCollapsed = true;
-                }
+                //if (panelDropDown.Size == panelDropDown.MinimumSize)
+                //{ 
+                //    timer1.Stop();
+                //    isCollapsed = true;
+                //}
             }
         }
 
@@ -525,7 +525,7 @@ namespace Shule
 
         private void btnAttendance_Click(object sender, EventArgs e)
         {
-            Discipline.Visible = false;
+           // Discipline.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
             Finance.Visible = false;
@@ -558,7 +558,7 @@ namespace Shule
         {
           // SqlConnection con = new SqlConnection("server = DESKTOP-AOUGB8E/SQLEXPRESS; database = shule; UID = root; password = ");
           //  con.Open();
-            string qur = "INSERT INTO StudentMaster VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudentname.Text + "','" + dateTimePickerDob.Value.Date.ToString() + "','" + comboBoxGender.SelectedValue + "','" + comboBoxCounty.SelectedValue + "'," +
+            string qur = "INSERT INTO StudentMaster VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudname.Text + "','" + dateTimePickerDob.Value.Date.ToString() + "','" + comboBoxGender.SelectedValue + "','" + comboBoxCounty.SelectedValue + "'," +
                 "'" + textBoxPrimarySch.Text + "','" + textBoxKCPEMarks.Text + "','" + comboBoxDisability.SelectedItem + "','" + richTextBoxDisabilityDescription.Text + "'," +
                 "'" + comboBoxClass.SelectedItem + "','" + comboBoxStream.SelectedValue + "','" + dateTimePicker1AdmDate.Value.Date.ToString() + "','" + textBoxParentname.Text + "'," +
                 "'" + textBoxPhoneNo.Text + "','" + textBoxEmail.Text + "','" + richTextBoxPostalAddress.Text + "','" + textBoxTown.Text + "')";
@@ -627,6 +627,21 @@ namespace Shule
         }
 
         private void btnGenerateScore_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveStudents_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
 
         }
