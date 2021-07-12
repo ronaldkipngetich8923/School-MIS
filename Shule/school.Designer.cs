@@ -228,6 +228,12 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Transport = new System.Windows.Forms.Panel();
+            this.label100 = new System.Windows.Forms.Label();
+            this.button35 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label99 = new System.Windows.Forms.Label();
+            this.button28 = new System.Windows.Forms.Button();
             this.panel_Sidenav = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -263,6 +269,9 @@
             this.button51 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panelDropTransport = new System.Windows.Forms.Panel();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
             this.button54 = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -438,15 +447,6 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label79 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.button28 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.label100 = new System.Windows.Forms.Label();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
             this.AdmissionPanel.SuspendLayout();
             this.admission.SuspendLayout();
             this.studentsTab.SuspendLayout();
@@ -485,6 +485,7 @@
             this.SetupParameter.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.Transport.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel_Sidenav.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelDropDownForAdmission.SuspendLayout();
@@ -529,7 +530,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GridHostelInfo)).BeginInit();
             this.HostelHeader.SuspendLayout();
             this.addUsers.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdmissionPanel
@@ -2316,7 +2316,6 @@
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button22.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Image = global::Shule.Properties.Resources.supply1;
             this.button22.Location = new System.Drawing.Point(966, 102);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(245, 108);
@@ -2344,7 +2343,6 @@
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Image = global::Shule.Properties.Resources.classes4;
             this.button21.Location = new System.Drawing.Point(663, 100);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(245, 108);
@@ -2417,7 +2415,6 @@
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Image = global::Shule.Properties.Resources.dashboard_layout;
             this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button18.Location = new System.Drawing.Point(0, 0);
             this.button18.Name = "button18";
@@ -3299,6 +3296,82 @@
             this.Transport.TabIndex = 35;
             this.Transport.Visible = false;
             // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.BackColor = System.Drawing.Color.LightBlue;
+            this.label100.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.Color.White;
+            this.label100.Location = new System.Drawing.Point(423, 111);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(25, 25);
+            this.label100.TabIndex = 27;
+            this.label100.Text = "0";
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.Color.LightBlue;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.White;
+            this.button35.Image = global::Shule.Properties.Resources.students;
+            this.button35.Location = new System.Drawing.Point(280, 49);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(245, 108);
+            this.button35.TabIndex = 26;
+            this.button35.Text = "Routes";
+            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button35.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.guna2HtmlLabel4);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1228, 49);
+            this.panel8.TabIndex = 25;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(411, 14);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(174, 21);
+            this.guna2HtmlLabel4.TabIndex = 0;
+            this.guna2HtmlLabel4.Text = "School Transport";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.BackColor = System.Drawing.Color.LightBlue;
+            this.label99.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.ForeColor = System.Drawing.Color.White;
+            this.label99.Location = new System.Drawing.Point(146, 111);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(25, 25);
+            this.label99.TabIndex = 21;
+            this.label99.Text = "0";
+            // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.Color.LightBlue;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button28.ForeColor = System.Drawing.Color.White;
+            this.button28.Image = global::Shule.Properties.Resources.students;
+            this.button28.Location = new System.Drawing.Point(3, 49);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(245, 108);
+            this.button28.TabIndex = 20;
+            this.button28.Text = "Vehicles";
+            this.button28.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button28.UseVisualStyleBackColor = false;
+            // 
             // panel_Sidenav
             // 
             this.panel_Sidenav.AutoScroll = true;
@@ -3779,6 +3852,42 @@
             this.panelDropTransport.Name = "panelDropTransport";
             this.panelDropTransport.Size = new System.Drawing.Size(125, 97);
             this.panelDropTransport.TabIndex = 30;
+            // 
+            // button38
+            // 
+            this.button38.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button38.FlatAppearance.BorderSize = 0;
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button38.Location = new System.Drawing.Point(0, 69);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(125, 28);
+            this.button38.TabIndex = 3;
+            this.button38.Text = "New Route";
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            this.button37.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button37.FlatAppearance.BorderSize = 0;
+            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button37.Location = new System.Drawing.Point(0, 46);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(125, 23);
+            this.button37.TabIndex = 2;
+            this.button37.Text = "New Vehicle";
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button36
+            // 
+            this.button36.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button36.FlatAppearance.BorderSize = 0;
+            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button36.Location = new System.Drawing.Point(0, 23);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(125, 23);
+            this.button36.TabIndex = 1;
+            this.button36.Text = "NewDriver";
+            this.button36.UseVisualStyleBackColor = true;
             // 
             // button54
             // 
@@ -6205,7 +6314,6 @@
             this.btnSignUpReset.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUpReset.ForeColor = System.Drawing.Color.White;
             this.btnSignUpReset.HoverState.Parent = this.btnSignUpReset;
-            this.btnSignUpReset.Image = global::Shule.Properties.Resources.reset;
             this.btnSignUpReset.Location = new System.Drawing.Point(847, 356);
             this.btnSignUpReset.Name = "btnSignUpReset";
             this.btnSignUpReset.ShadowDecoration.Parent = this.btnSignUpReset;
@@ -6227,7 +6335,6 @@
             this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.HoverState.Parent = this.btnSignUp;
-            this.btnSignUp.Image = global::Shule.Properties.Resources.login;
             this.btnSignUp.Location = new System.Drawing.Point(635, 356);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.ShadowDecoration.Parent = this.btnSignUp;
@@ -6458,118 +6565,6 @@
             this.label79.TabIndex = 20;
             this.label79.Text = "Full Name";
             // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.BackColor = System.Drawing.Color.LightBlue;
-            this.label99.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.ForeColor = System.Drawing.Color.White;
-            this.label99.Location = new System.Drawing.Point(146, 111);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(25, 25);
-            this.label99.TabIndex = 21;
-            this.label99.Text = "0";
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.LightBlue;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Image = global::Shule.Properties.Resources.students;
-            this.button28.Location = new System.Drawing.Point(3, 49);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(245, 108);
-            this.button28.TabIndex = 20;
-            this.button28.Text = "Vehicles";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.Controls.Add(this.guna2HtmlLabel4);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1228, 49);
-            this.panel8.TabIndex = 25;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(411, 14);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(174, 21);
-            this.guna2HtmlLabel4.TabIndex = 0;
-            this.guna2HtmlLabel4.Text = "School Transport";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.BackColor = System.Drawing.Color.LightBlue;
-            this.label100.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.Color.White;
-            this.label100.Location = new System.Drawing.Point(423, 111);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(25, 25);
-            this.label100.TabIndex = 27;
-            this.label100.Text = "0";
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.Color.LightBlue;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.Image = global::Shule.Properties.Resources.students;
-            this.button35.Location = new System.Drawing.Point(280, 49);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(245, 108);
-            this.button35.TabIndex = 26;
-            this.button35.Text = "Routes";
-            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // button36
-            // 
-            this.button36.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button36.FlatAppearance.BorderSize = 0;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Location = new System.Drawing.Point(0, 23);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(125, 23);
-            this.button36.TabIndex = 1;
-            this.button36.Text = "NewDriver";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Location = new System.Drawing.Point(0, 46);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(125, 23);
-            this.button37.TabIndex = 2;
-            this.button37.Text = "New Vehicle";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Location = new System.Drawing.Point(0, 69);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(125, 28);
-            this.button38.TabIndex = 3;
-            this.button38.Text = "New Route";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6654,6 +6649,8 @@
             this.guna2Panel1.PerformLayout();
             this.Transport.ResumeLayout(false);
             this.Transport.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel_Sidenav.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panelDropDownForAdmission.ResumeLayout(false);
@@ -6716,8 +6713,6 @@
             this.HostelHeader.PerformLayout();
             this.addUsers.ResumeLayout(false);
             this.addUsers.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
