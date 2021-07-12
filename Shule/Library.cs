@@ -103,5 +103,10 @@ namespace Shule
             Books.Visible = false;
             Users.Visible = true;
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

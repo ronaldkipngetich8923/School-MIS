@@ -83,10 +83,12 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.Header.SuspendLayout();
             this.SideMenu.SuspendLayout();
             this.MainDashboard.SuspendLayout();
@@ -106,6 +108,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Header
@@ -255,10 +260,8 @@
             // 
             // Books
             // 
+            this.Books.Controls.Add(this.tabControl1);
             this.Books.Controls.Add(this.dataGridView2);
-            this.Books.Controls.Add(this.panel8);
-            this.Books.Controls.Add(this.panel6);
-            this.Books.Controls.Add(this.panel5);
             this.Books.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Books.Location = new System.Drawing.Point(0, 0);
             this.Books.Name = "Books";
@@ -751,37 +754,68 @@
             this.label14.TabIndex = 48;
             this.label14.Text = "Available shelves";
             // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel5.Location = new System.Drawing.Point(136, 483);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(134, 46);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel6.Location = new System.Drawing.Point(108, 535);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(134, 46);
-            this.panel6.TabIndex = 1;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel8.Location = new System.Drawing.Point(414, 511);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(134, 46);
-            this.panel8.TabIndex = 2;
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(721, 94);
+            this.dataGridView2.Location = new System.Drawing.Point(838, 70);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(419, 412);
+            this.dataGridView2.Size = new System.Drawing.Size(302, 436);
             this.dataGridView2.TabIndex = 3;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(18, 23);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(814, 555);
+            this.tabControl1.TabIndex = 4;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.label15);
+            this.tabPage1.Location = new System.Drawing.Point(4, 33);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(806, 518);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Borrow Book";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 33);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(806, 486);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Return Book";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label15.Location = new System.Drawing.Point(277, 23);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(127, 24);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "Borrow Books";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label16.Location = new System.Drawing.Point(280, 26);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(119, 20);
+            this.label16.TabIndex = 4;
+            this.label16.Text = "Return Books";
             // 
             // Library
             // 
@@ -820,6 +854,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -881,9 +920,11 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
     }
 }
