@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.admission = new System.Windows.Forms.TabControl();
             this.studentsTab = new System.Windows.Forms.TabPage();
@@ -450,7 +450,6 @@
             this.btnSaveStudents.Size = new System.Drawing.Size(180, 34);
             this.btnSaveStudents.TabIndex = 37;
             this.btnSaveStudents.Text = "Save Records";
-            this.btnSaveStudents.Click += new System.EventHandler(this.btnSaveStudents_Click);
             // 
             // guna2GroupBox2
             // 
@@ -573,7 +572,6 @@
             this.btnReset.Size = new System.Drawing.Size(225, 35);
             this.btnReset.TabIndex = 35;
             this.btnReset.Text = "RESET FIELDS";
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnAdd
             // 
@@ -593,7 +591,6 @@
             this.btnAdd.Size = new System.Drawing.Size(145, 34);
             this.btnAdd.TabIndex = 34;
             this.btnAdd.Text = "ADD RECORD";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnView
             // 
@@ -1207,7 +1204,6 @@
             this.comboBoxRstream.ShadowDecoration.Parent = this.comboBoxRstream;
             this.comboBoxRstream.Size = new System.Drawing.Size(127, 36);
             this.comboBoxRstream.TabIndex = 86;
-            this.comboBoxRstream.SelectedIndexChanged += new System.EventHandler(this.comboBoxRstream_SelectedIndexChanged);
             // 
             // label55
             // 
@@ -1236,7 +1232,6 @@
             this.comboBoxRForm.ShadowDecoration.Parent = this.comboBoxRForm;
             this.comboBoxRForm.Size = new System.Drawing.Size(137, 36);
             this.comboBoxRForm.TabIndex = 84;
-            this.comboBoxRForm.SelectedIndexChanged += new System.EventHandler(this.comboBoxRForm_SelectedIndexChanged);
             // 
             // label53
             // 
@@ -1246,7 +1241,6 @@
             this.label53.Size = new System.Drawing.Size(46, 15);
             this.label53.TabIndex = 83;
             this.label53.Text = "FORM ";
-            this.label53.Click += new System.EventHandler(this.label53_Click);
             // 
             // comboBoxRExamCode
             // 
@@ -1266,7 +1260,6 @@
             this.comboBoxRExamCode.ShadowDecoration.Parent = this.comboBoxRExamCode;
             this.comboBoxRExamCode.Size = new System.Drawing.Size(97, 36);
             this.comboBoxRExamCode.TabIndex = 82;
-            this.comboBoxRExamCode.SelectedIndexChanged += new System.EventHandler(this.comboBoxRExamCode_SelectedIndexChanged);
             // 
             // label52
             // 
@@ -1295,7 +1288,6 @@
             this.btnUpdateScore.Size = new System.Drawing.Size(180, 45);
             this.btnUpdateScore.TabIndex = 48;
             this.btnUpdateScore.Text = "Update";
-            this.btnUpdateScore.Click += new System.EventHandler(this.btnUpdateScore_Click);
             // 
             // btnViewRecords
             // 
@@ -1315,7 +1307,6 @@
             this.btnViewRecords.Size = new System.Drawing.Size(180, 45);
             this.btnViewRecords.TabIndex = 47;
             this.btnViewRecords.Text = "View Records";
-            this.btnViewRecords.Click += new System.EventHandler(this.btnViewRecords_Click);
             // 
             // panel2
             // 
@@ -1334,7 +1325,6 @@
             this.dataGridView1StudentsScores.Name = "dataGridView1StudentsScores";
             this.dataGridView1StudentsScores.Size = new System.Drawing.Size(556, 391);
             this.dataGridView1StudentsScores.TabIndex = 2;
-            this.dataGridView1StudentsScores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1StudentsScores_CellContentClick);
             // 
             // panel4
             // 
@@ -1419,7 +1409,6 @@
             this.btnExamsScores.Size = new System.Drawing.Size(180, 45);
             this.btnExamsScores.TabIndex = 81;
             this.btnExamsScores.Text = "Record Score";
-            this.btnExamsScores.Click += new System.EventHandler(this.btnExamsScores_Click);
             // 
             // comboBoxExamCode
             // 
@@ -1439,7 +1428,6 @@
             this.comboBoxExamCode.ShadowDecoration.Parent = this.comboBoxExamCode;
             this.comboBoxExamCode.Size = new System.Drawing.Size(157, 36);
             this.comboBoxExamCode.TabIndex = 80;
-            this.comboBoxExamCode.SelectedIndexChanged += new System.EventHandler(this.comboBoxExamCode_SelectedIndexChanged);
             // 
             // label46
             // 
@@ -1613,7 +1601,6 @@
             this.comboBoxSubjects.ShadowDecoration.Parent = this.comboBoxSubjects;
             this.comboBoxSubjects.Size = new System.Drawing.Size(162, 36);
             this.comboBoxSubjects.TabIndex = 68;
-            this.comboBoxSubjects.SelectedIndexChanged += new System.EventHandler(this.comboBoxSubjects_SelectedIndexChanged);
             // 
             // comboBoxExamCategory
             // 
@@ -1633,7 +1620,6 @@
             this.comboBoxExamCategory.ShadowDecoration.Parent = this.comboBoxExamCategory;
             this.comboBoxExamCategory.Size = new System.Drawing.Size(162, 36);
             this.comboBoxExamCategory.TabIndex = 67;
-            this.comboBoxExamCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxExamCategory_SelectedIndexChanged);
             // 
             // comboBoxExamType
             // 
@@ -1653,7 +1639,6 @@
             this.comboBoxExamType.ShadowDecoration.Parent = this.comboBoxExamType;
             this.comboBoxExamType.Size = new System.Drawing.Size(157, 36);
             this.comboBoxExamType.TabIndex = 66;
-            this.comboBoxExamType.SelectedIndexChanged += new System.EventHandler(this.comboBoxExamType_SelectedIndexChanged);
             // 
             // txtAdmNo
             // 
@@ -1677,7 +1662,6 @@
             this.txtAdmNo.ShadowDecoration.Parent = this.txtAdmNo;
             this.txtAdmNo.Size = new System.Drawing.Size(140, 33);
             this.txtAdmNo.TabIndex = 62;
-            this.txtAdmNo.TextChanged += new System.EventHandler(this.txtAdmNo_TextChanged);
             // 
             // comboBoxYear
             // 
@@ -2113,7 +2097,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(136, 45);
             this.guna2Button1.TabIndex = 29;
             this.guna2Button1.Text = "View Records";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // dataGridView3StaffDetails
             // 
@@ -2297,7 +2280,6 @@
             this.comboBoxStaffType.ShadowDecoration.Parent = this.comboBoxStaffType;
             this.comboBoxStaffType.Size = new System.Drawing.Size(197, 36);
             this.comboBoxStaffType.TabIndex = 44;
-            this.comboBoxStaffType.SelectedIndexChanged += new System.EventHandler(this.comboBoxStaffType_SelectedIndexChanged);
             // 
             // txtPhone
             // 
@@ -2518,7 +2500,6 @@
             this.guna2Button1TeachersRecords.Size = new System.Drawing.Size(136, 45);
             this.guna2Button1TeachersRecords.TabIndex = 21;
             this.guna2Button1TeachersRecords.Text = "Save Records";
-            this.guna2Button1TeachersRecords.Click += new System.EventHandler(this.guna2Button1TeachersRecords_Click);
             // 
             // panelmDropDown
             // 
@@ -2625,7 +2606,6 @@
             this.SetupParameter.Size = new System.Drawing.Size(1228, 700);
             this.SetupParameter.TabIndex = 34;
             this.SetupParameter.Visible = false;
-            this.SetupParameter.Paint += new System.Windows.Forms.PaintEventHandler(this.SetupParameter_Paint);
             // 
             // btnStaffType
             // 
@@ -2640,7 +2620,6 @@
             this.btnStaffType.Text = " Staff Type";
             this.btnStaffType.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnStaffType.UseVisualStyleBackColor = false;
-            this.btnStaffType.Click += new System.EventHandler(this.btnStaffType_Click);
             // 
             // button13
             // 
@@ -3011,7 +2990,6 @@
             this.button26.TabIndex = 15;
             this.button26.Text = "Students Details";
             this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // AdmissionBtn
             // 
@@ -3071,7 +3049,6 @@
             this.button46.TabIndex = 2;
             this.button46.Text = "Transcript";
             this.button46.UseVisualStyleBackColor = true;
-            this.button46.Click += new System.EventHandler(this.button46_Click);
             // 
             // btnExaminations
             // 
@@ -3084,7 +3061,6 @@
             this.btnExaminations.TabIndex = 1;
             this.btnExaminations.Text = "Examinations";
             this.btnExaminations.UseVisualStyleBackColor = true;
-            this.btnExaminations.Click += new System.EventHandler(this.button45_Click);
             // 
             // btnSetExams
             // 
@@ -3097,7 +3073,6 @@
             this.btnSetExams.TabIndex = 0;
             this.btnSetExams.Text = "Set Exams";
             this.btnSetExams.UseVisualStyleBackColor = true;
-            this.btnSetExams.Click += new System.EventHandler(this.btnSetExams_Click);
             // 
             // btnFinance
             // 
@@ -3510,20 +3485,18 @@
             this.guna2TextBox1Search.ShadowDecoration.Parent = this.guna2TextBox1Search;
             this.guna2TextBox1Search.Size = new System.Drawing.Size(205, 38);
             this.guna2TextBox1Search.TabIndex = 12;
-            this.guna2TextBox1Search.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
-            this.guna2TextBox1Search.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBox1Search_KeyPress);
             // 
             // dataGridView3StudentsDetails
             // 
             this.dataGridView3StudentsDetails.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView3StudentsDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3StudentsDetails.Location = new System.Drawing.Point(38, 224);
             this.dataGridView3StudentsDetails.Name = "dataGridView3StudentsDetails";
@@ -3567,7 +3540,6 @@
             this.btnUpdate.Size = new System.Drawing.Size(180, 45);
             this.btnUpdate.TabIndex = 9;
             this.btnUpdate.Text = "Update Records";
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // guna2ComboBox1
             // 
@@ -3587,7 +3559,6 @@
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(214, 36);
             this.guna2ComboBox1.TabIndex = 7;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label16
             // 
@@ -3668,7 +3639,6 @@
             this.panelExamsResults.Name = "panelExamsResults";
             this.panelExamsResults.Size = new System.Drawing.Size(1028, 700);
             this.panelExamsResults.TabIndex = 19;
-            this.panelExamsResults.Paint += new System.Windows.Forms.PaintEventHandler(this.panelExamsResults_Paint);
             // 
             // guna2TextBoxAdmNo
             // 
@@ -3954,7 +3924,6 @@
             this.txtAllStudentMarks.ShadowDecoration.Parent = this.txtAllStudentMarks;
             this.txtAllStudentMarks.Size = new System.Drawing.Size(200, 36);
             this.txtAllStudentMarks.TabIndex = 20;
-            this.txtAllStudentMarks.TextChanged += new System.EventHandler(this.txtAllStudentMarks_TextChanged);
             // 
             // label56
             // 
@@ -4144,7 +4113,6 @@
             this.RcomboBoxExamCode.ShadowDecoration.Parent = this.RcomboBoxExamCode;
             this.RcomboBoxExamCode.Size = new System.Drawing.Size(167, 36);
             this.RcomboBoxExamCode.TabIndex = 0;
-            this.RcomboBoxExamCode.SelectedIndexChanged += new System.EventHandler(this.RcomboBoxExamCode_SelectedIndexChanged);
             // 
             // guna2Panel2
             // 
@@ -4189,7 +4157,6 @@
             this.btnExams.Text = " EXAMS";
             this.btnExams.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnExams.UseVisualStyleBackColor = false;
-            this.btnExams.Click += new System.EventHandler(this.btnExams_Click);
             // 
             // btnCats
             // 
@@ -4206,7 +4173,6 @@
             this.btnCats.Text = " CATS";
             this.btnCats.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCats.UseVisualStyleBackColor = false;
-            this.btnCats.Click += new System.EventHandler(this.btnCats_Click);
             // 
             // Home
             // 

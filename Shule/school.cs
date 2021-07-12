@@ -620,7 +620,16 @@ namespace Shule
         {
            
             }
-           
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
         }
+
+        private void btnGenerateScore_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
    
 }
