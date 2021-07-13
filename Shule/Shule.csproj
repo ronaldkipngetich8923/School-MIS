@@ -501,6 +501,7 @@
     <None Include="Resources\Books icon1.png" />
     <None Include="Resources\bOOk.jpg" />
     <Content Include="Resources\icons8-add-24.png" />
+    <None Include="Resources\magazines.png" />
     <Content Include="Resources\magnifying-glass.png" />
     <Content Include="Resources\money-transfer-icon.jpg" />
     <None Include="Resources\MUST-Vector-Logo.jpg" />

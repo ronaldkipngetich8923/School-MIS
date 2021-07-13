@@ -283,6 +283,16 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap magazines {
+            get {
+                object obj = ResourceManager.GetObject("magazines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MUST_Vector_Logo {
             get {
                 object obj = ResourceManager.GetObject("MUST-Vector-Logo", resourceCulture);
