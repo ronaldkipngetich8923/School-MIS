@@ -19,6 +19,7 @@ namespace Shule
         SqlDataReader sqlDataReader;
         SqlDataAdapter sqlDataAdapter;
         DataSet ds;
+        int indexRow;
         public tab()
         {
             InitializeComponent();
@@ -98,8 +99,9 @@ namespace Shule
 
         private void comboHostelCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-           //if (comboHostelCode.SelectedItem !=null)
-           // { 
+            //if (comboHostelCode.SelectedItem !=null)
+            // { 
+
             SqlCommand cmd1 = new SqlCommand("Select * From Hostels Where HostelCode='"+ comboHostelCode.SelectedItem + "'", sqlConnection);
 
             sqlConnection.Open();
@@ -124,7 +126,8 @@ namespace Shule
 
         private void AssignHostel_Load(object sender, EventArgs e)
         {
-
+            currentstatus.Items.Insert(0, "..Select Current Status..");
+            currentstatus.SelectedIndex = 0;
         }
 
         private void comboHosteAdmNo_SelectedIndexChanged(object sender, EventArgs e)
@@ -156,9 +159,9 @@ namespace Shule
         private void btnHostelSave_Click(object sender, EventArgs e)
         {
 
-            if (comboHostelCode.Text != "" && comboHosteAdmNo.Text != "")
+            if (comboHostelCode.Text != "" && comboHosteAdmNo.Text != "" && currentstatus.SelectedIndex != 0)
             {
-                string qur = "INSERT INTO OccupiedHostel (HostelCode,HostelName,AdmNo,Studname,DateAssigned) VALUES ('" + comboHostelCode.SelectedItem + "','" + txtHostelName.Text + "','" + comboHosteAdmNo.SelectedItem + "','" + txtComboStudname.Text + "','" + guna2DateTimePicker1Hostel.Text + "')";
+                string qur = "INSERT INTO OccupiedHostel (HostelCode,HostelName,AdmNo,Studname,DateAssigned,Status) VALUES ('" + comboHostelCode.SelectedItem + "','" + txtHostelName.Text + "','" + comboHosteAdmNo.SelectedItem + "','" + txtComboStudname.Text + "','" + guna2DateTimePicker1Hostel.Text + "','" + currentstatus.SelectedItem + "')";
                 SqlCommand cmd = new SqlCommand(qur, sqlConnection);
                 try
                 {
@@ -211,6 +214,12 @@ namespace Shule
 
         private void guna2Button1ViewHostels_Click(object sender, EventArgs e)
         {
+            string query = "SELECT * FROM OccupiedHostel where Status='ASSIGNED'";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            gridhostels.DataSource = dt;
+
             //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
 
             //string query = "SELECT o.HostelCode,h.Hostel I.AdmNo,T.Studname,T.Class,T.Stream FROM OcuppiedHostel as o  JOIN Hostels as h    ON o.HostelCode = h.HostelCode    JOIN StudentMaster as T    ON I.AdmNo = h.AdmNo ";
@@ -223,7 +232,7 @@ namespace Shule
             //sqlConnection.Open();
 
             //string query = "SELECT * FROM Subject  ";
-           
+
             //SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             //DataTable dt = new DataTable();
             //SDA.Fill(dt);
@@ -239,6 +248,41 @@ namespace Shule
             //txtHostelName.Clear();
             comboHosteAdmNo.SelectedIndex = -1;
             txtComboStudname.Clear();
+        }
+
+        private void gridhostels_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = gridhostels.Rows[indexRow];
+            comboHostelCode.Text = row.Cells[1].Value.ToString();
+            txtHostelName.Text = row.Cells[2].Value.ToString();
+            comboHosteAdmNo.SelectedItem = row.Cells[3].Value.ToString();
+            txtComboStudname.Text = row.Cells[4].Value.ToString();
+            guna2DateTimePicker1Hostel.Text = row.Cells[5].Value.ToString();
+            currentstatus.Text = row.Cells[6].Value.ToString();
+
+
+
+        }
+
+        private void UpdateHostel_Click(object sender, EventArgs e)
+        {
+            string qur = "UPDATE OccupiedHostel SET HostelName='" + txtHostelName.Text + "',AdmNo='" + comboHosteAdmNo.SelectedItem + "',Studname='" + txtComboStudname.Text + "' WHERE HostelCode='" + comboHostelCode.SelectedItem + "'";
+            SqlCommand cmd = new SqlCommand(qur, sqlConnection);
+            try
+            {
+
+                sqlConnection.Open();
+                int rows = cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Student Record Updated Successfully.", "Update Successed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            sqlConnection.Close();
+
         }
     }
     }

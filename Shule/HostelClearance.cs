@@ -74,22 +74,31 @@ namespace Shule
 
         private void btnHostelCSave_Click(object sender, EventArgs e)
         {
-            if (txtHostelClearAdmNo.Text != "" && txtHCode.Text != "")
+            if (txtHostelClearAdmNo.Text != "" && txtHCode.Text != "" && currentstatus.SelectedIndex != 0)
             {
-                string qur = "DELETE FROM OccupiedHostel WHERE AdmNo='"+ txtHostelClearAdmNo + "'";
-                SqlCommand cmd = new SqlCommand(qur, sqlConnection);
+
+                string quer = "UPDATE OccupiedHostel SET Status = '" + currentstatus.SelectedItem + "'  where AdmNo = '" + txtHostelClearAdmNo.Text + "'";
+                SqlCommand cmd = new SqlCommand(quer, sqlConnection);               
                 try
                 {
-
                     sqlConnection.Open();
                     int rows = cmd.ExecuteNonQuery();
+                    MessageBox.Show(" Student Cleared Successfully.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    MessageBox.Show(" Student Cleared Successfullyl .", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+
+
+                    //string delete = "DELETE FROM OccupiedHostel WHERE AdmNo='"+ txtHostelClearAdmNo + "'";
+                    //SqlCommand cmd1 = new SqlCommand(delete, sqlConnection);
+                    //cmd1.ExecuteNonQuery();
 
                     //Update the new hostel capacity
-                    string quer = "UPDATE Hostels SET Rooms = Rooms + 1  where HostelCode = '" + txtHCode.Text + "'";
-                    SqlCommand cmdUpdate = new SqlCommand(quer, sqlConnection);
+                    string updat = "UPDATE Hostels SET Rooms = Rooms + 1  where HostelCode = '" + txtHCode.Text + "'";
+                    SqlCommand cmdUpdate = new SqlCommand(updat, sqlConnection);
                     cmdUpdate.ExecuteNonQuery();
+
 
 
                 }
@@ -109,13 +118,29 @@ namespace Shule
             }
             else
             {
-                MessageBox.Show(" Field HostelCode & AdmNo Cannot be Empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(" Field HostelCode, AdmNo  & Status Cannot be Empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
 
 
             }
             sqlConnection.Close();
+
+        }
+
+        private void HostelClearance_Load(object sender, EventArgs e)
+        {
+            currentstatus.Items.Insert(0, "..Select Current Status..");
+            currentstatus.SelectedIndex = 0;
+        }
+
+        private void guna2Button1ViewCHostels_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM OccupiedHostel where Status='CLEARED'";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            GridHostelClearance.DataSource = dt;
 
         }
     }

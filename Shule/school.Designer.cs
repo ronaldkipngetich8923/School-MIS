@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.admission = new System.Windows.Forms.TabControl();
             this.studentsTab = new System.Windows.Forms.TabPage();
@@ -228,6 +228,19 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.Transport = new System.Windows.Forms.Panel();
+            this.ViewTransportDetails = new System.Windows.Forms.Panel();
+            this.transportdetails = new System.Windows.Forms.DataGridView();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.btnTrasportDetails = new System.Windows.Forms.Button();
+            this.labelRoute = new System.Windows.Forms.Label();
+            this.button35 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.label99 = new System.Windows.Forms.Label();
+            this.vehicles = new System.Windows.Forms.Button();
             this.panel_Sidenav = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -263,7 +276,10 @@
             this.button51 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panelDropTransport = new System.Windows.Forms.Panel();
-            this.button54 = new System.Windows.Forms.Button();
+            this.btnTransRoute = new System.Windows.Forms.Button();
+            this.btnVehicle = new System.Windows.Forms.Button();
+            this.btnDriver = new System.Windows.Forms.Button();
+            this.btnStudentsTrans = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelHome = new System.Windows.Forms.LinkLabel();
@@ -405,7 +421,7 @@
             this.Hostel = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.labelCleared = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.HostelOccupancy = new System.Windows.Forms.Panel();
             this.GridHostelInfo = new System.Windows.Forms.DataGridView();
@@ -438,15 +454,6 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label79 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.button28 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.label100 = new System.Windows.Forms.Label();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
             this.AdmissionPanel.SuspendLayout();
             this.admission.SuspendLayout();
             this.studentsTab.SuspendLayout();
@@ -485,6 +492,10 @@
             this.SetupParameter.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.Transport.SuspendLayout();
+            this.ViewTransportDetails.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.transportdetails)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel_Sidenav.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panelDropDownForAdmission.SuspendLayout();
@@ -529,7 +540,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GridHostelInfo)).BeginInit();
             this.HostelHeader.SuspendLayout();
             this.addUsers.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // AdmissionPanel
@@ -3287,17 +3297,193 @@
             // Transport
             // 
             this.Transport.BackColor = System.Drawing.Color.White;
+            this.Transport.Controls.Add(this.ViewTransportDetails);
             this.Transport.Controls.Add(this.label100);
+            this.Transport.Controls.Add(this.btnTrasportDetails);
+            this.Transport.Controls.Add(this.labelRoute);
             this.Transport.Controls.Add(this.button35);
             this.Transport.Controls.Add(this.panel8);
             this.Transport.Controls.Add(this.label99);
-            this.Transport.Controls.Add(this.button28);
+            this.Transport.Controls.Add(this.vehicles);
             this.Transport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Transport.Location = new System.Drawing.Point(125, 55);
             this.Transport.Name = "Transport";
             this.Transport.Size = new System.Drawing.Size(1228, 700);
             this.Transport.TabIndex = 35;
             this.Transport.Visible = false;
+            this.Transport.Paint += new System.Windows.Forms.PaintEventHandler(this.Transport_Paint);
+            // 
+            // ViewTransportDetails
+            // 
+            this.ViewTransportDetails.Controls.Add(this.transportdetails);
+            this.ViewTransportDetails.Controls.Add(this.panel10);
+            this.ViewTransportDetails.Location = new System.Drawing.Point(3, 206);
+            this.ViewTransportDetails.Name = "ViewTransportDetails";
+            this.ViewTransportDetails.Size = new System.Drawing.Size(1042, 326);
+            this.ViewTransportDetails.TabIndex = 30;
+            // 
+            // transportdetails
+            // 
+            this.transportdetails.BackgroundColor = System.Drawing.Color.White;
+            this.transportdetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.transportdetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transportdetails.Location = new System.Drawing.Point(0, 77);
+            this.transportdetails.Name = "transportdetails";
+            this.transportdetails.Size = new System.Drawing.Size(1042, 249);
+            this.transportdetails.TabIndex = 1;
+            this.transportdetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.guna2Button15);
+            this.panel10.Controls.Add(this.label101);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1042, 77);
+            this.panel10.TabIndex = 0;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
+            // 
+            // guna2Button15
+            // 
+            this.guna2Button15.BorderRadius = 20;
+            this.guna2Button15.CheckedState.Parent = this.guna2Button15;
+            this.guna2Button15.CustomImages.Parent = this.guna2Button15;
+            this.guna2Button15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button15.DisabledState.Parent = this.guna2Button15;
+            this.guna2Button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button15.ForeColor = System.Drawing.Color.White;
+            this.guna2Button15.HoverState.Parent = this.guna2Button15;
+            this.guna2Button15.Location = new System.Drawing.Point(0, 39);
+            this.guna2Button15.Name = "guna2Button15";
+            this.guna2Button15.ShadowDecoration.Parent = this.guna2Button15;
+            this.guna2Button15.Size = new System.Drawing.Size(126, 32);
+            this.guna2Button15.TabIndex = 1;
+            this.guna2Button15.Text = "Print";
+            this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(5, 12);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(173, 18);
+            this.label101.TabIndex = 0;
+            this.label101.Text = "Transport Details";
+            this.label101.Click += new System.EventHandler(this.label101_Click);
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.BackColor = System.Drawing.Color.LightBlue;
+            this.label100.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.Color.White;
+            this.label100.Location = new System.Drawing.Point(723, 111);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(25, 25);
+            this.label100.TabIndex = 29;
+            this.label100.Text = "0";
+            // 
+            // btnTrasportDetails
+            // 
+            this.btnTrasportDetails.BackColor = System.Drawing.Color.LightBlue;
+            this.btnTrasportDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrasportDetails.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrasportDetails.ForeColor = System.Drawing.Color.White;
+            this.btnTrasportDetails.Image = global::Shule.Properties.Resources.students;
+            this.btnTrasportDetails.Location = new System.Drawing.Point(580, 49);
+            this.btnTrasportDetails.Name = "btnTrasportDetails";
+            this.btnTrasportDetails.Size = new System.Drawing.Size(245, 108);
+            this.btnTrasportDetails.TabIndex = 28;
+            this.btnTrasportDetails.Text = "Students";
+            this.btnTrasportDetails.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnTrasportDetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTrasportDetails.UseVisualStyleBackColor = false;
+            this.btnTrasportDetails.Click += new System.EventHandler(this.btnTrasportDetails_Click);
+            // 
+            // labelRoute
+            // 
+            this.labelRoute.AutoSize = true;
+            this.labelRoute.BackColor = System.Drawing.Color.LightBlue;
+            this.labelRoute.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRoute.ForeColor = System.Drawing.Color.White;
+            this.labelRoute.Location = new System.Drawing.Point(423, 111);
+            this.labelRoute.Name = "labelRoute";
+            this.labelRoute.Size = new System.Drawing.Size(25, 25);
+            this.labelRoute.TabIndex = 27;
+            this.labelRoute.Text = "0";
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.Color.LightBlue;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.White;
+            this.button35.Image = global::Shule.Properties.Resources.students;
+            this.button35.Location = new System.Drawing.Point(280, 49);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(245, 108);
+            this.button35.TabIndex = 26;
+            this.button35.Text = "Routes";
+            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button35.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel8.Controls.Add(this.guna2HtmlLabel4);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1228, 49);
+            this.panel8.TabIndex = 25;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(411, 14);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(174, 21);
+            this.guna2HtmlLabel4.TabIndex = 0;
+            this.guna2HtmlLabel4.Text = "School Transport";
+            this.guna2HtmlLabel4.Click += new System.EventHandler(this.guna2HtmlLabel4_Click);
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.BackColor = System.Drawing.Color.LightBlue;
+            this.label99.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.ForeColor = System.Drawing.Color.White;
+            this.label99.Location = new System.Drawing.Point(146, 111);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(25, 25);
+            this.label99.TabIndex = 21;
+            this.label99.Text = "0";
+            // 
+            // vehicles
+            // 
+            this.vehicles.BackColor = System.Drawing.Color.LightBlue;
+            this.vehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vehicles.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vehicles.ForeColor = System.Drawing.Color.White;
+            this.vehicles.Image = global::Shule.Properties.Resources.students;
+            this.vehicles.Location = new System.Drawing.Point(3, 49);
+            this.vehicles.Name = "vehicles";
+            this.vehicles.Size = new System.Drawing.Size(245, 108);
+            this.vehicles.TabIndex = 20;
+            this.vehicles.Text = "Vehicles";
+            this.vehicles.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.vehicles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.vehicles.UseVisualStyleBackColor = false;
+            this.vehicles.Click += new System.EventHandler(this.vehicles_Click);
             // 
             // panel_Sidenav
             // 
@@ -3770,27 +3956,67 @@
             // panelDropTransport
             // 
             this.panelDropTransport.BackColor = System.Drawing.Color.Ivory;
-            this.panelDropTransport.Controls.Add(this.button38);
-            this.panelDropTransport.Controls.Add(this.button37);
-            this.panelDropTransport.Controls.Add(this.button36);
-            this.panelDropTransport.Controls.Add(this.button54);
+            this.panelDropTransport.Controls.Add(this.btnTransRoute);
+            this.panelDropTransport.Controls.Add(this.btnVehicle);
+            this.panelDropTransport.Controls.Add(this.btnDriver);
+            this.panelDropTransport.Controls.Add(this.btnStudentsTrans);
             this.panelDropTransport.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDropTransport.Location = new System.Drawing.Point(3, 956);
             this.panelDropTransport.Name = "panelDropTransport";
             this.panelDropTransport.Size = new System.Drawing.Size(125, 97);
             this.panelDropTransport.TabIndex = 30;
             // 
-            // button54
+            // btnTransRoute
             // 
-            this.button54.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button54.FlatAppearance.BorderSize = 0;
-            this.button54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button54.Location = new System.Drawing.Point(0, 0);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(125, 23);
-            this.button54.TabIndex = 0;
-            this.button54.Text = "New Student";
-            this.button54.UseVisualStyleBackColor = true;
+            this.btnTransRoute.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTransRoute.FlatAppearance.BorderSize = 0;
+            this.btnTransRoute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTransRoute.Location = new System.Drawing.Point(0, 69);
+            this.btnTransRoute.Name = "btnTransRoute";
+            this.btnTransRoute.Size = new System.Drawing.Size(125, 28);
+            this.btnTransRoute.TabIndex = 3;
+            this.btnTransRoute.Text = "New Route";
+            this.btnTransRoute.UseVisualStyleBackColor = true;
+            this.btnTransRoute.Click += new System.EventHandler(this.btnTransRoute_Click);
+            // 
+            // btnVehicle
+            // 
+            this.btnVehicle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVehicle.FlatAppearance.BorderSize = 0;
+            this.btnVehicle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVehicle.Location = new System.Drawing.Point(0, 46);
+            this.btnVehicle.Name = "btnVehicle";
+            this.btnVehicle.Size = new System.Drawing.Size(125, 23);
+            this.btnVehicle.TabIndex = 2;
+            this.btnVehicle.Text = "New Vehicle";
+            this.btnVehicle.UseVisualStyleBackColor = true;
+            this.btnVehicle.Click += new System.EventHandler(this.btnVehicle_Click);
+            // 
+            // btnDriver
+            // 
+            this.btnDriver.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDriver.FlatAppearance.BorderSize = 0;
+            this.btnDriver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDriver.Location = new System.Drawing.Point(0, 23);
+            this.btnDriver.Name = "btnDriver";
+            this.btnDriver.Size = new System.Drawing.Size(125, 23);
+            this.btnDriver.TabIndex = 1;
+            this.btnDriver.Text = "NewDriver";
+            this.btnDriver.UseVisualStyleBackColor = true;
+            this.btnDriver.Click += new System.EventHandler(this.btnDriver_Click);
+            // 
+            // btnStudentsTrans
+            // 
+            this.btnStudentsTrans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStudentsTrans.FlatAppearance.BorderSize = 0;
+            this.btnStudentsTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudentsTrans.Location = new System.Drawing.Point(0, 0);
+            this.btnStudentsTrans.Name = "btnStudentsTrans";
+            this.btnStudentsTrans.Size = new System.Drawing.Size(125, 23);
+            this.btnStudentsTrans.TabIndex = 0;
+            this.btnStudentsTrans.Text = "New Student";
+            this.btnStudentsTrans.UseVisualStyleBackColor = true;
+            this.btnStudentsTrans.Click += new System.EventHandler(this.btnStudentsTrans_Click);
             // 
             // btnAttendance
             // 
@@ -3911,14 +4137,14 @@
             // dataGridView3StudentsDetails
             // 
             this.dataGridView3StudentsDetails.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView3StudentsDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3StudentsDetails.Location = new System.Drawing.Point(38, 224);
             this.dataGridView3StudentsDetails.Name = "dataGridView3StudentsDetails";
@@ -5944,7 +6170,7 @@
             this.Hostel.AutoScroll = true;
             this.Hostel.BackColor = System.Drawing.Color.White;
             this.Hostel.Controls.Add(this.panel7);
-            this.Hostel.Controls.Add(this.label22);
+            this.Hostel.Controls.Add(this.labelCleared);
             this.Hostel.Controls.Add(this.button3);
             this.Hostel.Controls.Add(this.HostelOccupancy);
             this.Hostel.Controls.Add(this.OccupiedLabel);
@@ -5978,17 +6204,17 @@
             this.guna2HtmlLabel2.TabIndex = 0;
             this.guna2HtmlLabel2.Text = "School Hostels Section";
             // 
-            // label22
+            // labelCleared
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.LightBlue;
-            this.label22.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(842, 157);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(25, 25);
-            this.label22.TabIndex = 22;
-            this.label22.Text = "0";
+            this.labelCleared.AutoSize = true;
+            this.labelCleared.BackColor = System.Drawing.Color.LightBlue;
+            this.labelCleared.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCleared.ForeColor = System.Drawing.Color.White;
+            this.labelCleared.Location = new System.Drawing.Point(842, 157);
+            this.labelCleared.Name = "labelCleared";
+            this.labelCleared.Size = new System.Drawing.Size(25, 25);
+            this.labelCleared.TabIndex = 22;
+            this.labelCleared.Text = "0";
             // 
             // button3
             // 
@@ -6001,10 +6227,11 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(245, 108);
             this.button3.TabIndex = 21;
-            this.button3.Text = " Hostels\r\nOccupancy\r\n";
+            this.button3.Text = "Cleared Students";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // HostelOccupancy
             // 
@@ -6012,17 +6239,17 @@
             this.HostelOccupancy.Controls.Add(this.HostelHeader);
             this.HostelOccupancy.Location = new System.Drawing.Point(3, 273);
             this.HostelOccupancy.Name = "HostelOccupancy";
-            this.HostelOccupancy.Size = new System.Drawing.Size(946, 330);
+            this.HostelOccupancy.Size = new System.Drawing.Size(1030, 330);
             this.HostelOccupancy.TabIndex = 20;
             // 
             // GridHostelInfo
             // 
-            this.GridHostelInfo.BackgroundColor = System.Drawing.Color.White;
+            this.GridHostelInfo.BackgroundColor = System.Drawing.Color.Snow;
             this.GridHostelInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridHostelInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GridHostelInfo.Location = new System.Drawing.Point(0, 77);
             this.GridHostelInfo.Name = "GridHostelInfo";
-            this.GridHostelInfo.Size = new System.Drawing.Size(946, 253);
+            this.GridHostelInfo.Size = new System.Drawing.Size(1030, 253);
             this.GridHostelInfo.TabIndex = 1;
             this.GridHostelInfo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridHostelInfo_CellContentClick);
             // 
@@ -6035,7 +6262,7 @@
             this.HostelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.HostelHeader.Location = new System.Drawing.Point(0, 0);
             this.HostelHeader.Name = "HostelHeader";
-            this.HostelHeader.Size = new System.Drawing.Size(946, 77);
+            this.HostelHeader.Size = new System.Drawing.Size(1030, 77);
             this.HostelHeader.TabIndex = 0;
             this.HostelHeader.Paint += new System.Windows.Forms.PaintEventHandler(this.HostelHeader_Paint);
             // 
@@ -6097,6 +6324,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // labelHostel
             // 
@@ -6458,118 +6686,6 @@
             this.label79.TabIndex = 20;
             this.label79.Text = "Full Name";
             // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.BackColor = System.Drawing.Color.LightBlue;
-            this.label99.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.ForeColor = System.Drawing.Color.White;
-            this.label99.Location = new System.Drawing.Point(146, 111);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(25, 25);
-            this.label99.TabIndex = 21;
-            this.label99.Text = "0";
-            // 
-            // button28
-            // 
-            this.button28.BackColor = System.Drawing.Color.LightBlue;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button28.ForeColor = System.Drawing.Color.White;
-            this.button28.Image = global::Shule.Properties.Resources.students;
-            this.button28.Location = new System.Drawing.Point(3, 49);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(245, 108);
-            this.button28.TabIndex = 20;
-            this.button28.Text = "Vehicles";
-            this.button28.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button28.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button28.UseVisualStyleBackColor = false;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.Controls.Add(this.guna2HtmlLabel4);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1228, 49);
-            this.panel8.TabIndex = 25;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(411, 14);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(174, 21);
-            this.guna2HtmlLabel4.TabIndex = 0;
-            this.guna2HtmlLabel4.Text = "School Transport";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.BackColor = System.Drawing.Color.LightBlue;
-            this.label100.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.Color.White;
-            this.label100.Location = new System.Drawing.Point(423, 111);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(25, 25);
-            this.label100.TabIndex = 27;
-            this.label100.Text = "0";
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.Color.LightBlue;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.Image = global::Shule.Properties.Resources.students;
-            this.button35.Location = new System.Drawing.Point(280, 49);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(245, 108);
-            this.button35.TabIndex = 26;
-            this.button35.Text = "Routes";
-            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // button36
-            // 
-            this.button36.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button36.FlatAppearance.BorderSize = 0;
-            this.button36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button36.Location = new System.Drawing.Point(0, 23);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(125, 23);
-            this.button36.TabIndex = 1;
-            this.button36.Text = "NewDriver";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button37.FlatAppearance.BorderSize = 0;
-            this.button37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button37.Location = new System.Drawing.Point(0, 46);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(125, 23);
-            this.button37.TabIndex = 2;
-            this.button37.Text = "New Vehicle";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button38.FlatAppearance.BorderSize = 0;
-            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button38.Location = new System.Drawing.Point(0, 69);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(125, 28);
-            this.button38.TabIndex = 3;
-            this.button38.Text = "New Route";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6579,8 +6695,8 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.Transport);
-            this.Controls.Add(this.Dispensary);
             this.Controls.Add(this.Hostel);
+            this.Controls.Add(this.Dispensary);
             this.Controls.Add(this.SetupParameter);
             this.Controls.Add(this.Dashboard);
             this.Controls.Add(this.ExamsResults);
@@ -6654,6 +6770,12 @@
             this.guna2Panel1.PerformLayout();
             this.Transport.ResumeLayout(false);
             this.Transport.PerformLayout();
+            this.ViewTransportDetails.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.transportdetails)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel_Sidenav.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panelDropDownForAdmission.ResumeLayout(false);
@@ -6716,8 +6838,6 @@
             this.HostelHeader.PerformLayout();
             this.addUsers.ResumeLayout(false);
             this.addUsers.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6844,7 +6964,7 @@
         private System.Windows.Forms.Button button52;
         private System.Windows.Forms.Button button51;
         private System.Windows.Forms.Panel panelDropTransport;
-        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Button btnStudentsTrans;
         private System.Windows.Forms.Button btnAttendance;
         private System.Windows.Forms.RichTextBox richTextBoxDisabilityDescription;
         private System.Windows.Forms.Label label23;
@@ -7112,7 +7232,7 @@
         private System.Windows.Forms.Panel HostelHeader;
         private System.Windows.Forms.DataGridView GridHostelInfo;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelCleared;
         private System.Windows.Forms.Button button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button13;
         private System.Windows.Forms.Label label28;
@@ -7132,15 +7252,22 @@
         private System.Windows.Forms.Panel PanelMedicinesHeader;
         private Guna.UI2.WinForms.Guna2Button guna2Button14;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label labelRoute;
         private System.Windows.Forms.Button button35;
         private System.Windows.Forms.Panel panel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button vehicles;
+        private System.Windows.Forms.Button btnTransRoute;
+        private System.Windows.Forms.Button btnVehicle;
+        private System.Windows.Forms.Button btnDriver;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Button btnTrasportDetails;
+        private System.Windows.Forms.Panel ViewTransportDetails;
+        private System.Windows.Forms.DataGridView transportdetails;
+        private System.Windows.Forms.Panel panel10;
+        private Guna.UI2.WinForms.Guna2Button guna2Button15;
+        private System.Windows.Forms.Label label101;
     }
 }
 

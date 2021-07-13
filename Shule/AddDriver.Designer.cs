@@ -28,31 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtroute = new Guna.UI2.WinForms.Guna2TextBox();
+            this.griddrivers = new System.Windows.Forms.DataGridView();
+            this.comboVehicleAssigned = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtLicenceNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtDId = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDfullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2Button1ViewRoutes = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1ViewDrivers = new Guna.UI2.WinForms.Guna2Button();
             this.btnClassesRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnRouteSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnRouteReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1Routes = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboRouteAssigned = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.comboVehicleAssigned = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Routes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griddrivers)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,20 +66,20 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.txtroute);
+            this.guna2Panel1.Controls.Add(this.griddrivers);
             this.guna2Panel1.Controls.Add(this.comboVehicleAssigned);
             this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.comboRouteAssigned);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.txtLicenceNo);
             this.guna2Panel1.Controls.Add(this.txtDId);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.txtDfullName);
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.guna2Button1ViewRoutes);
+            this.guna2Panel1.Controls.Add(this.guna2Button1ViewDrivers);
             this.guna2Panel1.Controls.Add(this.btnClassesRefresh);
             this.guna2Panel1.Controls.Add(this.btnRouteSave);
             this.guna2Panel1.Controls.Add(this.btnRouteReset);
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1Routes);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -91,6 +88,85 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1140, 450);
             this.guna2Panel1.TabIndex = 4;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // txtroute
+            // 
+            this.txtroute.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtroute.DefaultText = "";
+            this.txtroute.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtroute.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtroute.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtroute.DisabledState.Parent = this.txtroute;
+            this.txtroute.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtroute.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtroute.FocusedState.Parent = this.txtroute;
+            this.txtroute.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtroute.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtroute.HoverState.Parent = this.txtroute;
+            this.txtroute.Location = new System.Drawing.Point(177, 297);
+            this.txtroute.Name = "txtroute";
+            this.txtroute.PasswordChar = '\0';
+            this.txtroute.PlaceholderText = "";
+            this.txtroute.SelectedText = "";
+            this.txtroute.ShadowDecoration.Parent = this.txtroute;
+            this.txtroute.Size = new System.Drawing.Size(212, 36);
+            this.txtroute.TabIndex = 21;
+            this.txtroute.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            // 
+            // griddrivers
+            // 
+            this.griddrivers.BackgroundColor = System.Drawing.Color.White;
+            this.griddrivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.griddrivers.Location = new System.Drawing.Point(541, 74);
+            this.griddrivers.Name = "griddrivers";
+            this.griddrivers.Size = new System.Drawing.Size(558, 247);
+            this.griddrivers.TabIndex = 20;
+            this.griddrivers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // comboVehicleAssigned
+            // 
+            this.comboVehicleAssigned.BackColor = System.Drawing.Color.Transparent;
+            this.comboVehicleAssigned.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboVehicleAssigned.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboVehicleAssigned.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboVehicleAssigned.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboVehicleAssigned.FocusedState.Parent = this.comboVehicleAssigned;
+            this.comboVehicleAssigned.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboVehicleAssigned.ForeColor = System.Drawing.Color.Orange;
+            this.comboVehicleAssigned.HoverState.Parent = this.comboVehicleAssigned;
+            this.comboVehicleAssigned.ItemHeight = 30;
+            this.comboVehicleAssigned.ItemsAppearance.Parent = this.comboVehicleAssigned;
+            this.comboVehicleAssigned.Location = new System.Drawing.Point(177, 243);
+            this.comboVehicleAssigned.Name = "comboVehicleAssigned";
+            this.comboVehicleAssigned.ShadowDecoration.Parent = this.comboVehicleAssigned;
+            this.comboVehicleAssigned.Size = new System.Drawing.Size(212, 36);
+            this.comboVehicleAssigned.TabIndex = 19;
+            this.comboVehicleAssigned.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.comboVehicleAssigned.SelectedIndexChanged += new System.EventHandler(this.comboVehicleAssigned_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(0, 243);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(171, 24);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Vehicle assigned";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(6, 297);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Route assigned";
             // 
             // txtLicenceNo
             // 
@@ -106,7 +182,7 @@
             this.txtLicenceNo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtLicenceNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLicenceNo.HoverState.Parent = this.txtLicenceNo;
-            this.txtLicenceNo.Location = new System.Drawing.Point(177, 196);
+            this.txtLicenceNo.Location = new System.Drawing.Point(177, 184);
             this.txtLicenceNo.Name = "txtLicenceNo";
             this.txtLicenceNo.PasswordChar = '\0';
             this.txtLicenceNo.PlaceholderText = "Licence Number";
@@ -114,6 +190,7 @@
             this.txtLicenceNo.ShadowDecoration.Parent = this.txtLicenceNo;
             this.txtLicenceNo.Size = new System.Drawing.Size(212, 36);
             this.txtLicenceNo.TabIndex = 15;
+            this.txtLicenceNo.TextChanged += new System.EventHandler(this.txtLicenceNo_TextChanged);
             // 
             // txtDId
             // 
@@ -132,7 +209,7 @@
             this.txtDId.Location = new System.Drawing.Point(177, 74);
             this.txtDId.Name = "txtDId";
             this.txtDId.PasswordChar = '\0';
-            this.txtDId.PlaceholderText = "Route Id";
+            this.txtDId.PlaceholderText = "Id No";
             this.txtDId.SelectedText = "";
             this.txtDId.ShadowDecoration.Parent = this.txtDId;
             this.txtDId.Size = new System.Drawing.Size(212, 36);
@@ -183,24 +260,25 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "Full Name";
             // 
-            // guna2Button1ViewRoutes
+            // guna2Button1ViewDrivers
             // 
-            this.guna2Button1ViewRoutes.CheckedState.Parent = this.guna2Button1ViewRoutes;
-            this.guna2Button1ViewRoutes.CustomImages.Parent = this.guna2Button1ViewRoutes;
-            this.guna2Button1ViewRoutes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1ViewRoutes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1ViewRoutes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1ViewRoutes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1ViewRoutes.DisabledState.Parent = this.guna2Button1ViewRoutes;
-            this.guna2Button1ViewRoutes.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1ViewRoutes.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1ViewRoutes.HoverState.Parent = this.guna2Button1ViewRoutes;
-            this.guna2Button1ViewRoutes.Location = new System.Drawing.Point(541, 355);
-            this.guna2Button1ViewRoutes.Name = "guna2Button1ViewRoutes";
-            this.guna2Button1ViewRoutes.ShadowDecoration.Parent = this.guna2Button1ViewRoutes;
-            this.guna2Button1ViewRoutes.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1ViewRoutes.TabIndex = 10;
-            this.guna2Button1ViewRoutes.Text = "View Records";
+            this.guna2Button1ViewDrivers.CheckedState.Parent = this.guna2Button1ViewDrivers;
+            this.guna2Button1ViewDrivers.CustomImages.Parent = this.guna2Button1ViewDrivers;
+            this.guna2Button1ViewDrivers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1ViewDrivers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1ViewDrivers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1ViewDrivers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1ViewDrivers.DisabledState.Parent = this.guna2Button1ViewDrivers;
+            this.guna2Button1ViewDrivers.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1ViewDrivers.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1ViewDrivers.HoverState.Parent = this.guna2Button1ViewDrivers;
+            this.guna2Button1ViewDrivers.Location = new System.Drawing.Point(541, 355);
+            this.guna2Button1ViewDrivers.Name = "guna2Button1ViewDrivers";
+            this.guna2Button1ViewDrivers.ShadowDecoration.Parent = this.guna2Button1ViewDrivers;
+            this.guna2Button1ViewDrivers.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1ViewDrivers.TabIndex = 10;
+            this.guna2Button1ViewDrivers.Text = "View Records";
+            this.guna2Button1ViewDrivers.Click += new System.EventHandler(this.guna2Button1ViewDrivers_Click);
             // 
             // btnClassesRefresh
             // 
@@ -239,6 +317,7 @@
             this.btnRouteSave.Size = new System.Drawing.Size(180, 45);
             this.btnRouteSave.TabIndex = 8;
             this.btnRouteSave.Text = "Save Records";
+            this.btnRouteSave.Click += new System.EventHandler(this.btnRouteSave_Click);
             // 
             // btnRouteReset
             // 
@@ -259,72 +338,17 @@
             this.btnRouteReset.TabIndex = 7;
             this.btnRouteReset.Text = "Reset Fields";
             // 
-            // guna2DataGridView1Routes
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1Routes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1Routes.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1Routes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1Routes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1Routes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1Routes.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1Routes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1Routes.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1Routes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.Location = new System.Drawing.Point(588, 74);
-            this.guna2DataGridView1Routes.Name = "guna2DataGridView1Routes";
-            this.guna2DataGridView1Routes.RowHeadersVisible = false;
-            this.guna2DataGridView1Routes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1Routes.Size = new System.Drawing.Size(540, 259);
-            this.guna2DataGridView1Routes.TabIndex = 6;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Routes.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1Routes.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(6, 196);
+            this.label3.Location = new System.Drawing.Point(6, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Licence Number";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel1
             // 
@@ -346,66 +370,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "New Driver";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(6, 249);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 24);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Route assigned";
-            // 
-            // comboRouteAssigned
-            // 
-            this.comboRouteAssigned.BackColor = System.Drawing.Color.Transparent;
-            this.comboRouteAssigned.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboRouteAssigned.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboRouteAssigned.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboRouteAssigned.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboRouteAssigned.FocusedState.Parent = this.comboRouteAssigned;
-            this.comboRouteAssigned.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboRouteAssigned.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.comboRouteAssigned.HoverState.Parent = this.comboRouteAssigned;
-            this.comboRouteAssigned.ItemHeight = 30;
-            this.comboRouteAssigned.ItemsAppearance.Parent = this.comboRouteAssigned;
-            this.comboRouteAssigned.Location = new System.Drawing.Point(177, 249);
-            this.comboRouteAssigned.Name = "comboRouteAssigned";
-            this.comboRouteAssigned.ShadowDecoration.Parent = this.comboRouteAssigned;
-            this.comboRouteAssigned.Size = new System.Drawing.Size(212, 36);
-            this.comboRouteAssigned.TabIndex = 17;
-            // 
-            // comboVehicleAssigned
-            // 
-            this.comboVehicleAssigned.BackColor = System.Drawing.Color.Transparent;
-            this.comboVehicleAssigned.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboVehicleAssigned.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboVehicleAssigned.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboVehicleAssigned.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboVehicleAssigned.FocusedState.Parent = this.comboVehicleAssigned;
-            this.comboVehicleAssigned.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboVehicleAssigned.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.comboVehicleAssigned.HoverState.Parent = this.comboVehicleAssigned;
-            this.comboVehicleAssigned.ItemHeight = 30;
-            this.comboVehicleAssigned.ItemsAppearance.Parent = this.comboVehicleAssigned;
-            this.comboVehicleAssigned.Location = new System.Drawing.Point(177, 302);
-            this.comboVehicleAssigned.Name = "comboVehicleAssigned";
-            this.comboVehicleAssigned.ShadowDecoration.Parent = this.comboVehicleAssigned;
-            this.comboVehicleAssigned.Size = new System.Drawing.Size(212, 36);
-            this.comboVehicleAssigned.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(6, 302);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(171, 24);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Vehicle assigned";
-            // 
             // AddDriver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -413,11 +377,13 @@
             this.ClientSize = new System.Drawing.Size(1140, 450);
             this.Controls.Add(this.panel2);
             this.Name = "AddDriver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddDriver";
+            this.Load += new System.EventHandler(this.AddDriver_Load);
             this.panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Routes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griddrivers)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -429,20 +395,20 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ComboBox comboVehicleAssigned;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2ComboBox comboRouteAssigned;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtLicenceNo;
-        private Guna.UI2.WinForms.Guna2TextBox txtDId;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtDfullName;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1ViewRoutes;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1ViewDrivers;
         private Guna.UI2.WinForms.Guna2Button btnClassesRefresh;
         private Guna.UI2.WinForms.Guna2Button btnRouteSave;
         private Guna.UI2.WinForms.Guna2Button btnRouteReset;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1Routes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView griddrivers;
+        private Guna.UI2.WinForms.Guna2TextBox txtroute;
+        private Guna.UI2.WinForms.Guna2TextBox txtDId;
     }
 }

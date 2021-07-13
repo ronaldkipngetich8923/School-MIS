@@ -28,31 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtPickTime = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtRouteName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Button1ViewRoutes = new Guna.UI2.WinForms.Guna2Button();
             this.btnClassesRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.btnRouteSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnRouteReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1Routes = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtRId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPickTime = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dataGridView1Routes = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Routes)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Routes)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.dataGridView1Routes);
             this.guna2Panel1.Controls.Add(this.txtPickTime);
             this.guna2Panel1.Controls.Add(this.txtRId);
             this.guna2Panel1.Controls.Add(this.label4);
@@ -62,15 +60,71 @@
             this.guna2Panel1.Controls.Add(this.btnClassesRefresh);
             this.guna2Panel1.Controls.Add(this.btnRouteSave);
             this.guna2Panel1.Controls.Add(this.btnRouteReset);
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1Routes);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(972, 450);
+            this.guna2Panel1.Size = new System.Drawing.Size(1045, 415);
             this.guna2Panel1.TabIndex = 3;
+            // 
+            // txtPickTime
+            // 
+            this.txtPickTime.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPickTime.DefaultText = "";
+            this.txtPickTime.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPickTime.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPickTime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPickTime.DisabledState.Parent = this.txtPickTime;
+            this.txtPickTime.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPickTime.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPickTime.FocusedState.Parent = this.txtPickTime;
+            this.txtPickTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPickTime.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPickTime.HoverState.Parent = this.txtPickTime;
+            this.txtPickTime.Location = new System.Drawing.Point(259, 197);
+            this.txtPickTime.Name = "txtPickTime";
+            this.txtPickTime.PasswordChar = '\0';
+            this.txtPickTime.PlaceholderText = "Pick Time";
+            this.txtPickTime.SelectedText = "";
+            this.txtPickTime.ShadowDecoration.Parent = this.txtPickTime;
+            this.txtPickTime.Size = new System.Drawing.Size(212, 36);
+            this.txtPickTime.TabIndex = 15;
+            // 
+            // txtRId
+            // 
+            this.txtRId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRId.DefaultText = "";
+            this.txtRId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRId.DisabledState.Parent = this.txtRId;
+            this.txtRId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRId.FocusedState.Parent = this.txtRId;
+            this.txtRId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRId.HoverState.Parent = this.txtRId;
+            this.txtRId.Location = new System.Drawing.Point(259, 75);
+            this.txtRId.Name = "txtRId";
+            this.txtRId.PasswordChar = '\0';
+            this.txtRId.PlaceholderText = "Route Id";
+            this.txtRId.SelectedText = "";
+            this.txtRId.ShadowDecoration.Parent = this.txtRId;
+            this.txtRId.Size = new System.Drawing.Size(212, 36);
+            this.txtRId.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(105, 75);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Route Id";
             // 
             // txtRouteName
             // 
@@ -124,6 +178,7 @@
             this.guna2Button1ViewRoutes.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1ViewRoutes.TabIndex = 10;
             this.guna2Button1ViewRoutes.Text = "View Records";
+            this.guna2Button1ViewRoutes.Click += new System.EventHandler(this.guna2Button1ViewRoutes_Click);
             // 
             // btnClassesRefresh
             // 
@@ -162,6 +217,7 @@
             this.btnRouteSave.Size = new System.Drawing.Size(180, 45);
             this.btnRouteSave.TabIndex = 8;
             this.btnRouteSave.Text = "Save Records";
+            this.btnRouteSave.Click += new System.EventHandler(this.btnRouteSave_Click);
             // 
             // btnRouteReset
             // 
@@ -182,62 +238,6 @@
             this.btnRouteReset.TabIndex = 7;
             this.btnRouteReset.Text = "Reset Fields";
             // 
-            // guna2DataGridView1Routes
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1Routes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1Routes.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1Routes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1Routes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1Routes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1Routes.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1Routes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1Routes.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1Routes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.Location = new System.Drawing.Point(541, 75);
-            this.guna2DataGridView1Routes.Name = "guna2DataGridView1Routes";
-            this.guna2DataGridView1Routes.RowHeadersVisible = false;
-            this.guna2DataGridView1Routes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1Routes.Size = new System.Drawing.Size(402, 259);
-            this.guna2DataGridView1Routes.TabIndex = 6;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Routes.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1Routes.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1Routes.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1Routes.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1Routes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -256,7 +256,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(972, 57);
+            this.panel1.Size = new System.Drawing.Size(1045, 57);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -269,77 +269,29 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "New Route";
             // 
-            // label4
+            // dataGridView1Routes
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(105, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Route Id";
-            // 
-            // txtRId
-            // 
-            this.txtRId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRId.DefaultText = "";
-            this.txtRId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtRId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtRId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRId.DisabledState.Parent = this.txtRId;
-            this.txtRId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtRId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRId.FocusedState.Parent = this.txtRId;
-            this.txtRId.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtRId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRId.HoverState.Parent = this.txtRId;
-            this.txtRId.Location = new System.Drawing.Point(259, 75);
-            this.txtRId.Name = "txtRId";
-            this.txtRId.PasswordChar = '\0';
-            this.txtRId.PlaceholderText = "Route Id";
-            this.txtRId.SelectedText = "";
-            this.txtRId.ShadowDecoration.Parent = this.txtRId;
-            this.txtRId.Size = new System.Drawing.Size(212, 36);
-            this.txtRId.TabIndex = 14;
-            // 
-            // txtPickTime
-            // 
-            this.txtPickTime.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPickTime.DefaultText = "";
-            this.txtPickTime.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPickTime.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPickTime.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPickTime.DisabledState.Parent = this.txtPickTime;
-            this.txtPickTime.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPickTime.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPickTime.FocusedState.Parent = this.txtPickTime;
-            this.txtPickTime.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPickTime.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPickTime.HoverState.Parent = this.txtPickTime;
-            this.txtPickTime.Location = new System.Drawing.Point(259, 197);
-            this.txtPickTime.Name = "txtPickTime";
-            this.txtPickTime.PasswordChar = '\0';
-            this.txtPickTime.PlaceholderText = "Pick Time";
-            this.txtPickTime.SelectedText = "";
-            this.txtPickTime.ShadowDecoration.Parent = this.txtPickTime;
-            this.txtPickTime.Size = new System.Drawing.Size(212, 36);
-            this.txtPickTime.TabIndex = 15;
+            this.dataGridView1Routes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1Routes.Location = new System.Drawing.Point(564, 75);
+            this.dataGridView1Routes.Name = "dataGridView1Routes";
+            this.dataGridView1Routes.Size = new System.Drawing.Size(450, 236);
+            this.dataGridView1Routes.TabIndex = 16;
             // 
             // AddRoutes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 450);
+            this.ClientSize = new System.Drawing.Size(1045, 415);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "AddRoutes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddRoutes";
             this.Load += new System.EventHandler(this.AddRoutes_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1Routes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1Routes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -356,9 +308,9 @@
         private Guna.UI2.WinForms.Guna2Button btnClassesRefresh;
         private Guna.UI2.WinForms.Guna2Button btnRouteSave;
         private Guna.UI2.WinForms.Guna2Button btnRouteReset;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1Routes;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1Routes;
     }
 }
