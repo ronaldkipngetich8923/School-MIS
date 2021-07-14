@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.rooms = new System.Windows.Forms.Label();
@@ -50,20 +47,23 @@
             this.guna2Button1ViewHostels = new Guna.UI2.WinForms.Guna2Button();
             this.btnHostelSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnHostelReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1HostelsAssign = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtHostelName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.gridhostels = new System.Windows.Forms.DataGridView();
+            this.currentstatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1HostelsAssign)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridhostels)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.gridhostels);
             this.guna2Panel1.Controls.Add(this.label9);
             this.guna2Panel1.Controls.Add(this.rooms);
             this.guna2Panel1.Controls.Add(this.comboHostelCode);
@@ -76,7 +76,6 @@
             this.guna2Panel1.Controls.Add(this.guna2Button1ViewHostels);
             this.guna2Panel1.Controls.Add(this.btnHostelSave);
             this.guna2Panel1.Controls.Add(this.btnHostelReset);
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1HostelsAssign);
             this.guna2Panel1.Controls.Add(this.txtHostelName);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.panel1);
@@ -132,6 +131,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.currentstatus);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtComboStudname);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -161,7 +162,7 @@
             this.txtComboStudname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtComboStudname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtComboStudname.HoverState.Parent = this.txtComboStudname;
-            this.txtComboStudname.Location = new System.Drawing.Point(197, 85);
+            this.txtComboStudname.Location = new System.Drawing.Point(187, 73);
             this.txtComboStudname.Name = "txtComboStudname";
             this.txtComboStudname.PasswordChar = '\0';
             this.txtComboStudname.PlaceholderText = "Student Name";
@@ -175,7 +176,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(6, 85);
+            this.label6.Location = new System.Drawing.Point(6, 73);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 24);
             this.label6.TabIndex = 17;
@@ -197,7 +198,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(6, 144);
+            this.label7.Location = new System.Drawing.Point(6, 132);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(145, 24);
             this.label7.TabIndex = 19;
@@ -216,7 +217,7 @@
             this.comboHosteAdmNo.HoverState.Parent = this.comboHosteAdmNo;
             this.comboHosteAdmNo.ItemHeight = 30;
             this.comboHosteAdmNo.ItemsAppearance.Parent = this.comboHosteAdmNo;
-            this.comboHosteAdmNo.Location = new System.Drawing.Point(197, 24);
+            this.comboHosteAdmNo.Location = new System.Drawing.Point(187, 24);
             this.comboHosteAdmNo.Name = "comboHosteAdmNo";
             this.comboHosteAdmNo.ShadowDecoration.Parent = this.comboHosteAdmNo;
             this.comboHosteAdmNo.Size = new System.Drawing.Size(212, 36);
@@ -229,7 +230,7 @@
             this.guna2DateTimePicker1Hostel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1Hostel.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1Hostel.HoverState.Parent = this.guna2DateTimePicker1Hostel;
-            this.guna2DateTimePicker1Hostel.Location = new System.Drawing.Point(197, 144);
+            this.guna2DateTimePicker1Hostel.Location = new System.Drawing.Point(187, 132);
             this.guna2DateTimePicker1Hostel.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1Hostel.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1Hostel.Name = "guna2DateTimePicker1Hostel";
@@ -256,6 +257,7 @@
             this.UpdateHostel.Size = new System.Drawing.Size(180, 45);
             this.UpdateHostel.TabIndex = 24;
             this.UpdateHostel.Text = "Update Hostel";
+            this.UpdateHostel.Click += new System.EventHandler(this.UpdateHostel_Click);
             // 
             // label8
             // 
@@ -373,62 +375,6 @@
             this.btnHostelReset.Text = "Reset Fields";
             this.btnHostelReset.Click += new System.EventHandler(this.btnHostelReset_Click);
             // 
-            // guna2DataGridView1HostelsAssign
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1HostelsAssign.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.guna2DataGridView1HostelsAssign.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1HostelsAssign.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1HostelsAssign.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1HostelsAssign.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1HostelsAssign.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1HostelsAssign.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.guna2DataGridView1HostelsAssign.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1HostelsAssign.DefaultCellStyle = dataGridViewCellStyle9;
-            this.guna2DataGridView1HostelsAssign.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1HostelsAssign.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1HostelsAssign.Location = new System.Drawing.Point(597, 98);
-            this.guna2DataGridView1HostelsAssign.Name = "guna2DataGridView1HostelsAssign";
-            this.guna2DataGridView1HostelsAssign.RowHeadersVisible = false;
-            this.guna2DataGridView1HostelsAssign.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1HostelsAssign.Size = new System.Drawing.Size(594, 382);
-            this.guna2DataGridView1HostelsAssign.TabIndex = 6;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1HostelsAssign.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // txtHostelName
             // 
             this.txtHostelName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -484,6 +430,49 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Assign Hostel";
             // 
+            // gridhostels
+            // 
+            this.gridhostels.BackgroundColor = System.Drawing.Color.White;
+            this.gridhostels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridhostels.Location = new System.Drawing.Point(610, 98);
+            this.gridhostels.Name = "gridhostels";
+            this.gridhostels.Size = new System.Drawing.Size(569, 385);
+            this.gridhostels.TabIndex = 29;
+            this.gridhostels.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridhostels_CellContentClick);
+            // 
+            // currentstatus
+            // 
+            this.currentstatus.BackColor = System.Drawing.Color.Transparent;
+            this.currentstatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.currentstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.currentstatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.currentstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.currentstatus.FocusedState.Parent = this.currentstatus;
+            this.currentstatus.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.currentstatus.ForeColor = System.Drawing.Color.DarkOrange;
+            this.currentstatus.HoverState.Parent = this.currentstatus;
+            this.currentstatus.ItemHeight = 30;
+            this.currentstatus.Items.AddRange(new object[] {
+            "ASSIGNED",
+            "CLEARED"});
+            this.currentstatus.ItemsAppearance.Parent = this.currentstatus;
+            this.currentstatus.Location = new System.Drawing.Point(187, 191);
+            this.currentstatus.Name = "currentstatus";
+            this.currentstatus.ShadowDecoration.Parent = this.currentstatus;
+            this.currentstatus.Size = new System.Drawing.Size(212, 36);
+            this.currentstatus.TabIndex = 43;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(6, 191);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 24);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Status";
+            // 
             // tab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,9 +487,9 @@
             this.guna2Panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1HostelsAssign)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridhostels)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -522,7 +511,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1ViewHostels;
         private Guna.UI2.WinForms.Guna2Button btnHostelSave;
         private Guna.UI2.WinForms.Guna2Button btnHostelReset;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1HostelsAssign;
         private Guna.UI2.WinForms.Guna2TextBox txtHostelName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
@@ -531,5 +519,8 @@
         private System.Windows.Forms.Label rooms;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2TextBox txtComboStudname;
+        private System.Windows.Forms.DataGridView gridhostels;
+        private Guna.UI2.WinForms.Guna2ComboBox currentstatus;
+        private System.Windows.Forms.Label label10;
     }
 }

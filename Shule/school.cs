@@ -7,6 +7,17 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
+//static string Encrypt(string value)
+//{
+//    //Using MD5 to encrypt a string
+//    using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+//    {
+//        UTF8Encoding utf8 = new UTF8Encoding();
+//        //Hash data
+//        byte[] data = md5.ComputeHash(utf8.GetBytes(value));
+//        return Convert.ToBase64String(data);
+//    }
+//}
 
 
 
@@ -452,6 +463,7 @@ namespace Shule
         private void button8_Click(object sender, EventArgs e)
         {
             showSubMenu(panelDropTransport);
+            ViewTransportDetails.Visible = false;
 
             addUsers.Visible = false;
             Academic.Visible = false;
@@ -893,11 +905,19 @@ namespace Shule
             sqlDataAdapter.Fill(ds);
             setLabel(ds, labelHostel);
             //get Hostels Occupancy
-            String Hoccupied = "select count(AdmNo) from OccupiedHostel";
+            String Hoccupied = "select count(AdmNo) from OccupiedHostel where Status='ASSIGNED'";
             sqlDataAdapter = new SqlDataAdapter(Hoccupied, sqlConnection);
             ds = new DataSet();
             sqlDataAdapter.Fill(ds);
             setLabel(ds, OccupiedLabel);
+
+            //get Hostels Occupancy
+            String clear = "select count(AdmNo) from OccupiedHostel where Status='CLEARED'";
+            sqlDataAdapter = new SqlDataAdapter(clear, sqlConnection);
+            ds = new DataSet();
+            sqlDataAdapter.Fill(ds);
+            setLabel(ds, labelCleared);
+
 
             //get Admitted Students
 
@@ -906,6 +926,15 @@ namespace Shule
             ds = new DataSet();
             sqlDataAdapter.Fill(ds);
             setLabel(ds, labelAdmitted);
+
+            //get Routes
+
+            String route = "select count(RouteId) from Routes";
+            sqlDataAdapter = new SqlDataAdapter(route, sqlConnection);
+            ds = new DataSet();
+            sqlDataAdapter.Fill(ds);
+            setLabel(ds, labelRoute);
+
 
             //get Number of Suppliers
             //String Supplier = "select count(SupplierName) from Suppliers";
@@ -2600,7 +2629,7 @@ namespace Shule
             HostelOccupancy.Visible = true;
             HostelOccupancy.BringToFront();
 
-            string query = "SELECT Hostels.HostelCode,Hostels.HostelName,Hostels.Capacity,OccupiedHostel.AdmNo,OccupiedHostel.Studname,StudentMaster.AdmDate,StudentMaster.Class,StudentMaster.Stream,OccupiedHostel.DateAssigned FROM Hostels " +
+            string query = "SELECT Hostels.HostelCode,Hostels.HostelName,Hostels.Capacity,OccupiedHostel.AdmNo,OccupiedHostel.Studname,StudentMaster.AdmDate,StudentMaster.Class,StudentMaster.Stream,OccupiedHostel.DateAssigned,OccupiedHostel.Status FROM Hostels " +
                 "INNER JOIN OccupiedHostel ON Hostels.HostelCode = OccupiedHostel.HostelCode " +
                 "INNER JOIN StudentMaster ON OccupiedHostel.AdmNo =StudentMaster.AdmNo";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
@@ -2732,8 +2761,196 @@ namespace Shule
             //NewMedicine nm = new NewMedicine();
             //nm.Show();
         }
+
+        private void btnStudentsTrans_Click(object sender, EventArgs e)
+        {
+            AddStudentTransport st = new AddStudentTransport();
+            st.Show();
+        }
+
+        private void btnDriver_Click(object sender, EventArgs e)
+        {
+            AddDriver dt = new AddDriver();
+            dt.Show();
+
+        }
+
+        private void btnVehicle_Click(object sender, EventArgs e)
+        {
+            AddVehicle vt = new AddVehicle();
+            vt.Show();
+        }
+
+        private void btnTransRoute_Click(object sender, EventArgs e)
+        {
+            AddRoutes rt = new AddRoutes();
+            rt.Show();
+        }
+
+        private void guna2HtmlLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Transport_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView6_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label101_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnTrasportDetails_Click(object sender, EventArgs e)
+        {
+            ViewTransportDetails.Visible = true;
+            ViewTransportDetails.BringToFront();
+
+            string query = "SELECT Transport.AdmNo,StudentMaster.Studname,StudentMaster.Class,StudentMaster.Stream,Transport.Route,Transport.DateOfRegistration FROM Transport " +
+                "INNER JOIN StudentMaster ON Transport.AdmNo = StudentMaster.AdmNo ";
+                //"INNER JOIN StudentMaster ON OccupiedHostel.AdmNo =StudentMaster.AdmNo";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            transportdetails.DataSource = dt;
+
+            //            SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+            //FROM Orders
+            //INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+
+
+
+
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            HostelOccupancy.Visible = true;
+            HostelOccupancy.BringToFront();
+
+            string query = "SELECT Hostels.HostelCode,Hostels.HostelName,Hostels.Capacity,OccupiedHostel.AdmNo,OccupiedHostel.Studname,StudentMaster.AdmDate,StudentMaster.Class,StudentMaster.Stream,OccupiedHostel.DateAssigned,OccupiedHostel.Status FROM Hostels " +
+                "INNER JOIN OccupiedHostel ON Hostels.HostelCode = OccupiedHostel.HostelCode  " +
+                "INNER JOIN StudentMaster ON OccupiedHostel.AdmNo =StudentMaster.AdmNo where Status='CLEARED'";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            GridHostelInfo.DataSource = dt;
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            HostelOccupancy.Visible = true;
+            HostelOccupancy.BringToFront();
+
+            string query = "SELECT Hostels.HostelCode,Hostels.HostelName,Hostels.Capacity,OccupiedHostel.AdmNo,OccupiedHostel.Studname,StudentMaster.AdmDate,StudentMaster.Class,StudentMaster.Stream,OccupiedHostel.DateAssigned,OccupiedHostel.Status FROM Hostels " +
+                "INNER JOIN OccupiedHostel ON Hostels.HostelCode = OccupiedHostel.HostelCode  " +
+                "INNER JOIN StudentMaster ON OccupiedHostel.AdmNo =StudentMaster.AdmNo where Status='ASSIGNED'";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            GridHostelInfo.DataSource = dt;
+
+        }
+
+        private void vehicles_Click(object sender, EventArgs e)
+        {
+            ViewTransportDetails.Visible = true;
+            ViewTransportDetails.BringToFront();
+
+            string query = "SELECT vehicles.vmodel,vehicles.vnumber,vehicles.route,vehicles.capacity,vehicles.maintanance_period,vehicles.idate,vehicles.edate,Drivers.driver_name, Drivers.idno FROM vehicles " +
+                "INNER JOIN Drivers ON vehicles.vnumber = Drivers.vnumber";
+            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            SDA.Fill(dt);
+            transportdetails.DataSource = dt;
+            transportdetails.Columns.Add("newColumnName", "Number Of Students");
+
+
+            //string str = "select count(AdmNo) from Transport ";
+            //SqlDataAdapter da = new SqlDataAdapter(str, sqlConnection);
+            //DataSet ds = new DataSet();
+            //da.Fill(ds);
+            //transportdetails.DataSource = dt;
+            //setLabel(ds, studentsLabel);
+
+        }
+
+        private void Dispensary_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxKCPEMarks_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if(!Char.IsDigit(ch) && ch !=8 && ch != 46)
+            {
+                e.Handled = true;
+
+            }
+            
+        }
+
+        private void textBoxKCPEMarks_TextChanged(object sender, EventArgs e)
+        {
+            int box_int = 0;
+            Int32.TryParse(textBoxKCPEMarks.Text, out box_int);
+            if(box_int >500)
+            {
+                textBoxKCPEMarks.Text = "499";
+                MessageBox.Show(" Maximum Allowed is 499.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+            }
+
+        }
+
+        private void guna2TextBox3_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            
+        }
+
+        private void textBoxEmail_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (textBoxEmail.Text.Length > 0)
+            {
+                if (!rEmail.IsMatch(textBoxEmail.Text))
+                {
+                    MessageBox.Show(" Invalid Email Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxEmail.SelectAll();
+                    e.Cancel = true;
+
+
+
+
+                }
+            }
+
+
+        }
     }
-    }
+}
+    
 
    
 

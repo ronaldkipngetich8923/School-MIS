@@ -16,5 +16,10 @@ namespace Shule
         {
             InitializeComponent();
         }
+
+        private void AttendancePortal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

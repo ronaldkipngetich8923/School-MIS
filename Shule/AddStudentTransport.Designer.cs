@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.comboRoute = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboStudentTransport = new Guna.UI2.WinForms.Guna2ComboBox();
             this.GridTransport = new System.Windows.Forms.DataGridView();
             this.guna2DateTimePicker1Transport = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -41,7 +42,6 @@
             this.btnTransReset = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboRoute = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridTransport)).BeginInit();
             this.panel1.SuspendLayout();
@@ -69,6 +69,25 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1142, 483);
             this.guna2Panel1.TabIndex = 7;
             // 
+            // comboRoute
+            // 
+            this.comboRoute.BackColor = System.Drawing.Color.Transparent;
+            this.comboRoute.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboRoute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRoute.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboRoute.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboRoute.FocusedState.Parent = this.comboRoute;
+            this.comboRoute.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboRoute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboRoute.HoverState.Parent = this.comboRoute;
+            this.comboRoute.ItemHeight = 30;
+            this.comboRoute.ItemsAppearance.Parent = this.comboRoute;
+            this.comboRoute.Location = new System.Drawing.Point(229, 149);
+            this.comboRoute.Name = "comboRoute";
+            this.comboRoute.ShadowDecoration.Parent = this.comboRoute;
+            this.comboRoute.Size = new System.Drawing.Size(212, 36);
+            this.comboRoute.TabIndex = 43;
+            // 
             // ComboStudentTransport
             // 
             this.ComboStudentTransport.BackColor = System.Drawing.Color.Transparent;
@@ -94,7 +113,7 @@
             this.GridTransport.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridTransport.Location = new System.Drawing.Point(516, 75);
             this.GridTransport.Name = "GridTransport";
-            this.GridTransport.Size = new System.Drawing.Size(597, 332);
+            this.GridTransport.Size = new System.Drawing.Size(600, 332);
             this.GridTransport.TabIndex = 40;
             // 
             // guna2DateTimePicker1Transport
@@ -182,6 +201,7 @@
             this.guna2Button1ViewCTrans.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1ViewCTrans.TabIndex = 10;
             this.guna2Button1ViewCTrans.Text = "View Records";
+            this.guna2Button1ViewCTrans.Click += new System.EventHandler(this.guna2Button1ViewCTrans_Click);
             // 
             // btnTransSave
             // 
@@ -201,6 +221,7 @@
             this.btnTransSave.Size = new System.Drawing.Size(180, 45);
             this.btnTransSave.TabIndex = 8;
             this.btnTransSave.Text = "Save Records";
+            this.btnTransSave.Click += new System.EventHandler(this.btnTransSave_Click);
             // 
             // btnTransReset
             // 
@@ -220,6 +241,7 @@
             this.btnTransReset.Size = new System.Drawing.Size(180, 45);
             this.btnTransReset.TabIndex = 7;
             this.btnTransReset.Text = "Reset Fields";
+            this.btnTransReset.Click += new System.EventHandler(this.btnTransReset_Click);
             // 
             // panel1
             // 
@@ -241,25 +263,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Assign Transport";
             // 
-            // comboRoute
-            // 
-            this.comboRoute.BackColor = System.Drawing.Color.Transparent;
-            this.comboRoute.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboRoute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboRoute.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboRoute.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.comboRoute.FocusedState.Parent = this.comboRoute;
-            this.comboRoute.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.comboRoute.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.comboRoute.HoverState.Parent = this.comboRoute;
-            this.comboRoute.ItemHeight = 30;
-            this.comboRoute.ItemsAppearance.Parent = this.comboRoute;
-            this.comboRoute.Location = new System.Drawing.Point(229, 149);
-            this.comboRoute.Name = "comboRoute";
-            this.comboRoute.ShadowDecoration.Parent = this.comboRoute;
-            this.comboRoute.Size = new System.Drawing.Size(212, 36);
-            this.comboRoute.TabIndex = 43;
-            // 
             // AddStudentTransport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,6 +272,7 @@
             this.Name = "AddStudentTransport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddStudentTransport";
+            this.Load += new System.EventHandler(this.AddStudentTransport_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridTransport)).EndInit();
