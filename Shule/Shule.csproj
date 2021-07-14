@@ -233,12 +233,6 @@
     <Compile Include="NewMedicine.Designer.cs">
       <DependentUpon>NewMedicine.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="ReferralForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -442,9 +436,6 @@
     <None Include="DataSetFees.xss">
       <DependentUpon>DataSetFees.xsd</DependentUpon>
     </None>
-    <None Include="obj\Release\Shule.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Release\Shule.csprojAssemblyReference.cache" />
-    <None Include="obj\Release\Shule.sourcelink.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
