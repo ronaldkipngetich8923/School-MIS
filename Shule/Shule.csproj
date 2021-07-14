@@ -228,6 +228,12 @@
     <Compile Include="NewMedicine.Designer.cs">
       <DependentUpon>NewMedicine.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="ReferralForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -404,6 +410,9 @@
       <DependentUpon>AssignHostel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Shule.exe.config" />
+    <None Include="obj\Release\Shule.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\Shule.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\Shule.sourcelink.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -422,6 +431,7 @@
     <None Include="Resources\college-icons.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Fee_Structure.gif.crdownload" />
     <None Include="Resources\icon1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -515,6 +525,26 @@
     <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll" />
     <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll" />
     <Content Include="Resources\bill.png" />
+    <Content Include="Resources\bill1.png" />
+    <Content Include="Resources\bill2.png" />
+    <Content Include="Resources\Book Shelve Icon.png" />
+    <Content Include="Resources\bOOk.jpg" />
+    <Content Include="Resources\Books icon.png" />
+    <Content Include="Resources\Books icon1.png" />
+    <Content Include="Resources\Books.jpg" />
+    <Content Include="Resources\fees preview.png" />
+    <Content Include="Resources\fees.png" />
+    <Content Include="Resources\magazines.png" />
+    <Content Include="Resources\MUST-Vector-Logo.jpg" />
+    <Content Include="Resources\STRUCTURE FEES.png" />
+    <Content Include="Resources\trans.PNG" />
+    <Content Include="Resources\transfer-bank-money-transf1.png" />
+    <Content Include="Resources\transfer-bank-money-transf2.png" />
+    <Content Include="Resources\transfer-bank-money-transf3.png" />
+    <Content Include="Resources\update fees.png" />
+    <Content Include="Resources\users.png" />
+    <Content Include="Resources\web-adjustment-1.png" />
+    <Content Include="Resources\web-adjustment-2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

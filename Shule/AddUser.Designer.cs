@@ -301,7 +301,7 @@
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.HoverState.Parent = this.btnReset;
-            this.btnReset.Image = global::Shule.Properties.Resources.reset;
+           // this.btnReset.Image = global::Shule.Properties.Resources.reset;
             this.btnReset.Location = new System.Drawing.Point(711, 412);
             this.btnReset.Name = "btnReset";
             this.btnReset.ShadowDecoration.Parent = this.btnReset;
@@ -322,7 +322,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Image = global::Shule.Properties.Resources.login;
+           // this.btnLogin.Image = global::Shule.Properties.Resources.login;
             this.btnLogin.Location = new System.Drawing.Point(499, 412);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
