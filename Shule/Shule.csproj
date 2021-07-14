@@ -308,6 +308,9 @@
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AttendancePortal.resx">
+      <DependentUpon>AttendancePortal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HostelClearance.resx">
       <DependentUpon>HostelClearance.cs</DependentUpon>
     </EmbeddedResource>

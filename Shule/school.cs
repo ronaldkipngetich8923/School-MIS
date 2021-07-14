@@ -2882,6 +2882,70 @@ namespace Shule
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             transportdetails.DataSource = dt;
+            transportdetails.Columns.Add("newColumnName", "Number Of Students");
+
+
+            //string str = "select count(AdmNo) from Transport ";
+            //SqlDataAdapter da = new SqlDataAdapter(str, sqlConnection);
+            //DataSet ds = new DataSet();
+            //da.Fill(ds);
+            //transportdetails.DataSource = dt;
+            //setLabel(ds, studentsLabel);
+
+        }
+
+        private void Dispensary_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBoxKCPEMarks_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if(!Char.IsDigit(ch) && ch !=8 && ch != 46)
+            {
+                e.Handled = true;
+
+            }
+            
+        }
+
+        private void textBoxKCPEMarks_TextChanged(object sender, EventArgs e)
+        {
+            int box_int = 0;
+            Int32.TryParse(textBoxKCPEMarks.Text, out box_int);
+            if(box_int >500)
+            {
+                textBoxKCPEMarks.Text = "499";
+                MessageBox.Show(" Maximum Allowed is 499.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+            }
+
+        }
+
+        private void guna2TextBox3_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            
+        }
+
+        private void textBoxEmail_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            System.Text.RegularExpressions.Regex rEmail = new System.Text.RegularExpressions.Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
+            if (textBoxEmail.Text.Length > 0)
+            {
+                if (!rEmail.IsMatch(textBoxEmail.Text))
+                {
+                    MessageBox.Show(" Invalid Email Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxEmail.SelectAll();
+                    e.Cancel = true;
+
+
+
+
+                }
+            }
+
 
         }
     }
