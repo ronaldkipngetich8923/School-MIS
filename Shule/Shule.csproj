@@ -184,11 +184,6 @@
     <Compile Include="AttendancePortal.Designer.cs">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSetFees.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetFees.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Fees_Structure.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,22 +245,6 @@
     </Compile>
     <Compile Include="SetExam.Designer.cs">
       <DependentUpon>SetExam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="shuleDataSet.Designer.cs" />
-    <Compile Include="shuleDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="shuleDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>shuleDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="shuleDataSetF.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Stream.cs">
@@ -431,17 +410,6 @@
       <DependentUpon>AssignHostel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Shule.exe.config" />
-    <None Include="DataSetFees.xsc">
-      <DependentUpon>DataSetFees.xsd</DependentUpon>
-    </None>
-    <None Include="DataSetFees.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetFees.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSetFees.xss">
-      <DependentUpon>DataSetFees.xsd</DependentUpon>
-    </None>
     <None Include="obj\Release\Shule.csproj.CoreCompileInputs.cache" />
     <None Include="obj\Release\Shule.csprojAssemblyReference.cache" />
     <None Include="obj\Release\Shule.sourcelink.json" />
@@ -455,39 +423,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="shuleDataSet.xsc">
-      <DependentUpon>shuleDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>shuleDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="shuleDataSet.xss">
-      <DependentUpon>shuleDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSet1.xsc">
-      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>shuleDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="shuleDataSet1.xss">
-      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSetF.xsc">
-      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSetF.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>shuleDataSetF.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="shuleDataSetF.xss">
-      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -496,6 +431,7 @@
     <None Include="Resources\college-icons.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Fee_Structure.gif.crdownload" />
     <None Include="Resources\icon1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -589,6 +525,26 @@
     <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll" />
     <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll" />
     <Content Include="Resources\bill.png" />
+    <Content Include="Resources\bill1.png" />
+    <Content Include="Resources\bill2.png" />
+    <Content Include="Resources\Book Shelve Icon.png" />
+    <Content Include="Resources\bOOk.jpg" />
+    <Content Include="Resources\Books icon.png" />
+    <Content Include="Resources\Books icon1.png" />
+    <Content Include="Resources\Books.jpg" />
+    <Content Include="Resources\fees preview.png" />
+    <Content Include="Resources\fees.png" />
+    <Content Include="Resources\magazines.png" />
+    <Content Include="Resources\MUST-Vector-Logo.jpg" />
+    <Content Include="Resources\STRUCTURE FEES.png" />
+    <Content Include="Resources\trans.PNG" />
+    <Content Include="Resources\transfer-bank-money-transf1.png" />
+    <Content Include="Resources\transfer-bank-money-transf2.png" />
+    <Content Include="Resources\transfer-bank-money-transf3.png" />
+    <Content Include="Resources\update fees.png" />
+    <Content Include="Resources\users.png" />
+    <Content Include="Resources\web-adjustment-1.png" />
+    <Content Include="Resources\web-adjustment-2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

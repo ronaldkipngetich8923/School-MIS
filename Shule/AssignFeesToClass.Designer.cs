@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.feesSetUpBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetFeesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.DataSetFees = new Shule.DataSetFees();
+           // this.DataSetFees = new Shule.DataSetFees();
             this.guna2ComboBoxform = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBoxStream = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBoxYear = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -46,11 +46,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.fees_SetUpTableAdapter = new Shule.DataSetFeesTableAdapters.fees_SetUpTableAdapter();
+           // this.fees_SetUpTableAdapter = new Shule.DataSetFeesTableAdapters.fees_SetUpTableAdapter();
             this.dataSetFeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.feesSetUpBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).BeginInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -64,13 +64,13 @@
             // 
             // dataSetFeesBindingSource1
             // 
-            this.dataSetFeesBindingSource1.DataSource = this.DataSetFees;
+           // this.dataSetFeesBindingSource1.DataSource = this.DataSetFees;
             this.dataSetFeesBindingSource1.Position = 0;
             // 
             // DataSetFees
             // 
-            this.DataSetFees.DataSetName = "DataSetFees";
-            this.DataSetFees.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           // this.DataSetFees.DataSetName = "DataSetFees";
+          //  this.DataSetFees.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2ComboBoxform
             // 
@@ -302,11 +302,11 @@
             // 
             // fees_SetUpTableAdapter
             // 
-            this.fees_SetUpTableAdapter.ClearBeforeFill = true;
+          //  this.fees_SetUpTableAdapter.ClearBeforeFill = true;
             // 
             // dataSetFeesBindingSource
             // 
-            this.dataSetFeesBindingSource.DataSource = this.DataSetFees;
+           // this.dataSetFeesBindingSource.DataSource = this.DataSetFees;
             this.dataSetFeesBindingSource.Position = 0;
             // 
             // AssignFeesToClass
@@ -321,7 +321,7 @@
             this.Load += new System.EventHandler(this.GenerateFeeStructure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.feesSetUpBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).EndInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -347,9 +347,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private DataSetFees DataSetFees;
+       // private DataSetFees DataSetFees;
         private System.Windows.Forms.BindingSource dataSetFeesBindingSource1;
-        private DataSetFeesTableAdapters.fees_SetUpTableAdapter fees_SetUpTableAdapter;
+        //private DataSetFeesTableAdapters.fees_SetUpTableAdapter fees_SetUpTableAdapter;
         private System.Windows.Forms.BindingSource feesSetUpBindingSource;
         private System.Windows.Forms.BindingSource dataSetFeesBindingSource;
         private System.Windows.Forms.DataGridView dataGridView1;
