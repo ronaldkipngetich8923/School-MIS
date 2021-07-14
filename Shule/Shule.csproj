@@ -172,11 +172,34 @@
     <Compile Include="AddUsers.Designer.cs">
       <DependentUpon>AddUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignFeesToClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignFeesToClass.Designer.cs">
+      <DependentUpon>AssignFeesToClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="AttendancePortal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AttendancePortal.Designer.cs">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fees_Structure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees_Structure.Designer.cs">
+      <DependentUpon>Fees_Structure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_Collections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee_Collections.Designer.cs">
+      <DependentUpon>Fee_Collections.cs</DependentUpon>
     </Compile>
     <Compile Include="Function.cs" />
     <Compile Include="HostelClearance.cs">
@@ -184,6 +207,13 @@
     </Compile>
     <Compile Include="HostelClearance.Designer.cs">
       <DependentUpon>HostelClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iTextSharp\text\Color.cs" />
+    <Compile Include="Library.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -203,6 +233,12 @@
     <Compile Include="NewMedicine.Designer.cs">
       <DependentUpon>NewMedicine.cs</DependentUpon>
     </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="ReferralForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +250,22 @@
     </Compile>
     <Compile Include="SetExam.Designer.cs">
       <DependentUpon>SetExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shuleDataSet.Designer.cs" />
+    <Compile Include="shuleDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shuleDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shuleDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shuleDataSetF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Stream.cs">
@@ -308,14 +360,26 @@
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssignFeesToClass.resx">
+      <DependentUpon>AssignFeesToClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AttendancePortal.resx">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees_Structure.resx">
+      <DependentUpon>Fees_Structure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_Collections.resx">
+      <DependentUpon>Fee_Collections.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HostelClearance.resx">
       <DependentUpon>HostelClearance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hostelclearence.resx">
       <DependentUpon>hostelclearence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -366,6 +430,21 @@
     <EmbeddedResource Include="AssignHostel.resx">
       <DependentUpon>AssignHostel.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\Shule.exe.config" />
+    <None Include="DataSetFees.xsc">
+      <DependentUpon>DataSetFees.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFees.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFees.xss">
+      <DependentUpon>DataSetFees.xsd</DependentUpon>
+    </None>
+    <None Include="obj\Release\Shule.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\Shule.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\Shule.sourcelink.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -376,6 +455,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="shuleDataSet.xsc">
+      <DependentUpon>shuleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shuleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shuleDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shuleDataSet.xss">
+      <DependentUpon>shuleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shuleDataSet1.xsc">
+      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shuleDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shuleDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shuleDataSet1.xss">
+      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shuleDataSetF.xsc">
+      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
+    </None>
+    <None Include="shuleDataSetF.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shuleDataSetF.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shuleDataSetF.xss">
+      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -402,6 +514,80 @@
     <None Include="Resources\Adduser.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\EnvDTE.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\Guna.UI2.dll" />
+    <Content Include="bin\Debug\itextsharp.dll" />
+    <Content Include="bin\Debug\itextsharp.xml" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\MaterialDesignColors.dll" />
+    <Content Include="bin\Debug\MaterialDesignColors.pdb" />
+    <Content Include="bin\Debug\MaterialDesignThemes.Wpf.dll" />
+    <Content Include="bin\Debug\MaterialDesignThemes.Wpf.pdb" />
+    <Content Include="bin\Debug\MaterialDesignThemes.Wpf.xml" />
+    <Content Include="bin\Debug\MaterialIcons.dll" />
+    <Content Include="bin\Debug\MetroFramework.dll" />
+    <Content Include="bin\Debug\Microsoft.MSXML.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WebDesign.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WebForms.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.xml" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Types.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\pt\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\Shule.exe" />
+    <Content Include="bin\Debug\Shule.pdb" />
+    <Content Include="bin\Debug\SqlServerTypes\x64\msvcr120.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x86\msvcr120.dll" />
+    <Content Include="bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="bin\Debug\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll" />
     <Content Include="Resources\bill.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
@@ -479,6 +665,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="Reports\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

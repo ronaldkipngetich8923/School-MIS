@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.admission = new System.Windows.Forms.TabControl();
             this.studentsTab = new System.Windows.Forms.TabPage();
@@ -153,18 +153,28 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label29 = new System.Windows.Forms.Label();
+            this.btnViewMedicines = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
+            this.button27 = new System.Windows.Forms.Button();
             this.labelAdmitted = new System.Windows.Forms.Label();
+            this.button25 = new System.Windows.Forms.Button();
             this.Library = new System.Windows.Forms.Panel();
             this.Dashboard = new System.Windows.Forms.Panel();
             this.labelSuppliers = new System.Windows.Forms.Label();
+            this.button22 = new System.Windows.Forms.Button();
             this.labelClasses = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
             this.labelTeachers = new System.Windows.Forms.Label();
+            this.button20 = new System.Windows.Forms.Button();
             this.studentsLabel = new System.Windows.Forms.Label();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
             this.ManageStaff = new System.Windows.Forms.Panel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button24 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button23 = new System.Windows.Forms.Button();
             this.Teachingstaff = new System.Windows.Forms.Panel();
             this.TeachingStaffTabControl = new System.Windows.Forms.TabControl();
@@ -209,8 +219,14 @@
             this.btnRanks = new System.Windows.Forms.Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.Transport = new System.Windows.Forms.Panel();
             this.ViewTransportDetails = new System.Windows.Forms.Panel();
             this.transportdetails = new System.Windows.Forms.DataGridView();
@@ -218,36 +234,47 @@
             this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
             this.label101 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
+            this.btnTrasportDetails = new System.Windows.Forms.Button();
             this.labelRoute = new System.Windows.Forms.Label();
+            this.button35 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label99 = new System.Windows.Forms.Label();
+            this.vehicles = new System.Windows.Forms.Button();
             this.panel_Sidenav = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDropDownForAdmission = new System.Windows.Forms.Panel();
             this.button26 = new System.Windows.Forms.Button();
+            this.AdmissionBtn = new System.Windows.Forms.Button();
+            this.btnAcademic = new System.Windows.Forms.Button();
             this.panelAcademic = new System.Windows.Forms.Panel();
             this.button46 = new System.Windows.Forms.Button();
             this.btnExaminations = new System.Windows.Forms.Button();
             this.btnSetExams = new System.Windows.Forms.Button();
+            this.btnFinance = new System.Windows.Forms.Button();
             this.panelDropFinance = new System.Windows.Forms.Panel();
             this.button48 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnManage = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panelDropDispensary = new System.Windows.Forms.Panel();
             this.btnNewMedicine = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.btnTriage = new System.Windows.Forms.Button();
+            this.btnLibrary = new System.Windows.Forms.Button();
             this.panelDropLibrary = new System.Windows.Forms.Panel();
             this.button50 = new System.Windows.Forms.Button();
             this.button49 = new System.Windows.Forms.Button();
             this.button44 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panelDropHostel = new System.Windows.Forms.Panel();
             this.button53 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panelDropTransport = new System.Windows.Forms.Panel();
             this.btnTransRoute = new System.Windows.Forms.Button();
             this.btnVehicle = new System.Windows.Forms.Button();
@@ -256,6 +283,7 @@
             this.btnAttendance = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelHome = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataSetStd = new System.Data.DataSet();
@@ -268,6 +296,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ExamsResults = new System.Windows.Forms.Panel();
             this.ViewProcessedResults = new System.Windows.Forms.Panel();
             this.comboBoxExamTerm = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -295,6 +324,7 @@
             this.GridExams = new System.Windows.Forms.DataGridView();
             this.btnGenerateScore = new Guna.UI2.WinForms.Guna2Button();
             this.ExamTypecombo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.label63 = new System.Windows.Forms.Label();
             this.CATS_EXAMS = new System.Windows.Forms.Panel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -323,6 +353,7 @@
             this.label61 = new System.Windows.Forms.Label();
             this.guna2TextBoxAdmNoExam = new Guna.UI2.WinForms.Guna2TextBox();
             this.label62 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
             this.catsPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.txtAllStudentMarks = new Guna.UI2.WinForms.Guna2TextBox();
             this.label56 = new System.Windows.Forms.Label();
@@ -333,6 +364,7 @@
             this.RcomboBoxTerm = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label25 = new System.Windows.Forms.Label();
             this.RcomboBoxSubject = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.button12 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.RcomboBoxExamCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -378,28 +410,36 @@
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.ExamsSideNavPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.flowLayoutPanel2Exams = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnCats = new System.Windows.Forms.Button();
+            this.btnExams = new System.Windows.Forms.Button();
             this.FormResults = new System.Windows.Forms.Panel();
             this.btnForm4Results = new System.Windows.Forms.Button();
             this.btnForm3Results = new System.Windows.Forms.Button();
             this.btnform2Results = new System.Windows.Forms.Button();
             this.BTNFORM1RESULTS = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
             this.Hostel = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.labelCleared = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.HostelOccupancy = new System.Windows.Forms.Panel();
             this.GridHostelInfo = new System.Windows.Forms.DataGridView();
             this.HostelHeader = new System.Windows.Forms.Panel();
             this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
             this.label18 = new System.Windows.Forms.Label();
             this.OccupiedLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.labelHostel = new System.Windows.Forms.Label();
+            this.btnHostels = new System.Windows.Forms.Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.addUsers = new System.Windows.Forms.Panel();
             this.label81 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnSignUpReset = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.txtMobile = new Guna.UI2.WinForms.Guna2TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
@@ -414,46 +454,6 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.label79 = new System.Windows.Forms.Label();
-            this.btnViewMedicines = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.btnTrasportDetails = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.vehicles = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnHostels = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.btnCats = new System.Windows.Forms.Button();
-            this.btnExams = new System.Windows.Forms.Button();
-            this.btnReports = new System.Windows.Forms.Button();
-            this.btnSignUpReset = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.AdmissionBtn = new System.Windows.Forms.Button();
-            this.btnAcademic = new System.Windows.Forms.Button();
-            this.btnFinance = new System.Windows.Forms.Button();
-            this.btnManage = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.btnLibrary = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.AdmissionPanel.SuspendLayout();
             this.admission.SuspendLayout();
             this.studentsTab.SuspendLayout();
@@ -481,6 +481,8 @@
             this.panel6.SuspendLayout();
             this.Dashboard.SuspendLayout();
             this.ManageStaff.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Teachingstaff.SuspendLayout();
             this.TeachingStaffTabControl.SuspendLayout();
             this.AddTeacher.SuspendLayout();
@@ -504,10 +506,12 @@
             this.panelDropHostel.SuspendLayout();
             this.panelDropTransport.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStd)).BeginInit();
             this.StudentsDetailsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3StudentsDetails)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.ExamsResults.SuspendLayout();
             this.ViewProcessedResults.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -536,10 +540,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GridHostelInfo)).BeginInit();
             this.HostelHeader.SuspendLayout();
             this.addUsers.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // AdmissionPanel
@@ -2209,6 +2209,23 @@
             this.label29.Text = "0";
             this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
+            // btnViewMedicines
+            // 
+            this.btnViewMedicines.BackColor = System.Drawing.Color.LightBlue;
+            this.btnViewMedicines.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewMedicines.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewMedicines.ForeColor = System.Drawing.Color.White;
+            this.btnViewMedicines.Image = global::Shule.Properties.Resources.students;
+            this.btnViewMedicines.Location = new System.Drawing.Point(745, 64);
+            this.btnViewMedicines.Name = "btnViewMedicines";
+            this.btnViewMedicines.Size = new System.Drawing.Size(245, 108);
+            this.btnViewMedicines.TabIndex = 22;
+            this.btnViewMedicines.Text = "Medicines";
+            this.btnViewMedicines.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnViewMedicines.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnViewMedicines.UseVisualStyleBackColor = false;
+            this.btnViewMedicines.Click += new System.EventHandler(this.button28_Click_1);
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -2222,6 +2239,23 @@
             this.label28.Text = "0";
             this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
+            // button27
+            // 
+            this.button27.BackColor = System.Drawing.Color.LightBlue;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button27.ForeColor = System.Drawing.Color.White;
+            this.button27.Image = global::Shule.Properties.Resources.students;
+            this.button27.Location = new System.Drawing.Point(406, 64);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(245, 108);
+            this.button27.TabIndex = 20;
+            this.button27.Text = " Refferals";
+            this.button27.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
             // labelAdmitted
             // 
             this.labelAdmitted.AutoSize = true;
@@ -2234,6 +2268,23 @@
             this.labelAdmitted.TabIndex = 19;
             this.labelAdmitted.Text = "0";
             this.labelAdmitted.Click += new System.EventHandler(this.label24_Click_1);
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.LightBlue;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.ForeColor = System.Drawing.Color.White;
+            this.button25.Image = global::Shule.Properties.Resources.students;
+            this.button25.Location = new System.Drawing.Point(29, 64);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(245, 108);
+            this.button25.TabIndex = 18;
+            this.button25.Text = "Admitted Students";
+            this.button25.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // Library
             // 
@@ -2275,6 +2326,21 @@
             this.labelSuppliers.TabIndex = 21;
             this.labelSuppliers.Text = "0";
             // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.LightBlue;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.ForeColor = System.Drawing.Color.White;
+            this.button22.Location = new System.Drawing.Point(966, 102);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(245, 108);
+            this.button22.TabIndex = 20;
+            this.button22.Text = " Suppliers";
+            this.button22.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button22.UseVisualStyleBackColor = false;
+            // 
             // labelClasses
             // 
             this.labelClasses.AutoSize = true;
@@ -2286,6 +2352,21 @@
             this.labelClasses.Size = new System.Drawing.Size(25, 25);
             this.labelClasses.TabIndex = 19;
             this.labelClasses.Text = "0";
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.LightBlue;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.Color.White;
+            this.button21.Location = new System.Drawing.Point(663, 100);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(245, 108);
+            this.button21.TabIndex = 18;
+            this.button21.Text = " Classes";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button21.UseVisualStyleBackColor = false;
             // 
             // labelTeachers
             // 
@@ -2299,6 +2380,22 @@
             this.labelTeachers.TabIndex = 17;
             this.labelTeachers.Text = "0";
             // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.LightBlue;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.Color.White;
+            this.button20.Image = global::Shule.Properties.Resources.students;
+            this.button20.Location = new System.Drawing.Point(327, 98);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(245, 108);
+            this.button20.TabIndex = 16;
+            this.button20.Text = " Teachers";
+            this.button20.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button20.UseVisualStyleBackColor = false;
+            // 
             // studentsLabel
             // 
             this.studentsLabel.AutoSize = true;
@@ -2310,6 +2407,38 @@
             this.studentsLabel.Size = new System.Drawing.Size(25, 25);
             this.studentsLabel.TabIndex = 15;
             this.studentsLabel.Text = "0";
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.LightBlue;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.Color.White;
+            this.button19.Image = global::Shule.Properties.Resources.students;
+            this.button19.Location = new System.Drawing.Point(6, 96);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(245, 108);
+            this.button19.TabIndex = 14;
+            this.button19.Text = " Students";
+            this.button19.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button19.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.LightBlue;
+            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.Color.White;
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button18.Location = new System.Drawing.Point(0, 0);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(1228, 82);
+            this.button18.TabIndex = 13;
+            this.button18.Text = " Dashboard";
+            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button18.UseVisualStyleBackColor = false;
             // 
             // ManageStaff
             // 
@@ -2341,6 +2470,17 @@
             this.linkLabel2.Text = "Subordinate Staff";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Shule.Properties.Resources.teachers_icon;
+            this.pictureBox4.Location = new System.Drawing.Point(504, 87);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(146, 93);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 5;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // button24
             // 
             this.button24.BackColor = System.Drawing.Color.White;
@@ -2364,6 +2504,17 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Teaching Staff";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Shule.Properties.Resources.teachers_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(143, 83);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(146, 93);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // button23
             // 
@@ -3022,6 +3173,38 @@
             this.guna2HtmlLabel1.Text = "Application Setup Parameters";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button41
+            // 
+            this.button41.BackColor = System.Drawing.Color.LightBlue;
+            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button41.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button41.ForeColor = System.Drawing.Color.White;
+            this.button41.Image = global::Shule.Properties.Resources.feess;
+            this.button41.Location = new System.Drawing.Point(0, 207);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(187, 80);
+            this.button41.TabIndex = 8;
+            this.button41.Text = " Fee Structure ";
+            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button41.UseVisualStyleBackColor = false;
+            this.button41.Click += new System.EventHandler(this.button41_Click);
+            // 
+            // button34
+            // 
+            this.button34.BackColor = System.Drawing.Color.LightBlue;
+            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button34.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button34.ForeColor = System.Drawing.Color.White;
+            this.button34.Image = global::Shule.Properties.Resources.schoolinfo;
+            this.button34.Location = new System.Drawing.Point(0, 97);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(187, 80);
+            this.button34.TabIndex = 6;
+            this.button34.Text = "School Info";
+            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button34.UseVisualStyleBackColor = false;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
             // button33
             // 
             this.button33.BackColor = System.Drawing.Color.LightBlue;
@@ -3049,6 +3232,70 @@
             this.button32.Text = "Hostels";
             this.button32.UseVisualStyleBackColor = false;
             this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
+            // button31
+            // 
+            this.button31.BackColor = System.Drawing.Color.LightBlue;
+            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button31.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button31.ForeColor = System.Drawing.Color.White;
+            this.button31.Image = global::Shule.Properties.Resources.schoolstream;
+            this.button31.Location = new System.Drawing.Point(626, 93);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(187, 80);
+            this.button31.TabIndex = 3;
+            this.button31.Text = "Add Streams";
+            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.Color.LightBlue;
+            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button30.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button30.ForeColor = System.Drawing.Color.White;
+            this.button30.Image = global::Shule.Properties.Resources.classes2;
+            this.button30.Location = new System.Drawing.Point(413, 93);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(187, 80);
+            this.button30.TabIndex = 2;
+            this.button30.Text = "Add Classes";
+            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.LightBlue;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = global::Shule.Properties.Resources.subjects;
+            this.button15.Location = new System.Drawing.Point(626, 209);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(187, 80);
+            this.button15.TabIndex = 1;
+            this.button15.Text = "Add Subjects";
+            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.LightBlue;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = global::Shule.Properties.Resources.Adduser;
+            this.button4.Location = new System.Drawing.Point(213, 96);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(187, 80);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "New User";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Transport
             // 
@@ -3146,6 +3393,23 @@
             this.label100.TabIndex = 29;
             this.label100.Text = "0";
             // 
+            // btnTrasportDetails
+            // 
+            this.btnTrasportDetails.BackColor = System.Drawing.Color.LightBlue;
+            this.btnTrasportDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrasportDetails.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrasportDetails.ForeColor = System.Drawing.Color.White;
+            this.btnTrasportDetails.Image = global::Shule.Properties.Resources.students;
+            this.btnTrasportDetails.Location = new System.Drawing.Point(580, 49);
+            this.btnTrasportDetails.Name = "btnTrasportDetails";
+            this.btnTrasportDetails.Size = new System.Drawing.Size(245, 108);
+            this.btnTrasportDetails.TabIndex = 28;
+            this.btnTrasportDetails.Text = "Students";
+            this.btnTrasportDetails.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnTrasportDetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTrasportDetails.UseVisualStyleBackColor = false;
+            this.btnTrasportDetails.Click += new System.EventHandler(this.btnTrasportDetails_Click);
+            // 
             // labelRoute
             // 
             this.labelRoute.AutoSize = true;
@@ -3157,6 +3421,22 @@
             this.labelRoute.Size = new System.Drawing.Size(25, 25);
             this.labelRoute.TabIndex = 27;
             this.labelRoute.Text = "0";
+            // 
+            // button35
+            // 
+            this.button35.BackColor = System.Drawing.Color.LightBlue;
+            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button35.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button35.ForeColor = System.Drawing.Color.White;
+            this.button35.Image = global::Shule.Properties.Resources.students;
+            this.button35.Location = new System.Drawing.Point(280, 49);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(245, 108);
+            this.button35.TabIndex = 26;
+            this.button35.Text = "Routes";
+            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button35.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -3190,6 +3470,23 @@
             this.label99.Size = new System.Drawing.Size(25, 25);
             this.label99.TabIndex = 21;
             this.label99.Text = "0";
+            // 
+            // vehicles
+            // 
+            this.vehicles.BackColor = System.Drawing.Color.LightBlue;
+            this.vehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vehicles.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vehicles.ForeColor = System.Drawing.Color.White;
+            this.vehicles.Image = global::Shule.Properties.Resources.students;
+            this.vehicles.Location = new System.Drawing.Point(3, 49);
+            this.vehicles.Name = "vehicles";
+            this.vehicles.Size = new System.Drawing.Size(245, 108);
+            this.vehicles.TabIndex = 20;
+            this.vehicles.Text = "Vehicles";
+            this.vehicles.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.vehicles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.vehicles.UseVisualStyleBackColor = false;
+            this.vehicles.Click += new System.EventHandler(this.vehicles_Click);
             // 
             // panel_Sidenav
             // 
@@ -3269,6 +3566,39 @@
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
+            // AdmissionBtn
+            // 
+            this.AdmissionBtn.BackColor = System.Drawing.Color.White;
+            this.AdmissionBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AdmissionBtn.FlatAppearance.BorderSize = 0;
+            this.AdmissionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AdmissionBtn.Image = global::Shule.Properties.Resources.caretside;
+            this.AdmissionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AdmissionBtn.Location = new System.Drawing.Point(0, 0);
+            this.AdmissionBtn.Name = "AdmissionBtn";
+            this.AdmissionBtn.Size = new System.Drawing.Size(125, 35);
+            this.AdmissionBtn.TabIndex = 13;
+            this.AdmissionBtn.Text = "Admission";
+            this.AdmissionBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.AdmissionBtn.UseVisualStyleBackColor = false;
+            this.AdmissionBtn.Click += new System.EventHandler(this.AdmissionBtn_Click);
+            // 
+            // btnAcademic
+            // 
+            this.btnAcademic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAcademic.FlatAppearance.BorderSize = 0;
+            this.btnAcademic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAcademic.Image = global::Shule.Properties.Resources.caretside;
+            this.btnAcademic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAcademic.Location = new System.Drawing.Point(3, 143);
+            this.btnAcademic.Name = "btnAcademic";
+            this.btnAcademic.Size = new System.Drawing.Size(125, 35);
+            this.btnAcademic.TabIndex = 2;
+            this.btnAcademic.Text = "Academics";
+            this.btnAcademic.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAcademic.UseVisualStyleBackColor = true;
+            this.btnAcademic.Click += new System.EventHandler(this.button2_Click);
+            // 
             // panelAcademic
             // 
             this.panelAcademic.BackColor = System.Drawing.Color.Ivory;
@@ -3322,6 +3652,23 @@
             this.btnSetExams.UseVisualStyleBackColor = true;
             this.btnSetExams.Click += new System.EventHandler(this.btnSetExams_Click);
             // 
+            // btnFinance
+            // 
+            this.btnFinance.BackColor = System.Drawing.Color.White;
+            this.btnFinance.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFinance.FlatAppearance.BorderSize = 0;
+            this.btnFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinance.Image = global::Shule.Properties.Resources.caretside;
+            this.btnFinance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFinance.Location = new System.Drawing.Point(3, 275);
+            this.btnFinance.Name = "btnFinance";
+            this.btnFinance.Size = new System.Drawing.Size(125, 35);
+            this.btnFinance.TabIndex = 3;
+            this.btnFinance.Text = "Finance";
+            this.btnFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnFinance.UseVisualStyleBackColor = false;
+            this.btnFinance.Click += new System.EventHandler(this.button3_Click);
+            // 
             // panelDropFinance
             // 
             this.panelDropFinance.BackColor = System.Drawing.Color.Ivory;
@@ -3367,6 +3714,40 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // btnManage
+            // 
+            this.btnManage.BackColor = System.Drawing.Color.White;
+            this.btnManage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnManage.FlatAppearance.BorderSize = 0;
+            this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManage.Image = global::Shule.Properties.Resources.caretside;
+            this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnManage.Location = new System.Drawing.Point(3, 422);
+            this.btnManage.Name = "btnManage";
+            this.btnManage.Size = new System.Drawing.Size(125, 41);
+            this.btnManage.TabIndex = 14;
+            this.btnManage.Text = "Administration";
+            this.btnManage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnManage.UseVisualStyleBackColor = false;
+            this.btnManage.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = global::Shule.Properties.Resources.caretside;
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button9.Location = new System.Drawing.Point(3, 526);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(125, 35);
+            this.button9.TabIndex = 9;
+            this.button9.Text = "Dispensary";
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panelDropDispensary
             // 
@@ -3418,6 +3799,22 @@
             this.btnTriage.Text = "Triage";
             this.btnTriage.UseVisualStyleBackColor = true;
             this.btnTriage.Click += new System.EventHandler(this.btnTriage_Click);
+            // 
+            // btnLibrary
+            // 
+            this.btnLibrary.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLibrary.FlatAppearance.BorderSize = 0;
+            this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLibrary.Image = global::Shule.Properties.Resources.caretside;
+            this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLibrary.Location = new System.Drawing.Point(3, 651);
+            this.btnLibrary.Name = "btnLibrary";
+            this.btnLibrary.Size = new System.Drawing.Size(125, 35);
+            this.btnLibrary.TabIndex = 5;
+            this.btnLibrary.Text = "Library";
+            this.btnLibrary.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLibrary.UseVisualStyleBackColor = true;
+            this.btnLibrary.Click += new System.EventHandler(this.button5_Click);
             // 
             // panelDropLibrary
             // 
@@ -3476,6 +3873,22 @@
             this.button5.Text = "Available Books";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // button7
+            // 
+            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = global::Shule.Properties.Resources.caretside;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.Location = new System.Drawing.Point(3, 798);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(125, 35);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Hostels";
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // panelDropHostel
             // 
             this.panelDropHostel.BackColor = System.Drawing.Color.Ivory;
@@ -3526,6 +3939,22 @@
             this.button51.Text = "New Hostel";
             this.button51.UseVisualStyleBackColor = true;
             this.button51.Click += new System.EventHandler(this.button51_Click);
+            // 
+            // button8
+            // 
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = global::Shule.Properties.Resources.caretside;
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button8.Location = new System.Drawing.Point(3, 915);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(125, 35);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Transport";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // panelDropTransport
             // 
@@ -3635,6 +4064,17 @@
             this.labelHome.UseCompatibleTextRendering = true;
             this.labelHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.labelHome_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Shule.Properties.Resources.icon1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -3700,14 +4140,14 @@
             // dataGridView3StudentsDetails
             // 
             this.dataGridView3StudentsDetails.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView3StudentsDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3StudentsDetails.Location = new System.Drawing.Point(38, 224);
             this.dataGridView3StudentsDetails.Name = "dataGridView3StudentsDetails";
@@ -3804,6 +4244,18 @@
             this.label17.Size = new System.Drawing.Size(214, 31);
             this.label17.TabIndex = 1;
             this.label17.Text = "Student Details";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Shule.Properties.Resources.icon1;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(145, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(147, 92);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // ExamsResults
             // 
@@ -4237,6 +4689,22 @@
             this.ExamTypecombo.ShadowDecoration.Parent = this.ExamTypecombo;
             this.ExamTypecombo.Size = new System.Drawing.Size(161, 36);
             this.ExamTypecombo.TabIndex = 49;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.LightBlue;
+            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button14.ForeColor = System.Drawing.Color.White;
+            this.button14.Image = global::Shule.Properties.Resources.feess;
+            this.button14.Location = new System.Drawing.Point(0, 0);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(1028, 58);
+            this.button14.TabIndex = 46;
+            this.button14.Text = " EXAMINATIONS";
+            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button14.UseVisualStyleBackColor = false;
             // 
             // label63
             // 
@@ -4725,6 +5193,22 @@
             this.label62.TabIndex = 65;
             this.label62.Text = "AdmNo";
             // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.LightBlue;
+            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ForeColor = System.Drawing.Color.White;
+            this.button17.Image = global::Shule.Properties.Resources.feess;
+            this.button17.Location = new System.Drawing.Point(0, 0);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(1028, 58);
+            this.button17.TabIndex = 46;
+            this.button17.Text = " EXAMINATIONS";
+            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button17.UseVisualStyleBackColor = false;
+            // 
             // catsPanel
             // 
             this.catsPanel.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -4885,6 +5369,22 @@
             this.RcomboBoxSubject.ShadowDecoration.Parent = this.RcomboBoxSubject;
             this.RcomboBoxSubject.Size = new System.Drawing.Size(167, 36);
             this.RcomboBoxSubject.TabIndex = 12;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.LightBlue;
+            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Image = global::Shule.Properties.Resources.feess;
+            this.button12.Location = new System.Drawing.Point(0, 0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(1028, 58);
+            this.button12.TabIndex = 11;
+            this.button12.Text = "CONTINUOUS ASSESSMENTS TEST(CATS) / EXAMINATIONS";
+            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button12.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -5548,6 +6048,40 @@
             this.flowLayoutPanel2Exams.Size = new System.Drawing.Size(200, 700);
             this.flowLayoutPanel2Exams.TabIndex = 29;
             // 
+            // btnCats
+            // 
+            this.btnCats.BackColor = System.Drawing.Color.LightBlue;
+            this.btnCats.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCats.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCats.ForeColor = System.Drawing.Color.White;
+            this.btnCats.Image = global::Shule.Properties.Resources.feess;
+            this.btnCats.Location = new System.Drawing.Point(3, 3);
+            this.btnCats.Name = "btnCats";
+            this.btnCats.Size = new System.Drawing.Size(200, 58);
+            this.btnCats.TabIndex = 9;
+            this.btnCats.Text = "MARKS\r\nENTRIES\r\n";
+            this.btnCats.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCats.UseVisualStyleBackColor = false;
+            this.btnCats.Click += new System.EventHandler(this.btnCats_Click);
+            // 
+            // btnExams
+            // 
+            this.btnExams.BackColor = System.Drawing.Color.LightBlue;
+            this.btnExams.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExams.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExams.ForeColor = System.Drawing.Color.White;
+            this.btnExams.Image = global::Shule.Properties.Resources.subjects;
+            this.btnExams.Location = new System.Drawing.Point(3, 67);
+            this.btnExams.Name = "btnExams";
+            this.btnExams.Size = new System.Drawing.Size(200, 58);
+            this.btnExams.TabIndex = 10;
+            this.btnExams.Text = " PROCESS \r\n EXAMS";
+            this.btnExams.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExams.UseVisualStyleBackColor = false;
+            this.btnExams.Click += new System.EventHandler(this.btnExams_Click);
+            // 
             // FormResults
             // 
             this.FormResults.BackColor = System.Drawing.Color.Ivory;
@@ -5619,6 +6153,21 @@
             this.BTNFORM1RESULTS.UseVisualStyleBackColor = true;
             this.BTNFORM1RESULTS.Click += new System.EventHandler(this.BTNFORM1RESULTS_Click);
             // 
+            // btnReports
+            // 
+            this.btnReports.BackColor = System.Drawing.Color.LightBlue;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReports.ForeColor = System.Drawing.Color.White;
+            this.btnReports.Image = global::Shule.Properties.Resources.feess;
+            this.btnReports.Location = new System.Drawing.Point(3, 227);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(200, 58);
+            this.btnReports.TabIndex = 11;
+            this.btnReports.Text = "REPORTS";
+            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReports.UseVisualStyleBackColor = false;
+            // 
             // Hostel
             // 
             this.Hostel.AutoScroll = true;
@@ -5669,6 +6218,23 @@
             this.labelCleared.Size = new System.Drawing.Size(25, 25);
             this.labelCleared.TabIndex = 22;
             this.labelCleared.Text = "0";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightBlue;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::Shule.Properties.Resources.students;
+            this.button3.Location = new System.Drawing.Point(699, 93);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(245, 108);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Cleared Students";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // HostelOccupancy
             // 
@@ -5746,6 +6312,23 @@
             this.OccupiedLabel.TabIndex = 19;
             this.OccupiedLabel.Text = "0";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::Shule.Properties.Resources.students;
+            this.button1.Location = new System.Drawing.Point(356, 93);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(245, 108);
+            this.button1.TabIndex = 18;
+            this.button1.Text = " Hostels\r\nOccupancy\r\n";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // labelHostel
             // 
             this.labelHostel.AutoSize = true;
@@ -5757,6 +6340,23 @@
             this.labelHostel.Size = new System.Drawing.Size(25, 25);
             this.labelHostel.TabIndex = 17;
             this.labelHostel.Text = "0";
+            // 
+            // btnHostels
+            // 
+            this.btnHostels.BackColor = System.Drawing.Color.LightBlue;
+            this.btnHostels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHostels.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHostels.ForeColor = System.Drawing.Color.White;
+            this.btnHostels.Image = global::Shule.Properties.Resources.students;
+            this.btnHostels.Location = new System.Drawing.Point(6, 92);
+            this.btnHostels.Name = "btnHostels";
+            this.btnHostels.Size = new System.Drawing.Size(245, 108);
+            this.btnHostels.TabIndex = 16;
+            this.btnHostels.Text = " Hostels";
+            this.btnHostels.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnHostels.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHostels.UseVisualStyleBackColor = false;
+            this.btnHostels.Click += new System.EventHandler(this.button1_Click);
             // 
             // guna2Elipse1
             // 
@@ -5822,6 +6422,48 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(4, 346);
             this.panel5.TabIndex = 37;
+            // 
+            // btnSignUpReset
+            // 
+            this.btnSignUpReset.BorderRadius = 20;
+            this.btnSignUpReset.CheckedState.Parent = this.btnSignUpReset;
+            this.btnSignUpReset.CustomImages.Parent = this.btnSignUpReset;
+            this.btnSignUpReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUpReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUpReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUpReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUpReset.DisabledState.Parent = this.btnSignUpReset;
+            this.btnSignUpReset.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUpReset.ForeColor = System.Drawing.Color.White;
+            this.btnSignUpReset.HoverState.Parent = this.btnSignUpReset;
+            this.btnSignUpReset.Location = new System.Drawing.Point(847, 356);
+            this.btnSignUpReset.Name = "btnSignUpReset";
+            this.btnSignUpReset.ShadowDecoration.Parent = this.btnSignUpReset;
+            this.btnSignUpReset.Size = new System.Drawing.Size(113, 38);
+            this.btnSignUpReset.TabIndex = 36;
+            this.btnSignUpReset.Text = "Reset";
+            this.btnSignUpReset.Click += new System.EventHandler(this.btnSignUpReset_Click);
+            // 
+            // btnSignUp
+            // 
+            this.btnSignUp.BorderRadius = 20;
+            this.btnSignUp.CheckedState.Parent = this.btnSignUp;
+            this.btnSignUp.CustomImages.Parent = this.btnSignUp;
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.DisabledState.Parent = this.btnSignUp;
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.HoverState.Parent = this.btnSignUp;
+            this.btnSignUp.Location = new System.Drawing.Point(635, 356);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.ShadowDecoration.Parent = this.btnSignUp;
+            this.btnSignUp.Size = new System.Drawing.Size(113, 38);
+            this.btnSignUp.TabIndex = 35;
+            this.btnSignUp.Text = "SignUp";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // txtMobile
             // 
@@ -6045,653 +6687,6 @@
             this.label79.TabIndex = 20;
             this.label79.Text = "Full Name";
             // 
-            // btnViewMedicines
-            // 
-            this.btnViewMedicines.BackColor = System.Drawing.Color.LightBlue;
-            this.btnViewMedicines.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewMedicines.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewMedicines.ForeColor = System.Drawing.Color.White;
-            this.btnViewMedicines.Image = global::Shule.Properties.Resources.students;
-            this.btnViewMedicines.Location = new System.Drawing.Point(745, 64);
-            this.btnViewMedicines.Name = "btnViewMedicines";
-            this.btnViewMedicines.Size = new System.Drawing.Size(245, 108);
-            this.btnViewMedicines.TabIndex = 22;
-            this.btnViewMedicines.Text = "Medicines";
-            this.btnViewMedicines.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnViewMedicines.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnViewMedicines.UseVisualStyleBackColor = false;
-            this.btnViewMedicines.Click += new System.EventHandler(this.button28_Click_1);
-            // 
-            // button27
-            // 
-            this.button27.BackColor = System.Drawing.Color.LightBlue;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button27.ForeColor = System.Drawing.Color.White;
-            this.button27.Image = global::Shule.Properties.Resources.students;
-            this.button27.Location = new System.Drawing.Point(406, 64);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(245, 108);
-            this.button27.TabIndex = 20;
-            this.button27.Text = " Refferals";
-            this.button27.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button27.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button27.UseVisualStyleBackColor = false;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.LightBlue;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button25.ForeColor = System.Drawing.Color.White;
-            this.button25.Image = global::Shule.Properties.Resources.students;
-            this.button25.Location = new System.Drawing.Point(29, 64);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(245, 108);
-            this.button25.TabIndex = 18;
-            this.button25.Text = "Admitted Students";
-            this.button25.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // btnTrasportDetails
-            // 
-            this.btnTrasportDetails.BackColor = System.Drawing.Color.LightBlue;
-            this.btnTrasportDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTrasportDetails.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTrasportDetails.ForeColor = System.Drawing.Color.White;
-            this.btnTrasportDetails.Image = global::Shule.Properties.Resources.students;
-            this.btnTrasportDetails.Location = new System.Drawing.Point(580, 49);
-            this.btnTrasportDetails.Name = "btnTrasportDetails";
-            this.btnTrasportDetails.Size = new System.Drawing.Size(245, 108);
-            this.btnTrasportDetails.TabIndex = 28;
-            this.btnTrasportDetails.Text = "Students";
-            this.btnTrasportDetails.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnTrasportDetails.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTrasportDetails.UseVisualStyleBackColor = false;
-            this.btnTrasportDetails.Click += new System.EventHandler(this.btnTrasportDetails_Click);
-            // 
-            // button35
-            // 
-            this.button35.BackColor = System.Drawing.Color.LightBlue;
-            this.button35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button35.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button35.ForeColor = System.Drawing.Color.White;
-            this.button35.Image = global::Shule.Properties.Resources.students;
-            this.button35.Location = new System.Drawing.Point(280, 49);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(245, 108);
-            this.button35.TabIndex = 26;
-            this.button35.Text = "Routes";
-            this.button35.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button35.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button35.UseVisualStyleBackColor = false;
-            // 
-            // vehicles
-            // 
-            this.vehicles.BackColor = System.Drawing.Color.LightBlue;
-            this.vehicles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vehicles.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vehicles.ForeColor = System.Drawing.Color.White;
-            this.vehicles.Image = global::Shule.Properties.Resources.students;
-            this.vehicles.Location = new System.Drawing.Point(3, 49);
-            this.vehicles.Name = "vehicles";
-            this.vehicles.Size = new System.Drawing.Size(245, 108);
-            this.vehicles.TabIndex = 20;
-            this.vehicles.Text = "Vehicles";
-            this.vehicles.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.vehicles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.vehicles.UseVisualStyleBackColor = false;
-            this.vehicles.Click += new System.EventHandler(this.vehicles_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Shule.Properties.Resources.students;
-            this.button3.Location = new System.Drawing.Point(699, 93);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(245, 108);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Cleared Students";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Shule.Properties.Resources.students;
-            this.button1.Location = new System.Drawing.Point(356, 93);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 108);
-            this.button1.TabIndex = 18;
-            this.button1.Text = " Hostels\r\nOccupancy\r\n";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // btnHostels
-            // 
-            this.btnHostels.BackColor = System.Drawing.Color.LightBlue;
-            this.btnHostels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHostels.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHostels.ForeColor = System.Drawing.Color.White;
-            this.btnHostels.Image = global::Shule.Properties.Resources.students;
-            this.btnHostels.Location = new System.Drawing.Point(6, 92);
-            this.btnHostels.Name = "btnHostels";
-            this.btnHostels.Size = new System.Drawing.Size(245, 108);
-            this.btnHostels.TabIndex = 16;
-            this.btnHostels.Text = " Hostels";
-            this.btnHostels.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnHostels.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHostels.UseVisualStyleBackColor = false;
-            this.btnHostels.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button41
-            // 
-            this.button41.BackColor = System.Drawing.Color.LightBlue;
-            this.button41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button41.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button41.ForeColor = System.Drawing.Color.White;
-            this.button41.Image = global::Shule.Properties.Resources.feess;
-            this.button41.Location = new System.Drawing.Point(0, 207);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(187, 80);
-            this.button41.TabIndex = 8;
-            this.button41.Text = " Fee Structure ";
-            this.button41.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button41.UseVisualStyleBackColor = false;
-            this.button41.Click += new System.EventHandler(this.button41_Click);
-            // 
-            // button34
-            // 
-            this.button34.BackColor = System.Drawing.Color.LightBlue;
-            this.button34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button34.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button34.ForeColor = System.Drawing.Color.White;
-            this.button34.Image = global::Shule.Properties.Resources.schoolinfo;
-            this.button34.Location = new System.Drawing.Point(0, 97);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(187, 80);
-            this.button34.TabIndex = 6;
-            this.button34.Text = "School Info";
-            this.button34.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button34.UseVisualStyleBackColor = false;
-            this.button34.Click += new System.EventHandler(this.button34_Click);
-            // 
-            // button31
-            // 
-            this.button31.BackColor = System.Drawing.Color.LightBlue;
-            this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button31.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.ForeColor = System.Drawing.Color.White;
-            this.button31.Image = global::Shule.Properties.Resources.schoolstream;
-            this.button31.Location = new System.Drawing.Point(626, 93);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(187, 80);
-            this.button31.TabIndex = 3;
-            this.button31.Text = "Add Streams";
-            this.button31.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button31.UseVisualStyleBackColor = false;
-            this.button31.Click += new System.EventHandler(this.button31_Click);
-            // 
-            // button30
-            // 
-            this.button30.BackColor = System.Drawing.Color.LightBlue;
-            this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button30.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button30.ForeColor = System.Drawing.Color.White;
-            this.button30.Image = global::Shule.Properties.Resources.classes2;
-            this.button30.Location = new System.Drawing.Point(413, 93);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(187, 80);
-            this.button30.TabIndex = 2;
-            this.button30.Text = "Add Classes";
-            this.button30.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button30.UseVisualStyleBackColor = false;
-            this.button30.Click += new System.EventHandler(this.button30_Click);
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.LightBlue;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = global::Shule.Properties.Resources.subjects;
-            this.button15.Location = new System.Drawing.Point(626, 209);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(187, 80);
-            this.button15.TabIndex = 1;
-            this.button15.Text = "Add Subjects";
-            this.button15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LightBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Shule.Properties.Resources.Adduser;
-            this.button4.Location = new System.Drawing.Point(213, 96);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(187, 80);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "New User";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.LightBlue;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.ForeColor = System.Drawing.Color.White;
-            this.button22.Image = global::Shule.Properties.Resources.supply1;
-            this.button22.Location = new System.Drawing.Point(966, 102);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(245, 108);
-            this.button22.TabIndex = 20;
-            this.button22.Text = " Suppliers";
-            this.button22.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.LightBlue;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.Color.White;
-            this.button21.Image = global::Shule.Properties.Resources.classes4;
-            this.button21.Location = new System.Drawing.Point(663, 100);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(245, 108);
-            this.button21.TabIndex = 18;
-            this.button21.Text = " Classes";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button20
-            // 
-            this.button20.BackColor = System.Drawing.Color.LightBlue;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Image = global::Shule.Properties.Resources.students;
-            this.button20.Location = new System.Drawing.Point(327, 98);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(245, 108);
-            this.button20.TabIndex = 16;
-            this.button20.Text = " Teachers";
-            this.button20.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button20.UseVisualStyleBackColor = false;
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.LightBlue;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Image = global::Shule.Properties.Resources.students;
-            this.button19.Location = new System.Drawing.Point(6, 96);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(245, 108);
-            this.button19.TabIndex = 14;
-            this.button19.Text = " Students";
-            this.button19.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button19.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.LightBlue;
-            this.button18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Image = global::Shule.Properties.Resources.dashboard_layout;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button18.Location = new System.Drawing.Point(0, 0);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(1228, 82);
-            this.button18.TabIndex = 13;
-            this.button18.Text = " Dashboard";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button14
-            // 
-            this.button14.BackColor = System.Drawing.Color.LightBlue;
-            this.button14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Image = global::Shule.Properties.Resources.feess;
-            this.button14.Location = new System.Drawing.Point(0, 0);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(1028, 58);
-            this.button14.TabIndex = 46;
-            this.button14.Text = " EXAMINATIONS";
-            this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button14.UseVisualStyleBackColor = false;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.LightBlue;
-            this.button17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = global::Shule.Properties.Resources.feess;
-            this.button17.Location = new System.Drawing.Point(0, 0);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(1028, 58);
-            this.button17.TabIndex = 46;
-            this.button17.Text = " EXAMINATIONS";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.LightBlue;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = global::Shule.Properties.Resources.feess;
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(1028, 58);
-            this.button12.TabIndex = 11;
-            this.button12.Text = "CONTINUOUS ASSESSMENTS TEST(CATS) / EXAMINATIONS";
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // btnCats
-            // 
-            this.btnCats.BackColor = System.Drawing.Color.LightBlue;
-            this.btnCats.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCats.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCats.ForeColor = System.Drawing.Color.White;
-            this.btnCats.Image = global::Shule.Properties.Resources.feess;
-            this.btnCats.Location = new System.Drawing.Point(3, 3);
-            this.btnCats.Name = "btnCats";
-            this.btnCats.Size = new System.Drawing.Size(200, 58);
-            this.btnCats.TabIndex = 9;
-            this.btnCats.Text = "MARKS\r\nENTRIES\r\n";
-            this.btnCats.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCats.UseVisualStyleBackColor = false;
-            this.btnCats.Click += new System.EventHandler(this.btnCats_Click);
-            // 
-            // btnExams
-            // 
-            this.btnExams.BackColor = System.Drawing.Color.LightBlue;
-            this.btnExams.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExams.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExams.ForeColor = System.Drawing.Color.White;
-            this.btnExams.Image = global::Shule.Properties.Resources.subjects;
-            this.btnExams.Location = new System.Drawing.Point(3, 67);
-            this.btnExams.Name = "btnExams";
-            this.btnExams.Size = new System.Drawing.Size(200, 58);
-            this.btnExams.TabIndex = 10;
-            this.btnExams.Text = " PROCESS \r\n EXAMS";
-            this.btnExams.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExams.UseVisualStyleBackColor = false;
-            this.btnExams.Click += new System.EventHandler(this.btnExams_Click);
-            // 
-            // btnReports
-            // 
-            this.btnReports.BackColor = System.Drawing.Color.LightBlue;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Image = global::Shule.Properties.Resources.feess;
-            this.btnReports.Location = new System.Drawing.Point(3, 227);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(200, 58);
-            this.btnReports.TabIndex = 11;
-            this.btnReports.Text = "REPORTS";
-            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReports.UseVisualStyleBackColor = false;
-            // 
-            // btnSignUpReset
-            // 
-            this.btnSignUpReset.BorderRadius = 20;
-            this.btnSignUpReset.CheckedState.Parent = this.btnSignUpReset;
-            this.btnSignUpReset.CustomImages.Parent = this.btnSignUpReset;
-            this.btnSignUpReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignUpReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignUpReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSignUpReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignUpReset.DisabledState.Parent = this.btnSignUpReset;
-            this.btnSignUpReset.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUpReset.ForeColor = System.Drawing.Color.White;
-            this.btnSignUpReset.HoverState.Parent = this.btnSignUpReset;
-            this.btnSignUpReset.Image = global::Shule.Properties.Resources.reset;
-            this.btnSignUpReset.Location = new System.Drawing.Point(847, 356);
-            this.btnSignUpReset.Name = "btnSignUpReset";
-            this.btnSignUpReset.ShadowDecoration.Parent = this.btnSignUpReset;
-            this.btnSignUpReset.Size = new System.Drawing.Size(113, 38);
-            this.btnSignUpReset.TabIndex = 36;
-            this.btnSignUpReset.Text = "Reset";
-            this.btnSignUpReset.Click += new System.EventHandler(this.btnSignUpReset_Click);
-            // 
-            // btnSignUp
-            // 
-            this.btnSignUp.BorderRadius = 20;
-            this.btnSignUp.CheckedState.Parent = this.btnSignUp;
-            this.btnSignUp.CustomImages.Parent = this.btnSignUp;
-            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignUp.DisabledState.Parent = this.btnSignUp;
-            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.HoverState.Parent = this.btnSignUp;
-            this.btnSignUp.Image = global::Shule.Properties.Resources.login;
-            this.btnSignUp.Location = new System.Drawing.Point(635, 356);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.ShadowDecoration.Parent = this.btnSignUp;
-            this.btnSignUp.Size = new System.Drawing.Size(113, 38);
-            this.btnSignUp.TabIndex = 35;
-            this.btnSignUp.Text = "SignUp";
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Shule.Properties.Resources.icon1;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(145, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(147, 92);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Shule.Properties.Resources.icon1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Shule.Properties.Resources.teachers_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(504, 87);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(146, 93);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Shule.Properties.Resources.teachers_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(143, 83);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(146, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // AdmissionBtn
-            // 
-            this.AdmissionBtn.BackColor = System.Drawing.Color.White;
-            this.AdmissionBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AdmissionBtn.FlatAppearance.BorderSize = 0;
-            this.AdmissionBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AdmissionBtn.Image = global::Shule.Properties.Resources.caretside;
-            this.AdmissionBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AdmissionBtn.Location = new System.Drawing.Point(0, 0);
-            this.AdmissionBtn.Name = "AdmissionBtn";
-            this.AdmissionBtn.Size = new System.Drawing.Size(125, 35);
-            this.AdmissionBtn.TabIndex = 13;
-            this.AdmissionBtn.Text = "Admission";
-            this.AdmissionBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.AdmissionBtn.UseVisualStyleBackColor = false;
-            this.AdmissionBtn.Click += new System.EventHandler(this.AdmissionBtn_Click);
-            // 
-            // btnAcademic
-            // 
-            this.btnAcademic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAcademic.FlatAppearance.BorderSize = 0;
-            this.btnAcademic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcademic.Image = global::Shule.Properties.Resources.caretside;
-            this.btnAcademic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAcademic.Location = new System.Drawing.Point(3, 143);
-            this.btnAcademic.Name = "btnAcademic";
-            this.btnAcademic.Size = new System.Drawing.Size(125, 35);
-            this.btnAcademic.TabIndex = 2;
-            this.btnAcademic.Text = "Academics";
-            this.btnAcademic.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAcademic.UseVisualStyleBackColor = true;
-            this.btnAcademic.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnFinance
-            // 
-            this.btnFinance.BackColor = System.Drawing.Color.White;
-            this.btnFinance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFinance.FlatAppearance.BorderSize = 0;
-            this.btnFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinance.Image = global::Shule.Properties.Resources.caretside;
-            this.btnFinance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFinance.Location = new System.Drawing.Point(3, 275);
-            this.btnFinance.Name = "btnFinance";
-            this.btnFinance.Size = new System.Drawing.Size(125, 35);
-            this.btnFinance.TabIndex = 3;
-            this.btnFinance.Text = "Finance";
-            this.btnFinance.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnFinance.UseVisualStyleBackColor = false;
-            this.btnFinance.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnManage
-            // 
-            this.btnManage.BackColor = System.Drawing.Color.White;
-            this.btnManage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnManage.FlatAppearance.BorderSize = 0;
-            this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManage.Image = global::Shule.Properties.Resources.caretside;
-            this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnManage.Location = new System.Drawing.Point(3, 422);
-            this.btnManage.Name = "btnManage";
-            this.btnManage.Size = new System.Drawing.Size(125, 41);
-            this.btnManage.TabIndex = 14;
-            this.btnManage.Text = "Administration";
-            this.btnManage.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnManage.UseVisualStyleBackColor = false;
-            this.btnManage.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = global::Shule.Properties.Resources.caretside;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(3, 526);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(125, 35);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Dispensary";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // btnLibrary
-            // 
-            this.btnLibrary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLibrary.FlatAppearance.BorderSize = 0;
-            this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLibrary.Image = global::Shule.Properties.Resources.caretside;
-            this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLibrary.Location = new System.Drawing.Point(3, 651);
-            this.btnLibrary.Name = "btnLibrary";
-            this.btnLibrary.Size = new System.Drawing.Size(125, 35);
-            this.btnLibrary.TabIndex = 5;
-            this.btnLibrary.Text = "Library";
-            this.btnLibrary.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLibrary.UseVisualStyleBackColor = true;
-            this.btnLibrary.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button7
-            // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = global::Shule.Properties.Resources.caretside;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(3, 798);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(125, 35);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Hostels";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = global::Shule.Properties.Resources.caretside;
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(3, 915);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(125, 35);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Transport";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -6762,6 +6757,8 @@
             this.Dashboard.PerformLayout();
             this.ManageStaff.ResumeLayout(false);
             this.ManageStaff.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Teachingstaff.ResumeLayout(false);
             this.TeachingStaffTabControl.ResumeLayout(false);
             this.AddTeacher.ResumeLayout(false);
@@ -6791,12 +6788,14 @@
             this.panelDropTransport.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetStd)).EndInit();
             this.StudentsDetailsPanel.ResumeLayout(false);
             this.StudentsDetailsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3StudentsDetails)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ExamsResults.ResumeLayout(false);
             this.ViewProcessedResults.ResumeLayout(false);
             this.ViewProcessedResults.PerformLayout();
@@ -6840,10 +6839,6 @@
             this.HostelHeader.PerformLayout();
             this.addUsers.ResumeLayout(false);
             this.addUsers.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
