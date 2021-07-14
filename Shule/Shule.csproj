@@ -184,11 +184,6 @@
     <Compile Include="AttendancePortal.Designer.cs">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSetFees.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetFees.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Fees_Structure.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,22 +239,6 @@
     </Compile>
     <Compile Include="SetExam.Designer.cs">
       <DependentUpon>SetExam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="shuleDataSet.Designer.cs" />
-    <Compile Include="shuleDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="shuleDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>shuleDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="shuleDataSetF.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Stream.cs">
@@ -425,17 +404,6 @@
       <DependentUpon>AssignHostel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Shule.exe.config" />
-    <None Include="DataSetFees.xsc">
-      <DependentUpon>DataSetFees.xsd</DependentUpon>
-    </None>
-    <None Include="DataSetFees.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetFees.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSetFees.xss">
-      <DependentUpon>DataSetFees.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -446,39 +414,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="shuleDataSet.xsc">
-      <DependentUpon>shuleDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>shuleDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="shuleDataSet.xss">
-      <DependentUpon>shuleDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSet1.xsc">
-      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>shuleDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="shuleDataSet1.xss">
-      <DependentUpon>shuleDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSetF.xsc">
-      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
-    </None>
-    <None Include="shuleDataSetF.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>shuleDataSetF.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="shuleDataSetF.xss">
-      <DependentUpon>shuleDataSetF.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
