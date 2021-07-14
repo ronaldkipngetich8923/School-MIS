@@ -27,7 +27,7 @@ namespace Shule
     {
        
      
-        Function fn = new Function();
+        //Function fn = new Function();
         String query;
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
@@ -671,8 +671,8 @@ namespace Shule
 
         private void button31_Click(object sender, EventArgs e)
         {
-            Stream st = new Stream();
-            st.Show();
+            //Stream st = new Stream();
+            //st.Show();
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -1245,8 +1245,8 @@ namespace Shule
 
         private void btnSetExams_Click(object sender, EventArgs e)
         {
-            SetExam sr = new SetExam();
-            sr.Show();
+            ////SetExam sr = new SetExam();
+            ////sr.Show();
         }
 
         private void button45_Click(object sender, EventArgs e)
@@ -2056,7 +2056,7 @@ namespace Shule
                 
 
                 query = "insert into users (UserRole,Fname,Dob,MobileNo,emailAddress,Uname,Pass) values ('" + role + "','" + name + "','" + dob + "','" + mobile + "','" + email + "','" + username + "','" + pass + "')";
-                fn.setData(query, "SignUp Successful");
+                //fn.setData(query, "SignUp Successful");
 
             }
             catch (Exception)
@@ -2613,14 +2613,14 @@ namespace Shule
 
         private void button53_Click(object sender, EventArgs e)
         {
-            HostelClearance hr = new HostelClearance();
-            hr.Show();
+            //HostelClearance hr = new HostelClearance();
+            //hr.Show();
         }
 
         private void button52_Click(object sender, EventArgs e)
         {
-            tab hos = new tab();
-            hos.Show();
+            //tab hos = new tab();
+            //hos.Show();
 
         }
 
@@ -2657,8 +2657,8 @@ namespace Shule
 
         private void button43_Click(object sender, EventArgs e)
         {
-            ReferralForm rf = new ReferralForm();
-            rf.Show();
+            //ReferralForm rf = new ReferralForm();
+            //rf.Show();
         }
 
         private void GridHostelInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -2752,14 +2752,14 @@ namespace Shule
 
         private void btnMedicCategories_Click(object sender, EventArgs e)
         {
-            NewDrugCategory dr = new NewDrugCategory();
-            dr.Show();
+            //NewDrugCategory dr = new NewDrugCategory();
+            //dr.Show();
         }
 
         private void btnNewMedicine_Click(object sender, EventArgs e)
         {
-            NewMedicine nm = new NewMedicine();
-            nm.Show();
+            //NewMedicine nm = new NewMedicine();
+            //nm.Show();
         }
 
         private void btnStudentsTrans_Click(object sender, EventArgs e)

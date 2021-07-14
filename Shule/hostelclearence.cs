@@ -37,9 +37,9 @@ namespace Shule
             {
                 textBoxAdmNo.Text = mdr.GetValue(1).ToString();
                 textBoxStudname.Text = mdr.GetValue(2).ToString();
-                textBoxhostelcode.Text = mdr.GetValue(0).ToString();
-                textBoxhostel.Text = mdr.GetValue(0).ToString();
-                textBoxroomNo.Text = mdr.GetValue(0).ToString();
+                textBoxhostelcode.Text = mdr.GetValue(3).ToString();
+                textBoxhostel.Text = mdr.GetValue(4).ToString();
+                textBoxroomNo.Text = mdr.GetValue(5).ToString();
 
             }
             else
@@ -51,6 +51,78 @@ namespace Shule
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBoxhostelcode.Text != "" && textBoxhostel.Text != "" && textBoxAdmNo.Text !="" && textBoxStudname.Text != "" && textBoxroomNo.Text != "" && dateTimePickerClearence.Text != "") 
+            {
+
+
+                try
+                {
+                    con.Open();
+                    String Query = "DELETE FROM Assignedhostel where AdmNo='" + this.textBoxAdmNo.Text + "'";
+                    cmd = new SqlCommand(Query, con);
+
+                    mdr = cmd.ExecuteReader();
+                    MessageBox.Show("Student Has Been Cleared Successfully");
+
+                 
+
+
+                    if (mdr != null)
+                    {
+                        while (mdr.Read())
+                        {
+                            //do something
+                            cmd = new SqlCommand("insert into hostelclearence(Hostelcode,Hostelname,RoomNo,AdmNo,Studname,DateOfClearence) values(@Hostelcode,@Hostelname,@RoomNo,@AdmNo,@Studname,@DateOfClearence)", con);
+                            //con.Open();
+                            cmd.Parameters.AddWithValue("@Hostelcode", textBoxhostelcode.Text);
+                            cmd.Parameters.AddWithValue("@Hostelname", textBoxhostel.Text);
+                            cmd.Parameters.AddWithValue("@RoomNo", textBoxroomNo.Text);
+                            cmd.Parameters.AddWithValue("@AdmNo", textBoxAdmNo.Text);
+                            cmd.Parameters.AddWithValue("@Studname", textBoxStudname.Text);
+                            cmd.Parameters.AddWithValue("@DateOfClearence", dateTimePickerClearence.Value);
+
+                            //cmd.ExecuteNonQuery();
+                        }
+                    }
+                    mdr.Close(); // closing SqlDataReader
+                    mdr.Dispose();
+
+
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+
+            }
+
+            else
+            {
+
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM hostelclearence", con);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "hostelclearence");
+            dataGridView1.DataSource = ds.Tables["hostelclearence"].DefaultView;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

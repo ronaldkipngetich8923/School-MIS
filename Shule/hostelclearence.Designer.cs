@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.textBoxhostel = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.textBoxsearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.dateTimePickerClearence = new System.Windows.Forms.DateTimePicker();
@@ -46,18 +50,17 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBoxsearch = new System.Windows.Forms.TextBox();
-            this.buttonSearch = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxhostel = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.textBoxhostel);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.buttonSearch);
@@ -81,9 +84,42 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(849, 448);
+            this.panel2.Size = new System.Drawing.Size(817, 526);
             this.panel2.TabIndex = 21;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // textBoxhostel
+            // 
+            this.textBoxhostel.Location = new System.Drawing.Point(544, 179);
+            this.textBoxhostel.Name = "textBoxhostel";
+            this.textBoxhostel.Size = new System.Drawing.Size(100, 20);
+            this.textBoxhostel.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(124, 267);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Hostel Code";
+            // 
+            // buttonSearch
+            // 
+            this.buttonSearch.Location = new System.Drawing.Point(362, 98);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(114, 31);
+            this.buttonSearch.TabIndex = 22;
+            this.buttonSearch.Text = "Search  Student";
+            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // textBoxsearch
+            // 
+            this.textBoxsearch.Location = new System.Drawing.Point(239, 104);
+            this.textBoxsearch.Name = "textBoxsearch";
+            this.textBoxsearch.Size = new System.Drawing.Size(100, 20);
+            this.textBoxsearch.TabIndex = 20;
             // 
             // panel1
             // 
@@ -93,7 +129,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 66);
+            this.panel1.Size = new System.Drawing.Size(815, 66);
             this.panel1.TabIndex = 17;
             // 
             // label7
@@ -211,6 +247,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Clear Student";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -220,6 +257,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "View Cleared Students";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -231,44 +269,20 @@
             this.button1.Text = "SEARCH BY ADMNO.";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBoxsearch
+            // dataGridView1
             // 
-            this.textBoxsearch.Location = new System.Drawing.Point(239, 104);
-            this.textBoxsearch.Name = "textBoxsearch";
-            this.textBoxsearch.Size = new System.Drawing.Size(100, 20);
-            this.textBoxsearch.TabIndex = 20;
-            // 
-            // buttonSearch
-            // 
-            this.buttonSearch.Location = new System.Drawing.Point(362, 98);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(114, 31);
-            this.buttonSearch.TabIndex = 22;
-            this.buttonSearch.Text = "Search  Student";
-            this.buttonSearch.UseVisualStyleBackColor = true;
-            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(124, 267);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 13);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Hostel Code";
-            // 
-            // textBoxhostel
-            // 
-            this.textBoxhostel.Location = new System.Drawing.Point(544, 179);
-            this.textBoxhostel.Name = "textBoxhostel";
-            this.textBoxhostel.Size = new System.Drawing.Size(100, 20);
-            this.textBoxhostel.TabIndex = 25;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(40, 397);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(745, 116);
+            this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // hostelclearence
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 448);
+            this.ClientSize = new System.Drawing.Size(817, 526);
             this.Controls.Add(this.panel2);
             this.Name = "hostelclearence";
             this.Text = "hostelclearence";
@@ -276,6 +290,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,5 +319,6 @@
         private System.Windows.Forms.TextBox textBoxsearch;
         private System.Windows.Forms.TextBox textBoxhostel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
