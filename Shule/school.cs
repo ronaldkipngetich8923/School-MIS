@@ -37,7 +37,7 @@ namespace Shule
         private bool isCollapsed;
         //  SetExam sr = new SetExam();
 
-
+        string connStr = "Data Source = (localDB)\\MSSQLLocalDB;Initial Catalog = shule; Integrated Security = True";
 
         public Home()
         {
@@ -55,7 +55,6 @@ namespace Shule
             ComboTermFill();
             clearAl();
 
-
             // hideSubmenu();
         }
         int indexRow;
@@ -67,13 +66,12 @@ namespace Shule
 
         public void ComboTermFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM SetExams";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -84,8 +82,6 @@ namespace Shule
 
                     comboBoxTerm.Items.Add(sName);
                     RcomboBoxTerm.Items.Add(sName);
-
-
                 }
             }
             catch (Exception ex)
@@ -94,20 +90,14 @@ namespace Shule
             }
         }
 
-
-
-
-
-
         public void ComboYearFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM SetExams";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -118,8 +108,6 @@ namespace Shule
 
                     comboBoxYear.Items.Add(sName);
                     RcomboBoxYear.Items.Add(sName);
-
-
                 }
             }
             catch (Exception ex)
@@ -131,13 +119,12 @@ namespace Shule
 
         public void CombosubjectFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Subject";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -149,8 +136,6 @@ namespace Shule
                     comboBoxSubjects.Items.Add(sName);
                     RcomboBoxSubject.Items.Add(sName);
                     guna2ComboBox5.Items.Add(sName);
-
-
                 }
             }
             catch (Exception ex)
@@ -161,13 +146,12 @@ namespace Shule
 
         public void ComboExamCodeFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM SetExams";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -179,8 +163,6 @@ namespace Shule
                     comboBoxExamCode.Items.Add(sName);
                     RcomboBoxExamCode.Items.Add(sName);
                     comboBoxRExamCode.Items.Add(sName);
-
-
                 }
             }
             catch (Exception ex)
@@ -189,20 +171,15 @@ namespace Shule
             }
         }
 
-
-
-
-
         public void ComboStreamFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Streams";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
 
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -211,7 +188,6 @@ namespace Shule
                 while (sqlDataReader.Read())
                 {
                     string sName = sqlDataReader["StreamName"].ToString();
-
 
                     comboBoxStream.Items.Add(sName);
 
@@ -229,13 +205,12 @@ namespace Shule
         }
         public void ComboExamTypeFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM SetExams";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -245,15 +220,10 @@ namespace Shule
                     string sName = sqlDataReader["ExamType"].ToString();
                     string examcategory = sqlDataReader["Category"].ToString();
 
-
-
                     comboBoxExamType.Items.Add(sName);
                     comboBoxExamCategory.Items.Add(examcategory);
                     RcomboBoxExamCategory.Items.Add(examcategory);
                     ExamTypecombo.Items.Add(sName);
-
-
-
                 }
             }
             catch (Exception ex)
@@ -264,13 +234,12 @@ namespace Shule
 
         public void ComboclassFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Classes";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -284,8 +253,6 @@ namespace Shule
                     comboBoxForm.Items.Add(sName);
                     comboBoxRForm.Items.Add(sName);
                     guna2ComboBox3.Items.Add(sName);
-
-
                 }
             }
             catch (Exception ex)
@@ -293,10 +260,6 @@ namespace Shule
                 MessageBox.Show(ex.Message);
             }
         }
-
-
-
-
 
         private void customizeDesign()
         {
@@ -308,8 +271,6 @@ namespace Shule
             panelDropHostel.Visible = false;
             panelDropTransport.Visible = false;
             FormResults.Visible = false;
-
-
         }
 
         private void hideSubMenu()
@@ -331,7 +292,6 @@ namespace Shule
             if (FormResults.Visible == true)
                 FormResults.Visible = false;
 
-
             //panelDropDown.Visible = false;
 
         }
@@ -348,17 +308,9 @@ namespace Shule
         }
 
 
-
-
-
-
-
         private void button2_Click(object sender, EventArgs e)
         {
             showSubMenu(panelAcademic);
-
-
-
             addUsers.Visible = false;
             Academic.Visible = true;
             AdmissionPanel.Visible = false;
@@ -830,7 +782,6 @@ namespace Shule
             AttendancePortal rs = new AttendancePortal();
             rs.Show();
 
-
         }
 
         private void studentsTab_Click(object sender, EventArgs e)
@@ -843,36 +794,12 @@ namespace Shule
 
         }
 
-        // SqlCommand cmd = new SqlCommand(qur, sqlConnection);
-        // cmd.ExecuteNonQuery();
-        // con.Close();
-        // MessageBox.Show("Inserted sucessfully");
-        //   textBoxstudent.Text = "";
-        //textBox2.Text = "";
-        // textBoxadmNo.Text = "";
-        // textBox4.Text = "";
-        //dateTimePickerDOB.Value = "";
-        // comboBoxGender.SelectedValue = "";
-        // comboBoxcounty.SelectedValue = "";
-        // textBoxSchoolPrimary.Text = "";
-        //textBoxKcpe.Text = "";
-        //comboBoxDisabled.SelectedValue = "";
-        // richTextBoxDescribeDis.Text = "";
-        //comboBoxClass.SelectedValue = "";
-        //comboBoxStream.SelectedValue = "";
-        //textBoxParentName.Text = "";
-        //textBoxPhoneNo.Text = "";
-        // textBoxEmail.Text = "";
-        // richTextBoxPostalAddress.Text = "";
-        // textBoxTown.Text = "";
-
-
 
         private void Home_Load(object sender, EventArgs e)
         {
             Dashboard.Visible = true;
             addUsers.Visible = false;
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+          //  string connStr = "Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;";
             sqlConnection = new SqlConnection(connStr);
 
             //Get number Of students
@@ -935,17 +862,12 @@ namespace Shule
             sqlDataAdapter.Fill(ds);
             setLabel(ds, labelRoute);
 
-
             //get Number of Suppliers
             //String Supplier = "select count(SupplierName) from Suppliers";
             //sqlDataAdapter = new SqlDataAdapter(Supplier, sqlConnection);
             //ds = new DataSet();
             //sqlDataAdapter.Fill(ds);
             //setLabel(ds, labelSuppliers);
-
-
-
-
 
             //StudentScore GridView
 
@@ -964,9 +886,8 @@ namespace Shule
             // comboBoxSubjects.SelectedIndex = 0;
             comboBoxForm.SelectedIndex = 0;
             comboBoxStreams.SelectedIndex = 0;
-
-
         }
+
         private void setLabel(DataSet ds, Label lbl)
         {
             if (ds.Tables[0].Rows.Count != 0)
@@ -983,20 +904,6 @@ namespace Shule
         {
 
         }
-
-        //private void btnView_Click(object sender, EventArgs e)
-        //{
-        //    sqlConnection.Close();
-        //    string query = "SELECT * FROM StudentMaster";
-        //    SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
-        //    DataTable dt = new DataTable();
-        //    SDA.Fill(dt);
-        //    StudentGridView.DataSource = dt;
-
-        //    sqlConnection.Open();
-
-
-        //}
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -1018,7 +925,6 @@ namespace Shule
             dataGridView3StudentsDetails.DataSource = dt;
             sqlConnection.Close();
 
-
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
@@ -1028,24 +934,7 @@ namespace Shule
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            //sqlConnection = new SqlConnection(connStr);
-            //string qur = "UPDATE StudentMaster SET Studname='" + textBoxStudname.Text + "',Dob='" + dateTimePickerDob.Text + "',Gender='" + comboBoxGender.SelectedItem + "',County='" + comboBoxCounty.SelectedItem + "',PrimarySch ='" + textBoxPrimarySch.Text + "',KCPEMarks='" + textBoxKCPEMarks.Text + "',Disability='" + comboBoxDisability.SelectedItem + "',DisabilityDescription='" + richTextBoxDisabilityDescription.Text + "',Class='" + comboBoxClass.SelectedItem + "',Stream='" + comboBoxStream.SelectedItem + "',AdmDate='" + dateTimePicker1AdmDate.Text + "',Parentname='" + textBoxParentname.Text + "',PhoneNo='" + textBoxPhoneNo.Text + "',Email='" + textBoxEmail.Text + "',PostalAddress='" + richTextBoxPostalAddress.Text + "',Town='" + textBoxTown.Text + "' WHERE AdmNo='" + textBoxAdmNo.Text + "' ";
-            //SqlDataAdapter sqlData = new SqlDataAdapter(qur, sqlConnection);
 
-            //try
-            //{
-            //    sqlConnection.Close();
-
-            //    sqlConnection.Open();
-
-            //    sqlData.SelectCommand.ExecuteNonQuery();
-            //    MessageBox.Show("Record Updated");
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
         }
 
         private void guna2Button1TeachersRecords_Click(object sender, EventArgs e)
@@ -1056,15 +945,14 @@ namespace Shule
             try
             {
                 sqlConnection.Open();
-                sqlConnection.Close();
-              ;
+                sqlConnection.Close();              
                 int rows = cmd.ExecuteNonQuery();
 
                 MessageBox.Show(rows + " Staff Member inserted successfully.");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message); 
             }
         }
 
@@ -1085,8 +973,6 @@ namespace Shule
                 SDA.Fill(dt);
                 dataGridView3StudentsDetails.DataSource = dt;
                 sqlConnection.Close();
-
-
             }
             else if (guna2ComboBox1.SelectedIndex == 1)
             {
@@ -1098,9 +984,6 @@ namespace Shule
                 SDA.Fill(dt);
                 dataGridView3StudentsDetails.DataSource = dt;
                 sqlConnection.Close();
-
-
-
             }
             else if (guna2ComboBox1.SelectedIndex == 2)
             {
@@ -1110,9 +993,7 @@ namespace Shule
                 SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
                 DataTable dt = new DataTable();
                 SDA.Fill(dt);
-                dataGridView3StudentsDetails.DataSource = dt;
-
-                
+                dataGridView3StudentsDetails.DataSource = dt;                
                 sqlConnection.Close();
 
             }
@@ -1126,32 +1007,9 @@ namespace Shule
                 SDA.Fill(dt);
                 dataGridView3StudentsDetails.DataSource = dt;
                 sqlConnection.Close();
-
-
-
             }
         }
 
-        //private void btnSaveStudents_Click(object sender, EventArgs e)
-        //{
-        //    string qur = "INSERT INTO StudentMaster VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudname.Text + "','" + dateTimePickerDob.Text + "','" + comboBoxGender.SelectedItem + "','" + comboBoxCounty.SelectedItem + "'," +
-        //        "'" + textBoxPrimarySch.Text + "','" + textBoxKCPEMarks.Text + "','" + comboBoxDisability.SelectedItem + "','" + richTextBoxDisabilityDescription.Text + "'," +
-        //        "'" + comboBoxClass.SelectedItem + "','" + comboBoxStream.SelectedItem + "','" + dateTimePicker1AdmDate.Text + "','" + textBoxParentname.Text + "'," +
-        //        "'" + textBoxPhoneNo.Text + "','" + textBoxEmail.Text + "','" + richTextBoxPostalAddress.Text + "','" + textBoxTown.Text + "')";
-        //    SqlCommand cmd = new SqlCommand(qur, sqlConnection);
-        //    try
-        //    {
-        //        sqlConnection.Close();
-        //        sqlConnection.Open();
-        //        int rows = cmd.ExecuteNonQuery();
-
-        //        MessageBox.Show(rows + "  row inserted successfully.");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
 
         private void btnReset_Click(object sender, EventArgs e)
         {
@@ -1172,15 +1030,6 @@ namespace Shule
             richTextBoxPostalAddress.Clear();
             guna2TextBox3.Clear();
 
-
-
-
-
-
-
-
-
-
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
@@ -1190,8 +1039,7 @@ namespace Shule
 
         private void guna2TextBox1Search_KeyPress(object sender, KeyPressEventArgs e)
         {
-            sqlConnection.Open();
-            
+            sqlConnection.Open();            
             string query = "SELECT * FROM StudentMaster";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
@@ -1278,15 +1126,13 @@ namespace Shule
 
         private void comboBoxExamCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM SetExams WHERE ExamCode  ='" + comboBoxExamCode.Text + "' ";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
-
                 sqlConnection.Open();
-
                 sqlDataReader = sqlCommand.ExecuteReader();
 
                 while (sqlDataReader.Read())
@@ -1304,8 +1150,6 @@ namespace Shule
                     comboBoxExamCategory.Text = category;
                     comboBoxSubjects.Text = subject;
                     txtWeight.Text = weight;
-
-
                 }
             }
             catch (Exception ex)
@@ -1320,8 +1164,7 @@ namespace Shule
             string qur = "INSERT INTO Exams VALUES ('" + txtAdmNo.Text + "','" + txtStudname.Text + "','" + comboBoxForm.SelectedItem + "','" + comboBoxStreams.SelectedItem + "','" + comboBoxTerm.SelectedItem + "','" + comboBoxYear.SelectedItem + "','" + comboBoxExamCode.SelectedItem + "','" + comboBoxExamType.SelectedItem + "','" + comboBoxExamCategory.SelectedItem + "','" + comboBoxSubjects.SelectedItem + "','" + txtStudentScore.Text + "','" + txtWeight.Text + "')";
             SqlCommand cmd = new SqlCommand(qur, sqlConnection);
             try
-            {
-                
+            {                
                 sqlConnection.Open();
                 cmd.ExecuteNonQuery();
 
@@ -1336,13 +1179,10 @@ namespace Shule
 
         private void txtAdmNo_TextChanged(object sender, EventArgs e)
         {
-
-
             string qur = "SELECT *  FROM StudentMaster Where AdmNo =" + txtAdmNo.Text + " ";
             SqlCommand cmd = new SqlCommand(qur, sqlConnection);
             try
-            {
-              
+            {              
                 sqlConnection.Open();
                 sqlDataReader = cmd.ExecuteReader();
 
@@ -1357,19 +1197,7 @@ namespace Shule
                     txtStudname.Text = name;
                     comboBoxForm.Text = form;
                     comboBoxStreams.Text = strem;
-
-
-
-
-                    //    txtAdmNo.Text = sqlDataReader.GetValue(1).ToString();
-                    // txtStudname.Text = sqlDataReader.GetValue(2).ToString();
-                    // comboBoxClass.Text = sqlDataReader.GetValue(3).ToString();
-                    //comboBoxStreams.Text = sqlDataReader.GetValue(4).ToString();
-
-
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -1378,9 +1206,8 @@ namespace Shule
                 MessageBox.Show("Student does not Exist");
 
             }
+
             sqlConnection.Close();
-
-
         }
 
         private void btnViewRecords_Click(object sender, EventArgs e)
@@ -1393,13 +1220,11 @@ namespace Shule
             SDA.Fill(dt);
             dataGridView1StudentsScores.DataSource = dt;
             sqlConnection.Close();
-
-
         }
 
         private void btnUpdateScore_Click(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string qur = "UPDATE Exams SET Studname='" + txtStudname.Text + "',Class='" + comboBoxForm.SelectedItem + "',Stream='" + comboBoxStreams.SelectedItem + "',Term='" + comboBoxTerm.SelectedItem + "',Year='" + comboBoxYear.SelectedItem + "',ExamCode='" + comboBoxExamCode.SelectedItem + "',ExamType='" + comboBoxExamType.SelectedItem + "',Subject='" + comboBoxSubjects.SelectedItem + "',StudentScore='" + txtStudentScore.Text + "' WHERE AdmNo='" + txtAdmNo.Text + "' ";
             SqlDataAdapter sqlData = new SqlDataAdapter(qur, sqlConnection);
@@ -1435,15 +1260,11 @@ namespace Shule
             comboBoxSubjects.SelectedItem = row.Cells[10].Value.ToString();
             txtStudentScore.Text = row.Cells[11].Value.ToString();
             txtWeight.Text = row.Cells[12].Value.ToString();
-
-
-
-
         }
 
         private void RcomboBoxExamCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Exams WHERE ExamCode  ='" + RcomboBoxExamCode.Text + "' ";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
@@ -1454,8 +1275,7 @@ namespace Shule
             dataGridView1ExamResults.DataSource = dt;
 
             try
-            {
-                
+            {                
                 sqlConnection.Open();
                 sqlDataReader = sqlCommand.ExecuteReader();
 
@@ -1475,10 +1295,6 @@ namespace Shule
                     RcomboBoxSubject.Text = subject;
                     // txtWeight.Text = weight;
 
-
-
-
-
                 }
             }
             catch (Exception ex)
@@ -1489,8 +1305,6 @@ namespace Shule
 
             }
             sqlConnection.Close();
-
-
 
         }
 
@@ -1504,10 +1318,7 @@ namespace Shule
                 SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
                 DataTable dt = new DataTable();
                 SDA.Fill(dt);
-                dataGridView1StudentsScores.DataSource = dt;
-
-                
-
+                dataGridView1StudentsScores.DataSource = dt;               
             }
             else
             {
@@ -1527,16 +1338,12 @@ namespace Shule
             if (comboBoxRForm.SelectedItem != null)
             {
                 sqlConnection.Open();
-               
+
                 string query = "SELECT * FROM Exams WHERE Class = '" + comboBoxRForm.Text + "' ";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
                 DataTable dt = new DataTable();
                 SDA.Fill(dt);
                 dataGridView1StudentsScores.DataSource = dt;
-               
-
-                
-
             }
             else
             {
@@ -1549,17 +1356,13 @@ namespace Shule
         private void comboBoxRstream_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBoxRstream.SelectedItem != null)
-            {
-               
+            {               
                 sqlConnection.Open();
                 string query = "SELECT * FROM Exams WHERE Stream = '" + comboBoxRstream.Text + "' ";
                 SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
                 DataTable dt = new DataTable();
                 SDA.Fill(dt);
                 dataGridView1StudentsScores.DataSource = dt;
-
-
-
             }
             else
             {
@@ -1575,7 +1378,6 @@ namespace Shule
 
             try
             {
-
                 sqlConnection.Open();
 
                 sqlDataReader = cmd.ExecuteReader();
@@ -1583,7 +1385,6 @@ namespace Shule
                 DataTable dt = new DataTable();
                 SDA.Fill(dt);
                 dataGridView1ExamResults.DataSource = dt;
-
             }
 
             catch (Exception ex)
@@ -1591,7 +1392,6 @@ namespace Shule
                 MessageBox.Show(ex.Message);
 
                 MessageBox.Show("Student Marks does not Exist");
-
             }
 
             sqlConnection.Close();
@@ -1608,8 +1408,6 @@ namespace Shule
         private void btnExams_Click(object sender, EventArgs e)
         {
             showSubMenu(FormResults);
-
-
             panelExamsResults.Visible = true;
             panelExamsResults.BringToFront();
             catsPanel.Visible = false;
@@ -1628,40 +1426,13 @@ namespace Shule
 
         }
 
-
-        //string query = "SELECT ISNULL(StudentScore, 0 ) from Exams";
-        //sqlConnection.Close();
-        //sqlConnection.Open();
-
-        //SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
-        //DataTable de = new DataTable();
-        //sqlDataAdapter.Fill(de);
-        //GridExams.DataSource = de;
-        //string avg = "SELECT * FROM Exams  WHERE AdmNo  IN (SELECT  AdmNo FROM  Exams GROUP BY AdmNo  HAVING COUNT (distinct ExamCategory ) > 1";
-
-        // string conn = "SELECT * FROM Exams WHERE AdmNo IN (SELECT AdmNo FROM Exams GROUP BY AdmNo SUM(StudentScore)";
-
-        //string avg = "SELECT * FROM Exams WHERE AdmNo IN (SELECT AdmNo FROM Exams GROUP BY AdmNo HAVING COUNT (distinct ExamCategory) > 1)";
-        // string exams = " SELECT AdmNo FROM  StudentMaster WHERE EXISTS (SELECT  Studname,Class,Stream,Category,Subject,StudentScore FROM Exams WHERE  ExamType='" + ExamTypecombo.SelectedItem + "'";
-        //  SqlCommand exe = new SqlCommand(avg, sqlConnection);
-
-
-
-        //dt.Columns.Add(new DataColumn("Total Cats Score", typeof(int)));
-        //  Decimal TotalScore = Convert.ToDecimal(dt.Compute("SUM(StudentScore)", "StudentScore > 3"));
-        // dt.Columns.Add(new DataColumn("Cat Average Score", typeof(int)));
-        // dt.Columns.Add(new DataColumn("Total Score", typeof(int)));
-        // GridExams.DataSource = dv;
-        // DataTable dv = new DataTable();
-        // sdc.Fill(dv);
         private void btnGenerateScore_Click(object sender, EventArgs e)
         {
             string avg = " select * from(select  AdmNo, Studname,Class,Stream,Subject,  TOTAL_SCORE  From  Results ) As P Pivot    (max([TOTAL_SCORE]) For Subject In([ENGLISH],[KISWAHILI],[MATHEMATICS],[GEOGRAPHY],[HISTORY],[BUSINESS],[BIOLOGY],[PHYSICS],[CHEMISTRY],[COMPUTER_STUDIES],[DRAWING_AND_DESIGN],[TOTAL_MARKS],[POINTS],[GRADE])  )As p order by AdmNo ";
             //string avg = " select * from(select  AdmNo, Studname,Class,Stream,Subject,ExamCategory, StudentScore  From  Exams ) As P  Pivot    (max([StudentScore]) For Subject In([ENGLISH],[KISWAHILI],[MATHEMATICS],[GEOGRAPHY],[HISTORY],[BUSINESS],[BIOLOGY],[PHYSICS],[CHEMISTRY],[COMPUTER_STUDIES],[DRAWING_AND_DESIGN],[TOTAL_MARKS],[POINTS],[GRADE])  )As p order by AdmNo ";
 
             try
-            {
-               
+            {               
                 sqlConnection.Open();
 
                 SqlDataAdapter SDA = new SqlDataAdapter(avg, sqlConnection);
@@ -1730,8 +1501,6 @@ namespace Shule
                             GridExams.Rows[n].Cells[14].Value = 0;
                         }
 
-
-
                         Convert.ToDecimal(GridExams.Rows[n].Cells[15].Value = Convert.ToDecimal
                             (decimal.Parse(GridExams.Rows[n].Cells[4].Value.ToString()) +
                             decimal.Parse(GridExams.Rows[n].Cells[5].Value.ToString()) +
@@ -1793,34 +1562,16 @@ namespace Shule
                             GridExams.Rows[n].Cells[17].Value.ToString();
                             GridExams.Rows[n].Cells[17].Value = "X";
                         }
-
-                        
-
-                        
-                        //else
-                        //{
-                        //    GridExams.Rows[n].Cells[17].Value = "Y";
-                        //}
-
                     }
                 }
             }
 
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
-                // MessageBox.Show("Student Marks does not Exist");
-
-
-
             }
 
-
             sqlConnection.Close();
-
-
-
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -1841,16 +1592,13 @@ namespace Shule
                
                 sqlConnection.Open();
                 SqlCommand cmd = new SqlCommand("Select CAT_1, CAT_2, FINALEXAM FROM examtest where AdmNo='" + guna2TextBoxAdmNoExam.Text + "' AND SUBJECTS='" + guna2ComboBox5.Text + "'", sqlConnection);
-
-
-
                 sqlDataReader = cmd.ExecuteReader();
+
                 if (sqlDataReader.Read())
                 {
                     guna2TextBoxCAT1.Text = sqlDataReader["CAT_1"].ToString();
                     guna2TextBoxCat_2.Text = sqlDataReader["CAT_2"].ToString();
                     guna2TextBoxfinal.Text = sqlDataReader["FINALEXAM"].ToString();
-
 
                     if (guna2TextBoxCAT1.Text.Length > 0 && guna2TextBoxCat_2.Text.Length > 0)
                     {
@@ -1859,8 +1607,7 @@ namespace Shule
                     }
                     if (guna2TextBoxfinal.Text.Length > 0 && guna2TextBoxavg.Text.Length > 0)
                     {
-                        guna2TextBoxresults.Text = Convert.ToString(Convert.ToDecimal(guna2TextBoxfinal.Text) + Convert.ToDecimal(guna2TextBoxavg.Text));
-                        //txtt4.Text = Convert.ToString(Convert.ToInt32(txtt1.Text) * Convert.ToInt32(txtt2.Text));
+                        guna2TextBoxresults.Text = Convert.ToString(Convert.ToDecimal(guna2TextBoxfinal.Text) + Convert.ToDecimal(guna2TextBoxavg.Text));                       
                     }
 
                     decimal results = Convert.ToDecimal(guna2TextBoxresults.Text);
@@ -1901,16 +1648,11 @@ namespace Shule
                         guna2TextBoxgrade.Text = "F";
 
                     }
-
-
                 }
                 else
                 {
                     MessageBox.Show("Results Does Not Exist!");
                 }
-
-
-
             }
             else
             {
@@ -1923,18 +1665,6 @@ namespace Shule
 
         private void guna2TextBoxAdmNoExam_TextChanged(object sender, EventArgs e)
         {
-            //sqlConnection.Open();
-            //SqlCommand cmd = new SqlCommand("Select Studname,Stream FROM StudentMaster where AdmNo='" + guna2TextBoxAdmNoExam.Text + "'", sqlConnection);
-
-
-
-            //sqlDataReader = cmd.ExecuteReader();
-            //sqlDataReader.Read();
-            //guna2TextBox1.Text = sqlDataReader["Studname"].ToString();
-            //guna2ComboBox6.Text = sqlDataReader["Stream"].ToString();
-
-            //sqlConnection.Close();
-
 
         }
 
@@ -1958,18 +1688,13 @@ namespace Shule
             {
                 guna2TextBox1.Text = sqlDataReader["Studname"].ToString();
                 guna2TextBox2.Text = sqlDataReader["Stream"].ToString();
-
-
-
             }
             else
             {
                 MessageBox.Show("Student Does Not exist in this Class !!");
             }
-
             sqlDataReader.Close();
             sqlConnection.Close();
-
         }
 
         private void label66_Click(object sender, EventArgs e)
@@ -1980,15 +1705,10 @@ namespace Shule
         private void btnSaveRecords_Click(object sender, EventArgs e)
         {
             SqlCommand cmd2 = new SqlCommand("INSERT INTO Results VALUES ('" + guna2TextBoxAdmNoExam.Text + "','" + guna2TextBox1.Text + "', '" + guna2ComboBox3.SelectedItem + "', '" + guna2TextBox2.Text + "','" + guna2ComboBox5.SelectedItem + "','" + guna2TextBoxCAT1.Text + "','" + guna2TextBoxCat_2.Text + "'," +
-                "'" + guna2TextBoxavg.Text + "','" + guna2TextBoxfinal.Text + "','" + guna2TextBoxresults.Text + "', '" + guna2TextBoxgrade.Text + "') ", sqlConnection);
-
-            
+                "'" + guna2TextBoxavg.Text + "','" + guna2TextBoxfinal.Text + "','" + guna2TextBoxresults.Text + "', '" + guna2TextBoxgrade.Text + "') ", sqlConnection);         
             sqlConnection.Open();
-
             try
             {
-
-
                 cmd2.ExecuteNonQuery();
 
                 MessageBox.Show(" Student Results inserted successfully.");
@@ -1996,18 +1716,14 @@ namespace Shule
                 sqlConnection.Close();
 
                 guna2TextBoxAdmNoExam.Text = "";
-                guna2TextBox1.Text = "";
-                // guna2ComboBox3.SelectedItem = null;
+                guna2TextBox1.Text = "";              
                 guna2TextBox2.Text = "";
-                // guna2ComboBox5.SelectedIndex = -1;
                 guna2TextBoxCAT1.Text = "";
                 guna2TextBoxCat_2.Text = "";
                 guna2TextBoxavg.Text = "";
                 guna2TextBoxfinal.Text = "";
                 guna2TextBoxresults.Text = "";
                 guna2TextBoxgrade.Text = "";
-
-
             }
             catch (Exception ex)
             {
@@ -2015,7 +1731,6 @@ namespace Shule
             }
 
             sqlConnection.Close();
-
 
         }
 
@@ -2050,34 +1765,20 @@ namespace Shule
             String username = txtUser.Text;
             String pass = txtPass.Text;
 
-
             try
-            {
-                
-
+            {              
                 query = "insert into users (UserRole,Fname,Dob,MobileNo,emailAddress,Uname,Pass) values ('" + role + "','" + name + "','" + dob + "','" + mobile + "','" + email + "','" + username + "','" + pass + "')";
                 //fn.setData(query, "SignUp Successful");
-
             }
             catch (Exception)
             {
-
             MessageBox.Show("Username Already Exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
-
             }
-
-
-
         }
 
         private void btnSignUpReset_Click(object sender, EventArgs e)
         {
             clearAl();
-
-
-
         }
         public void clearAl()
         {
@@ -2087,22 +1788,11 @@ namespace Shule
             txtEmailUser.Clear();
             txtPass.Clear();
             comboBoxUserRole.SelectedIndex = -1;
-
-
         }
-        //private void GridExams_CellFormating(object sender,DataGridViewCellFormattingEventArgs e)
-        //{
-        //    String Value = e.Value as String;
-        //    if((Value != null)&& Value.Equals(e.CellStyle.DataSourceNullValue))
-        //    {
-        //        e.Value = e.CellStyle.NullValue;
-        //        e.FormattingApplied = true;
-        //    }
-        //}
+
 
         private void guna2Button4_Click_1(object sender, EventArgs e)
-        {
-          
+        {         
             foreach (DataGridViewRow g1 in GridExams.Rows)
             {
 
@@ -2179,7 +1869,7 @@ namespace Shule
                 string total = GridExams.Rows[i].Cells["TOTAL_MARKS"].Value?.ToString();
                 string points = GridExams.Rows[i].Cells["POINTS"].Value?.ToString();
 
-                String connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+               // String connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
                 sqlConnection = new SqlConnection(connStr);
                 SqlCommand cmd = new SqlCommand("insert into processedResults(AdmNo,ENGLISH,KISWAHILI,MATHEMATICS,GEOGRAPHY,HISTORY,BUSINESS,BIOLOGY,PHYSICS,CHEMISTRY,COMPUTER_STUDIES,DRAWING_AND_DESIGN,TOTAL_MARKS,POINTS) values ('" + Admno + "','" + Eng + "','" + kisw + "','" + MTH + "','" + geo + "','" + hist + "','" + Buss + "','" + Bio + "','" + PHY + "','" + chem + "','" + comp + "','" + draw + "','" + total + "','" + points + "')", sqlConnection);
                 sqlConnection.Open();
@@ -2190,21 +1880,15 @@ namespace Shule
         }
 
         private void btnViewForm1Results_Click(object sender, EventArgs e)
-        {
-            
-
+        {          
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM processedResults", sqlConnection);
             DataSet ds = new DataSet();         
             da.Fill(ds, "processedResults");
-            GridProcessedResults.DataSource = ds.Tables["processedResults"].DefaultView;
-        
+            GridProcessedResults.DataSource = ds.Tables["processedResults"].DefaultView;        
         }
 
         private void btnRank_Click(object sender, EventArgs e)
         {
-
-
-
             try
             {
                 SqlDataAdapter s = new SqlDataAdapter("SELECT I.AdmNo,T.Studname,T.Class,T.Stream,ENGLISH,KISWAHILI,MATHEMATICS,GEOGRAPHY,HISTORY,BUSINESS,BIOLOGY,PHYSICS,CHEMISTRY,COMPUTER_STUDIES,DRAWING_AND_DESIGN " +
@@ -2218,31 +1902,24 @@ namespace Shule
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-
             }
-
-
         }
 
         private void comboboxFormOneResults_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-                if (comboboxFormOneResults.Text != "")
-                {
-                   
-                    sqlConnection.Open();                   
-                    SqlDataAdapter frm1 = new SqlDataAdapter("Select * FROM processedResults as I   JOIN StudentMaster as T    ON I.AdmNo = T.AdmNo where T.Stream='" + comboboxFormOneResults.SelectedItem + "' ", sqlConnection);
-                    DataSet ds = new DataSet();
-                    frm1.Fill(ds, "processedResults");
-                    GridProcessedResults.DataSource = ds.Tables["processedResults"].DefaultView;
-
+            if (comboboxFormOneResults.Text != "")
+            {
+                sqlConnection.Open();
+                SqlDataAdapter frm1 = new SqlDataAdapter("Select * FROM processedResults as I   JOIN StudentMaster as T    ON I.AdmNo = T.AdmNo where T.Stream='" + comboboxFormOneResults.SelectedItem + "' ", sqlConnection);
+                DataSet ds = new DataSet();
+                frm1.Fill(ds, "processedResults");
+                GridProcessedResults.DataSource = ds.Tables["processedResults"].DefaultView;
             }
-                else
+            else
             {
                 MessageBox.Show("Stream Results Not Yet Available");
             }
             sqlConnection.Close();
-
         }
 
         private void BTNFORM1RESULTS_Click(object sender, EventArgs e)
@@ -2299,15 +1976,13 @@ namespace Shule
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+          // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string qur = "UPDATE Exams SET Studname='" + txtStudname.Text + "',Class='" + comboBoxForm.SelectedItem + "',Stream='" + comboBoxStreams.SelectedItem + "',Term='" + comboBoxTerm.SelectedItem + "',Year='" + comboBoxYear.SelectedItem + "',ExamCode='" + comboBoxExamCode.SelectedItem + "',ExamType='" + comboBoxExamType.SelectedItem + "',Subject='" + comboBoxSubjects.SelectedItem + "',StudentScore='" + txtStudentScore.Text + "' WHERE AdmNo='" + txtAdmNo.Text + "' ";
             SqlDataAdapter sqlData = new SqlDataAdapter(qur, sqlConnection);
 
             try
-            {
-                
-
+            {           
                 sqlConnection.Open();
 
                 sqlData.SelectCommand.ExecuteNonQuery();
@@ -2484,16 +2159,6 @@ namespace Shule
                 string myStringVariable20 = string.Empty;
                 MessageBox.Show("Town Name  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
-
-
-
-
-
-
-
             else
             {
                 string qur = "INSERT INTO StudentMaster VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudname.Text + "','" + dateTimePickerDob.Text + "','" + comboBoxGender.SelectedItem + "','" + comboBoxCounty.SelectedItem + "'," +
@@ -2514,16 +2179,7 @@ namespace Shule
                     MessageBox.Show(ex.Message);
                 }
                 sqlConnection.Close();
-            }
-
-
-
-
-
-
-
-
-           
+            }          
         }
 
         private void btnUpdateStudent_Click(object sender, EventArgs e)
@@ -2636,16 +2292,8 @@ namespace Shule
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             GridHostelInfo.DataSource = dt;
-
-//            SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
-//FROM Orders
-//INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
-
-
-
-
-
-
+          //  SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDat 
+          //FROM Orders //INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
         }
 
         private void btnTriage_Click(object sender, EventArgs e)
@@ -2680,39 +2328,17 @@ namespace Shule
         {
 
         }
-        //protected void dataGridMedicines_RowDataBound(object sender, GridViewRowEventArgs e)
-        //{
-        //    if (e.Row.RowIndex >= 0)
-        //    {
-        //        var DrugMDate = DateTime.Parse(e.Row.Cells[7].Text);
-        //        var DrugEDate = DateTime.Parse(e.Row.Cells[7].Text);
-
-        //        if (DrugMDate > DrugEDate)
-        //        {
-        //            e.Row.Cells[7].BackColor = Color.Red;
-        //            e.Row.Cells[7].ForeColor = Color.White;
-        //        }
-        //    }
-        //}
 
         private void button28_Click_1(object sender, EventArgs e)
         {
-
-
             panelMedicines.Visible = true;
             panelMedicines.BringToFront();
             string query = "SELECT * FROM Drugs";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
-            dataGridMedicines.DataSource = dt;
-            
-
-
+            dataGridMedicines.DataSource = dt;          
             dataGridMedicines.Columns.Add("newColumnName", "Days To Expiry");
-
-
-
             DateTime d1;
             DateTime d2;
             for (int i = 0; i < dataGridMedicines.RowCount; i++)
@@ -2830,15 +2456,9 @@ namespace Shule
             SDA.Fill(dt);
             transportdetails.DataSource = dt;
 
-            //            SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+            //SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
             //FROM Orders
             //INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
-
-
-
-
-
-
         }
 
         private void button3_Click_1(object sender, EventArgs e)
@@ -2853,7 +2473,6 @@ namespace Shule
             DataTable dt = new DataTable();
             SDA.Fill(dt);
             GridHostelInfo.DataSource = dt;
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -2918,8 +2537,6 @@ namespace Shule
             {
                 textBoxKCPEMarks.Text = "499";
                 MessageBox.Show(" Maximum Allowed is 499.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
             }
 
         }
@@ -2939,14 +2556,8 @@ namespace Shule
                     MessageBox.Show(" Invalid Email Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textBoxEmail.SelectAll();
                     e.Cancel = true;
-
-
-
-
                 }
             }
-
-
         }
     }
 }
@@ -2954,11 +2565,6 @@ namespace Shule
 
    
 
-        //btnNext.Content = "Next";
-        //// here is the problem
-        //NewPage np = new NewPage();
-        //this.NavigationService.Navigate(np);
- 
 
 
     
