@@ -292,5 +292,148 @@ namespace Shule
             }
             con.Close();
         }
+
+        private void guna2Button14_Click(object sender, EventArgs e)
+        {
+            guna2TextBoxsearch.Text = "";
+            guna2TextBoxAdmNo.Text = "";
+            guna2TextBoxform.Text = "";
+            guna2TextBoxstream.Text = "";
+            guna2TextBoxbalance.Text = "";
+            guna2TextBoxAmount.Text = "";
+        }
+
+        private void guna2Button15_Click(object sender, EventArgs e)
+        {
+            if (guna2TextBoxsearch.Text!="")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Enter Admission Number to PRINT RECEIPT !!","Error Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+        }
+
+        private void guna2Buttonfeestransfer_Click(object sender, EventArgs e)
+        {
+            try
+            {               
+                if (guna2TextBoxAdmNoTT.Text!="" && richTextBoxReason.Text!="" && guna2TextBoxStudnameTT.Text!="" && textBoxAmtTt.Text!="" && guna2TextBoxAdmNoT.Text!="" && guna2TextBoxStudnameT.Text!="" && guna2TextBoxAmtAvaT.Text!="" && guna2TextBoxAmtTt.Text!="")
+                {
+                    decimal val1 = Convert.ToDecimal(guna2TextBoxAmtAvaT.Text.ToString());
+                    decimal val2 = Convert.ToDecimal(textBoxAmtTt.Text.ToString());
+                    if (val1>=val2)
+                    {
+                        con.Open();
+                        cmd = new SqlCommand("Insert into fees_transfer(AdmNoTransferFrom,StudnameTransferFrom,Amt_available,Amt_transfer,AdmNoTransferTo,StudnameTransferTo,AmtTransfered,ReasonForFeesTransfer,FeeTransferdate) values(@AdmNoTransferFrom,@StudnameTransferFrom,@Amt_available,@Amt_transfer,@AdmNoTransferTo,@StudnameTransferTo,@AmtTransfered,@ReasonForFeesTransfer,@FeeTransferdate)", con);
+                        cmd.Parameters.AddWithValue("@AdmNoTransferFrom", guna2TextBoxAdmNoT.Text);
+                        cmd.Parameters.AddWithValue("@StudnameTransferFrom", guna2TextBoxStudnameT.Text);
+                        cmd.Parameters.AddWithValue("@Amt_available", guna2TextBoxAmtAvaT.Text);
+                        cmd.Parameters.AddWithValue("@Amt_transfer", guna2TextBoxAmtTt.Text);
+                        cmd.Parameters.AddWithValue("@AdmNoTransferTo", guna2TextBoxAdmNoTT.Text);
+                        cmd.Parameters.AddWithValue("@StudnameTransferTo", guna2TextBoxStudnameTT.Text);
+                        cmd.Parameters.AddWithValue("@AmtTransfered", textBoxAmtTt.Text);
+                        cmd.Parameters.AddWithValue("@ReasonForFeesTransfer", richTextBoxReason.Text);
+                        cmd.Parameters.AddWithValue("@FeeTransferdate", dateTimePicker1.Value);
+                        cmd.ExecuteNonQuery();
+
+                        ////Update Fees Running Balances in fees Receipting for student transferred to
+                        ///
+                       // decimal val3 = Convert.ToDecimal(textBoxAmtTt.Text.ToString());
+                        SqlCommand cmd1 = new SqlCommand("Update fee_receipts Set Running_balance=('"+textBoxAmtTt.Text+ "'-Running_balance) Where AdmNo='" + guna2TextBoxAdmNoTT.Text + "' AND ReceiptNo=(Select Max(ReceiptNo)From fee_receipts Where AdmNo='" + guna2TextBoxAdmNoTT.Text + "')", con);
+                        cmd1.ExecuteNonQuery();
+
+                        ////Update Fees Running Balances in fees Receipting for student transfering 
+                        SqlCommand cmd3 = new SqlCommand("Update fee_receipts Set Running_balance=(Running_balance+'" + textBoxAmtTt.Text + "') Where AdmNo='" + guna2TextBoxAdmNoT.Text + "' AND ReceiptNo=(Select Max(ReceiptNo)From fee_receipts Where AdmNo='" + guna2TextBoxAdmNoT.Text + "')", con);
+                        cmd3.ExecuteNonQuery();
+
+                        // Update student_Term for a specific student registered for that term.
+                        SqlCommand cmd2 = new SqlCommand("Update Student_Term SET Total_Amount= (Total_Amount+(Select Running_balance From fee_receipts  Where AdmNo ='" + guna2TextBoxAdmNoTT.Text + "' AND ReceiptNo =(Select Max(ReceiptNo) AS ReceiptNo From fee_Receipts Where AdmNo='" + guna2TextBoxAdmNoTT.Text + "') )) Where AdmNo ='" + guna2TextBoxAdmNoTT.Text + "'", con);
+                        cmd2.ExecuteNonQuery();
+                        // Update student_Term for a specific student registered for that term.
+                        SqlCommand cmd4 = new SqlCommand("Update Student_Term SET Total_Amount= (Total_Amount+(Select Running_balance From fee_receipts  Where AdmNo ='" + guna2TextBoxAdmNoT.Text + "' AND ReceiptNo =(Select Max(ReceiptNo) AS ReceiptNo From fee_Receipts Where AdmNo='" + guna2TextBoxAdmNoT.Text + "') )) Where AdmNo ='" + guna2TextBoxAdmNoT.Text + "'", con);
+                        cmd4.ExecuteNonQuery();
+                        MessageBox.Show("Fees Transfered Successfully.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        con.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cannot Transfer Fees more than available Fees Amount","Error Message",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        con.Close();
+                    }
+                   
+                }
+                else
+                {
+                    MessageBox.Show("Provide All Details.","Error Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    con.Close();
+                }
+
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.Message);
+                con.Close();
+            }
+           
+        }
+
+        private void transferfeepanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button16_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (guna2TextBox1.Text!="")
+                {
+                    con.Open();
+                   // SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+                    String selectQuery = "SELECT Running_balance FROM fee_receipts  Where AdmNo='" + guna2TextBox1.Text + "' AND ReceiptNo =(Select Max(ReceiptNo) AS ReceiptNo From fee_Receipts Where AdmNo='" + guna2TextBox1.Text + "')";
+                    cmd = new SqlCommand(selectQuery, con);
+                    sqldataReader = cmd.ExecuteReader();
+
+                    if (sqldataReader.Read())
+                    {
+                        guna2TextBoxAdmNoT.Text = guna2TextBox1.Text.ToString();
+                        decimal val;
+                        val =Convert.ToDecimal(sqldataReader.GetValue(0).ToString());
+                        if (val<0)
+                        {
+                            val = val / -1;
+                            guna2TextBoxAmtAvaT.Text = val.ToString();
+                            con.Close();
+                        }
+                        else
+                        {
+                            guna2TextBoxAmtAvaT.Text = 0.ToString();
+                            con.Close();
+                        }
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("No such student In School");
+                        con.Close();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("");
+                    con.Close();
+                }
+
+            }
+            catch (Exception ee1)
+            {
+                MessageBox.Show(ee1.Message);
+                con.Close();
+            }
+        }
     }
 }

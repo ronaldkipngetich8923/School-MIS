@@ -32,7 +32,7 @@ namespace Shule
            // this.WindowState = FormWindowState.Minimized;
             if (textBox1ShelfNo.Text != "" && textBoxShelfName.Text != "" && richTextBoxDescription.Text != "" && textBoxShelfLocation.Text != "")
             {
-                cmd = new SqlCommand("insert into shelf(ShelfNo,ShelfName,ShelfDescription,ShelfLocation) values(@ShelfNo,@ShelfName,@ShelfDescription,@ShelfLocation)", con);
+                cmd = new SqlCommand("insert into shelf(ShelfNo,ShelfName,ShelfDescription,ShelfLocation) values(@ShelfNo,@ShelfName,@ShelfDescription,@ShelfLocation", con);
                 con.Open();
                 cmd.Parameters.AddWithValue("@ShelfNo", textBox1ShelfNo.Text);
                 cmd.Parameters.AddWithValue("@ShelfName", textBoxShelfName.Text);

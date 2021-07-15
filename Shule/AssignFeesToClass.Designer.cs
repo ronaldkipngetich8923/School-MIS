@@ -320,7 +320,7 @@
             this.Text = "GenerateFeeStructure";
             this.Load += new System.EventHandler(this.GenerateFeeStructure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.feesSetUpBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).EndInit();
            // ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
