@@ -24,7 +24,7 @@ namespace Shule
         public decimal sum { get; set; }
         private void guna2Button1_Click(object sender, EventArgs e)
         {           
-            if (guna2ComboBoxClass.Text!="" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "" )
+            if (guna2ComboBoxClass.Text!="" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "" && labelFID.Text!="")
             {
                 try
                 {
@@ -47,12 +47,14 @@ namespace Shule
                 catch (Exception em)
                 {
                     MessageBox.Show(em.Message);
+                    con.Close();
                 }
                
             }
             else
             {
                 MessageBox.Show("Kindly select Form, Term, Stream, Year !!");
+                con.Close();
             }
 
 
@@ -72,7 +74,7 @@ namespace Shule
         {
             try
             {
-                if (guna2ComboBoxClass.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "" && guna2TextBoxTotalFee.Text!="")
+                if (guna2ComboBoxClass.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "" && guna2TextBoxTotalFee.Text!="" && labelFID.Text!="")
                 {
                     SqlCommand cmd = new SqlCommand("insert into fee_Structure(Fee_StructureID,Class,Stream,Year,Term,Total_Amount) values(@FeeID,@Class,@Stream,@Year,@Term,@TotalAmount)", con);
                     con.Open();
@@ -129,6 +131,14 @@ namespace Shule
             AddFeeStructure frm = new AddFeeStructure();
             frm.Show();
             
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AssignFeesToClass af = new AssignFeesToClass();
+            af.Show();
+           
         }
     }
 }

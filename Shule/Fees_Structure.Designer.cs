@@ -338,6 +338,7 @@
             this.guna2Button5.Size = new System.Drawing.Size(97, 36);
             this.guna2Button5.TabIndex = 17;
             this.guna2Button5.Text = "Assign Fees Stucture";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // Student_Promotion
             // 
