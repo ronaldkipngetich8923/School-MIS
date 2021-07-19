@@ -20,44 +20,43 @@ namespace Shule
 
         SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
 
-       public int i { get; set; }
-        public decimal sum { get; set; }
+        
         private void guna2Button1_Click(object sender, EventArgs e)
-        {           
-            if (guna2ComboBoxClass.Text!="" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "" && labelFID.Text!="")
+        {
+            decimal sum1; 
+            int i;
+            if (guna2ComboBoxClass.SelectedItem!=null && guna2ComboBoxStream.SelectedItem!= null && guna2ComboBoxYear.SelectedItem != null && guna2ComboBoxTerm.SelectedItem != null && labelFID.Text!="")
             {
                 try
                 {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT Fees_vote,Fees_Vote_Amount FROM fees_SetUp Where Form='" + guna2ComboBoxClass.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "'", con);
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "fees_setUp");
-                    dataGridView1.DataSource = ds.Tables["fees_setUp"].DefaultView;
+                    string query = "SELECT Fees_vote, Fees_Vote_Amount FROM fees_SetUp Where Form = '" + guna2ComboBoxClass.Text + "' AND Stream = '" + guna2ComboBoxStream.Text + "' AND Year = '" + guna2ComboBoxYear.Text + "' AND Term = '" + guna2ComboBoxTerm.Text + "'";
+                    SqlDataAdapter SDA = new SqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    SDA.Fill(dt);
+                    dataGridView1.DataSource = dt;
                     guna2TextBoxTotalFee.Show();
                     labelFID.Show();
                     labelFIDL.Show();
-                    sum = 0;
-                    for (i = 0; i < dataGridView1.RowCount; i++)
+                    decimal sum = 0;
+                    for (i = 0; i <= dataGridView1.RowCount; i++)
                     {
-                        sum = sum + decimal.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString());
-                        guna2TextBoxTotalFee.Text = sum.ToString();
+                        sum1 = sum + decimal.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString());
+                        guna2TextBoxTotalFee.Text = sum1.ToString();
                         labelFID.Text = guna2ComboBoxClass.Text + guna2ComboBoxStream.Text + guna2ComboBoxYear.Text + guna2ComboBoxTerm.Text;
                     }
-
+                    con.Close();
                 }
                 catch (Exception em)
                 {
                     MessageBox.Show(em.Message);
                     con.Close();
                 }
-               
             }
             else
             {
                 MessageBox.Show("Kindly select Form, Term, Stream, Year !!");
                 con.Close();
             }
-
-
         }
 
         private void Fees_Structure_Load(object sender, EventArgs e)

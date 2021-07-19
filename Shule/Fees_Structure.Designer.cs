@@ -55,7 +55,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(620, 58);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(300, 389);
+            this.dataGridView1.Size = new System.Drawing.Size(348, 335);
             this.dataGridView1.TabIndex = 0;
             // 
             // guna2TextBoxTotalFee
@@ -346,14 +346,14 @@
             this.Student_Promotion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Student_Promotion.Location = new System.Drawing.Point(0, 0);
             this.Student_Promotion.Name = "Student_Promotion";
-            this.Student_Promotion.Size = new System.Drawing.Size(1029, 505);
+            this.Student_Promotion.Size = new System.Drawing.Size(1029, 462);
             this.Student_Promotion.TabIndex = 18;
             // 
             // Fees_Structure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 505);
+            this.ClientSize = new System.Drawing.Size(1029, 462);
             this.Controls.Add(this.guna2Button5);
             this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button3);

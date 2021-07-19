@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.admission = new System.Windows.Forms.TabControl();
             this.studentsTab = new System.Windows.Forms.TabPage();
@@ -56,6 +56,10 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.guna2ComboBox16 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBox15 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dateTimePicker1AdmDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.comboBoxStream = new Guna.UI2.WinForms.Guna2ComboBox();
             this.comboBoxClass = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -213,6 +217,8 @@
             this.button11 = new System.Windows.Forms.Button();
             this.subordinatestaff = new System.Windows.Forms.Panel();
             this.SetupParameter = new System.Windows.Forms.Panel();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
             this.btnMedicCategories = new System.Windows.Forms.Button();
             this.btnStaffType = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -249,6 +255,7 @@
             this.AdmissionBtn = new System.Windows.Forms.Button();
             this.btnAcademic = new System.Windows.Forms.Button();
             this.panelAcademic = new System.Windows.Forms.Panel();
+            this.button28 = new System.Windows.Forms.Button();
             this.button46 = new System.Windows.Forms.Button();
             this.btnExaminations = new System.Windows.Forms.Button();
             this.btnSetExams = new System.Windows.Forms.Button();
@@ -926,6 +933,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label102);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.guna2ComboBox16);
+            this.groupBox1.Controls.Add(this.guna2ComboBox15);
             this.groupBox1.Controls.Add(this.dateTimePicker1AdmDate);
             this.groupBox1.Controls.Add(this.comboBoxStream);
             this.groupBox1.Controls.Add(this.comboBoxClass);
@@ -939,13 +950,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Assign Class/Form";
             // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.Location = new System.Drawing.Point(29, 161);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(48, 21);
+            this.label102.TabIndex = 19;
+            this.label102.Text = "Term";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(29, 113);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(43, 21);
+            this.label22.TabIndex = 18;
+            this.label22.Text = "Year";
+            // 
+            // guna2ComboBox16
+            // 
+            this.guna2ComboBox16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox16.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox16.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox16.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox16.FocusedState.Parent = this.guna2ComboBox16;
+            this.guna2ComboBox16.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox16.HoverState.Parent = this.guna2ComboBox16;
+            this.guna2ComboBox16.ItemHeight = 30;
+            this.guna2ComboBox16.ItemsAppearance.Parent = this.guna2ComboBox16;
+            this.guna2ComboBox16.Location = new System.Drawing.Point(241, 147);
+            this.guna2ComboBox16.Name = "guna2ComboBox16";
+            this.guna2ComboBox16.ShadowDecoration.Parent = this.guna2ComboBox16;
+            this.guna2ComboBox16.Size = new System.Drawing.Size(238, 36);
+            this.guna2ComboBox16.TabIndex = 17;
+            // 
+            // guna2ComboBox15
+            // 
+            this.guna2ComboBox15.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox15.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox15.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox15.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox15.FocusedState.Parent = this.guna2ComboBox15;
+            this.guna2ComboBox15.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox15.HoverState.Parent = this.guna2ComboBox15;
+            this.guna2ComboBox15.ItemHeight = 30;
+            this.guna2ComboBox15.ItemsAppearance.Parent = this.guna2ComboBox15;
+            this.guna2ComboBox15.Location = new System.Drawing.Point(243, 101);
+            this.guna2ComboBox15.Name = "guna2ComboBox15";
+            this.guna2ComboBox15.ShadowDecoration.Parent = this.guna2ComboBox15;
+            this.guna2ComboBox15.Size = new System.Drawing.Size(238, 36);
+            this.guna2ComboBox15.TabIndex = 16;
+            // 
             // dateTimePicker1AdmDate
             // 
             this.dateTimePicker1AdmDate.CheckedState.Parent = this.dateTimePicker1AdmDate;
             this.dateTimePicker1AdmDate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateTimePicker1AdmDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dateTimePicker1AdmDate.HoverState.Parent = this.dateTimePicker1AdmDate;
-            this.dateTimePicker1AdmDate.Location = new System.Drawing.Point(240, 125);
+            this.dateTimePicker1AdmDate.Location = new System.Drawing.Point(245, 192);
             this.dateTimePicker1AdmDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1AdmDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1AdmDate.Name = "dateTimePicker1AdmDate";
@@ -967,7 +1036,7 @@
             this.comboBoxStream.HoverState.Parent = this.comboBoxStream;
             this.comboBoxStream.ItemHeight = 30;
             this.comboBoxStream.ItemsAppearance.Parent = this.comboBoxStream;
-            this.comboBoxStream.Location = new System.Drawing.Point(240, 71);
+            this.comboBoxStream.Location = new System.Drawing.Point(240, 56);
             this.comboBoxStream.Name = "comboBoxStream";
             this.comboBoxStream.ShadowDecoration.Parent = this.comboBoxStream;
             this.comboBoxStream.Size = new System.Drawing.Size(238, 36);
@@ -986,7 +1055,7 @@
             this.comboBoxClass.HoverState.Parent = this.comboBoxClass;
             this.comboBoxClass.ItemHeight = 30;
             this.comboBoxClass.ItemsAppearance.Parent = this.comboBoxClass;
-            this.comboBoxClass.Location = new System.Drawing.Point(240, 17);
+            this.comboBoxClass.Location = new System.Drawing.Point(240, 11);
             this.comboBoxClass.Name = "comboBoxClass";
             this.comboBoxClass.ShadowDecoration.Parent = this.comboBoxClass;
             this.comboBoxClass.Size = new System.Drawing.Size(238, 36);
@@ -996,7 +1065,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(29, 133);
+            this.label14.Location = new System.Drawing.Point(34, 200);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(152, 21);
             this.label14.TabIndex = 11;
@@ -1006,7 +1075,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(29, 81);
+            this.label20.Location = new System.Drawing.Point(28, 68);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(64, 21);
             this.label20.TabIndex = 2;
@@ -1016,7 +1085,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(29, 34);
+            this.label19.Location = new System.Drawing.Point(29, 23);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(49, 21);
             this.label19.TabIndex = 0;
@@ -2407,6 +2476,7 @@
             this.studentsLabel.Size = new System.Drawing.Size(25, 25);
             this.studentsLabel.TabIndex = 15;
             this.studentsLabel.Text = "0";
+            this.studentsLabel.Click += new System.EventHandler(this.studentsLabel_Click);
             // 
             // button19
             // 
@@ -2994,7 +3064,7 @@
             this.panelmDropDown.Controls.Add(this.btnAddUsers);
             this.panelmDropDown.Controls.Add(this.btnTeachingStaff);
             this.panelmDropDown.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelmDropDown.Location = new System.Drawing.Point(3, 469);
+            this.panelmDropDown.Location = new System.Drawing.Point(3, 492);
             this.panelmDropDown.Name = "panelmDropDown";
             this.panelmDropDown.Size = new System.Drawing.Size(125, 51);
             this.panelmDropDown.TabIndex = 26;
@@ -3030,7 +3100,7 @@
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(3, 1100);
+            this.button10.Location = new System.Drawing.Point(3, 1123);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(125, 35);
             this.button10.TabIndex = 10;
@@ -3044,7 +3114,7 @@
             this.btnSetup.FlatAppearance.BorderSize = 0;
             this.btnSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSetup.Location = new System.Drawing.Point(3, 1182);
+            this.btnSetup.Location = new System.Drawing.Point(3, 1205);
             this.btnSetup.Name = "btnSetup";
             this.btnSetup.Size = new System.Drawing.Size(125, 35);
             this.btnSetup.TabIndex = 12;
@@ -3057,7 +3127,7 @@
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(3, 1141);
+            this.button11.Location = new System.Drawing.Point(3, 1164);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(125, 35);
             this.button11.TabIndex = 11;
@@ -3077,6 +3147,8 @@
             // SetupParameter
             // 
             this.SetupParameter.BackColor = System.Drawing.Color.White;
+            this.SetupParameter.Controls.Add(this.button37);
+            this.SetupParameter.Controls.Add(this.button36);
             this.SetupParameter.Controls.Add(this.btnMedicCategories);
             this.SetupParameter.Controls.Add(this.btnStaffType);
             this.SetupParameter.Controls.Add(this.button13);
@@ -3097,6 +3169,32 @@
             this.SetupParameter.TabIndex = 34;
             this.SetupParameter.Visible = false;
             this.SetupParameter.Paint += new System.Windows.Forms.PaintEventHandler(this.SetupParameter_Paint);
+            // 
+            // button37
+            // 
+            this.button37.BackColor = System.Drawing.Color.LightBlue;
+            this.button37.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button37.ForeColor = System.Drawing.Color.White;
+            this.button37.Location = new System.Drawing.Point(211, 308);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(187, 80);
+            this.button37.TabIndex = 15;
+            this.button37.Text = "Add Term";
+            this.button37.UseVisualStyleBackColor = false;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // button36
+            // 
+            this.button36.BackColor = System.Drawing.Color.LightBlue;
+            this.button36.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button36.ForeColor = System.Drawing.Color.White;
+            this.button36.Location = new System.Drawing.Point(-1, 308);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(187, 80);
+            this.button36.TabIndex = 14;
+            this.button36.Text = "Add Year";
+            this.button36.UseVisualStyleBackColor = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
             // 
             // btnMedicCategories
             // 
@@ -3602,16 +3700,29 @@
             // panelAcademic
             // 
             this.panelAcademic.BackColor = System.Drawing.Color.Ivory;
+            this.panelAcademic.Controls.Add(this.button28);
             this.panelAcademic.Controls.Add(this.button46);
             this.panelAcademic.Controls.Add(this.btnExaminations);
             this.panelAcademic.Controls.Add(this.btnSetExams);
             this.panelAcademic.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelAcademic.Location = new System.Drawing.Point(3, 184);
-            this.panelAcademic.MaximumSize = new System.Drawing.Size(125, 85);
             this.panelAcademic.MinimumSize = new System.Drawing.Size(125, 85);
             this.panelAcademic.Name = "panelAcademic";
-            this.panelAcademic.Size = new System.Drawing.Size(125, 85);
+            this.panelAcademic.Size = new System.Drawing.Size(125, 108);
             this.panelAcademic.TabIndex = 27;
+            // 
+            // button28
+            // 
+            this.button28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Location = new System.Drawing.Point(0, 69);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(125, 23);
+            this.button28.TabIndex = 3;
+            this.button28.Text = "Promote Students";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click_2);
             // 
             // button46
             // 
@@ -3660,7 +3771,7 @@
             this.btnFinance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinance.Image = global::Shule.Properties.Resources.caretside;
             this.btnFinance.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFinance.Location = new System.Drawing.Point(3, 275);
+            this.btnFinance.Location = new System.Drawing.Point(3, 298);
             this.btnFinance.Name = "btnFinance";
             this.btnFinance.Size = new System.Drawing.Size(125, 35);
             this.btnFinance.TabIndex = 3;
@@ -3676,7 +3787,7 @@
             this.panelDropFinance.Controls.Add(this.button47);
             this.panelDropFinance.Controls.Add(this.button2);
             this.panelDropFinance.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropFinance.Location = new System.Drawing.Point(3, 316);
+            this.panelDropFinance.Location = new System.Drawing.Point(3, 339);
             this.panelDropFinance.Name = "panelDropFinance";
             this.panelDropFinance.Size = new System.Drawing.Size(125, 100);
             this.panelDropFinance.TabIndex = 28;
@@ -3712,8 +3823,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(125, 23);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "Fees";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // btnManage
             // 
@@ -3723,7 +3835,7 @@
             this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManage.Image = global::Shule.Properties.Resources.caretside;
             this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnManage.Location = new System.Drawing.Point(3, 422);
+            this.btnManage.Location = new System.Drawing.Point(3, 445);
             this.btnManage.Name = "btnManage";
             this.btnManage.Size = new System.Drawing.Size(125, 41);
             this.btnManage.TabIndex = 14;
@@ -3740,7 +3852,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Image = global::Shule.Properties.Resources.caretside;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(3, 526);
+            this.button9.Location = new System.Drawing.Point(3, 549);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(125, 35);
             this.button9.TabIndex = 9;
@@ -3756,7 +3868,7 @@
             this.panelDropDispensary.Controls.Add(this.button43);
             this.panelDropDispensary.Controls.Add(this.btnTriage);
             this.panelDropDispensary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropDispensary.Location = new System.Drawing.Point(3, 567);
+            this.panelDropDispensary.Location = new System.Drawing.Point(3, 590);
             this.panelDropDispensary.Name = "panelDropDispensary";
             this.panelDropDispensary.Size = new System.Drawing.Size(125, 78);
             this.panelDropDispensary.TabIndex = 29;
@@ -3807,7 +3919,7 @@
             this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLibrary.Image = global::Shule.Properties.Resources.caretside;
             this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLibrary.Location = new System.Drawing.Point(3, 651);
+            this.btnLibrary.Location = new System.Drawing.Point(3, 674);
             this.btnLibrary.Name = "btnLibrary";
             this.btnLibrary.Size = new System.Drawing.Size(125, 35);
             this.btnLibrary.TabIndex = 5;
@@ -3824,7 +3936,7 @@
             this.panelDropLibrary.Controls.Add(this.button44);
             this.panelDropLibrary.Controls.Add(this.button5);
             this.panelDropLibrary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropLibrary.Location = new System.Drawing.Point(3, 692);
+            this.panelDropLibrary.Location = new System.Drawing.Point(3, 715);
             this.panelDropLibrary.Name = "panelDropLibrary";
             this.panelDropLibrary.Size = new System.Drawing.Size(125, 100);
             this.panelDropLibrary.TabIndex = 26;
@@ -3880,7 +3992,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = global::Shule.Properties.Resources.caretside;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(3, 798);
+            this.button7.Location = new System.Drawing.Point(3, 821);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 35);
             this.button7.TabIndex = 7;
@@ -3896,7 +4008,7 @@
             this.panelDropHostel.Controls.Add(this.button52);
             this.panelDropHostel.Controls.Add(this.button51);
             this.panelDropHostel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropHostel.Location = new System.Drawing.Point(3, 839);
+            this.panelDropHostel.Location = new System.Drawing.Point(3, 862);
             this.panelDropHostel.Name = "panelDropHostel";
             this.panelDropHostel.Size = new System.Drawing.Size(125, 70);
             this.panelDropHostel.TabIndex = 26;
@@ -3947,7 +4059,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = global::Shule.Properties.Resources.caretside;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(3, 915);
+            this.button8.Location = new System.Drawing.Point(3, 938);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(125, 35);
             this.button8.TabIndex = 8;
@@ -3964,7 +4076,7 @@
             this.panelDropTransport.Controls.Add(this.btnDriver);
             this.panelDropTransport.Controls.Add(this.btnStudentsTrans);
             this.panelDropTransport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropTransport.Location = new System.Drawing.Point(3, 956);
+            this.panelDropTransport.Location = new System.Drawing.Point(3, 979);
             this.panelDropTransport.Name = "panelDropTransport";
             this.panelDropTransport.Size = new System.Drawing.Size(125, 97);
             this.panelDropTransport.TabIndex = 30;
@@ -4025,7 +4137,7 @@
             // 
             this.btnAttendance.FlatAppearance.BorderSize = 0;
             this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.Location = new System.Drawing.Point(3, 1059);
+            this.btnAttendance.Location = new System.Drawing.Point(3, 1082);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(125, 35);
             this.btnAttendance.TabIndex = 31;
@@ -4140,14 +4252,14 @@
             // dataGridView3StudentsDetails
             // 
             this.dataGridView3StudentsDetails.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3StudentsDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView3StudentsDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3StudentsDetails.Location = new System.Drawing.Point(38, 224);
             this.dataGridView3StudentsDetails.Name = "dataGridView3StudentsDetails";
@@ -6696,11 +6808,11 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.AdmissionPanel);
+            this.Controls.Add(this.Dashboard);
+            this.Controls.Add(this.SetupParameter);
             this.Controls.Add(this.Hostel);
             this.Controls.Add(this.Dispensary);
             this.Controls.Add(this.Transport);
-            this.Controls.Add(this.SetupParameter);
-            this.Controls.Add(this.Dashboard);
             this.Controls.Add(this.ExamsResults);
             this.Controls.Add(this.addUsers);
             this.Controls.Add(this.Academic);
@@ -7269,6 +7381,13 @@
         private System.Windows.Forms.Panel panel10;
         private Guna.UI2.WinForms.Guna2Button guna2Button15;
         private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label22;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox16;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox15;
     }
 }
 

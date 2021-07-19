@@ -13,8 +13,8 @@ namespace Shule
 {
     public partial class Stream : Form
     {
-        SqlConnection sqlConnection;
-        SqlDataReader sqlDataReader;
+        SqlConnection sqlConnection =new SqlConnection("Data Source = (localDB)\\MSSQLLocalDB;Initial Catalog = shule; Integrated Security = True");
+
         public Stream()
         {
             InitializeComponent();
@@ -41,8 +41,8 @@ namespace Shule
 
         private void Stream_Load(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //sqlConnection = new SqlConnection(connStr);
         }
 
         private void guna2Button1ViewClass_Click(object sender, EventArgs e)

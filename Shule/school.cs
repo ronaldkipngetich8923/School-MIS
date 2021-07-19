@@ -37,14 +37,12 @@ namespace Shule
         private bool isCollapsed;
         //  SetExam sr = new SetExam();
 
-        string connStr = "Data Source = (localDB)\\MSSQLLocalDB;Initial Catalog = shule; Integrated Security = True";
+        string connStr = "Data Source = (localDB)\\MSSQLLocalDB;Initial Catalog = shule; Integrated Security = True; MultipleActiveResultSets=true";
 
         public Home()
         {
             InitializeComponent();
-
-            //SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-AOUGB8E\SQLEXPRESS;Initial Catalog=shule;Integrated Security=True");
-
+            
             customizeDesign();
             ComboclassFill();
             ComboStreamFill();
@@ -54,6 +52,7 @@ namespace Shule
             ComboYearFill();
             ComboTermFill();
             clearAl();
+           // ComboyearFill();
 
             // hideSubmenu();
         }
@@ -68,7 +67,7 @@ namespace Shule
         {
             //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
-            string cmdStr = " SELECT *  FROM SetExams";
+            string cmdStr = " SELECT *  FROM Term";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
@@ -82,6 +81,7 @@ namespace Shule
 
                     comboBoxTerm.Items.Add(sName);
                     RcomboBoxTerm.Items.Add(sName);
+                    guna2ComboBox16.Items.Add(sName);
                 }
             }
             catch (Exception ex)
@@ -94,7 +94,7 @@ namespace Shule
         {
            // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
-            string cmdStr = " SELECT *  FROM SetExams";
+            string cmdStr = " SELECT *  FROM Year";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
@@ -108,6 +108,7 @@ namespace Shule
 
                     comboBoxYear.Items.Add(sName);
                     RcomboBoxYear.Items.Add(sName);
+                    guna2ComboBox15.Items.Add(sName);
                 }
             }
             catch (Exception ex)
@@ -119,7 +120,6 @@ namespace Shule
 
         public void CombosubjectFill()
         {
-           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Subject";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
@@ -232,6 +232,34 @@ namespace Shule
             }
         }
 
+        public void ComboyearFill()
+        {
+            string cmdStr = " SELECT *  FROM Year";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
+            try
+            {
+                sqlConnection.Open();
+
+                sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                    guna2ComboBox1.Items.Add(sName);
+                    guna2ComboBox5.Items.Add(sName);
+                    guna2ComboBox13.Items.Add(sName);
+                    guna2ComboBox10.Items.Add(sName);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            sqlConnection.Close();
+        }
         public void ComboclassFill()
         {
            // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
@@ -871,21 +899,21 @@ namespace Shule
 
             //StudentScore GridView
 
-            string query = "SELECT * FROM Exams";
-            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
-            DataTable dt = new DataTable();
-            SDA.Fill(dt);
-            dataGridView1StudentsScores.DataSource = dt;
+            //string query = "SELECT * FROM Exams";
+            //SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+            //DataTable dt = new DataTable();
+            //SDA.Fill(dt);
+            //dataGridView1StudentsScores.DataSource = dt;
 
-            comboBoxGender.SelectedIndex = 0;
-            comboBoxCounty.SelectedIndex = 0;
-            comboBoxDisability.SelectedIndex = 1;
-            comboBoxClass.SelectedIndex = 0;
-            comboBoxStream.SelectedIndex = 0;
-            comboBoxExamType.SelectedIndex = 0;
-            // comboBoxSubjects.SelectedIndex = 0;
-            comboBoxForm.SelectedIndex = 0;
-            comboBoxStreams.SelectedIndex = 0;
+           // comboBoxGender.SelectedIndex = 0;
+           // comboBoxCounty.SelectedIndex = 0;
+           // comboBoxDisability.SelectedIndex = 1;
+           //// comboBoxClass.SelectedIndex = 0;
+           // comboBoxStream.SelectedIndex = 0;
+           // comboBoxExamType.SelectedIndex = 0;
+           // // comboBoxSubjects.SelectedIndex = 0;
+           // comboBoxForm.SelectedIndex = 0;
+           // comboBoxStreams.SelectedIndex = 0;
         }
 
         private void setLabel(DataSet ds, Label lbl)
@@ -1212,14 +1240,20 @@ namespace Shule
 
         private void btnViewRecords_Click(object sender, EventArgs e)
         {
-            sqlConnection.Open();
-            
-            string query = "SELECT * FROM Exams";
-            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
-            DataTable dt = new DataTable();
-            SDA.Fill(dt);
-            dataGridView1StudentsScores.DataSource = dt;
-            sqlConnection.Close();
+            try
+            {
+                sqlConnection.Open();
+                string query = "SELECT * FROM Exams";
+                SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+                dataGridView1StudentsScores.DataSource = dt;
+                sqlConnection.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnUpdateScore_Click(object sender, EventArgs e)
@@ -1748,6 +1782,27 @@ namespace Shule
         {
             Dashboard.Visible = true;
             Dashboard.BringToFront();
+
+            string str = "select count(AdmNo) from StudentMaster";
+            SqlDataAdapter da = new SqlDataAdapter(str, sqlConnection);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            setLabel(ds, studentsLabel);
+
+            //GET NUMBER OF TEACHING STAFF
+            String teacher = "select count(StaffType) from TeachersTable where StaffType='TEACHING STAFF'";
+            sqlDataAdapter = new SqlDataAdapter(teacher, sqlConnection);
+            ds = new DataSet();
+            sqlDataAdapter.Fill(ds);
+            setLabel(ds, labelTeachers);
+
+            // get number of Classes
+
+            String classes = "select count(ClassName) from Classes";
+            sqlDataAdapter = new SqlDataAdapter(classes, sqlConnection);
+            ds = new DataSet();
+            sqlDataAdapter.Fill(ds);
+            setLabel(ds, labelClasses);
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -1997,189 +2052,232 @@ namespace Shule
 
         private void btnSaveStudents_Click_1(object sender, EventArgs e)
         {
-            if (textBoxAdmNo.Text == "")
+            try
             {
-                string myStringVariable1 = string.Empty;
-                MessageBox.Show("AdmNo Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxStudname.Text == "")
-            {
-                string myStringVariable2 = string.Empty;
-                MessageBox.Show("Student Name Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (dateTimePickerDob.Text == "")
-            {
-                string myStringVariable3 = string.Empty;
-                MessageBox.Show("DateOfBirth Field is Empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (comboBoxGender.Text == "--Choose--")
-            {
-                string myStringVariable4 = string.Empty;
-                MessageBox.Show("Select Gender.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (comboBoxCounty.Text == "--Choose--")
-            {
-                string myStringVariable5 = string.Empty;
-                MessageBox.Show("Select County.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (comboBoxCounty.Text == "--Choose--")
-            {
-                string myStringVariable6 = string.Empty;
-                MessageBox.Show("Select County.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxPrimarySch.Text == " ")
-            {
-                string myStringVariable7 = string.Empty;
-                MessageBox.Show("Primary School Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxKCPEMarks.Text == " ")
-            {
-                string myStringVariable8 = string.Empty;
-                MessageBox.Show("Primary School Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                int temp;
-                if (int.TryParse(textBoxKCPEMarks.Text, out temp))
+                if (textBoxAdmNo.Text == "")
                 {
-                    if (temp >= 0 && temp <= 500)
+                    string myStringVariable1 = string.Empty;
+                    MessageBox.Show("AdmNo Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxStudname.Text == "")
+                {
+                    string myStringVariable2 = string.Empty;
+                    MessageBox.Show("Student Name Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (dateTimePickerDob.Text == "")
+                {
+                    string myStringVariable3 = string.Empty;
+                    MessageBox.Show("DateOfBirth Field is Empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBoxGender.Text == "--Choose--")
+                {
+                    string myStringVariable4 = string.Empty;
+                    MessageBox.Show("Select Gender.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBoxCounty.Text == "--Choose--")
+                {
+                    string myStringVariable5 = string.Empty;
+                    MessageBox.Show("Select County.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBoxCounty.Text == "--Choose--")
+                {
+                    string myStringVariable6 = string.Empty;
+                    MessageBox.Show("Select County.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxPrimarySch.Text == " ")
+                {
+                    string myStringVariable7 = string.Empty;
+                    MessageBox.Show("Primary School Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxKCPEMarks.Text == " ")
+                {
+                    string myStringVariable8 = string.Empty;
+                    MessageBox.Show("Primary School Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    int temp;
+                    if (int.TryParse(textBoxKCPEMarks.Text, out temp))
                     {
-                        //valid number (int)
+                        if (temp >= 0 && temp <= 500)
+                        {
+                            //valid number (int)
+                        }
+                        else
+                        {
+                            MessageBox.Show("Marks Should either be 0 OR Less Than 500", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Marks Should either be 0 OR Less Than 500", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Entered Value is not a Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+                }
+                else if (comboBoxDisability.Text == "--Choose--")
+                {
+                    string myStringVariable9 = string.Empty;
+                    MessageBox.Show("Disability Status Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (comboBoxDisability.SelectedIndex == 1)
+                    {
+                        richTextBoxDisabilityDescription.Text = "NO COMPLICATIONS";
+
+                    }
+                }
+                else if (richTextBoxDisabilityDescription.Text == "")
+                {
+                    string myStringVariable10 = string.Empty;
+                    MessageBox.Show("Disability Description Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBoxClass.Text == "--Choose--")
+                {
+                    string myStringVariable11 = string.Empty;
+                    MessageBox.Show("Class Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBoxStream.Text == "--Choose--")
+                {
+                    string myStringVariable12 = string.Empty;
+                    MessageBox.Show("Stream Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (guna2ComboBox16.Text == "")
+                {
+                    MessageBox.Show("Term Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (guna2ComboBox15.Text == "")
+                {
+                    MessageBox.Show("Year Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (comboBoxStream.Text == "--Choose--")
+                {
+                    string myStringVariable13 = string.Empty;
+                    MessageBox.Show("Stream Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (dateTimePicker1AdmDate.Text == "--Choose--")
+                {
+                    string myStringVariable14 = string.Empty;
+                    MessageBox.Show("Admissin Date Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxParentname.Text == "")
+                {
+                    string myStringVariable15 = string.Empty;
+                    MessageBox.Show("Parent Name Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxPhoneNo.Text == "")
+                {
+                    string myStringVariable16 = string.Empty;
+                    MessageBox.Show("Phone No Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxParentname.Text == "")
+                {
+                    string myStringVariable17 = string.Empty;
+                    MessageBox.Show("Parent Name Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (textBoxEmail.Text == "")
+                {
+                    string myStringVariable18 = string.Empty;
+                    MessageBox.Show("Email Address  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    try
+                    {
+                        // Normalize the domain
+                        textBoxEmail.Text = Regex.Replace(textBoxEmail.Text, @"(@)(.+)$", DomainMapper,
+                                              RegexOptions.None, TimeSpan.FromMilliseconds(200));
+
+                        // Examines the domain part of the email and normalizes it.
+                        string DomainMapper(Match match)
+                        {
+                            // Use IdnMapping class to convert Unicode domain names.
+                            var idn = new IdnMapping();
+
+                            // Pull out and process domain name (throws ArgumentException on invalid)
+                            string domainName = idn.GetAscii(match.Groups[2].Value);
+
+                            return match.Groups[1].Value + domainName;
+                        }
+                    }
+                    catch (RegexMatchTimeoutException)
+
+                    {
+
+                        //return false;
+                    }
+                    catch (ArgumentException)
+                    {
+                        //MessageBox.Show(ex.Message);
+                        //return false;
+                    }
+
+                    try
+                    {
+                        ////return Regex.IsMatch(textBoxEmail.Text,
+                        ////    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
+                        ////    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
+                    }
+                    catch (RegexMatchTimeoutException)
+                    {
+                        //return false;
+                    }
+                }
+                else if (richTextBoxPostalAddress.Text == "")
+                {
+                    string myStringVariable19 = string.Empty;
+                    MessageBox.Show("Postal Address  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (guna2TextBox3.Text == "")
+                {
+                    string myStringVariable20 = string.Empty;
+                    MessageBox.Show("Town Name  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Entered Value is not a Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else if (comboBoxDisability.Text == "--Choose--")
-            {
-                string myStringVariable9 = string.Empty;
-                MessageBox.Show("Disability Status Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                if (comboBoxDisability.SelectedIndex == 1)
-                {
-                    richTextBoxDisabilityDescription.Text = "NO COMPLICATIONS";
-
-                }
-            }
-            else if (richTextBoxDisabilityDescription.Text == "")
-            {
-                string myStringVariable10 = string.Empty;
-                MessageBox.Show("Disability Description Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (comboBoxClass.Text == "--Choose--")
-            {
-                string myStringVariable11 = string.Empty;
-                MessageBox.Show("Class Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (comboBoxStream.Text == "--Choose--")
-            {
-                string myStringVariable12 = string.Empty;
-                MessageBox.Show("Stream Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (comboBoxStream.Text == "--Choose--")
-            {
-                string myStringVariable13 = string.Empty;
-                MessageBox.Show("Stream Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (dateTimePicker1AdmDate.Text == "--Choose--")
-            {
-                string myStringVariable14 = string.Empty;
-                MessageBox.Show("Admissin Date Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxParentname.Text == "")
-            {
-                string myStringVariable15 = string.Empty;
-                MessageBox.Show("Parent Name Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxPhoneNo.Text == "")
-            {
-                string myStringVariable16 = string.Empty;
-                MessageBox.Show("Phone No Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxParentname.Text == "")
-            {
-                string myStringVariable17 = string.Empty;
-                MessageBox.Show("Parent Name Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (textBoxEmail.Text == "")
-            {
-                string myStringVariable18 = string.Empty;
-                MessageBox.Show("Email Address  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                try
-                {
-                    // Normalize the domain
-                    textBoxEmail.Text = Regex.Replace(textBoxEmail.Text, @"(@)(.+)$", DomainMapper,
-                                          RegexOptions.None, TimeSpan.FromMilliseconds(200));
-
-                    // Examines the domain part of the email and normalizes it.
-                    string DomainMapper(Match match)
+                    string qur = "INSERT INTO StudentMaster VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudname.Text + "','" + dateTimePickerDob.Value + "','" + comboBoxGender.SelectedItem + "','" + comboBoxCounty.SelectedItem + "'," +
+                  "'" + textBoxPrimarySch.Text + "','" + textBoxKCPEMarks.Text + "','" + comboBoxDisability.SelectedItem + "','" + richTextBoxDisabilityDescription.Text + "'," +
+                  "'" + comboBoxClass.SelectedItem + "','" + comboBoxStream.SelectedItem + "','" + guna2ComboBox15.SelectedItem + "','" + guna2ComboBox16.SelectedItem + "','" + dateTimePicker1AdmDate.Value + "','" + textBoxParentname.Text + "'," +
+                  "'" + textBoxPhoneNo.Text + "','" + textBoxEmail.Text + "','" + richTextBoxPostalAddress.Text + "','" + guna2TextBox3.Text + "')";
+                    SqlCommand cmd2 = new SqlCommand(qur, sqlConnection);
+                    try
                     {
-                        // Use IdnMapping class to convert Unicode domain names.
-                        var idn = new IdnMapping();
+                        sqlDataReader.Close();
+                        sqlConnection.Open();
+                        int rows = cmd2.ExecuteNonQuery();
+                        
+                        String selectQuery = "SELECT SUM(Fees_Vote_Amount) AS Fees_Vote_Amount FROM fees_SetUp Where Form='"+ comboBoxClass.Text +"'AND Stream='"+ comboBoxStream.Text +"' AND Year='"+ guna2ComboBox15.Text +"' AND Term='"+ guna2ComboBox16.Text +"' ";
+                        SqlCommand cmd = new SqlCommand(selectQuery, sqlConnection);
+                        sqlDataReader = cmd.ExecuteReader();
+                       
+                        decimal Termfee;
+                        decimal amount = Convert.ToDecimal(0); 
+                        if (sqlDataReader.Read())
+                        {
+                            Termfee = Convert.ToDecimal(sqlDataReader.GetValue(0).ToString());
+                            SqlCommand cmd1 = new SqlCommand("insert into Student_Term(AdmNo,Class,Stream,Year,Term,Total_Amount,Term_Fees) Values(@AdmNo,@Class,@Stream,@Year,@Term,@Total_Amount,@Term_Fees)", sqlConnection);
+                            cmd1.Parameters.AddWithValue("@AdmNo", textBoxAdmNo.Text);
+                            cmd1.Parameters.AddWithValue("@Class", comboBoxClass.SelectedItem);
+                            cmd1.Parameters.AddWithValue("@Stream", comboBoxStream.SelectedItem);
+                            cmd1.Parameters.AddWithValue("@Year", guna2ComboBox15.SelectedItem);
+                            cmd1.Parameters.AddWithValue("@Term", guna2ComboBox16.SelectedItem);
+                            cmd1.Parameters.AddWithValue("@Total_Amount", amount);
+                            cmd1.Parameters.AddWithValue("@Term_Fees", Termfee);
+                            cmd1.ExecuteNonQuery();
 
-                        // Pull out and process domain name (throws ArgumentException on invalid)
-                        string domainName = idn.GetAscii(match.Groups[2].Value);
+                            MessageBox.Show(rows + "  Student Saved successfully.");
 
-                        return match.Groups[1].Value + domainName;
+                            sqlDataReader.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("No Fees SetUp for this Class");
+                        }
+                        
                     }
-                }
-                catch (RegexMatchTimeoutException)
-
-                {
-
-                    //return false;
-                }
-                catch (ArgumentException)
-                {
-                    //MessageBox.Show(ex.Message);
-                    //return false;
-                }
-
-                try
-                {
-                    ////return Regex.IsMatch(textBoxEmail.Text,
-                    ////    @"^[^@\s]+@[^@\s]+\.[^@\s]+$",
-                    ////    RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250));
-                }
-                catch (RegexMatchTimeoutException)
-                {
-                    //return false;
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        sqlDataReader.Close();
+                    }
+                    sqlConnection.Close();
                 }
             }
-            else if (richTextBoxPostalAddress.Text == "")
+            catch
             {
-                string myStringVariable19 = string.Empty;
-                MessageBox.Show("Postal Address  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (guna2TextBox3.Text == "")
-            {
-                string myStringVariable20 = string.Empty;
-                MessageBox.Show("Town Name  Field is required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                string qur = "INSERT INTO StudentMaster VALUES ('" + textBoxAdmNo.Text + "','" + textBoxStudname.Text + "','" + dateTimePickerDob.Text + "','" + comboBoxGender.SelectedItem + "','" + comboBoxCounty.SelectedItem + "'," +
-              "'" + textBoxPrimarySch.Text + "','" + textBoxKCPEMarks.Text + "','" + comboBoxDisability.SelectedItem + "','" + richTextBoxDisabilityDescription.Text + "'," +
-              "'" + comboBoxClass.SelectedItem + "','" + comboBoxStream.SelectedItem + "','" + dateTimePicker1AdmDate.Text + "','" + textBoxParentname.Text + "'," +
-              "'" + textBoxPhoneNo.Text + "','" + textBoxEmail.Text + "','" + richTextBoxPostalAddress.Text + "','" + guna2TextBox3.Text + "')";
-                SqlCommand cmd = new SqlCommand(qur, sqlConnection);
-                try
-                {
-                    
-                    sqlConnection.Open();
-                    int rows = cmd.ExecuteNonQuery();
 
-                    MessageBox.Show(rows + "  Student Saved successfully.");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                sqlConnection.Close();
-            }          
+            }
         }
 
         private void btnUpdateStudent_Click(object sender, EventArgs e)
@@ -2558,6 +2656,36 @@ namespace Shule
                     e.Cancel = true;
                 }
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Fee_Collections fc = new Fee_Collections();
+            fc.Show();
+
+        }
+
+        private void button28_Click_2(object sender, EventArgs e)
+        {
+            studentTerm st = new studentTerm();
+            st.Show();
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            NewYear ny = new NewYear();
+            ny.Show();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            NewTerm nt = new NewTerm();
+            nt.Show();
+        }
+
+        private void studentsLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

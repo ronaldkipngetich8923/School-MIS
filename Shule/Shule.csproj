@@ -228,6 +228,18 @@
     <Compile Include="NewMedicine.Designer.cs">
       <DependentUpon>NewMedicine.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewTerm.Designer.cs">
+      <DependentUpon>NewTerm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewYear.Designer.cs">
+      <DependentUpon>NewYear.cs</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -311,6 +323,12 @@
     <Compile Include="AssignHostel.Designer.cs">
       <DependentUpon>AssignHostel.cs</DependentUpon>
     </Compile>
+    <Compile Include="studentTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentTerm.Designer.cs">
+      <DependentUpon>studentTerm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,6 +389,12 @@
     <EmbeddedResource Include="Newshelf.resx">
       <DependentUpon>Newshelf.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewTerm.resx">
+      <DependentUpon>NewTerm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewYear.resx">
+      <DependentUpon>NewYear.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReferralForm.resx">
       <DependentUpon>ReferralForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -404,6 +428,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AssignHostel.resx">
       <DependentUpon>AssignHostel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentTerm.resx">
+      <DependentUpon>studentTerm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Shule.exe.config" />
     <None Include="obj\Release\Shule.csproj.CoreCompileInputs.cache" />
