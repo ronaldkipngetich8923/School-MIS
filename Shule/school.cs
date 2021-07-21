@@ -27,7 +27,7 @@ namespace Shule
     {
        
      
-        //Function fn = new Function();
+        Function fn = new Function();
         String query;
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
@@ -419,8 +419,9 @@ namespace Shule
 
         private void button5_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelDropLibrary);
-
+            //showSubMenu(panelDropLibrary);
+            Library lb = new Library();
+            lb.Show();
 
             addUsers.Visible = false;
             Academic.Visible = false;
@@ -870,6 +871,10 @@ namespace Shule
 
         private void Home_Load(object sender, EventArgs e)
         {
+
+
+
+
             Dashboard.Visible = true;
             addUsers.Visible = false;
             string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
@@ -2056,7 +2061,7 @@ namespace Shule
                 
 
                 query = "insert into users (UserRole,Fname,Dob,MobileNo,emailAddress,Uname,Pass) values ('" + role + "','" + name + "','" + dob + "','" + mobile + "','" + email + "','" + username + "','" + pass + "')";
-                //fn.setData(query, "SignUp Successful");
+                fn.setData(query, "SignUp Successful");
 
             }
             catch (Exception)
@@ -2631,7 +2636,7 @@ namespace Shule
 
             string query = "SELECT Hostels.HostelCode,Hostels.HostelName,Hostels.Capacity,OccupiedHostel.AdmNo,OccupiedHostel.Studname,StudentMaster.AdmDate,StudentMaster.Class,StudentMaster.Stream,OccupiedHostel.DateAssigned,OccupiedHostel.Status FROM Hostels " +
                 "INNER JOIN OccupiedHostel ON Hostels.HostelCode = OccupiedHostel.HostelCode " +
-                "INNER JOIN StudentMaster ON OccupiedHostel.AdmNo =StudentMaster.AdmNo";
+                "INNER JOIN StudentMaster ON OccupiedHostel.AdmNo = StudentMaster.AdmNo";
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
@@ -2657,8 +2662,8 @@ namespace Shule
 
         private void button43_Click(object sender, EventArgs e)
         {
-            //ReferralForm rf = new ReferralForm();
-            //rf.Show();
+            ReferralForm rf = new ReferralForm();
+            rf.Show();
         }
 
         private void GridHostelInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -2752,14 +2757,14 @@ namespace Shule
 
         private void btnMedicCategories_Click(object sender, EventArgs e)
         {
-            //NewDrugCategory dr = new NewDrugCategory();
-            //dr.Show();
+            NewDrugCategory dr = new NewDrugCategory();
+            dr.Show();
         }
 
         private void btnNewMedicine_Click(object sender, EventArgs e)
         {
-            //NewMedicine nm = new NewMedicine();
-            //nm.Show();
+            NewMedicine nm = new NewMedicine();
+            nm.Show();
         }
 
         private void btnStudentsTrans_Click(object sender, EventArgs e)

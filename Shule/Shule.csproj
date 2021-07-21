@@ -43,9 +43,6 @@
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.7\lib\net40\Guna.UI2.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
-      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="MaterialDesignColors, Version=2.0.1.2556, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.2.0.1\lib\net452\MaterialDesignColors.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
@@ -61,27 +58,6 @@
     <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.Common.VS2010.10.0.40219.1\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1449.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1449.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.VS2010.10.0.40219.1\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
@@ -203,7 +179,6 @@
     <Compile Include="HostelClearance.Designer.cs">
       <DependentUpon>HostelClearance.cs</DependentUpon>
     </Compile>
-    <Compile Include="iTextSharp\text\Color.cs" />
     <Compile Include="Library.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +209,11 @@
     <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReferralForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -265,35 +245,17 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
-    <Compile Include="hostelclearence.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hostelclearence.Designer.cs">
-      <DependentUpon>hostelclearence.cs</DependentUpon>
-    </Compile>
     <Compile Include="Newrooms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Newrooms.Designer.cs">
       <DependentUpon>Newrooms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Newshelf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Newshelf.Designer.cs">
-      <DependentUpon>Newshelf.cs</DependentUpon>
-    </Compile>
     <Compile Include="removeshelf.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="removeshelf.Designer.cs">
       <DependentUpon>removeshelf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Fees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fees.Designer.cs">
-      <DependentUpon>Fees.cs</DependentUpon>
     </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
@@ -314,6 +276,12 @@
     </Compile>
     <Compile Include="AssignHostel.Designer.cs">
       <DependentUpon>AssignHostel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timetable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timetable.Designer.cs">
+      <DependentUpon>timetable.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddClass.resx">
       <DependentUpon>AddClass.cs</DependentUpon>
@@ -354,9 +322,6 @@
     <EmbeddedResource Include="HostelClearance.resx">
       <DependentUpon>HostelClearance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hostelclearence.resx">
-      <DependentUpon>hostelclearence.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Library.resx">
       <DependentUpon>Library.cs</DependentUpon>
     </EmbeddedResource>
@@ -372,8 +337,10 @@
     <EmbeddedResource Include="Newrooms.resx">
       <DependentUpon>Newrooms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Newshelf.resx">
-      <DependentUpon>Newshelf.cs</DependentUpon>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ReferralForm.resx">
       <DependentUpon>ReferralForm.cs</DependentUpon>
@@ -390,16 +357,6 @@
     <EmbeddedResource Include="school.resx">
       <DependentUpon>school.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="SetExam.resx">
       <DependentUpon>SetExam.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AssignHostel.resx">
       <DependentUpon>AssignHostel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timetable.resx">
+      <DependentUpon>timetable.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="bin\Debug\Shule.exe.config" />
     <None Include="obj\Release\Shule.csproj.CoreCompileInputs.cache" />
@@ -423,31 +383,40 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\Adduser.png" />
+    <None Include="Resources\books1.jpg" />
+    <None Include="Resources\caret.png" />
+    <None Include="Resources\caret2.png" />
+    <None Include="Resources\caretdown.png" />
+    <None Include="Resources\caretside.png" />
+    <None Include="Resources\careup.png" />
+    <None Include="Resources\clasese.png" />
+    <None Include="Resources\classes1.png" />
+    <None Include="Resources\classes2.png" />
+    <None Include="Resources\classes3.png" />
+    <None Include="Resources\classes31.png" />
+    <None Include="Resources\classes4.png" />
     <None Include="Resources\college-icons.jpg" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\dashboard-layout.png" />
+    <None Include="Resources\feess.png" />
     <None Include="Resources\Fee_Structure.gif.crdownload" />
     <None Include="Resources\icon1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\img.png" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\reset.jpg" />
+    <None Include="Resources\schoolicon.jpg" />
+    <None Include="Resources\schoolinfo.png" />
+    <None Include="Resources\schoolstream.png" />
+    <None Include="Resources\streams1.png" />
+    <None Include="Resources\streams2.png" />
     <None Include="Resources\students.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\subjects.png" />
+    <None Include="Resources\supply1.png" />
+    <None Include="Resources\teachers_icon.jpg" />
     <None Include="Resources\teachers.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\img.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\teachers icon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Adduser.png" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\BouncyCastle.Crypto.dll" />
@@ -527,22 +496,35 @@
     <Content Include="Resources\bill.png" />
     <Content Include="Resources\bill1.png" />
     <Content Include="Resources\bill2.png" />
-    <Content Include="Resources\Book Shelve Icon.png" />
     <Content Include="Resources\bOOk.jpg" />
     <Content Include="Resources\Books icon.png" />
     <Content Include="Resources\Books icon1.png" />
-    <Content Include="Resources\Books.jpg" />
+    <Content Include="Resources\Book_Shelve_Icon.png" />
+    <Content Include="Resources\classes.png" />
     <Content Include="Resources\fees preview.png" />
     <Content Include="Resources\fees.png" />
+    <Content Include="Resources\icons8-add-24.png" />
     <Content Include="Resources\magazines.png" />
+    <Content Include="Resources\magnifying-glass.png" />
+    <None Include="Resources\medic.png" />
+    <Content Include="Resources\money-transfer-icon.jpg" />
     <Content Include="Resources\MUST-Vector-Logo.jpg" />
+    <None Include="Resources\patient.jpg" />
+    <None Include="Resources\patient2.jpg" />
+    <None Include="Resources\refferal_icon.png" />
+    <Content Include="Resources\search-interface-symbol.png" />
+    <Content Include="Resources\streams.png" />
     <Content Include="Resources\STRUCTURE FEES.png" />
+    <Content Include="Resources\studentss.png" />
+    <Content Include="Resources\teacher.png" />
     <Content Include="Resources\trans.PNG" />
+    <Content Include="Resources\transfer-bank-money-transf.png" />
     <Content Include="Resources\transfer-bank-money-transf1.png" />
     <Content Include="Resources\transfer-bank-money-transf2.png" />
     <Content Include="Resources\transfer-bank-money-transf3.png" />
     <Content Include="Resources\update fees.png" />
     <Content Include="Resources\users.png" />
+    <Content Include="Resources\web-adjustment-.png" />
     <Content Include="Resources\web-adjustment-1.png" />
     <Content Include="Resources\web-adjustment-2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
@@ -558,38 +540,6 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\caretdown.png" />
-    <None Include="Resources\caretside.png" />
-    <None Include="Resources\careup.png" />
-    <None Include="Resources\caret2.png" />
-    <None Include="Resources\caret.png" />
-    <None Include="Resources\clasese.png" />
-    <Content Include="Resources\classes.png" />
-    <None Include="Resources\classes1.png" />
-    <None Include="Resources\classes2.png" />
-    <None Include="Resources\classes3.png" />
-    <None Include="Resources\feess.png" />
-    <None Include="Resources\dashboard-layout.png" />
-    <None Include="Resources\classes31.png" />
-    <None Include="Resources\classes4.png" />
-    <Content Include="Resources\icons8-add-24.png" />
-    <None Include="Resources\login.jpg" />
-    <Content Include="Resources\magnifying-glass.png" />
-    <Content Include="Resources\money-transfer-icon.jpg" />
-    <None Include="Resources\schoolinfo.png" />
-    <None Include="Resources\schoolstream.png" />
-    <None Include="Resources\schoolicon.jpg" />
-    <None Include="Resources\reset.jpg" />
-    <Content Include="Resources\search-interface-symbol.png" />
-    <Content Include="Resources\streams.png" />
-    <None Include="Resources\streams1.png" />
-    <None Include="Resources\streams2.png" />
-    <Content Include="Resources\studentss.png" />
-    <None Include="Resources\subjects.png" />
-    <None Include="Resources\supply1.png" />
-    <Content Include="Resources\teacher.png" />
-    <Content Include="Resources\transfer-bank-money-transf.png" />
-    <Content Include="Resources\web-adjustment-.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">

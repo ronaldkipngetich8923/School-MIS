@@ -18,7 +18,7 @@ namespace Shule
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+        SqlConnection con = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
         SqlCommand cmd;
         SqlDataReader sqldataReader;
 
@@ -57,7 +57,7 @@ namespace Shule
             feesadjustmentpanel.Visible = false;
             transferfeepanel.Visible = false;
             MainDashboard.Visible = true;
-            menupanel.Visible = false;
+            menupanel.Visible = true;
         }
 
         private void guna2Button9_Click(object sender, EventArgs e)
@@ -291,6 +291,31 @@ namespace Shule
                 MessageBox.Show("Please Provide All Details!");
             }
             con.Close();
+        }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox18_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+
+            }
         }
     }
 }
