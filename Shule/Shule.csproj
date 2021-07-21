@@ -273,35 +273,17 @@
     <Compile Include="Dispensary.Designer.cs">
       <DependentUpon>Dispensary.cs</DependentUpon>
     </Compile>
-    <Compile Include="hostelclearence.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hostelclearence.Designer.cs">
-      <DependentUpon>hostelclearence.cs</DependentUpon>
-    </Compile>
     <Compile Include="Newrooms.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Newrooms.Designer.cs">
       <DependentUpon>Newrooms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Newshelf.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Newshelf.Designer.cs">
-      <DependentUpon>Newshelf.cs</DependentUpon>
-    </Compile>
     <Compile Include="removeshelf.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="removeshelf.Designer.cs">
       <DependentUpon>removeshelf.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Fees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fees.Designer.cs">
-      <DependentUpon>Fees.cs</DependentUpon>
     </Compile>
     <Compile Include="school.cs">
       <SubType>Form</SubType>
@@ -368,9 +350,6 @@
     <EmbeddedResource Include="HostelClearance.resx">
       <DependentUpon>HostelClearance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hostelclearence.resx">
-      <DependentUpon>hostelclearence.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Library.resx">
       <DependentUpon>Library.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,9 +364,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Newrooms.resx">
       <DependentUpon>Newrooms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Newshelf.resx">
-      <DependentUpon>Newshelf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewTerm.resx">
       <DependentUpon>NewTerm.cs</DependentUpon>
