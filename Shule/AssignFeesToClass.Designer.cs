@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.feesSetUpBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetFeesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-           // this.DataSetFees = new Shule.DataSetFees();
             this.guna2ComboBoxform = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBoxStream = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBoxYear = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -46,11 +45,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-           // this.fees_SetUpTableAdapter = new Shule.DataSetFeesTableAdapters.fees_SetUpTableAdapter();
             this.dataSetFeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.feesSetUpBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).BeginInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -61,16 +58,6 @@
             // 
             this.feesSetUpBindingSource.DataMember = "fees_SetUp";
             this.feesSetUpBindingSource.DataSource = this.dataSetFeesBindingSource1;
-            // 
-            // dataSetFeesBindingSource1
-            // 
-           // this.dataSetFeesBindingSource1.DataSource = this.DataSetFees;
-            this.dataSetFeesBindingSource1.Position = 0;
-            // 
-            // DataSetFees
-            // 
-           // this.DataSetFees.DataSetName = "DataSetFees";
-          //  this.DataSetFees.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2ComboBoxform
             // 
@@ -90,7 +77,7 @@
             "Form 3",
             "Form 4"});
             this.guna2ComboBoxform.ItemsAppearance.Parent = this.guna2ComboBoxform;
-            this.guna2ComboBoxform.Location = new System.Drawing.Point(15, 53);
+            this.guna2ComboBoxform.Location = new System.Drawing.Point(33, 127);
             this.guna2ComboBoxform.Name = "guna2ComboBoxform";
             this.guna2ComboBoxform.ShadowDecoration.Parent = this.guna2ComboBoxform;
             this.guna2ComboBoxform.Size = new System.Drawing.Size(140, 36);
@@ -112,7 +99,7 @@
             "East",
             "West"});
             this.guna2ComboBoxStream.ItemsAppearance.Parent = this.guna2ComboBoxStream;
-            this.guna2ComboBoxStream.Location = new System.Drawing.Point(188, 53);
+            this.guna2ComboBoxStream.Location = new System.Drawing.Point(206, 127);
             this.guna2ComboBoxStream.Name = "guna2ComboBoxStream";
             this.guna2ComboBoxStream.ShadowDecoration.Parent = this.guna2ComboBoxStream;
             this.guna2ComboBoxStream.Size = new System.Drawing.Size(140, 36);
@@ -136,7 +123,7 @@
             "2022",
             "2023"});
             this.guna2ComboBoxYear.ItemsAppearance.Parent = this.guna2ComboBoxYear;
-            this.guna2ComboBoxYear.Location = new System.Drawing.Point(365, 53);
+            this.guna2ComboBoxYear.Location = new System.Drawing.Point(383, 127);
             this.guna2ComboBoxYear.Name = "guna2ComboBoxYear";
             this.guna2ComboBoxYear.ShadowDecoration.Parent = this.guna2ComboBoxYear;
             this.guna2ComboBoxYear.Size = new System.Drawing.Size(129, 36);
@@ -159,7 +146,7 @@
             "Term 2",
             "Term 3"});
             this.guna2ComboBoxTerm.ItemsAppearance.Parent = this.guna2ComboBoxTerm;
-            this.guna2ComboBoxTerm.Location = new System.Drawing.Point(529, 54);
+            this.guna2ComboBoxTerm.Location = new System.Drawing.Point(547, 128);
             this.guna2ComboBoxTerm.Name = "guna2ComboBoxTerm";
             this.guna2ComboBoxTerm.ShadowDecoration.Parent = this.guna2ComboBoxTerm;
             this.guna2ComboBoxTerm.Size = new System.Drawing.Size(121, 36);
@@ -169,7 +156,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(215, 23);
+            this.label1.Location = new System.Drawing.Point(233, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 26);
             this.label1.TabIndex = 4;
@@ -179,7 +166,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(561, 24);
+            this.label2.Location = new System.Drawing.Point(579, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 26);
             this.label2.TabIndex = 5;
@@ -189,7 +176,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(402, 23);
+            this.label3.Location = new System.Drawing.Point(420, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 26);
             this.label3.TabIndex = 6;
@@ -199,7 +186,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(55, 23);
+            this.label4.Location = new System.Drawing.Point(73, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 26);
             this.label4.TabIndex = 7;
@@ -219,7 +206,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(819, 53);
+            this.guna2Button1.Location = new System.Drawing.Point(837, 127);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(126, 36);
@@ -266,16 +253,16 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 70);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1005, 466);
+            this.panel2.Size = new System.Drawing.Size(1005, 624);
             this.panel2.TabIndex = 10;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(55, 112);
+            this.dataGridView1.Location = new System.Drawing.Point(55, 210);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(878, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(878, 386);
             this.dataGridView1.TabIndex = 10;
             // 
             // guna2Button2
@@ -292,7 +279,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(682, 53);
+            this.guna2Button2.Location = new System.Drawing.Point(700, 127);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(112, 36);
@@ -300,28 +287,18 @@
             this.guna2Button2.Text = "Assign";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // fees_SetUpTableAdapter
-            // 
-          //  this.fees_SetUpTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataSetFeesBindingSource
-            // 
-           // this.dataSetFeesBindingSource.DataSource = this.DataSetFees;
-            this.dataSetFeesBindingSource.Position = 0;
-            // 
             // AssignFeesToClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 548);
+            this.ClientSize = new System.Drawing.Size(1029, 706);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AssignFeesToClass";
             this.Text = "GenerateFeeStructure";
             this.Load += new System.EventHandler(this.GenerateFeeStructure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.feesSetUpBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).EndInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.DataSetFees)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataSetFeesBindingSource1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

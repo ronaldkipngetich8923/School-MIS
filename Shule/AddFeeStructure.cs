@@ -38,6 +38,8 @@ namespace Shule
         {
             labelfees.Hide();
             textBoxId.Hide();
+            checkBox1.Hide();
+            checkBox2.Hide();
 
             if (textBoxYear.Text != "" && guna2ComboBoxForm.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxTerm.Text != "" && guna2ComboBoxFvote.Text != "" && textBoxFeesDescr.Text != "" && textBoxAmount.Text != "")
             {
@@ -78,34 +80,44 @@ namespace Shule
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if (textBoxYear.Text != "" && guna2ComboBoxForm.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxTerm.Text != "" && guna2ComboBoxFvote.Text != "" && textBoxFeesDescr.Text != "" && textBoxAmount.Text != "")
+            try
             {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("UPDATE fees_SetUp SET Fees_Vote='" + guna2ComboBoxFvote.SelectedItem + "',Fees_Vote_Description='" + textBoxFeesDescr.Text + "',Fees_Vote_Amount='" + textBoxAmount.Text + "',Form='" + guna2ComboBoxForm.SelectedItem + "',Stream='" + guna2ComboBoxStream.SelectedItem + "',Year='" + textBoxYear.Text + "',Term='" + guna2ComboBoxTerm.SelectedItem + "' where Fees_Set_UpID='" + textBoxId.Text + "'", con);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Fees Vote Updated Successfully");
+                if (textBoxYear.Text != "" && guna2ComboBoxForm.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxTerm.Text != "" && guna2ComboBoxFvote.Text != "" && textBoxFeesDescr.Text != "" && textBoxAmount.Text != "")
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("UPDATE fees_SetUp SET Fees_Vote='" + guna2ComboBoxFvote.SelectedItem + "',Fees_Vote_Description='" + textBoxFeesDescr.Text + "',Fees_Vote_Amount='" + textBoxAmount.Text + "',Form='" + guna2ComboBoxForm.SelectedItem + "',Stream='" + guna2ComboBoxStream.SelectedItem + "',Year='" + textBoxYear.Text + "',Term='" + guna2ComboBoxTerm.SelectedItem + "' where Fees_Set_UpID='" + textBoxId.Text + "'", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Fees Vote Updated Successfully");
 
-                textBoxYear.Text = "";
-                guna2ComboBoxForm.SelectedItem = null;
-                guna2ComboBoxStream.SelectedItem = null;
-                guna2ComboBoxTerm.SelectedItem = null;
-                guna2ComboBoxFvote.SelectedItem = null;
-                textBoxFeesDescr.Text = "";
-                textBoxAmount.Text = "";
-                labelfees.Hide();
-                textBoxId.Hide();
-                con.Close();                
+                    textBoxYear.Text = "";
+                    guna2ComboBoxForm.SelectedItem = null;
+                    guna2ComboBoxStream.SelectedItem = null;
+                    guna2ComboBoxTerm.SelectedItem = null;
+                    guna2ComboBoxFvote.SelectedItem = null;
+                    textBoxFeesDescr.Text = "";
+                    textBoxAmount.Text = "";
+                    labelfees.Hide();
+                    textBoxId.Hide();
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Please Select Record to Update");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Please Select Record to Update");
-            }
+                MessageBox.Show(ex.Message);
+
+            }           
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             labelfees.Show();
             textBoxId.Show();
+            checkBox1.Show();
+            checkBox2.Show();
 
             indexRow = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[indexRow];

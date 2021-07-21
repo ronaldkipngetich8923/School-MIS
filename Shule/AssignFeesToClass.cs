@@ -49,17 +49,7 @@ namespace Shule
                     dataGridView1.DataSource = ds.Tables["Student_Term"].DefaultView;
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    // guna2TextBoxTotalFee.Show();
-                    // labelFID.Show();
-                    // labelFIDL.Show();
-                    //sum = 0;
-                    //for (i = 0; i < dataGridView1.RowCount; i++)
-                    //{
-                    //    sum = sum + decimal.Parse(dataGridView1.Rows[i].Cells[1].Value.ToString());
-                    //    guna2TextBoxTotalFee.Text = sum.ToString();
-                    //    labelFID.Text = guna2ComboBoxClass.Text + guna2ComboBoxStream.Text + guna2ComboBoxYear.Text + guna2ComboBoxTerm.Text;
-                    //}
-
+                 
                 }
                 catch (Exception em)
                 {
@@ -90,23 +80,37 @@ namespace Shule
                 if (guna2ComboBoxform.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxYear.Text != "" && guna2ComboBoxTerm.Text != "")
                 {
                     con.Open();
-                    cmd = new SqlCommand("Update Student_Term Set Total_Amount=(SELECT Total_Amount From fee_Structure Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "'),Term_Fees=(SELECT Total_Amount From fee_Structure Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "') Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "' ", con);
+                    cmd = new SqlCommand("Update Student_Term Set Term_Fees=(SELECT Total_Amount From fee_Structure Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "') Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "' ", con);
                     cmd.ExecuteNonQuery();
-                    con.Close();
+                   // con.Close();
                     MessageBox.Show("Successfully Assigned.", "Success Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    try
+                    {
+                        SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Student_Term Where Class='" + guna2ComboBoxform.Text + "' AND Stream ='" + guna2ComboBoxStream.Text + "' AND  Year='" + guna2ComboBoxYear.Text + "' AND Term ='" + guna2ComboBoxTerm.Text + "' order by StudSemID", con);
+                        DataSet ds = new DataSet();
+                        da.Fill(ds, "Student_Term");
+                        dataGridView1.DataSource = ds.Tables["Student_Term"].DefaultView;
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                    }
+                    catch (Exception em)
+                    {
+                        MessageBox.Show(em.Message);
+                        con.Close();
+                    }
+
                 }
                 else
                 {
                     MessageBox.Show("Fields are Empty .", "Message Fail",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                }
-                  
+                    con.Close();
+                }                 
             }
             catch (Exception emm)
             {
                 MessageBox.Show(emm.Message);
-
-            }
-           
+                con.Close();
+            }         
         }
     }
 }
