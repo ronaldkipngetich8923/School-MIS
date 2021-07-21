@@ -31,11 +31,6 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.feespanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.MainDashboard = new System.Windows.Forms.Panel();
-            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
             this.feesreceiptpanel = new Guna.UI2.WinForms.Guna2Panel();
             this.gridReceipts = new System.Windows.Forms.DataGridView();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -66,13 +61,6 @@
             this.guna2TextBoxbalance = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Fees_Structure = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.feesadjustmentpanel = new System.Windows.Forms.Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
@@ -94,6 +82,13 @@
             this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
+            this.Fees_Structure = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.linkLabel9 = new System.Windows.Forms.LinkLabel();
             this.transferfeepanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
@@ -118,6 +113,11 @@
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
+            this.MainDashboard = new System.Windows.Forms.Panel();
+            this.guna2Button13 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button12 = new Guna.UI2.WinForms.Guna2Button();
             this.toppanel = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.menupanel = new Guna.UI2.WinForms.Guna2Panel();
@@ -128,23 +128,25 @@
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button15 = new Guna.UI2.WinForms.Guna2Button();
             this.feespanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.MainDashboard.SuspendLayout();
             this.feesreceiptpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridReceipts)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
-            this.Fees_Structure.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.feesadjustmentpanel.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.Fees_Structure.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.transferfeepanel.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            this.MainDashboard.SuspendLayout();
             this.toppanel.SuspendLayout();
             this.menupanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -172,123 +174,16 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.feesreceiptpanel);
+            this.panel1.Controls.Add(this.transferfeepanel);
             this.panel1.Controls.Add(this.feesadjustmentpanel);
             this.panel1.Controls.Add(this.Fees_Structure);
-            this.panel1.Controls.Add(this.transferfeepanel);
+            this.panel1.Controls.Add(this.feesreceiptpanel);
             this.panel1.Controls.Add(this.MainDashboard);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(152, 80);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1078, 637);
             this.panel1.TabIndex = 4;
-            // 
-            // MainDashboard
-            // 
-            this.MainDashboard.BackColor = System.Drawing.Color.White;
-            this.MainDashboard.Controls.Add(this.guna2Button13);
-            this.MainDashboard.Controls.Add(this.guna2Button10);
-            this.MainDashboard.Controls.Add(this.guna2Button11);
-            this.MainDashboard.Controls.Add(this.guna2Button12);
-            this.MainDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainDashboard.Location = new System.Drawing.Point(0, 0);
-            this.MainDashboard.Name = "MainDashboard";
-            this.MainDashboard.Size = new System.Drawing.Size(1078, 637);
-            this.MainDashboard.TabIndex = 33;
-            // 
-            // guna2Button13
-            // 
-            this.guna2Button13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button13.CheckedState.Parent = this.guna2Button13;
-            this.guna2Button13.CustomImages.Parent = this.guna2Button13;
-            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button13.DisabledState.Parent = this.guna2Button13;
-            this.guna2Button13.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button13.ForeColor = System.Drawing.Color.White;
-            this.guna2Button13.HoverState.Parent = this.guna2Button13;
-            this.guna2Button13.Image = global::Shule.Properties.Resources.Fee_Structure_gif;
-            this.guna2Button13.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button13.Location = new System.Drawing.Point(796, 7);
-            this.guna2Button13.Name = "guna2Button13";
-            this.guna2Button13.ShadowDecoration.Parent = this.guna2Button13;
-            this.guna2Button13.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button13.TabIndex = 40;
-            this.guna2Button13.Text = "FEES STRUCTURE";
-            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
-            // 
-            // guna2Button10
-            // 
-            this.guna2Button10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
-            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
-            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button10.DisabledState.Parent = this.guna2Button10;
-            this.guna2Button10.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button10.ForeColor = System.Drawing.Color.White;
-            this.guna2Button10.HoverState.Parent = this.guna2Button10;
-            this.guna2Button10.Image = global::Shule.Properties.Resources.fees;
-            this.guna2Button10.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button10.Location = new System.Drawing.Point(537, 7);
-            this.guna2Button10.Name = "guna2Button10";
-            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
-            this.guna2Button10.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button10.TabIndex = 39;
-            this.guna2Button10.Text = "FEES ADJUSTMENT";
-            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
-            // 
-            // guna2Button11
-            // 
-            this.guna2Button11.CheckedState.Parent = this.guna2Button11;
-            this.guna2Button11.CustomImages.Parent = this.guna2Button11;
-            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button11.DisabledState.Parent = this.guna2Button11;
-            this.guna2Button11.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
-            this.guna2Button11.HoverState.Parent = this.guna2Button11;
-            this.guna2Button11.Image = global::Shule.Properties.Resources.fees_preview;
-            this.guna2Button11.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button11.Location = new System.Drawing.Point(274, 7);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
-            this.guna2Button11.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button11.TabIndex = 38;
-            this.guna2Button11.Text = "FEES TRANSFER";
-            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
-            // 
-            // guna2Button12
-            // 
-            this.guna2Button12.CheckedState.Parent = this.guna2Button12;
-            this.guna2Button12.CustomImages.Parent = this.guna2Button12;
-            this.guna2Button12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button12.DisabledState.Parent = this.guna2Button12;
-            this.guna2Button12.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button12.ForeColor = System.Drawing.Color.White;
-            this.guna2Button12.HoverState.Parent = this.guna2Button12;
-            this.guna2Button12.Image = global::Shule.Properties.Resources.fees;
-            this.guna2Button12.ImageSize = new System.Drawing.Size(25, 25);
-            this.guna2Button12.Location = new System.Drawing.Point(11, 7);
-            this.guna2Button12.Name = "guna2Button12";
-            this.guna2Button12.ShadowDecoration.Parent = this.guna2Button12;
-            this.guna2Button12.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button12.TabIndex = 37;
-            this.guna2Button12.Text = "FEES RECEIPT";
-            this.guna2Button12.Click += new System.EventHandler(this.guna2Button12_Click);
             // 
             // feesreceiptpanel
             // 
@@ -641,7 +536,6 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(100, 20);
             this.guna2HtmlLabel8.TabIndex = 26;
             this.guna2HtmlLabel8.Text = "Balance      (Ksh.)";
-            this.guna2HtmlLabel8.Click += new System.EventHandler(this.guna2HtmlLabel8_Click);
             // 
             // guna2TextBoxstream
             // 
@@ -786,118 +680,6 @@
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(119, 19);
             this.guna2HtmlLabel7.TabIndex = 14;
             this.guna2HtmlLabel7.Text = "Admission Number: ";
-            // 
-            // Fees_Structure
-            // 
-            this.Fees_Structure.BackColor = System.Drawing.Color.White;
-            this.Fees_Structure.Controls.Add(this.panel2);
-            this.Fees_Structure.Controls.Add(this.panel4);
-            this.Fees_Structure.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Fees_Structure.Location = new System.Drawing.Point(0, 0);
-            this.Fees_Structure.Name = "Fees_Structure";
-            this.Fees_Structure.Size = new System.Drawing.Size(1078, 637);
-            this.Fees_Structure.TabIndex = 33;
-            this.Fees_Structure.Paint += new System.Windows.Forms.PaintEventHandler(this.Fees_Structure_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Snow;
-            this.panel2.Controls.Add(this.guna2Button9);
-            this.panel2.Controls.Add(this.guna2Button8);
-            this.panel2.Controls.Add(this.guna2Button5);
-            this.panel2.Location = new System.Drawing.Point(99, 66);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(893, 266);
-            this.panel2.TabIndex = 29;
-            // 
-            // guna2Button9
-            // 
-            this.guna2Button9.BackColor = System.Drawing.Color.LightBlue;
-            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
-            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
-            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button9.DisabledState.Parent = this.guna2Button9;
-            this.guna2Button9.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button9.ForeColor = System.Drawing.Color.White;
-            this.guna2Button9.HoverState.Parent = this.guna2Button9;
-            this.guna2Button9.Location = new System.Drawing.Point(595, 60);
-            this.guna2Button9.Name = "guna2Button9";
-            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
-            this.guna2Button9.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button9.TabIndex = 36;
-            this.guna2Button9.Text = "NEW FEES VOTE";
-            this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.BackColor = System.Drawing.Color.LightBlue;
-            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
-            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.DisabledState.Parent = this.guna2Button8;
-            this.guna2Button8.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(330, 60);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button8.TabIndex = 35;
-            this.guna2Button8.Text = "GENERATE FEES STRUCTURE";
-            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BackColor = System.Drawing.Color.LightBlue;
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(58, 61);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(245, 108);
-            this.guna2Button5.TabIndex = 34;
-            this.guna2Button5.Text = "UPDATE FEES";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Controls.Add(this.linkLabel9);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1078, 44);
-            this.panel4.TabIndex = 28;
-            // 
-            // linkLabel9
-            // 
-            this.linkLabel9.AutoSize = true;
-            this.linkLabel9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel9.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel9.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel9.Location = new System.Drawing.Point(353, 10);
-            this.linkLabel9.Name = "linkLabel9";
-            this.linkLabel9.Size = new System.Drawing.Size(141, 24);
-            this.linkLabel9.TabIndex = 32;
-            this.linkLabel9.TabStop = true;
-            this.linkLabel9.Text = "Fees Structure";
             // 
             // feesadjustmentpanel
             // 
@@ -1118,7 +900,6 @@
             this.guna2TextBox18.ShadowDecoration.Parent = this.guna2TextBox18;
             this.guna2TextBox18.Size = new System.Drawing.Size(235, 36);
             this.guna2TextBox18.TabIndex = 23;
-            this.guna2TextBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.guna2TextBox18_KeyPress);
             // 
             // guna2HtmlLabel20
             // 
@@ -1172,6 +953,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(205, 36);
             this.guna2Button6.TabIndex = 17;
             this.guna2Button6.Text = "Submit";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2HtmlLabel21
             // 
@@ -1216,9 +998,123 @@
             this.linkLabel7.TabStop = true;
             this.linkLabel7.Text = "Fees Adjustment";
             // 
+            // Fees_Structure
+            // 
+            this.Fees_Structure.BackColor = System.Drawing.Color.White;
+            this.Fees_Structure.Controls.Add(this.panel2);
+            this.Fees_Structure.Controls.Add(this.panel4);
+            this.Fees_Structure.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Fees_Structure.Location = new System.Drawing.Point(0, 0);
+            this.Fees_Structure.Name = "Fees_Structure";
+            this.Fees_Structure.Size = new System.Drawing.Size(1078, 637);
+            this.Fees_Structure.TabIndex = 33;
+            this.Fees_Structure.Paint += new System.Windows.Forms.PaintEventHandler(this.Fees_Structure_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Snow;
+            this.panel2.Controls.Add(this.guna2Button9);
+            this.panel2.Controls.Add(this.guna2Button8);
+            this.panel2.Controls.Add(this.guna2Button5);
+            this.panel2.Location = new System.Drawing.Point(99, 66);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(893, 266);
+            this.panel2.TabIndex = 29;
+            // 
+            // guna2Button9
+            // 
+            this.guna2Button9.BackColor = System.Drawing.Color.LightBlue;
+            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
+            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
+            this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button9.DisabledState.Parent = this.guna2Button9;
+            this.guna2Button9.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button9.ForeColor = System.Drawing.Color.White;
+            this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Location = new System.Drawing.Point(595, 60);
+            this.guna2Button9.Name = "guna2Button9";
+            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
+            this.guna2Button9.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button9.TabIndex = 36;
+            this.guna2Button9.Text = "NEW FEES VOTE";
+            this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.BackColor = System.Drawing.Color.LightBlue;
+            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
+            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.DisabledState.Parent = this.guna2Button8;
+            this.guna2Button8.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.HoverState.Parent = this.guna2Button8;
+            this.guna2Button8.Location = new System.Drawing.Point(330, 60);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
+            this.guna2Button8.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button8.TabIndex = 35;
+            this.guna2Button8.Text = "GENERATE FEES STRUCTURE";
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.BackColor = System.Drawing.Color.LightBlue;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Location = new System.Drawing.Point(58, 61);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button5.TabIndex = 34;
+            this.guna2Button5.Text = "UPDATE FEES";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel4.Controls.Add(this.linkLabel9);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1078, 44);
+            this.panel4.TabIndex = 28;
+            // 
+            // linkLabel9
+            // 
+            this.linkLabel9.AutoSize = true;
+            this.linkLabel9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel9.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel9.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel9.Location = new System.Drawing.Point(353, 10);
+            this.linkLabel9.Name = "linkLabel9";
+            this.linkLabel9.Size = new System.Drawing.Size(141, 24);
+            this.linkLabel9.TabIndex = 32;
+            this.linkLabel9.TabStop = true;
+            this.linkLabel9.Text = "Fees Structure";
+            // 
             // transferfeepanel
             // 
             this.transferfeepanel.BackColor = System.Drawing.Color.White;
+            this.transferfeepanel.Controls.Add(this.guna2Button15);
+            this.transferfeepanel.Controls.Add(this.guna2TextBox1);
             this.transferfeepanel.Controls.Add(this.guna2Panel8);
             this.transferfeepanel.Controls.Add(this.guna2Panel5);
             this.transferfeepanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1252,12 +1148,11 @@
             this.guna2Panel8.Controls.Add(this.guna2TextBoxStudnameTT);
             this.guna2Panel8.Controls.Add(this.guna2Buttonfeestransfer);
             this.guna2Panel8.Controls.Add(this.guna2HtmlLabel14);
-            this.guna2Panel8.Location = new System.Drawing.Point(62, 63);
+            this.guna2Panel8.Location = new System.Drawing.Point(62, 93);
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.ShadowDecoration.Parent = this.guna2Panel8;
             this.guna2Panel8.Size = new System.Drawing.Size(963, 317);
             this.guna2Panel8.TabIndex = 27;
-            this.guna2Panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel8_Paint);
             // 
             // linkLabel4
             // 
@@ -1357,6 +1252,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(209, 32);
             this.guna2Button3.TabIndex = 31;
             this.guna2Button3.Text = "RESET";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2HtmlLabel15
             // 
@@ -1401,7 +1297,6 @@
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(161, 19);
             this.guna2HtmlLabel5.TabIndex = 27;
             this.guna2HtmlLabel5.Text = "Amount Transfered    (Ksh.)";
-            this.guna2HtmlLabel5.Click += new System.EventHandler(this.guna2HtmlLabel5_Click);
             // 
             // guna2HtmlLabel9
             // 
@@ -1569,6 +1464,7 @@
             this.guna2Buttonfeestransfer.Size = new System.Drawing.Size(209, 32);
             this.guna2Buttonfeestransfer.TabIndex = 17;
             this.guna2Buttonfeestransfer.Text = "TRANSFER";
+            this.guna2Buttonfeestransfer.Click += new System.EventHandler(this.guna2Buttonfeestransfer_Click);
             // 
             // guna2HtmlLabel14
             // 
@@ -1603,6 +1499,113 @@
             this.linkLabel8.TabIndex = 7;
             this.linkLabel8.TabStop = true;
             this.linkLabel8.Text = " Fees Transfer";
+            // 
+            // MainDashboard
+            // 
+            this.MainDashboard.BackColor = System.Drawing.Color.White;
+            this.MainDashboard.Controls.Add(this.guna2Button13);
+            this.MainDashboard.Controls.Add(this.guna2Button10);
+            this.MainDashboard.Controls.Add(this.guna2Button11);
+            this.MainDashboard.Controls.Add(this.guna2Button12);
+            this.MainDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainDashboard.Location = new System.Drawing.Point(0, 0);
+            this.MainDashboard.Name = "MainDashboard";
+            this.MainDashboard.Size = new System.Drawing.Size(1078, 637);
+            this.MainDashboard.TabIndex = 33;
+            // 
+            // guna2Button13
+            // 
+            this.guna2Button13.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button13.CheckedState.Parent = this.guna2Button13;
+            this.guna2Button13.CustomImages.Parent = this.guna2Button13;
+            this.guna2Button13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button13.DisabledState.Parent = this.guna2Button13;
+            this.guna2Button13.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button13.ForeColor = System.Drawing.Color.White;
+            this.guna2Button13.HoverState.Parent = this.guna2Button13;
+            this.guna2Button13.Image = global::Shule.Properties.Resources.Fee_Structure_gif;
+            this.guna2Button13.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button13.Location = new System.Drawing.Point(796, 7);
+            this.guna2Button13.Name = "guna2Button13";
+            this.guna2Button13.ShadowDecoration.Parent = this.guna2Button13;
+            this.guna2Button13.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button13.TabIndex = 40;
+            this.guna2Button13.Text = "FEES STRUCTURE";
+            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
+            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
+            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button10.DisabledState.Parent = this.guna2Button10;
+            this.guna2Button10.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button10.ForeColor = System.Drawing.Color.White;
+            this.guna2Button10.HoverState.Parent = this.guna2Button10;
+            this.guna2Button10.Image = global::Shule.Properties.Resources.fees;
+            this.guna2Button10.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button10.Location = new System.Drawing.Point(537, 7);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
+            this.guna2Button10.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button10.TabIndex = 39;
+            this.guna2Button10.Text = "FEES ADJUSTMENT";
+            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
+            // 
+            // guna2Button11
+            // 
+            this.guna2Button11.CheckedState.Parent = this.guna2Button11;
+            this.guna2Button11.CustomImages.Parent = this.guna2Button11;
+            this.guna2Button11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button11.DisabledState.Parent = this.guna2Button11;
+            this.guna2Button11.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button11.ForeColor = System.Drawing.Color.White;
+            this.guna2Button11.HoverState.Parent = this.guna2Button11;
+            this.guna2Button11.Image = global::Shule.Properties.Resources.fees_preview;
+            this.guna2Button11.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button11.Location = new System.Drawing.Point(274, 7);
+            this.guna2Button11.Name = "guna2Button11";
+            this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
+            this.guna2Button11.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button11.TabIndex = 38;
+            this.guna2Button11.Text = "FEES TRANSFER";
+            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
+            // 
+            // guna2Button12
+            // 
+            this.guna2Button12.CheckedState.Parent = this.guna2Button12;
+            this.guna2Button12.CustomImages.Parent = this.guna2Button12;
+            this.guna2Button12.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button12.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button12.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button12.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button12.DisabledState.Parent = this.guna2Button12;
+            this.guna2Button12.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button12.ForeColor = System.Drawing.Color.White;
+            this.guna2Button12.HoverState.Parent = this.guna2Button12;
+            this.guna2Button12.Image = global::Shule.Properties.Resources.fees;
+            this.guna2Button12.ImageSize = new System.Drawing.Size(25, 25);
+            this.guna2Button12.Location = new System.Drawing.Point(11, 7);
+            this.guna2Button12.Name = "guna2Button12";
+            this.guna2Button12.ShadowDecoration.Parent = this.guna2Button12;
+            this.guna2Button12.Size = new System.Drawing.Size(245, 108);
+            this.guna2Button12.TabIndex = 37;
+            this.guna2Button12.Text = "FEES RECEIPT";
+            this.guna2Button12.Click += new System.EventHandler(this.guna2Button12_Click);
             // 
             // toppanel
             // 
@@ -1646,6 +1649,7 @@
             this.menupanel.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0);
             this.menupanel.Size = new System.Drawing.Size(152, 717);
             this.menupanel.TabIndex = 3;
+            this.menupanel.Paint += new System.Windows.Forms.PaintEventHandler(this.menupanel_Paint);
             // 
             // pictureBox1
             // 
@@ -1758,6 +1762,52 @@
             this.linkLabel5.Text = "Fees Receipt ";
             this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
             // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Location = new System.Drawing.Point(170, 52);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
+            this.guna2TextBox1.Size = new System.Drawing.Size(232, 32);
+            this.guna2TextBox1.TabIndex = 28;
+            // 
+            // guna2Button15
+            // 
+            this.guna2Button15.AutoRoundedCorners = true;
+            this.guna2Button15.BorderRadius = 15;
+            this.guna2Button15.CheckedState.Parent = this.guna2Button15;
+            this.guna2Button15.CustomImages.Parent = this.guna2Button15;
+            this.guna2Button15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button15.DisabledState.Parent = this.guna2Button15;
+            this.guna2Button15.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button15.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2Button15.ForeColor = System.Drawing.Color.White;
+            this.guna2Button15.HoverState.Parent = this.guna2Button15;
+            this.guna2Button15.Location = new System.Drawing.Point(491, 50);
+            this.guna2Button15.Name = "guna2Button15";
+            this.guna2Button15.ShadowDecoration.Parent = this.guna2Button15;
+            this.guna2Button15.Size = new System.Drawing.Size(180, 32);
+            this.guna2Button15.TabIndex = 29;
+            this.guna2Button15.Text = "Search By AdmNo";
+            this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
+            // 
             // Fee_Collections
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1769,7 +1819,6 @@
             this.Load += new System.EventHandler(this.Fee_Collections_Load);
             this.feespanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.MainDashboard.ResumeLayout(false);
             this.feesreceiptpanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridReceipts)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
@@ -1777,20 +1826,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            this.Fees_Structure.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.feesadjustmentpanel.ResumeLayout(false);
             this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel10.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.Fees_Structure.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.transferfeepanel.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            this.MainDashboard.ResumeLayout(false);
             this.toppanel.ResumeLayout(false);
             this.toppanel.PerformLayout();
             this.menupanel.ResumeLayout(false);
@@ -1902,5 +1952,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView gridReceipts;
         private Guna.UI2.WinForms.Guna2Button guna2Button14;
+        private Guna.UI2.WinForms.Guna2Button guna2Button15;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }

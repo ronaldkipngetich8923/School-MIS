@@ -867,14 +867,14 @@ namespace Shule
         {
 
             showSubMenu(panelDropdownShelves);
-            Shelves.Visible = true;
-            Shelves.BringToFront();
-            main.Visible = false;
-            Books.Visible = false;
-            Users.Visible = false;
-            magazines.Visible = false;
-            RemoveShelves.Visible = false;
-            BorrowMagazines.Visible = false;
+            //Shelves.Visible = true;
+            //Shelves.BringToFront();
+            //main.Visible = false;
+            //Books.Visible = false;
+            //Users.Visible = false;
+            //magazines.Visible = false;
+            //RemoveShelves.Visible = false;
+            //BorrowMagazines.Visible = false;
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
@@ -981,19 +981,27 @@ namespace Shule
 
         private void guna2Button30_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelDropdownShelves);
+           // showSubMenu(panelDropdownShelves);
             Shelves.Visible = true;
+            Shelves.BringToFront();
             main.Visible = false;
             Books.Visible = false;
             Users.Visible = false;
             magazines.Visible = false;
             RemoveShelves.Visible = false;
+            BorrowMagazines.Visible = false;
         }
 
         private void btnRemoveShelves_Click(object sender, EventArgs e)
         {
             RemoveShelves.Visible = true;
             RemoveShelves.BringToFront();
+            main.Visible = false;
+            Books.Visible = false;
+            Users.Visible = false;
+            magazines.Visible = false;
+            Shelves.Visible = false;
+            BorrowMagazines.Visible = false;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -1013,34 +1021,32 @@ namespace Shule
 
         private void btnShelfRemove_Click(object sender, EventArgs e)
         {
-        //    try
-        //    {
-        //        if (textBox3.Text != "")
-        //        {
-        //            con.Open();
-        //            SqlCommand cmd = new SqlCommand("DELETE FROM Shelf WHERE Shelf_NO='" + textBox3.Text + "' ", con);
-        //            cmd.ExecuteNonQuery();
-        //            MessageBox.Show("Shelf Removed Successfully !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            textBox3.Text = "";
-        //            textBox1.Text = "";
-        //            textBox4.Text = "";
-        //            richTextBox1.Text = "";
-        //            textBox2.Text = "";
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Please Provide Shelf Number!");
-        //        }
-        //    }
-        //    catch (Exception e2)
-        //    {
-        //        MessageBox.Show(e2.Message);
-        //    }
-        //    con.Close();
-        //}
-
-
-    }
+            try
+            {
+                if (txtShelfSearch.Text != "")
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Shelf WHERE Shelf_NO='" + txtShelfNumber.Text + "' ", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Shelf Removed Successfully !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtShelfSearch.Text = "";
+                    txtShelfNumber.Text = "";
+                    txtShelfName.Text = "";
+                    txtShelfDescription.Text = "";
+                    txtShelfLocation.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Please Provide Shelf Number!");
+                }
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
+            }
+            con.Close();
+        }
+        
 
         private void guna2TextBox35_TextChanged(object sender, EventArgs e)
         {
@@ -1118,7 +1124,26 @@ namespace Shule
 
         private void txtlibrarySubjects_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+                string querry = "Select * FROM Shelf where Shelf_Name='"+ txtlibrarySubjects.SelectedItem+ "'";
 
+                SqlCommand cmd = new SqlCommand(querry,con);
+                con.Open();
+                sqlDataReader = cmd.ExecuteReader();
+                if (sqlDataReader.Read())
+                {
+                    guna2TextBox20.Text = sqlDataReader["Shelf_No"].ToString();
+                    
+                }
+
+            }
+            catch (Exception exx)
+            {
+                MessageBox.Show(exx.Message);
+                
+            }
+            con.Close();
         }
 
         private void btnMagazineSave_Click(object sender, EventArgs e)

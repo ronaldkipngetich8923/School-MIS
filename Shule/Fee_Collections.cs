@@ -18,7 +18,7 @@ namespace Shule
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+        SqlConnection con = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
         SqlCommand cmd;
         SqlDataReader sqldataReader;
 
@@ -60,22 +60,22 @@ namespace Shule
             MainDashboard.Visible = true;
             menupanel.Visible = true;
 
-            con.Open();
-            String selectQuery = "SELECT Max(ReceiptNo) As ReceiptNo FROM fee_receipts ";
-            cmd = new SqlCommand(selectQuery, con);
-            sqldataReader = cmd.ExecuteReader();
+            //con.Open();
+            //String selectQuery = "SELECT Max(ReceiptNo) As ReceiptNo FROM fee_receipts ";
+            //cmd = new SqlCommand(selectQuery, con);
+            //sqldataReader = cmd.ExecuteReader();
 
-            if (sqldataReader.Read())
-            { 
-                    //guna2TextBoxReceiptNo.Text = sqldataReader.GetValue(0).ToString();              
-                    con.Close();
-            }
-            else
-            {
-                MessageBox.Show("No such student In School");
-                con.Close();
-            }
-            con.Close(); ;
+            //if (sqldataReader.Read())
+            //{ 
+            //        //guna2TextBoxReceiptNo.Text = sqldataReader.GetValue(0).ToString();              
+            //        con.Close();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("No such student In School");
+            //    con.Close();
+            //}
+            //con.Close(); ;
           
         }
 
@@ -335,7 +335,7 @@ namespace Shule
                         cmd.Parameters.AddWithValue("@StudnameTransferTo", guna2TextBoxStudnameTT.Text);
                         cmd.Parameters.AddWithValue("@AmtTransfered", textBoxAmtTt.Text);
                         cmd.Parameters.AddWithValue("@ReasonForFeesTransfer", richTextBoxReason.Text);
-                        cmd.Parameters.AddWithValue("@FeeTransferdate", dateTimePicker1.Value);
+                        cmd.Parameters.AddWithValue("@FeeTransferdate", dateTimePickerReceipt.Value);
                         cmd.ExecuteNonQuery();
 
                         ////Update Fees Running Balances in fees Receipting for student transferred to
@@ -431,6 +431,21 @@ namespace Shule
                 MessageBox.Show(ee1.Message);
                 con.Close();
             }
+        }
+
+        private void menupanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

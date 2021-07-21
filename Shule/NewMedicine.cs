@@ -14,11 +14,11 @@ namespace Shule
     public partial class NewMedicine : Form
     {
         SqlConnection sqlConnection = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
-        SqlCommand cmd;
+       // SqlCommand cmd;
         //SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        SqlDataAdapter sqlDataAdapter;
-        DataSet ds;
+        //SqlDataAdapter sqlDataAdapter;
+        //DataSet ds;
         public NewMedicine()
         {
             InitializeComponent();
