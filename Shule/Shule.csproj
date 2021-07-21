@@ -203,7 +203,6 @@
     <Compile Include="HostelClearance.Designer.cs">
       <DependentUpon>HostelClearance.cs</DependentUpon>
     </Compile>
-    <Compile Include="iTextSharp\text\Color.cs" />
     <Compile Include="Library.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -608,6 +607,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+    <Folder Include="iTextSharp\text\" />
     <Folder Include="Reports\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

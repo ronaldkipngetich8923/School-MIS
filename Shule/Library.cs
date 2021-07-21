@@ -22,7 +22,7 @@ namespace Shule
             ComboclassFill();
         }
 
-        SqlConnection con = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
+        SqlConnection con = new SqlConnection("Data Source = (localDB)\\MSSQLLocalDB; Initial Catalog = shule; Integrated Security = True; MultipleActiveResultSets=true");
         public void CombosubjectFill()
         {
             // sqlConnection = new SqlConnection(connStr);
@@ -1013,35 +1013,33 @@ namespace Shule
 
         private void btnShelfRemove_Click(object sender, EventArgs e)
         {
-        //    try
-        //    {
-        //        if (textBox3.Text != "")
-        //        {
-        //            con.Open();
-        //            SqlCommand cmd = new SqlCommand("DELETE FROM Shelf WHERE Shelf_NO='" + textBox3.Text + "' ", con);
-        //            cmd.ExecuteNonQuery();
-        //            MessageBox.Show("Shelf Removed Successfully !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //            textBox3.Text = "";
-        //            textBox1.Text = "";
-        //            textBox4.Text = "";
-        //            richTextBox1.Text = "";
-        //            textBox2.Text = "";
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Please Provide Shelf Number!");
-        //        }
-        //    }
-        //    catch (Exception e2)
-        //    {
-        //        MessageBox.Show(e2.Message);
-        //    }
-        //    con.Close();
-        //}
+            try
+            {
+                if (txtShelfNumber.Text != "")
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Shelf WHERE Shelf_NO='" + txtShelfNumber.Text + "' ", con);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Shelf Removed Successfully !!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtShelfNumber.Text = "";
+                    txtShelfName.Text = "";
+                    txtShelfDescription.Text = "";
+                    txtShelfLocation.Text = "";
+                    txtShelfSearch.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Please Provide Shelf Number!");
+                }
+            }
+            catch (Exception e2)
+            {
+                MessageBox.Show(e2.Message);
+            }
+            con.Close();
+        }
 
-
-    }
-
+        
         private void guna2TextBox35_TextChanged(object sender, EventArgs e)
         {
 

@@ -417,6 +417,8 @@ namespace Shule
             Teachingstaff.Visible = false;
             subordinatestaff.Visible = false;
 
+            Library lb = new Library();
+            lb.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
