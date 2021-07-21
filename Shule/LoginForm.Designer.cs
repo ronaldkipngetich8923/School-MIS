@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,6 +64,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 222);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(339, 273);
@@ -109,7 +111,7 @@
             this.combBoxRole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.combBoxRole.FocusedState.Parent = this.combBoxRole;
             this.combBoxRole.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.combBoxRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.combBoxRole.ForeColor = System.Drawing.Color.Orange;
             this.combBoxRole.HoverState.Parent = this.combBoxRole;
             this.combBoxRole.ItemHeight = 30;
             this.combBoxRole.Items.AddRange(new object[] {
@@ -121,6 +123,7 @@
             this.combBoxRole.ShadowDecoration.Parent = this.combBoxRole;
             this.combBoxRole.Size = new System.Drawing.Size(260, 36);
             this.combBoxRole.TabIndex = 3;
+            this.combBoxRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUsename
             // 
@@ -284,6 +287,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

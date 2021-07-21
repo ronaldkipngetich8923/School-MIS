@@ -18,7 +18,7 @@ namespace Shule
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+        SqlConnection con = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
 
         
         private void guna2Button1_Click(object sender, EventArgs e)

@@ -103,9 +103,9 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Books {
+        internal static System.Drawing.Bitmap books {
             get {
-                object obj = ResourceManager.GetObject("Books", resourceCulture);
+                object obj = ResourceManager.GetObject("books", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +293,49 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medic {
+            get {
+                object obj = ResourceManager.GetObject("medic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MUST_Vector_Logo {
             get {
                 object obj = ResourceManager.GetObject("MUST-Vector-Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patient {
+            get {
+                object obj = ResourceManager.GetObject("patient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patient2 {
+            get {
+                object obj = ResourceManager.GetObject("patient2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap refferal_icon {
+            get {
+                object obj = ResourceManager.GetObject("refferal_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

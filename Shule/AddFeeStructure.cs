@@ -13,7 +13,7 @@ namespace Shule
 {
     public partial class AddFeeStructure : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+        SqlConnection con = new SqlConnection("Data source = DESKTOP - AOUGB8E\\SQLEXPRESS; initial catalog = shule; integrated security = True");
         SqlCommand cmd;
        // SqlDataReader sqlReader;
         DataTable Fee_Set = new DataTable();
@@ -26,6 +26,7 @@ namespace Shule
      
         private void AddFeeStructure_Load(object sender, EventArgs e)
         {
+           
             //this.WindowState = FormWindowState.Maximized;
             SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM fees_SetUp", con);
             DataSet ds = new DataSet();
