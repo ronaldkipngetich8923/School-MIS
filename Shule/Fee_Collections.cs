@@ -30,6 +30,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void Fees_Structure_Paint(object sender, PaintEventArgs e)
@@ -59,6 +60,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = true;
             menupanel.Visible = true;
+            reports.Visible = false;
             
         }
 
@@ -76,6 +78,7 @@ namespace Shule
             MainDashboard.Visible = false;
             transferfeepanel.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2PictureBox9_Click(object sender, EventArgs e)
@@ -86,6 +89,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2PictureBox4_Click(object sender, EventArgs e)
@@ -96,6 +100,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -106,6 +111,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -116,6 +122,7 @@ namespace Shule
             transferfeepanel.Visible = true;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2PictureBox5_Click(object sender, EventArgs e)
@@ -126,6 +133,7 @@ namespace Shule
             transferfeepanel.Visible = true;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2PictureBox6_Click(object sender, EventArgs e)
@@ -136,6 +144,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -146,6 +155,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = true;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2Button13_Click(object sender, EventArgs e)
@@ -156,6 +166,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2Button10_Click(object sender, EventArgs e)
@@ -166,6 +177,7 @@ namespace Shule
             MainDashboard.Visible = false;
             transferfeepanel.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2Button11_Click(object sender, EventArgs e)
@@ -176,6 +188,7 @@ namespace Shule
             transferfeepanel.Visible = true;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         private void guna2Button12_Click(object sender, EventArgs e)
@@ -186,6 +199,7 @@ namespace Shule
             transferfeepanel.Visible = false;
             MainDashboard.Visible = false;
             menupanel.Visible = true;
+            reports.Visible = false;
         }
 
         public void receiptNumber()
@@ -514,6 +528,48 @@ namespace Shule
         private void guna2Panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Button17_Click(object sender, EventArgs e)
+        {
+            Fees_Structure.Visible = false;
+            feesadjustmentpanel.Visible = false;
+            feesreceiptpanel.Visible = false;
+            transferfeepanel.Visible = false;
+            MainDashboard.Visible = false;
+            menupanel.Visible = true;
+            reports.Visible = true;
+        }
+
+        private void printReceipt_Click(object sender, EventArgs e)
+        {
+            Print_Receipt pr = new Print_Receipt();
+            pr.Show();
+
+        }
+
+        private void guna2Button18_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand command = new SqlCommand("Select * FROM Student_Term",con);// where Total_Amount>=0.00.ToString() OR Total_Amount>=0.00", con);               
+               
+                sqldataReader = command.ExecuteReader();
+
+                if (sqldataReader.Read())
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(sqldataReader);
+                    dataGridView1.DataSource = dt;
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                con.Close();
+            }
         }
     }
 }
