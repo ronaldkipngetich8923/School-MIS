@@ -147,7 +147,6 @@
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rank = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Finance = new System.Windows.Forms.Panel();
             this.Dispensary = new System.Windows.Forms.Panel();
             this.panelMedicines = new System.Windows.Forms.Panel();
             this.dataGridMedicines = new System.Windows.Forms.DataGridView();
@@ -261,12 +260,12 @@
             this.btnSetExams = new System.Windows.Forms.Button();
             this.btnFinance = new System.Windows.Forms.Button();
             this.panelDropFinance = new System.Windows.Forms.Panel();
-            this.button48 = new System.Windows.Forms.Button();
             this.button47 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnManage = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panelDropDispensary = new System.Windows.Forms.Panel();
+            this.button38 = new System.Windows.Forms.Button();
             this.btnNewMedicine = new System.Windows.Forms.Button();
             this.button43 = new System.Windows.Forms.Button();
             this.btnTriage = new System.Windows.Forms.Button();
@@ -2155,15 +2154,6 @@
             this.Rank.HeaderText = "Rank";
             this.Rank.Name = "Rank";
             // 
-            // Finance
-            // 
-            this.Finance.BackColor = System.Drawing.Color.Green;
-            this.Finance.Location = new System.Drawing.Point(0, 0);
-            this.Finance.Name = "Finance";
-            this.Finance.Size = new System.Drawing.Size(968, 542);
-            this.Finance.TabIndex = 22;
-            this.Finance.Visible = false;
-            // 
             // Dispensary
             // 
             this.Dispensary.BackColor = System.Drawing.Color.White;
@@ -3064,7 +3054,7 @@
             this.panelmDropDown.Controls.Add(this.btnAddUsers);
             this.panelmDropDown.Controls.Add(this.btnTeachingStaff);
             this.panelmDropDown.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelmDropDown.Location = new System.Drawing.Point(3, 492);
+            this.panelmDropDown.Location = new System.Drawing.Point(3, 438);
             this.panelmDropDown.Name = "panelmDropDown";
             this.panelmDropDown.Size = new System.Drawing.Size(125, 51);
             this.panelmDropDown.TabIndex = 26;
@@ -3100,7 +3090,7 @@
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(3, 1123);
+            this.button10.Location = new System.Drawing.Point(3, 1080);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(125, 35);
             this.button10.TabIndex = 10;
@@ -3114,7 +3104,7 @@
             this.btnSetup.FlatAppearance.BorderSize = 0;
             this.btnSetup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSetup.Location = new System.Drawing.Point(3, 1205);
+            this.btnSetup.Location = new System.Drawing.Point(3, 1162);
             this.btnSetup.Name = "btnSetup";
             this.btnSetup.Size = new System.Drawing.Size(125, 35);
             this.btnSetup.TabIndex = 12;
@@ -3127,7 +3117,7 @@
             this.button11.Dock = System.Windows.Forms.DockStyle.Top;
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(3, 1164);
+            this.button11.Location = new System.Drawing.Point(3, 1121);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(125, 35);
             this.button11.TabIndex = 11;
@@ -3783,26 +3773,14 @@
             // panelDropFinance
             // 
             this.panelDropFinance.BackColor = System.Drawing.Color.Ivory;
-            this.panelDropFinance.Controls.Add(this.button48);
             this.panelDropFinance.Controls.Add(this.button47);
             this.panelDropFinance.Controls.Add(this.button2);
             this.panelDropFinance.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDropFinance.Location = new System.Drawing.Point(3, 339);
             this.panelDropFinance.Name = "panelDropFinance";
-            this.panelDropFinance.Size = new System.Drawing.Size(125, 100);
+            this.panelDropFinance.Size = new System.Drawing.Size(125, 46);
             this.panelDropFinance.TabIndex = 28;
             this.panelDropFinance.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDropFinance_Paint);
-            // 
-            // button48
-            // 
-            this.button48.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button48.Location = new System.Drawing.Point(0, 46);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(125, 23);
-            this.button48.TabIndex = 2;
-            this.button48.Text = "button48";
-            this.button48.UseVisualStyleBackColor = true;
             // 
             // button47
             // 
@@ -3812,7 +3790,7 @@
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(125, 23);
             this.button47.TabIndex = 1;
-            this.button47.Text = "button47";
+            this.button47.Text = "Payroll";
             this.button47.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -3835,7 +3813,7 @@
             this.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManage.Image = global::Shule.Properties.Resources.caretside;
             this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnManage.Location = new System.Drawing.Point(3, 445);
+            this.btnManage.Location = new System.Drawing.Point(3, 391);
             this.btnManage.Name = "btnManage";
             this.btnManage.Size = new System.Drawing.Size(125, 41);
             this.btnManage.TabIndex = 14;
@@ -3852,7 +3830,7 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Image = global::Shule.Properties.Resources.caretside;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.Location = new System.Drawing.Point(3, 549);
+            this.button9.Location = new System.Drawing.Point(3, 495);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(125, 35);
             this.button9.TabIndex = 9;
@@ -3864,14 +3842,28 @@
             // panelDropDispensary
             // 
             this.panelDropDispensary.BackColor = System.Drawing.Color.Ivory;
+            this.panelDropDispensary.Controls.Add(this.button38);
             this.panelDropDispensary.Controls.Add(this.btnNewMedicine);
             this.panelDropDispensary.Controls.Add(this.button43);
             this.panelDropDispensary.Controls.Add(this.btnTriage);
             this.panelDropDispensary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropDispensary.Location = new System.Drawing.Point(3, 590);
+            this.panelDropDispensary.Location = new System.Drawing.Point(3, 536);
             this.panelDropDispensary.Name = "panelDropDispensary";
-            this.panelDropDispensary.Size = new System.Drawing.Size(125, 78);
+            this.panelDropDispensary.Size = new System.Drawing.Size(125, 89);
             this.panelDropDispensary.TabIndex = 29;
+            // 
+            // button38
+            // 
+            this.button38.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button38.FlatAppearance.BorderSize = 0;
+            this.button38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button38.Location = new System.Drawing.Point(0, 69);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(125, 23);
+            this.button38.TabIndex = 3;
+            this.button38.Text = "Drug Category";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
             // 
             // btnNewMedicine
             // 
@@ -3919,7 +3911,7 @@
             this.btnLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLibrary.Image = global::Shule.Properties.Resources.caretside;
             this.btnLibrary.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLibrary.Location = new System.Drawing.Point(3, 674);
+            this.btnLibrary.Location = new System.Drawing.Point(3, 631);
             this.btnLibrary.Name = "btnLibrary";
             this.btnLibrary.Size = new System.Drawing.Size(125, 35);
             this.btnLibrary.TabIndex = 5;
@@ -3936,7 +3928,7 @@
             this.panelDropLibrary.Controls.Add(this.button44);
             this.panelDropLibrary.Controls.Add(this.button5);
             this.panelDropLibrary.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropLibrary.Location = new System.Drawing.Point(3, 715);
+            this.panelDropLibrary.Location = new System.Drawing.Point(3, 672);
             this.panelDropLibrary.Name = "panelDropLibrary";
             this.panelDropLibrary.Size = new System.Drawing.Size(125, 100);
             this.panelDropLibrary.TabIndex = 26;
@@ -3992,7 +3984,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Image = global::Shule.Properties.Resources.caretside;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(3, 821);
+            this.button7.Location = new System.Drawing.Point(3, 778);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 35);
             this.button7.TabIndex = 7;
@@ -4008,7 +4000,7 @@
             this.panelDropHostel.Controls.Add(this.button52);
             this.panelDropHostel.Controls.Add(this.button51);
             this.panelDropHostel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropHostel.Location = new System.Drawing.Point(3, 862);
+            this.panelDropHostel.Location = new System.Drawing.Point(3, 819);
             this.panelDropHostel.Name = "panelDropHostel";
             this.panelDropHostel.Size = new System.Drawing.Size(125, 70);
             this.panelDropHostel.TabIndex = 26;
@@ -4059,7 +4051,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Image = global::Shule.Properties.Resources.caretside;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(3, 938);
+            this.button8.Location = new System.Drawing.Point(3, 895);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(125, 35);
             this.button8.TabIndex = 8;
@@ -4076,7 +4068,7 @@
             this.panelDropTransport.Controls.Add(this.btnDriver);
             this.panelDropTransport.Controls.Add(this.btnStudentsTrans);
             this.panelDropTransport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDropTransport.Location = new System.Drawing.Point(3, 979);
+            this.panelDropTransport.Location = new System.Drawing.Point(3, 936);
             this.panelDropTransport.Name = "panelDropTransport";
             this.panelDropTransport.Size = new System.Drawing.Size(125, 97);
             this.panelDropTransport.TabIndex = 30;
@@ -4137,7 +4129,7 @@
             // 
             this.btnAttendance.FlatAppearance.BorderSize = 0;
             this.btnAttendance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAttendance.Location = new System.Drawing.Point(3, 1082);
+            this.btnAttendance.Location = new System.Drawing.Point(3, 1039);
             this.btnAttendance.Name = "btnAttendance";
             this.btnAttendance.Size = new System.Drawing.Size(125, 35);
             this.btnAttendance.TabIndex = 31;
@@ -6807,12 +6799,12 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.AdmissionPanel);
-            this.Controls.Add(this.Dashboard);
             this.Controls.Add(this.SetupParameter);
-            this.Controls.Add(this.Hostel);
-            this.Controls.Add(this.Dispensary);
+            this.Controls.Add(this.AdmissionPanel);
             this.Controls.Add(this.Transport);
+            this.Controls.Add(this.Dispensary);
+            this.Controls.Add(this.Hostel);
+            this.Controls.Add(this.Dashboard);
             this.Controls.Add(this.ExamsResults);
             this.Controls.Add(this.addUsers);
             this.Controls.Add(this.Academic);
@@ -6822,7 +6814,6 @@
             this.Controls.Add(this.ManageStaff);
             this.Controls.Add(this.panel_Sidenav);
             this.Controls.Add(this.Library);
-            this.Controls.Add(this.Finance);
             this.Controls.Add(this.subordinatestaff);
             this.Name = "Home";
             this.Text = "Form1";
@@ -6974,7 +6965,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel Academic;
-        private System.Windows.Forms.Panel Finance;
         private System.Windows.Forms.Panel Dispensary;
         private System.Windows.Forms.Panel Library;
         private System.Windows.Forms.Panel Dashboard;
@@ -7062,7 +7052,6 @@
         private System.Windows.Forms.Button btnFinance;
         private System.Windows.Forms.Panel panelDropFinance;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button48;
         private System.Windows.Forms.Button button47;
         private System.Windows.Forms.Panel panelDropDispensary;
         private System.Windows.Forms.Button button43;
@@ -7388,6 +7377,7 @@
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox16;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox15;
+        private System.Windows.Forms.Button button38;
     }
 }
 

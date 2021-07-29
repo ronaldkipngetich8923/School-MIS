@@ -13,7 +13,7 @@ namespace Shule
 {
     public partial class Dispensary : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
         SqlCommand cmd;
         //SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
@@ -181,6 +181,35 @@ namespace Shule
             txtMedicStream.Clear();
             richTextBoxComplain.Clear();
             richTextBox2Medication.Clear(); 
+        }
+
+        private void guna2Button1ViewMedicInfo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtMedicAdmNo.Text!="")
+                {
+                    string query = "SELECT * FROM Dispensary where AdmNo='" + txtMedicAdmNo.Text + "'";
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+                    DataTable dt = new DataTable();
+                    sqlDataAdapter.Fill(dt);
+                    guna2DataGridView1ClinicSection.DataSource = dt;
+
+                }
+                else 
+                {
+                    string query = "SELECT * FROM Dispensary ";
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+                    DataTable dt = new DataTable();
+                    sqlDataAdapter.Fill(dt);
+                    guna2DataGridView1ClinicSection.DataSource = dt.DefaultView;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            }
         }
     }
 }

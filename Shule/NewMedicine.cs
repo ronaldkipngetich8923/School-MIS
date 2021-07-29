@@ -13,8 +13,8 @@ namespace Shule
 {
     public partial class NewMedicine : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
-       // SqlCommand cmd;
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+        // SqlCommand cmd;
         //SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
         //SqlDataAdapter sqlDataAdapter;
@@ -26,8 +26,8 @@ namespace Shule
         }
         public void ComboMedicCategor()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+          //  string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM DrugCategories";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
 
@@ -62,11 +62,8 @@ namespace Shule
 
         private void NewMedicine_Load(object sender, EventArgs e)
         {
-            ComboMedicCategory.SelectedIndex = 0;
-            
+           // ComboMedicCategory.SelectedIndex = 0;
            
-
-
         }
 
         private void btnMedicSave_Click(object sender, EventArgs e)
@@ -114,10 +111,7 @@ namespace Shule
             SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
             DataTable dt = new DataTable();
             SDA.Fill(dt);
-            GridMedicines.DataSource = dt;
-
-
-           
+            GridMedicines.DataSource = dt.DefaultView;
             
         }
     }

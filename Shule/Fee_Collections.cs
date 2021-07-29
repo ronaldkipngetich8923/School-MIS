@@ -561,7 +561,7 @@ namespace Shule
                 {
                     DataTable dt = new DataTable();
                     dt.Load(sqldataReader);
-                    dataGridView1.DataSource = dt;
+                   // dataGridView1.DataSource = dt;
                 }
                 con.Close();
             }
@@ -570,6 +570,35 @@ namespace Shule
                 MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 con.Close();
             }
+        }
+
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button18_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                string str = " Select fee_receipts.ReceiptNo,fee_receipts.AdmNo,StudentMaster.Studname,fee_receipts.Form,fee_receipts.Stream,fee_receipts.Year,fee_receipts.Term,fee_receipts.AmountReceived,fee_receipts.Running_balance FROM fee_receipts INNER JOIN StudentMaster ON fee_receipts.AdmNo=StudentMaster.AdmNo ";
+                SqlDataAdapter da = new SqlDataAdapter(str, con);
+                DataSet ds = new DataSet();
+                DataTable dt = new DataTable();
+                da.Fill(ds);
+                ds.Tables.Add(dt);
+               // ds.WriteXmlSchema("Fees_Statement.xml");
+                Fees_Statement fs = new Fees_Statement();
+                //Fees_Statement
+                fs.SetDataSource(ds);
+                crystalReportViewer1.ReportSource = fs;
+                crystalReportViewer1.Refresh();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            
         }
     }
 }

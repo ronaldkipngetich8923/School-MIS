@@ -12,7 +12,9 @@ namespace Shule
 {
     public partial class SetExam : Form
     {
-        SqlConnection sqlConnection;
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+
+       // SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
         SqlDataAdapter sqlDataAdapter;
         public SetExam()
@@ -23,8 +25,8 @@ namespace Shule
         }
         public void CombosubjectFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Subject";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -50,8 +52,8 @@ namespace Shule
         }
         public void ComboTeachersFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM TeachersTable";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -100,8 +102,8 @@ namespace Shule
 
         private void SetExam_Load(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             conboBoxSetBy.SelectedIndex = 0;
             comboSubjects.SelectedIndex = 0;
 

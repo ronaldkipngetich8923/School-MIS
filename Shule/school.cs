@@ -342,7 +342,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = true;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+           // Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -363,7 +363,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = true;
-            Finance.Visible = false;
+          //  Finance.Visible = false;
             Dispensary.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
@@ -381,20 +381,20 @@ namespace Shule
         {
             showSubMenu(panelDropFinance);
 
-            addUsers.Visible = false;
-            Academic.Visible = false;
-            AdmissionPanel.Visible = false;
-            Finance.Visible = true;
-            Library.Visible = false;
-            Hostel.Visible = false;
-            Dispensary.Visible = false;
-            Transport.Visible = false;
-            Dashboard.Visible = false;
-            ExamsResults.Visible = false;
-            SetupParameter.Visible = false;
-            ManageStaff.Visible = false;
-            Teachingstaff.Visible = false;
-            subordinatestaff.Visible = false;
+            //addUsers.Visible = false;
+            //Academic.Visible = false;
+            //AdmissionPanel.Visible = false;
+            //Finance.Visible = true;
+            //Library.Visible = false;
+            //Hostel.Visible = false;
+            //Dispensary.Visible = false;
+            //Transport.Visible = false;
+            //Dashboard.Visible = false;
+            //ExamsResults.Visible = false;
+            //SetupParameter.Visible = false;
+            //ManageStaff.Visible = false;
+            //Teachingstaff.Visible = false;
+            //subordinatestaff.Visible = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -402,20 +402,20 @@ namespace Shule
             showSubMenu(panelDropLibrary);
 
 
-            addUsers.Visible = false;
-            Academic.Visible = false;
-            AdmissionPanel.Visible = false;
-            Finance.Visible = false;
-            Library.Visible = true;
-            Hostel.Visible = false;
-            Dispensary.Visible = false;
-            Transport.Visible = false;
-            Dashboard.Visible = false;
-            ExamsResults.Visible = false;
-            SetupParameter.Visible = false;
-            ManageStaff.Visible = false;
-            Teachingstaff.Visible = false;
-            subordinatestaff.Visible = false;
+            //addUsers.Visible = false;
+            //Academic.Visible = false;
+            //AdmissionPanel.Visible = false;
+            //Finance.Visible = false;
+            //Library.Visible = true;
+            //Hostel.Visible = false;
+            //Dispensary.Visible = false;
+            //Transport.Visible = false;
+            //Dashboard.Visible = false;
+            //ExamsResults.Visible = false;
+            //SetupParameter.Visible = false;
+            //ManageStaff.Visible = false;
+            //Teachingstaff.Visible = false;
+            //subordinatestaff.Visible = false;
 
             Library lb = new Library();
             lb.Show();
@@ -428,7 +428,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+           // Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = true;
             Transport.Visible = false;
@@ -450,7 +450,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+          //  Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = true;
@@ -472,7 +472,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+          //  Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -490,7 +490,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+         //   Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -509,7 +509,7 @@ namespace Shule
             addUsers.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+           // Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -529,7 +529,7 @@ namespace Shule
             ExamsResults.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+           // Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -565,7 +565,7 @@ namespace Shule
             ExamsResults.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+          //  Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -598,7 +598,7 @@ namespace Shule
             ExamsResults.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+          //  Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -622,7 +622,7 @@ namespace Shule
             ExamsResults.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+         //   Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -799,7 +799,7 @@ namespace Shule
             ExamsResults.Visible = false;
             Academic.Visible = false;
             AdmissionPanel.Visible = false;
-            Finance.Visible = false;
+          //  Finance.Visible = false;
             Library.Visible = false;
             Hostel.Visible = false;
             Transport.Visible = false;
@@ -827,6 +827,7 @@ namespace Shule
 
         private void Home_Load(object sender, EventArgs e)
         {
+            btnMedicCategories.Hide();
             Dashboard.Visible = true;
             addUsers.Visible = false;
           //  string connStr = "Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;";
@@ -943,18 +944,26 @@ namespace Shule
 
         private void button26_Click(object sender, EventArgs e)
         {
-            StudentsDetailsPanel.Visible = true;
-            StudentsDetailsPanel.BringToFront();
+            try
+            {
+                StudentsDetailsPanel.Visible = true;
+                StudentsDetailsPanel.BringToFront();
 
-            sqlConnection.Open();
-            
-            string query = "SELECT * FROM StudentMaster";
-            SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
-            DataTable dt = new DataTable();
-            SDA.Fill(dt);
-            dataGridView3StudentsDetails.DataSource = dt;
-            sqlConnection.Close();
+                sqlConnection.Open();
 
+                string query = "SELECT * FROM StudentMaster";
+                SqlDataAdapter SDA = new SqlDataAdapter(query, sqlConnection);
+                DataTable dt = new DataTable();
+                SDA.Fill(dt);
+                dataGridView3StudentsDetails.DataSource = dt;
+                sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                sqlConnection.Close();
+            }
+           
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
@@ -2243,11 +2252,14 @@ namespace Shule
                         SqlCommand cmd = new SqlCommand(selectQuery, sqlConnection);
                         sqlDataReader = cmd.ExecuteReader();
                        
+
                         decimal Termfee;
-                        decimal amount = Convert.ToDecimal(0); 
-                        if (sqlDataReader.Read())
+                        decimal amount;// Convert.ToDecimal(0); 
+                        while (sqlDataReader.Read())
                         {
                             Termfee = Convert.ToDecimal(sqlDataReader.GetValue(0).ToString());
+                            amount = Convert.ToDecimal(Termfee);
+
                             SqlCommand cmd1 = new SqlCommand("insert into Student_Term(AdmNo,Class,Stream,Year,Term,Total_Amount,Term_Fees) Values(@AdmNo,@Class,@Stream,@Year,@Term,@Total_Amount,@Term_Fees)", sqlConnection);
                             cmd1.Parameters.AddWithValue("@AdmNo", textBoxAdmNo.Text);
                             cmd1.Parameters.AddWithValue("@Class", comboBoxClass.SelectedItem);
@@ -2257,15 +2269,13 @@ namespace Shule
                             cmd1.Parameters.AddWithValue("@Total_Amount", amount);
                             cmd1.Parameters.AddWithValue("@Term_Fees", Termfee);
                             cmd1.ExecuteNonQuery();
-
+                            
                             MessageBox.Show(rows + "  Student Saved successfully.");
-
+                            
                             sqlDataReader.Close();
                         }
-                        else
-                        {
-                            MessageBox.Show("No Fees SetUp for this Class");
-                        }
+                        
+
                         
                     }
                     catch (Exception ex)
@@ -2369,14 +2379,14 @@ namespace Shule
 
         private void button53_Click(object sender, EventArgs e)
         {
-            //HostelClearance hr = new HostelClearance();
-            //hr.Show();
+            HostelClearance hr = new HostelClearance();
+            hr.Show();
         }
 
         private void button52_Click(object sender, EventArgs e)
         {
-            //tab hos = new tab();
-            //hos.Show();
+            tab hos = new tab();
+            hos.Show();
 
         }
 
@@ -2405,8 +2415,8 @@ namespace Shule
 
         private void button43_Click(object sender, EventArgs e)
         {
-            //ReferralForm rf = new ReferralForm();
-            //rf.Show();
+            ReferralForm rf = new ReferralForm();
+            rf.Show();
         }
 
         private void GridHostelInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -2478,14 +2488,14 @@ namespace Shule
 
         private void btnMedicCategories_Click(object sender, EventArgs e)
         {
-            //NewDrugCategory dr = new NewDrugCategory();
-            //dr.Show();
+            NewDrugCategory dr = new NewDrugCategory();
+            dr.Show();
         }
 
         private void btnNewMedicine_Click(object sender, EventArgs e)
         {
-            //NewMedicine nm = new NewMedicine();
-            //nm.Show();
+            NewMedicine nm = new NewMedicine();
+            nm.Show();
         }
 
         private void btnStudentsTrans_Click(object sender, EventArgs e)
@@ -2688,6 +2698,12 @@ namespace Shule
         private void studentsLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button38_Click(object sender, EventArgs e)
+        {
+            NewDrugCategory dr = new NewDrugCategory();
+            dr.Show();
         }
     }
 }

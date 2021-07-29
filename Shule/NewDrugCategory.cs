@@ -14,7 +14,7 @@ namespace Shule
     public partial class NewDrugCategory : Form
     {
 
-        SqlConnection sqlConnection = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
         SqlCommand cmd;
         //SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
