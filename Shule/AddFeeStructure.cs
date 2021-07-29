@@ -15,7 +15,7 @@ namespace Shule
     {
         SqlConnection con = new SqlConnection("Data source = DESKTOP - AOUGB8E\\SQLEXPRESS; initial catalog = shule; integrated security = True");
         SqlCommand cmd;
-       // SqlDataReader sqlReader;
+        SqlDataReader sqlDataReader;
         DataTable Fee_Set = new DataTable();
         int indexRow;
 
@@ -23,15 +23,48 @@ namespace Shule
         {
             InitializeComponent();
         }
-     
+
+        public void ComboYearFill()
+        {
+            
+           
+            string cmdStr = " SELECT *  FROM Year";
+            cmd = new SqlCommand(cmdStr, con);
+            try
+            {
+
+                con.Open();
+
+                sqlDataReader = cmd.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                    textBoxYear.Items.Add(sName);
+                    
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+        }
+
+
         private void AddFeeStructure_Load(object sender, EventArgs e)
         {
-           
+            textBoxYear.Items.Insert(0, "..Select Year..");
+            textBoxYear.SelectedIndex = 0;
+
             //this.WindowState = FormWindowState.Maximized;
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM fees_SetUp", con);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "fees_SetUp");
-            dataGridView1.DataSource = ds.Tables["fees_SetUp"].DefaultView;
+            //SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM fees_SetUp", con);
+            //DataSet ds = new DataSet();
+            //da.Fill(ds, "fees_SetUp");
+            //dataGridView1.DataSource = ds.Tables["fees_SetUp"].DefaultView;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -41,11 +74,11 @@ namespace Shule
             checkBox1.Hide();
             checkBox2.Hide();
 
-            if (textBoxYear.Text != "" && guna2ComboBoxForm.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxTerm.Text != "" && guna2ComboBoxFvote.Text != "" && textBoxFeesDescr.Text != "" && textBoxAmount.Text != "")
+            if (textBoxYear.SelectedIndex != 0 && guna2ComboBoxForm.Text != "" && guna2ComboBoxStream.Text != "" && guna2ComboBoxTerm.Text != "" && guna2ComboBoxFvote.Text != "" && textBoxFeesDescr.Text != "" && textBoxAmount.Text != "")
             {
                 cmd = new SqlCommand("insert into fees_SetUp(Fees_Vote,Fees_Vote_Description,Fees_Vote_Amount,Form,Stream,Year,Term) values (@Fees_Vote,@Fees_Vote_Description,@Fees_Vote_Amount,@Form,@Stream,@Year,@Term)", con);
                 con.Open();
-                cmd.Parameters.AddWithValue("@Year", textBoxYear.Text);
+                cmd.Parameters.AddWithValue("@Year", textBoxYear.SelectedItem);
                 cmd.Parameters.AddWithValue("@Form", guna2ComboBoxForm.Text);
                 cmd.Parameters.AddWithValue("@Stream", guna2ComboBoxStream.Text);
                 cmd.Parameters.AddWithValue("@Term", guna2ComboBoxTerm.Text);
@@ -137,6 +170,11 @@ namespace Shule
             this.Hide();
             Fees_Structure fs = new Fees_Structure();
             fs.Show();
+        }
+
+        private void textBoxYear_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

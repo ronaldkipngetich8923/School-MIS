@@ -176,6 +176,9 @@ namespace Shule
                     SqlCommand cmdUpdate = new SqlCommand(quer,sqlConnection);
                     cmdUpdate.ExecuteNonQuery();
 
+                    this.Refresh();
+                    Refresh();
+
 
                 }
 

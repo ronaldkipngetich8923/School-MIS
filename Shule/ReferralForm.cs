@@ -23,7 +23,39 @@ namespace Shule
         public ReferralForm()
         {
             InitializeComponent();
+            FillcomboPatron();
         }
+
+        public void FillcomboPatron()
+        {
+            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //sqlConnection = new SqlConnection(connStr);
+            string cmdStr = " SELECT *  FROM StaffDescription where StaffDescription='SURBOARDINATE STAFF'";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
+            try
+            {
+
+                sqlConnection.Open();
+
+                sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["StaffDescription"].ToString();
+
+                    comboPatronName.Items.Add(sName);
+
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            sqlConnection.Close();
+        }
+
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
@@ -61,7 +93,7 @@ namespace Shule
         {
             if (txtRAdmNo.Text != "" && richTextBoxReferal.Text != "" && txtReferTo.Text != "" && guna2DateTimePicker1Referal.Text != "")
             {
-                string qur = "INSERT INTO Referals (AdmNo,Complain,ReferedTo,DateOfReferal) VALUES ('" + txtRAdmNo.Text + "','" + richTextBoxReferal.Text + "','" + txtReferTo.Text + "','" + guna2DateTimePicker1Referal.Text + "')";
+                string qur = "INSERT INTO Referals (AdmNo,Complain,ReferedTo,ReferedBy,DateOfReferal) VALUES ('" + txtRAdmNo.Text + "','" + richTextBoxReferal.Text + "','" + txtReferTo.Text + "','" + comboPatronName.SelectedItem + "','" + guna2DateTimePicker1Referal.Text + "')";
                 SqlCommand cmd = new SqlCommand(qur, sqlConnection);
                 try
                 {
@@ -156,6 +188,17 @@ namespace Shule
             }
             sqlConnection.Close();
 
+
+        }
+
+        private void ReferralForm_Load(object sender, EventArgs e)
+        {
+            comboPatronName.Items.Insert(0, "..Select Matron..");
+            comboPatronName.SelectedIndex = 0;
+        }
+
+        private void comboPatronName_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -51,37 +51,21 @@
             this.guna2Button35 = new Guna.UI2.WinForms.Guna2Button();
             this.btnLusers = new Guna.UI2.WinForms.Guna2Button();
             this.MainDashboard = new System.Windows.Forms.Panel();
-            this.magazines = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button23 = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.guna2Button24 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button25 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMsearch = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox31 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button27 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DateTimePicker10 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker9 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2TextBox32 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2TextBox33 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.BorrowMagazines = new System.Windows.Forms.Panel();
-            this.gridmagazines = new System.Windows.Forms.DataGridView();
-            this.btnViewMagazines = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker12 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtMagazineDescription = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMagazine = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnMagazineSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMagazineReset = new Guna.UI2.WinForms.Guna2Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.RemoveShelves = new System.Windows.Forms.Panel();
+            this.txtShelfLocation = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtShelfName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtShelfNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSearchShelf = new Guna.UI2.WinForms.Guna2Button();
+            this.txtShelfSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnShelfRemove = new Guna.UI2.WinForms.Guna2Button();
+            this.btnShelfReset = new Guna.UI2.WinForms.Guna2Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtShelfDescription = new System.Windows.Forms.RichTextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
             this.Books = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.New_Books = new System.Windows.Forms.TabPage();
@@ -181,6 +165,37 @@
             this.guna2TextBox27 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox28 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button17 = new Guna.UI2.WinForms.Guna2Button();
+            this.magazines = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button23 = new Guna.UI2.WinForms.Guna2Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.guna2Button24 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button25 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMsearch = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TextBox31 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button27 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DateTimePicker10 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DateTimePicker9 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2TextBox32 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TextBox33 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.BorrowMagazines = new System.Windows.Forms.Panel();
+            this.gridmagazines = new System.Windows.Forms.DataGridView();
+            this.btnViewMagazines = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2DateTimePicker12 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtMagazineDescription = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMagazine = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnMagazineSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btnMagazineReset = new Guna.UI2.WinForms.Guna2Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.main = new System.Windows.Forms.Panel();
             this.panelMedicines = new System.Windows.Forms.Panel();
             this.dataGridMedicines = new System.Windows.Forms.DataGridView();
@@ -203,21 +218,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.labelAdmitted = new System.Windows.Forms.Label();
             this.button25 = new System.Windows.Forms.Button();
-            this.RemoveShelves = new System.Windows.Forms.Panel();
-            this.txtShelfLocation = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtShelfName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtShelfNumber = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearchShelf = new Guna.UI2.WinForms.Guna2Button();
-            this.txtShelfSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnShelfRemove = new Guna.UI2.WinForms.Guna2Button();
-            this.btnShelfReset = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtShelfDescription = new System.Windows.Forms.RichTextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
             this.Shelves = new System.Windows.Forms.Panel();
             this.txtNShelfLocation = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtNShelfName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -247,12 +247,8 @@
             this.panelDropdownBooks.SuspendLayout();
             this.panelDropdownMagazines.SuspendLayout();
             this.MainDashboard.SuspendLayout();
-            this.magazines.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.BorrowMagazines.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridmagazines)).BeginInit();
-            this.panel10.SuspendLayout();
+            this.RemoveShelves.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.Books.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.New_Books.SuspendLayout();
@@ -265,6 +261,12 @@
             this.assignTeachers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LteachersGrid)).BeginInit();
             this.panel4.SuspendLayout();
+            this.magazines.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.BorrowMagazines.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridmagazines)).BeginInit();
+            this.panel10.SuspendLayout();
             this.main.SuspendLayout();
             this.panelMedicines.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridMedicines)).BeginInit();
@@ -273,8 +275,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.RemoveShelves.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.Shelves.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridShelfs)).BeginInit();
@@ -681,539 +681,261 @@
             this.MainDashboard.TabIndex = 2;
             this.MainDashboard.Paint += new System.Windows.Forms.PaintEventHandler(this.MainDashboard_Paint);
             // 
-            // magazines
+            // RemoveShelves
             // 
-            this.magazines.Controls.Add(this.panel9);
-            this.magazines.Controls.Add(this.guna2Button23);
-            this.magazines.Controls.Add(this.dataGridView3);
-            this.magazines.Controls.Add(this.guna2Button24);
-            this.magazines.Controls.Add(this.guna2Button25);
-            this.magazines.Controls.Add(this.btnMsearch);
-            this.magazines.Controls.Add(this.guna2HtmlLabel8);
-            this.magazines.Controls.Add(this.guna2TextBox31);
-            this.magazines.Controls.Add(this.guna2Button27);
-            this.magazines.Controls.Add(this.guna2DateTimePicker10);
-            this.magazines.Controls.Add(this.guna2HtmlLabel5);
-            this.magazines.Controls.Add(this.guna2DateTimePicker9);
-            this.magazines.Controls.Add(this.guna2TextBox32);
-            this.magazines.Controls.Add(this.guna2HtmlLabel6);
-            this.magazines.Controls.Add(this.guna2TextBox33);
-            this.magazines.Controls.Add(this.guna2HtmlLabel7);
-            this.magazines.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.magazines.Location = new System.Drawing.Point(0, 0);
-            this.magazines.Name = "magazines";
-            this.magazines.Size = new System.Drawing.Size(1153, 664);
-            this.magazines.TabIndex = 3;
-            this.magazines.Paint += new System.Windows.Forms.PaintEventHandler(this.magazines_Paint);
+            this.RemoveShelves.BackColor = System.Drawing.Color.White;
+            this.RemoveShelves.Controls.Add(this.txtShelfLocation);
+            this.RemoveShelves.Controls.Add(this.txtShelfName);
+            this.RemoveShelves.Controls.Add(this.txtShelfNumber);
+            this.RemoveShelves.Controls.Add(this.btnSearchShelf);
+            this.RemoveShelves.Controls.Add(this.txtShelfSearch);
+            this.RemoveShelves.Controls.Add(this.panel6);
+            this.RemoveShelves.Controls.Add(this.btnShelfRemove);
+            this.RemoveShelves.Controls.Add(this.btnShelfReset);
+            this.RemoveShelves.Controls.Add(this.label3);
+            this.RemoveShelves.Controls.Add(this.txtShelfDescription);
+            this.RemoveShelves.Controls.Add(this.label41);
+            this.RemoveShelves.Controls.Add(this.label45);
+            this.RemoveShelves.Controls.Add(this.label46);
+            this.RemoveShelves.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RemoveShelves.Location = new System.Drawing.Point(0, 0);
+            this.RemoveShelves.Name = "RemoveShelves";
+            this.RemoveShelves.Size = new System.Drawing.Size(1153, 664);
+            this.RemoveShelves.TabIndex = 4;
+            this.RemoveShelves.Paint += new System.Windows.Forms.PaintEventHandler(this.RemoveShelves_Paint);
             // 
-            // panel9
+            // txtShelfLocation
             // 
-            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel9.Controls.Add(this.guna2HtmlLabel2);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1153, 49);
-            this.panel9.TabIndex = 26;
+            this.txtShelfLocation.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtShelfLocation.DefaultText = "";
+            this.txtShelfLocation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtShelfLocation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtShelfLocation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfLocation.DisabledState.Parent = this.txtShelfLocation;
+            this.txtShelfLocation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfLocation.FocusedState.Parent = this.txtShelfLocation;
+            this.txtShelfLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtShelfLocation.ForeColor = System.Drawing.Color.Blue;
+            this.txtShelfLocation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfLocation.HoverState.Parent = this.txtShelfLocation;
+            this.txtShelfLocation.Location = new System.Drawing.Point(708, 178);
+            this.txtShelfLocation.Name = "txtShelfLocation";
+            this.txtShelfLocation.PasswordChar = '\0';
+            this.txtShelfLocation.PlaceholderText = "Location";
+            this.txtShelfLocation.SelectedText = "";
+            this.txtShelfLocation.ShadowDecoration.Parent = this.txtShelfLocation;
+            this.txtShelfLocation.Size = new System.Drawing.Size(200, 36);
+            this.txtShelfLocation.TabIndex = 54;
             // 
-            // guna2HtmlLabel2
+            // txtShelfName
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(390, 10);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(168, 21);
-            this.guna2HtmlLabel2.TabIndex = 0;
-            this.guna2HtmlLabel2.Text = "BORROW MAGAZINE";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtShelfName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtShelfName.DefaultText = "";
+            this.txtShelfName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtShelfName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtShelfName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfName.DisabledState.Parent = this.txtShelfName;
+            this.txtShelfName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfName.FocusedState.Parent = this.txtShelfName;
+            this.txtShelfName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtShelfName.ForeColor = System.Drawing.Color.Blue;
+            this.txtShelfName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfName.HoverState.Parent = this.txtShelfName;
+            this.txtShelfName.Location = new System.Drawing.Point(250, 181);
+            this.txtShelfName.Name = "txtShelfName";
+            this.txtShelfName.PasswordChar = '\0';
+            this.txtShelfName.PlaceholderText = "Shelf Name";
+            this.txtShelfName.SelectedText = "";
+            this.txtShelfName.ShadowDecoration.Parent = this.txtShelfName;
+            this.txtShelfName.Size = new System.Drawing.Size(200, 36);
+            this.txtShelfName.TabIndex = 53;
             // 
-            // guna2Button23
+            // txtShelfNumber
             // 
-            this.guna2Button23.AutoRoundedCorners = true;
-            this.guna2Button23.BorderRadius = 17;
-            this.guna2Button23.CheckedState.Parent = this.guna2Button23;
-            this.guna2Button23.CustomImages.Parent = this.guna2Button23;
-            this.guna2Button23.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button23.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button23.DisabledState.Parent = this.guna2Button23;
-            this.guna2Button23.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button23.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button23.ForeColor = System.Drawing.Color.White;
-            this.guna2Button23.HoverState.Parent = this.guna2Button23;
-            this.guna2Button23.Location = new System.Drawing.Point(340, 382);
-            this.guna2Button23.Name = "guna2Button23";
-            this.guna2Button23.ShadowDecoration.Parent = this.guna2Button23;
-            this.guna2Button23.Size = new System.Drawing.Size(152, 36);
-            this.guna2Button23.TabIndex = 17;
-            this.guna2Button23.Text = "Remove Magazinne";
-            this.guna2Button23.Click += new System.EventHandler(this.guna2Button23_Click);
+            this.txtShelfNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtShelfNumber.DefaultText = "";
+            this.txtShelfNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtShelfNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtShelfNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfNumber.DisabledState.Parent = this.txtShelfNumber;
+            this.txtShelfNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfNumber.FocusedState.Parent = this.txtShelfNumber;
+            this.txtShelfNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtShelfNumber.ForeColor = System.Drawing.Color.Blue;
+            this.txtShelfNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfNumber.HoverState.Parent = this.txtShelfNumber;
+            this.txtShelfNumber.Location = new System.Drawing.Point(250, 116);
+            this.txtShelfNumber.Name = "txtShelfNumber";
+            this.txtShelfNumber.PasswordChar = '\0';
+            this.txtShelfNumber.PlaceholderText = "Shelf Number";
+            this.txtShelfNumber.SelectedText = "";
+            this.txtShelfNumber.ShadowDecoration.Parent = this.txtShelfNumber;
+            this.txtShelfNumber.Size = new System.Drawing.Size(200, 36);
+            this.txtShelfNumber.TabIndex = 52;
             // 
-            // dataGridView3
+            // btnSearchShelf
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.Snow;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(522, 56);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(615, 315);
-            this.dataGridView3.TabIndex = 8;
+            this.btnSearchShelf.BorderRadius = 20;
+            this.btnSearchShelf.CheckedState.Parent = this.btnSearchShelf;
+            this.btnSearchShelf.CustomImages.Parent = this.btnSearchShelf;
+            this.btnSearchShelf.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchShelf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchShelf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchShelf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchShelf.DisabledState.Parent = this.btnSearchShelf;
+            this.btnSearchShelf.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSearchShelf.ForeColor = System.Drawing.Color.White;
+            this.btnSearchShelf.HoverState.Parent = this.btnSearchShelf;
+            this.btnSearchShelf.Location = new System.Drawing.Point(261, 65);
+            this.btnSearchShelf.Name = "btnSearchShelf";
+            this.btnSearchShelf.ShadowDecoration.Parent = this.btnSearchShelf;
+            this.btnSearchShelf.Size = new System.Drawing.Size(180, 41);
+            this.btnSearchShelf.TabIndex = 51;
+            this.btnSearchShelf.Text = "Search Shelf";
+            this.btnSearchShelf.Click += new System.EventHandler(this.btnSearchShelf_Click);
             // 
-            // guna2Button24
+            // txtShelfSearch
             // 
-            this.guna2Button24.AutoRoundedCorners = true;
-            this.guna2Button24.BorderRadius = 17;
-            this.guna2Button24.CheckedState.Parent = this.guna2Button24;
-            this.guna2Button24.CustomImages.Parent = this.guna2Button24;
-            this.guna2Button24.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button24.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button24.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button24.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button24.DisabledState.Parent = this.guna2Button24;
-            this.guna2Button24.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button24.ForeColor = System.Drawing.Color.White;
-            this.guna2Button24.HoverState.Parent = this.guna2Button24;
-            this.guna2Button24.Location = new System.Drawing.Point(162, 382);
-            this.guna2Button24.Name = "guna2Button24";
-            this.guna2Button24.ShadowDecoration.Parent = this.guna2Button24;
-            this.guna2Button24.Size = new System.Drawing.Size(152, 36);
-            this.guna2Button24.TabIndex = 5;
-            this.guna2Button24.Text = "Save";
-            this.guna2Button24.Click += new System.EventHandler(this.guna2Button24_Click);
+            this.txtShelfSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtShelfSearch.DefaultText = "";
+            this.txtShelfSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtShelfSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtShelfSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfSearch.DisabledState.Parent = this.txtShelfSearch;
+            this.txtShelfSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtShelfSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfSearch.FocusedState.Parent = this.txtShelfSearch;
+            this.txtShelfSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtShelfSearch.ForeColor = System.Drawing.Color.Blue;
+            this.txtShelfSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtShelfSearch.HoverState.Parent = this.txtShelfSearch;
+            this.txtShelfSearch.Location = new System.Drawing.Point(28, 70);
+            this.txtShelfSearch.Name = "txtShelfSearch";
+            this.txtShelfSearch.PasswordChar = '\0';
+            this.txtShelfSearch.PlaceholderText = "Search";
+            this.txtShelfSearch.SelectedText = "";
+            this.txtShelfSearch.ShadowDecoration.Parent = this.txtShelfSearch;
+            this.txtShelfSearch.Size = new System.Drawing.Size(200, 36);
+            this.txtShelfSearch.TabIndex = 50;
             // 
-            // guna2Button25
+            // panel6
             // 
-            this.guna2Button25.AutoRoundedCorners = true;
-            this.guna2Button25.BorderRadius = 17;
-            this.guna2Button25.CheckedState.Parent = this.guna2Button25;
-            this.guna2Button25.CustomImages.Parent = this.guna2Button25;
-            this.guna2Button25.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button25.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button25.DisabledState.Parent = this.guna2Button25;
-            this.guna2Button25.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button25.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button25.ForeColor = System.Drawing.Color.White;
-            this.guna2Button25.HoverState.Parent = this.guna2Button25;
-            this.guna2Button25.Location = new System.Drawing.Point(4, 382);
-            this.guna2Button25.Name = "guna2Button25";
-            this.guna2Button25.ShadowDecoration.Parent = this.guna2Button25;
-            this.guna2Button25.Size = new System.Drawing.Size(152, 36);
-            this.guna2Button25.TabIndex = 4;
-            this.guna2Button25.Text = "Reset";
-            this.guna2Button25.Click += new System.EventHandler(this.guna2Button25_Click);
+            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel6.Controls.Add(this.guna2HtmlLabel9);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1153, 49);
+            this.panel6.TabIndex = 49;
             // 
-            // btnMsearch
+            // guna2HtmlLabel9
             // 
-            this.btnMsearch.AutoRoundedCorners = true;
-            this.btnMsearch.BorderRadius = 17;
-            this.btnMsearch.CheckedState.Parent = this.btnMsearch;
-            this.btnMsearch.CustomImages.Parent = this.btnMsearch;
-            this.btnMsearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMsearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMsearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMsearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMsearch.DisabledState.Parent = this.btnMsearch;
-            this.btnMsearch.FillColor = System.Drawing.Color.LightBlue;
-            this.btnMsearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMsearch.ForeColor = System.Drawing.Color.White;
-            this.btnMsearch.HoverState.Parent = this.btnMsearch;
-            this.btnMsearch.Location = new System.Drawing.Point(302, 55);
-            this.btnMsearch.Name = "btnMsearch";
-            this.btnMsearch.ShadowDecoration.Parent = this.btnMsearch;
-            this.btnMsearch.Size = new System.Drawing.Size(167, 36);
-            this.btnMsearch.TabIndex = 7;
-            this.btnMsearch.Text = "Search";
-            this.btnMsearch.Click += new System.EventHandler(this.guna2Button22_Click);
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(416, 18);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(128, 21);
+            this.guna2HtmlLabel9.TabIndex = 0;
+            this.guna2HtmlLabel9.Text = "REMOVE SHELF";
             // 
-            // guna2HtmlLabel8
+            // btnShelfRemove
             // 
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(6, 306);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(98, 21);
-            this.guna2HtmlLabel8.TabIndex = 16;
-            this.guna2HtmlLabel8.Text = "Date Borrowed";
+            this.btnShelfRemove.AutoRoundedCorners = true;
+            this.btnShelfRemove.BorderRadius = 16;
+            this.btnShelfRemove.CheckedState.Parent = this.btnShelfRemove;
+            this.btnShelfRemove.CustomImages.Parent = this.btnShelfRemove;
+            this.btnShelfRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnShelfRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnShelfRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnShelfRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnShelfRemove.DisabledState.Parent = this.btnShelfRemove;
+            this.btnShelfRemove.FillColor = System.Drawing.Color.Red;
+            this.btnShelfRemove.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnShelfRemove.ForeColor = System.Drawing.Color.White;
+            this.btnShelfRemove.HoverState.Parent = this.btnShelfRemove;
+            this.btnShelfRemove.Location = new System.Drawing.Point(504, 292);
+            this.btnShelfRemove.Name = "btnShelfRemove";
+            this.btnShelfRemove.ShadowDecoration.Parent = this.btnShelfRemove;
+            this.btnShelfRemove.Size = new System.Drawing.Size(192, 35);
+            this.btnShelfRemove.TabIndex = 47;
+            this.btnShelfRemove.Text = "Remove";
+            this.btnShelfRemove.Click += new System.EventHandler(this.btnShelfRemove_Click);
             // 
-            // guna2TextBox31
+            // btnShelfReset
             // 
-            this.guna2TextBox31.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox31.DefaultText = "";
-            this.guna2TextBox31.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox31.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox31.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox31.DisabledState.Parent = this.guna2TextBox31;
-            this.guna2TextBox31.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox31.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox31.FocusedState.Parent = this.guna2TextBox31;
-            this.guna2TextBox31.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox31.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox31.HoverState.Parent = this.guna2TextBox31;
-            this.guna2TextBox31.Location = new System.Drawing.Point(5, 56);
-            this.guna2TextBox31.Name = "guna2TextBox31";
-            this.guna2TextBox31.PasswordChar = '\0';
-            this.guna2TextBox31.PlaceholderText = "Search Magazine";
-            this.guna2TextBox31.SelectedText = "";
-            this.guna2TextBox31.ShadowDecoration.Parent = this.guna2TextBox31;
-            this.guna2TextBox31.Size = new System.Drawing.Size(207, 36);
-            this.guna2TextBox31.TabIndex = 6;
-            this.guna2TextBox31.TextChanged += new System.EventHandler(this.guna2TextBox31_TextChanged);
+            this.btnShelfReset.AutoRoundedCorners = true;
+            this.btnShelfReset.BorderRadius = 16;
+            this.btnShelfReset.CheckedState.Parent = this.btnShelfReset;
+            this.btnShelfReset.CustomImages.Parent = this.btnShelfReset;
+            this.btnShelfReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnShelfReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnShelfReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnShelfReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnShelfReset.DisabledState.Parent = this.btnShelfReset;
+            this.btnShelfReset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnShelfReset.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnShelfReset.ForeColor = System.Drawing.Color.White;
+            this.btnShelfReset.HoverState.Parent = this.btnShelfReset;
+            this.btnShelfReset.Location = new System.Drawing.Point(261, 292);
+            this.btnShelfReset.Name = "btnShelfReset";
+            this.btnShelfReset.ShadowDecoration.Parent = this.btnShelfReset;
+            this.btnShelfReset.Size = new System.Drawing.Size(192, 35);
+            this.btnShelfReset.TabIndex = 46;
+            this.btnShelfReset.Text = "Reset";
+            this.btnShelfReset.Click += new System.EventHandler(this.btnShelfReset_Click);
             // 
-            // guna2Button27
+            // label3
             // 
-            this.guna2Button27.AutoRoundedCorners = true;
-            this.guna2Button27.BorderRadius = 17;
-            this.guna2Button27.CheckedState.Parent = this.guna2Button27;
-            this.guna2Button27.CustomImages.Parent = this.guna2Button27;
-            this.guna2Button27.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button27.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button27.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button27.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button27.DisabledState.Parent = this.guna2Button27;
-            this.guna2Button27.FillColor = System.Drawing.Color.LightBlue;
-            this.guna2Button27.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button27.ForeColor = System.Drawing.Color.White;
-            this.guna2Button27.HoverState.Parent = this.guna2Button27;
-            this.guna2Button27.Location = new System.Drawing.Point(563, 382);
-            this.guna2Button27.Name = "guna2Button27";
-            this.guna2Button27.ShadowDecoration.Parent = this.guna2Button27;
-            this.guna2Button27.Size = new System.Drawing.Size(152, 36);
-            this.guna2Button27.TabIndex = 7;
-            this.guna2Button27.Text = "Borrowed Magazinnes";
-            this.guna2Button27.Click += new System.EventHandler(this.guna2Button27_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(507, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 17);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Shelf Location";
             // 
-            // guna2DateTimePicker10
+            // txtShelfDescription
             // 
-            this.guna2DateTimePicker10.BackColor = System.Drawing.Color.MistyRose;
-            this.guna2DateTimePicker10.CheckedState.Parent = this.guna2DateTimePicker10;
-            this.guna2DateTimePicker10.FillColor = System.Drawing.Color.MistyRose;
-            this.guna2DateTimePicker10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker10.HoverState.Parent = this.guna2DateTimePicker10;
-            this.guna2DateTimePicker10.Location = new System.Drawing.Point(218, 297);
-            this.guna2DateTimePicker10.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker10.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker10.Name = "guna2DateTimePicker10";
-            this.guna2DateTimePicker10.ShadowDecoration.Parent = this.guna2DateTimePicker10;
-            this.guna2DateTimePicker10.Size = new System.Drawing.Size(251, 36);
-            this.guna2DateTimePicker10.TabIndex = 15;
-            this.guna2DateTimePicker10.Value = new System.DateTime(2021, 7, 13, 14, 4, 23, 161);
+            this.txtShelfDescription.ForeColor = System.Drawing.Color.Blue;
+            this.txtShelfDescription.Location = new System.Drawing.Point(708, 92);
+            this.txtShelfDescription.Name = "txtShelfDescription";
+            this.txtShelfDescription.Size = new System.Drawing.Size(200, 54);
+            this.txtShelfDescription.TabIndex = 41;
+            this.txtShelfDescription.Text = "";
             // 
-            // guna2HtmlLabel5
+            // label41
             // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(10, 243);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(98, 21);
-            this.guna2HtmlLabel5.TabIndex = 14;
-            this.guna2HtmlLabel5.Text = "Date Borrowed";
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(512, 111);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(74, 17);
+            this.label41.TabIndex = 35;
+            this.label41.Text = "Description";
             // 
-            // guna2DateTimePicker9
+            // label45
             // 
-            this.guna2DateTimePicker9.BackColor = System.Drawing.Color.MistyRose;
-            this.guna2DateTimePicker9.CheckedState.Parent = this.guna2DateTimePicker9;
-            this.guna2DateTimePicker9.FillColor = System.Drawing.Color.MistyRose;
-            this.guna2DateTimePicker9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker9.HoverState.Parent = this.guna2DateTimePicker9;
-            this.guna2DateTimePicker9.Location = new System.Drawing.Point(218, 243);
-            this.guna2DateTimePicker9.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker9.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker9.Name = "guna2DateTimePicker9";
-            this.guna2DateTimePicker9.ShadowDecoration.Parent = this.guna2DateTimePicker9;
-            this.guna2DateTimePicker9.Size = new System.Drawing.Size(251, 35);
-            this.guna2DateTimePicker9.TabIndex = 13;
-            this.guna2DateTimePicker9.Value = new System.DateTime(2021, 7, 13, 14, 4, 23, 161);
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(57, 185);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(75, 17);
+            this.label45.TabIndex = 34;
+            this.label45.Text = "Shelf Name";
+            this.label45.Click += new System.EventHandler(this.label45_Click);
             // 
-            // guna2TextBox32
+            // label46
             // 
-            this.guna2TextBox32.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox32.DefaultText = "";
-            this.guna2TextBox32.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox32.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox32.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox32.DisabledState.Parent = this.guna2TextBox32;
-            this.guna2TextBox32.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox32.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox32.FocusedState.Parent = this.guna2TextBox32;
-            this.guna2TextBox32.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox32.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox32.HoverState.Parent = this.guna2TextBox32;
-            this.guna2TextBox32.Location = new System.Drawing.Point(218, 192);
-            this.guna2TextBox32.Name = "guna2TextBox32";
-            this.guna2TextBox32.PasswordChar = '\0';
-            this.guna2TextBox32.PlaceholderText = "";
-            this.guna2TextBox32.SelectedText = "";
-            this.guna2TextBox32.ShadowDecoration.Parent = this.guna2TextBox32;
-            this.guna2TextBox32.Size = new System.Drawing.Size(251, 36);
-            this.guna2TextBox32.TabIndex = 10;
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(11, 140);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(109, 21);
-            this.guna2HtmlLabel6.TabIndex = 12;
-            this.guna2HtmlLabel6.Text = "Magazinne Name";
-            // 
-            // guna2TextBox33
-            // 
-            this.guna2TextBox33.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox33.DefaultText = "";
-            this.guna2TextBox33.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox33.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox33.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox33.DisabledState.Parent = this.guna2TextBox33;
-            this.guna2TextBox33.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox33.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox33.FocusedState.Parent = this.guna2TextBox33;
-            this.guna2TextBox33.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox33.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox33.HoverState.Parent = this.guna2TextBox33;
-            this.guna2TextBox33.Location = new System.Drawing.Point(218, 140);
-            this.guna2TextBox33.Name = "guna2TextBox33";
-            this.guna2TextBox33.PasswordChar = '\0';
-            this.guna2TextBox33.PlaceholderText = "";
-            this.guna2TextBox33.SelectedText = "";
-            this.guna2TextBox33.ShadowDecoration.Parent = this.guna2TextBox33;
-            this.guna2TextBox33.Size = new System.Drawing.Size(251, 36);
-            this.guna2TextBox33.TabIndex = 9;
-            // 
-            // guna2HtmlLabel7
-            // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(11, 194);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(122, 21);
-            this.guna2HtmlLabel7.TabIndex = 11;
-            this.guna2HtmlLabel7.Text = "Magazinne Number";
-            // 
-            // BorrowMagazines
-            // 
-            this.BorrowMagazines.BackColor = System.Drawing.Color.White;
-            this.BorrowMagazines.Controls.Add(this.gridmagazines);
-            this.BorrowMagazines.Controls.Add(this.btnViewMagazines);
-            this.BorrowMagazines.Controls.Add(this.guna2HtmlLabel15);
-            this.BorrowMagazines.Controls.Add(this.guna2DateTimePicker12);
-            this.BorrowMagazines.Controls.Add(this.guna2HtmlLabel16);
-            this.BorrowMagazines.Controls.Add(this.guna2HtmlLabel17);
-            this.BorrowMagazines.Controls.Add(this.txtMagazineDescription);
-            this.BorrowMagazines.Controls.Add(this.txtMagazine);
-            this.BorrowMagazines.Controls.Add(this.btnMagazineSave);
-            this.BorrowMagazines.Controls.Add(this.btnMagazineReset);
-            this.BorrowMagazines.Controls.Add(this.panel10);
-            this.BorrowMagazines.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BorrowMagazines.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BorrowMagazines.Location = new System.Drawing.Point(0, 0);
-            this.BorrowMagazines.Name = "BorrowMagazines";
-            this.BorrowMagazines.Size = new System.Drawing.Size(1153, 664);
-            this.BorrowMagazines.TabIndex = 6;
-            this.BorrowMagazines.Paint += new System.Windows.Forms.PaintEventHandler(this.BorrowMagazines_Paint);
-            // 
-            // gridmagazines
-            // 
-            this.gridmagazines.BackgroundColor = System.Drawing.Color.Snow;
-            this.gridmagazines.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridmagazines.Location = new System.Drawing.Point(480, 56);
-            this.gridmagazines.Name = "gridmagazines";
-            this.gridmagazines.Size = new System.Drawing.Size(657, 315);
-            this.gridmagazines.TabIndex = 36;
-            // 
-            // btnViewMagazines
-            // 
-            this.btnViewMagazines.AutoRoundedCorners = true;
-            this.btnViewMagazines.BorderRadius = 17;
-            this.btnViewMagazines.CheckedState.Parent = this.btnViewMagazines;
-            this.btnViewMagazines.CustomImages.Parent = this.btnViewMagazines;
-            this.btnViewMagazines.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnViewMagazines.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnViewMagazines.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnViewMagazines.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnViewMagazines.DisabledState.Parent = this.btnViewMagazines;
-            this.btnViewMagazines.FillColor = System.Drawing.Color.LightBlue;
-            this.btnViewMagazines.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewMagazines.ForeColor = System.Drawing.Color.White;
-            this.btnViewMagazines.HoverState.Parent = this.btnViewMagazines;
-            this.btnViewMagazines.Location = new System.Drawing.Point(410, 421);
-            this.btnViewMagazines.Name = "btnViewMagazines";
-            this.btnViewMagazines.ShadowDecoration.Parent = this.btnViewMagazines;
-            this.btnViewMagazines.Size = new System.Drawing.Size(148, 36);
-            this.btnViewMagazines.TabIndex = 35;
-            this.btnViewMagazines.Text = "View Magazinnes";
-            this.btnViewMagazines.Click += new System.EventHandler(this.btnViewMagazines_Click);
-            // 
-            // guna2HtmlLabel15
-            // 
-            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(12, 188);
-            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(92, 21);
-            this.guna2HtmlLabel15.TabIndex = 34;
-            this.guna2HtmlLabel15.Text = "Date Received";
-            // 
-            // guna2DateTimePicker12
-            // 
-            this.guna2DateTimePicker12.CheckedState.Parent = this.guna2DateTimePicker12;
-            this.guna2DateTimePicker12.FillColor = System.Drawing.Color.MistyRose;
-            this.guna2DateTimePicker12.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker12.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker12.HoverState.Parent = this.guna2DateTimePicker12;
-            this.guna2DateTimePicker12.Location = new System.Drawing.Point(162, 185);
-            this.guna2DateTimePicker12.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker12.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker12.Name = "guna2DateTimePicker12";
-            this.guna2DateTimePicker12.ShadowDecoration.Parent = this.guna2DateTimePicker12;
-            this.guna2DateTimePicker12.Size = new System.Drawing.Size(222, 34);
-            this.guna2DateTimePicker12.TabIndex = 33;
-            this.guna2DateTimePicker12.Value = new System.DateTime(2021, 7, 13, 14, 4, 23, 161);
-            // 
-            // guna2HtmlLabel16
-            // 
-            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(8, 82);
-            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(109, 21);
-            this.guna2HtmlLabel16.TabIndex = 32;
-            this.guna2HtmlLabel16.Text = "Magazinne Name";
-            // 
-            // guna2HtmlLabel17
-            // 
-            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(8, 133);
-            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            this.guna2HtmlLabel17.Size = new System.Drawing.Size(72, 21);
-            this.guna2HtmlLabel17.TabIndex = 31;
-            this.guna2HtmlLabel17.Text = "Description";
-            // 
-            // txtMagazineDescription
-            // 
-            this.txtMagazineDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMagazineDescription.DefaultText = "";
-            this.txtMagazineDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMagazineDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMagazineDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMagazineDescription.DisabledState.Parent = this.txtMagazineDescription;
-            this.txtMagazineDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMagazineDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMagazineDescription.FocusedState.Parent = this.txtMagazineDescription;
-            this.txtMagazineDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMagazineDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMagazineDescription.HoverState.Parent = this.txtMagazineDescription;
-            this.txtMagazineDescription.Location = new System.Drawing.Point(161, 127);
-            this.txtMagazineDescription.Name = "txtMagazineDescription";
-            this.txtMagazineDescription.PasswordChar = '\0';
-            this.txtMagazineDescription.PlaceholderText = "Description";
-            this.txtMagazineDescription.SelectedText = "";
-            this.txtMagazineDescription.ShadowDecoration.Parent = this.txtMagazineDescription;
-            this.txtMagazineDescription.Size = new System.Drawing.Size(223, 36);
-            this.txtMagazineDescription.TabIndex = 30;
-            // 
-            // txtMagazine
-            // 
-            this.txtMagazine.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMagazine.DefaultText = "";
-            this.txtMagazine.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMagazine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMagazine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMagazine.DisabledState.Parent = this.txtMagazine;
-            this.txtMagazine.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMagazine.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMagazine.FocusedState.Parent = this.txtMagazine;
-            this.txtMagazine.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMagazine.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMagazine.HoverState.Parent = this.txtMagazine;
-            this.txtMagazine.Location = new System.Drawing.Point(161, 77);
-            this.txtMagazine.Name = "txtMagazine";
-            this.txtMagazine.PasswordChar = '\0';
-            this.txtMagazine.PlaceholderText = "Magazine Name";
-            this.txtMagazine.SelectedText = "";
-            this.txtMagazine.ShadowDecoration.Parent = this.txtMagazine;
-            this.txtMagazine.Size = new System.Drawing.Size(223, 36);
-            this.txtMagazine.TabIndex = 29;
-            // 
-            // btnMagazineSave
-            // 
-            this.btnMagazineSave.AutoRoundedCorners = true;
-            this.btnMagazineSave.BorderRadius = 17;
-            this.btnMagazineSave.CheckedState.Parent = this.btnMagazineSave;
-            this.btnMagazineSave.CustomImages.Parent = this.btnMagazineSave;
-            this.btnMagazineSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMagazineSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMagazineSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMagazineSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMagazineSave.DisabledState.Parent = this.btnMagazineSave;
-            this.btnMagazineSave.FillColor = System.Drawing.Color.LightBlue;
-            this.btnMagazineSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMagazineSave.ForeColor = System.Drawing.Color.White;
-            this.btnMagazineSave.HoverState.Parent = this.btnMagazineSave;
-            this.btnMagazineSave.Location = new System.Drawing.Point(196, 421);
-            this.btnMagazineSave.Name = "btnMagazineSave";
-            this.btnMagazineSave.ShadowDecoration.Parent = this.btnMagazineSave;
-            this.btnMagazineSave.Size = new System.Drawing.Size(176, 36);
-            this.btnMagazineSave.TabIndex = 28;
-            this.btnMagazineSave.Text = "Save";
-            this.btnMagazineSave.Click += new System.EventHandler(this.btnMagazineSave_Click);
-            // 
-            // btnMagazineReset
-            // 
-            this.btnMagazineReset.AutoRoundedCorners = true;
-            this.btnMagazineReset.BorderRadius = 17;
-            this.btnMagazineReset.CheckedState.Parent = this.btnMagazineReset;
-            this.btnMagazineReset.CustomImages.Parent = this.btnMagazineReset;
-            this.btnMagazineReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnMagazineReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnMagazineReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnMagazineReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnMagazineReset.DisabledState.Parent = this.btnMagazineReset;
-            this.btnMagazineReset.FillColor = System.Drawing.Color.LightBlue;
-            this.btnMagazineReset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMagazineReset.ForeColor = System.Drawing.Color.White;
-            this.btnMagazineReset.HoverState.Parent = this.btnMagazineReset;
-            this.btnMagazineReset.Location = new System.Drawing.Point(12, 421);
-            this.btnMagazineReset.Name = "btnMagazineReset";
-            this.btnMagazineReset.ShadowDecoration.Parent = this.btnMagazineReset;
-            this.btnMagazineReset.Size = new System.Drawing.Size(165, 36);
-            this.btnMagazineReset.TabIndex = 27;
-            this.btnMagazineReset.Text = "Reset";
-            this.btnMagazineReset.Click += new System.EventHandler(this.btnMagazineReset_Click);
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel10.Controls.Add(this.guna2HtmlLabel18);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1153, 49);
-            this.panel10.TabIndex = 25;
-            // 
-            // guna2HtmlLabel18
-            // 
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(390, 10);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(131, 21);
-            this.guna2HtmlLabel18.TabIndex = 0;
-            this.guna2HtmlLabel18.Text = "NEW MAGAZINE";
-            this.guna2HtmlLabel18.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(54, 123);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(88, 17);
+            this.label46.TabIndex = 33;
+            this.label46.Text = "Shelf Number";
             // 
             // Books
             // 
@@ -2937,6 +2659,540 @@
             this.guna2Button17.Text = "ASSIGN";
             this.guna2Button17.Click += new System.EventHandler(this.guna2Button17_Click);
             // 
+            // magazines
+            // 
+            this.magazines.Controls.Add(this.panel9);
+            this.magazines.Controls.Add(this.guna2Button23);
+            this.magazines.Controls.Add(this.dataGridView3);
+            this.magazines.Controls.Add(this.guna2Button24);
+            this.magazines.Controls.Add(this.guna2Button25);
+            this.magazines.Controls.Add(this.btnMsearch);
+            this.magazines.Controls.Add(this.guna2HtmlLabel8);
+            this.magazines.Controls.Add(this.guna2TextBox31);
+            this.magazines.Controls.Add(this.guna2Button27);
+            this.magazines.Controls.Add(this.guna2DateTimePicker10);
+            this.magazines.Controls.Add(this.guna2HtmlLabel5);
+            this.magazines.Controls.Add(this.guna2DateTimePicker9);
+            this.magazines.Controls.Add(this.guna2TextBox32);
+            this.magazines.Controls.Add(this.guna2HtmlLabel6);
+            this.magazines.Controls.Add(this.guna2TextBox33);
+            this.magazines.Controls.Add(this.guna2HtmlLabel7);
+            this.magazines.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.magazines.Location = new System.Drawing.Point(0, 0);
+            this.magazines.Name = "magazines";
+            this.magazines.Size = new System.Drawing.Size(1153, 664);
+            this.magazines.TabIndex = 3;
+            this.magazines.Paint += new System.Windows.Forms.PaintEventHandler(this.magazines_Paint);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel9.Controls.Add(this.guna2HtmlLabel2);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1153, 49);
+            this.panel9.TabIndex = 26;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(390, 10);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(168, 21);
+            this.guna2HtmlLabel2.TabIndex = 0;
+            this.guna2HtmlLabel2.Text = "BORROW MAGAZINE";
+            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2Button23
+            // 
+            this.guna2Button23.AutoRoundedCorners = true;
+            this.guna2Button23.BorderRadius = 17;
+            this.guna2Button23.CheckedState.Parent = this.guna2Button23;
+            this.guna2Button23.CustomImages.Parent = this.guna2Button23;
+            this.guna2Button23.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button23.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button23.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button23.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button23.DisabledState.Parent = this.guna2Button23;
+            this.guna2Button23.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button23.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button23.ForeColor = System.Drawing.Color.White;
+            this.guna2Button23.HoverState.Parent = this.guna2Button23;
+            this.guna2Button23.Location = new System.Drawing.Point(340, 382);
+            this.guna2Button23.Name = "guna2Button23";
+            this.guna2Button23.ShadowDecoration.Parent = this.guna2Button23;
+            this.guna2Button23.Size = new System.Drawing.Size(152, 36);
+            this.guna2Button23.TabIndex = 17;
+            this.guna2Button23.Text = "Remove Magazinne";
+            this.guna2Button23.Click += new System.EventHandler(this.guna2Button23_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.Snow;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(522, 56);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(615, 315);
+            this.dataGridView3.TabIndex = 8;
+            // 
+            // guna2Button24
+            // 
+            this.guna2Button24.AutoRoundedCorners = true;
+            this.guna2Button24.BorderRadius = 17;
+            this.guna2Button24.CheckedState.Parent = this.guna2Button24;
+            this.guna2Button24.CustomImages.Parent = this.guna2Button24;
+            this.guna2Button24.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button24.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button24.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button24.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button24.DisabledState.Parent = this.guna2Button24;
+            this.guna2Button24.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button24.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button24.ForeColor = System.Drawing.Color.White;
+            this.guna2Button24.HoverState.Parent = this.guna2Button24;
+            this.guna2Button24.Location = new System.Drawing.Point(162, 382);
+            this.guna2Button24.Name = "guna2Button24";
+            this.guna2Button24.ShadowDecoration.Parent = this.guna2Button24;
+            this.guna2Button24.Size = new System.Drawing.Size(152, 36);
+            this.guna2Button24.TabIndex = 5;
+            this.guna2Button24.Text = "Save";
+            this.guna2Button24.Click += new System.EventHandler(this.guna2Button24_Click);
+            // 
+            // guna2Button25
+            // 
+            this.guna2Button25.AutoRoundedCorners = true;
+            this.guna2Button25.BorderRadius = 17;
+            this.guna2Button25.CheckedState.Parent = this.guna2Button25;
+            this.guna2Button25.CustomImages.Parent = this.guna2Button25;
+            this.guna2Button25.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button25.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button25.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button25.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button25.DisabledState.Parent = this.guna2Button25;
+            this.guna2Button25.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button25.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button25.ForeColor = System.Drawing.Color.White;
+            this.guna2Button25.HoverState.Parent = this.guna2Button25;
+            this.guna2Button25.Location = new System.Drawing.Point(4, 382);
+            this.guna2Button25.Name = "guna2Button25";
+            this.guna2Button25.ShadowDecoration.Parent = this.guna2Button25;
+            this.guna2Button25.Size = new System.Drawing.Size(152, 36);
+            this.guna2Button25.TabIndex = 4;
+            this.guna2Button25.Text = "Reset";
+            this.guna2Button25.Click += new System.EventHandler(this.guna2Button25_Click);
+            // 
+            // btnMsearch
+            // 
+            this.btnMsearch.AutoRoundedCorners = true;
+            this.btnMsearch.BorderRadius = 17;
+            this.btnMsearch.CheckedState.Parent = this.btnMsearch;
+            this.btnMsearch.CustomImages.Parent = this.btnMsearch;
+            this.btnMsearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMsearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMsearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMsearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMsearch.DisabledState.Parent = this.btnMsearch;
+            this.btnMsearch.FillColor = System.Drawing.Color.LightBlue;
+            this.btnMsearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMsearch.ForeColor = System.Drawing.Color.White;
+            this.btnMsearch.HoverState.Parent = this.btnMsearch;
+            this.btnMsearch.Location = new System.Drawing.Point(302, 55);
+            this.btnMsearch.Name = "btnMsearch";
+            this.btnMsearch.ShadowDecoration.Parent = this.btnMsearch;
+            this.btnMsearch.Size = new System.Drawing.Size(167, 36);
+            this.btnMsearch.TabIndex = 7;
+            this.btnMsearch.Text = "Search";
+            this.btnMsearch.Click += new System.EventHandler(this.guna2Button22_Click);
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(6, 306);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(98, 21);
+            this.guna2HtmlLabel8.TabIndex = 16;
+            this.guna2HtmlLabel8.Text = "Date Borrowed";
+            // 
+            // guna2TextBox31
+            // 
+            this.guna2TextBox31.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox31.DefaultText = "";
+            this.guna2TextBox31.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox31.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox31.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox31.DisabledState.Parent = this.guna2TextBox31;
+            this.guna2TextBox31.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox31.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox31.FocusedState.Parent = this.guna2TextBox31;
+            this.guna2TextBox31.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox31.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox31.HoverState.Parent = this.guna2TextBox31;
+            this.guna2TextBox31.Location = new System.Drawing.Point(5, 56);
+            this.guna2TextBox31.Name = "guna2TextBox31";
+            this.guna2TextBox31.PasswordChar = '\0';
+            this.guna2TextBox31.PlaceholderText = "Search Magazine";
+            this.guna2TextBox31.SelectedText = "";
+            this.guna2TextBox31.ShadowDecoration.Parent = this.guna2TextBox31;
+            this.guna2TextBox31.Size = new System.Drawing.Size(207, 36);
+            this.guna2TextBox31.TabIndex = 6;
+            this.guna2TextBox31.TextChanged += new System.EventHandler(this.guna2TextBox31_TextChanged);
+            // 
+            // guna2Button27
+            // 
+            this.guna2Button27.AutoRoundedCorners = true;
+            this.guna2Button27.BorderRadius = 17;
+            this.guna2Button27.CheckedState.Parent = this.guna2Button27;
+            this.guna2Button27.CustomImages.Parent = this.guna2Button27;
+            this.guna2Button27.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button27.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button27.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button27.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button27.DisabledState.Parent = this.guna2Button27;
+            this.guna2Button27.FillColor = System.Drawing.Color.LightBlue;
+            this.guna2Button27.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button27.ForeColor = System.Drawing.Color.White;
+            this.guna2Button27.HoverState.Parent = this.guna2Button27;
+            this.guna2Button27.Location = new System.Drawing.Point(563, 382);
+            this.guna2Button27.Name = "guna2Button27";
+            this.guna2Button27.ShadowDecoration.Parent = this.guna2Button27;
+            this.guna2Button27.Size = new System.Drawing.Size(152, 36);
+            this.guna2Button27.TabIndex = 7;
+            this.guna2Button27.Text = "Borrowed Magazinnes";
+            this.guna2Button27.Click += new System.EventHandler(this.guna2Button27_Click);
+            // 
+            // guna2DateTimePicker10
+            // 
+            this.guna2DateTimePicker10.BackColor = System.Drawing.Color.MistyRose;
+            this.guna2DateTimePicker10.CheckedState.Parent = this.guna2DateTimePicker10;
+            this.guna2DateTimePicker10.FillColor = System.Drawing.Color.MistyRose;
+            this.guna2DateTimePicker10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker10.HoverState.Parent = this.guna2DateTimePicker10;
+            this.guna2DateTimePicker10.Location = new System.Drawing.Point(218, 297);
+            this.guna2DateTimePicker10.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker10.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker10.Name = "guna2DateTimePicker10";
+            this.guna2DateTimePicker10.ShadowDecoration.Parent = this.guna2DateTimePicker10;
+            this.guna2DateTimePicker10.Size = new System.Drawing.Size(251, 36);
+            this.guna2DateTimePicker10.TabIndex = 15;
+            this.guna2DateTimePicker10.Value = new System.DateTime(2021, 7, 13, 14, 4, 23, 161);
+            // 
+            // guna2HtmlLabel5
+            // 
+            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(10, 243);
+            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(98, 21);
+            this.guna2HtmlLabel5.TabIndex = 14;
+            this.guna2HtmlLabel5.Text = "Date Borrowed";
+            // 
+            // guna2DateTimePicker9
+            // 
+            this.guna2DateTimePicker9.BackColor = System.Drawing.Color.MistyRose;
+            this.guna2DateTimePicker9.CheckedState.Parent = this.guna2DateTimePicker9;
+            this.guna2DateTimePicker9.FillColor = System.Drawing.Color.MistyRose;
+            this.guna2DateTimePicker9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker9.HoverState.Parent = this.guna2DateTimePicker9;
+            this.guna2DateTimePicker9.Location = new System.Drawing.Point(218, 243);
+            this.guna2DateTimePicker9.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker9.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker9.Name = "guna2DateTimePicker9";
+            this.guna2DateTimePicker9.ShadowDecoration.Parent = this.guna2DateTimePicker9;
+            this.guna2DateTimePicker9.Size = new System.Drawing.Size(251, 35);
+            this.guna2DateTimePicker9.TabIndex = 13;
+            this.guna2DateTimePicker9.Value = new System.DateTime(2021, 7, 13, 14, 4, 23, 161);
+            // 
+            // guna2TextBox32
+            // 
+            this.guna2TextBox32.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox32.DefaultText = "";
+            this.guna2TextBox32.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox32.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox32.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox32.DisabledState.Parent = this.guna2TextBox32;
+            this.guna2TextBox32.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox32.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox32.FocusedState.Parent = this.guna2TextBox32;
+            this.guna2TextBox32.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox32.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox32.HoverState.Parent = this.guna2TextBox32;
+            this.guna2TextBox32.Location = new System.Drawing.Point(218, 192);
+            this.guna2TextBox32.Name = "guna2TextBox32";
+            this.guna2TextBox32.PasswordChar = '\0';
+            this.guna2TextBox32.PlaceholderText = "";
+            this.guna2TextBox32.SelectedText = "";
+            this.guna2TextBox32.ShadowDecoration.Parent = this.guna2TextBox32;
+            this.guna2TextBox32.Size = new System.Drawing.Size(251, 36);
+            this.guna2TextBox32.TabIndex = 10;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(11, 140);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(109, 21);
+            this.guna2HtmlLabel6.TabIndex = 12;
+            this.guna2HtmlLabel6.Text = "Magazinne Name";
+            // 
+            // guna2TextBox33
+            // 
+            this.guna2TextBox33.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox33.DefaultText = "";
+            this.guna2TextBox33.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox33.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox33.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox33.DisabledState.Parent = this.guna2TextBox33;
+            this.guna2TextBox33.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox33.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox33.FocusedState.Parent = this.guna2TextBox33;
+            this.guna2TextBox33.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox33.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox33.HoverState.Parent = this.guna2TextBox33;
+            this.guna2TextBox33.Location = new System.Drawing.Point(218, 140);
+            this.guna2TextBox33.Name = "guna2TextBox33";
+            this.guna2TextBox33.PasswordChar = '\0';
+            this.guna2TextBox33.PlaceholderText = "";
+            this.guna2TextBox33.SelectedText = "";
+            this.guna2TextBox33.ShadowDecoration.Parent = this.guna2TextBox33;
+            this.guna2TextBox33.Size = new System.Drawing.Size(251, 36);
+            this.guna2TextBox33.TabIndex = 9;
+            // 
+            // guna2HtmlLabel7
+            // 
+            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(11, 194);
+            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(122, 21);
+            this.guna2HtmlLabel7.TabIndex = 11;
+            this.guna2HtmlLabel7.Text = "Magazinne Number";
+            // 
+            // BorrowMagazines
+            // 
+            this.BorrowMagazines.BackColor = System.Drawing.Color.White;
+            this.BorrowMagazines.Controls.Add(this.gridmagazines);
+            this.BorrowMagazines.Controls.Add(this.btnViewMagazines);
+            this.BorrowMagazines.Controls.Add(this.guna2HtmlLabel15);
+            this.BorrowMagazines.Controls.Add(this.guna2DateTimePicker12);
+            this.BorrowMagazines.Controls.Add(this.guna2HtmlLabel16);
+            this.BorrowMagazines.Controls.Add(this.guna2HtmlLabel17);
+            this.BorrowMagazines.Controls.Add(this.txtMagazineDescription);
+            this.BorrowMagazines.Controls.Add(this.txtMagazine);
+            this.BorrowMagazines.Controls.Add(this.btnMagazineSave);
+            this.BorrowMagazines.Controls.Add(this.btnMagazineReset);
+            this.BorrowMagazines.Controls.Add(this.panel10);
+            this.BorrowMagazines.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BorrowMagazines.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BorrowMagazines.Location = new System.Drawing.Point(0, 0);
+            this.BorrowMagazines.Name = "BorrowMagazines";
+            this.BorrowMagazines.Size = new System.Drawing.Size(1153, 664);
+            this.BorrowMagazines.TabIndex = 6;
+            this.BorrowMagazines.Paint += new System.Windows.Forms.PaintEventHandler(this.BorrowMagazines_Paint);
+            // 
+            // gridmagazines
+            // 
+            this.gridmagazines.BackgroundColor = System.Drawing.Color.Snow;
+            this.gridmagazines.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridmagazines.Location = new System.Drawing.Point(480, 56);
+            this.gridmagazines.Name = "gridmagazines";
+            this.gridmagazines.Size = new System.Drawing.Size(657, 315);
+            this.gridmagazines.TabIndex = 36;
+            // 
+            // btnViewMagazines
+            // 
+            this.btnViewMagazines.AutoRoundedCorners = true;
+            this.btnViewMagazines.BorderRadius = 17;
+            this.btnViewMagazines.CheckedState.Parent = this.btnViewMagazines;
+            this.btnViewMagazines.CustomImages.Parent = this.btnViewMagazines;
+            this.btnViewMagazines.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnViewMagazines.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnViewMagazines.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnViewMagazines.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnViewMagazines.DisabledState.Parent = this.btnViewMagazines;
+            this.btnViewMagazines.FillColor = System.Drawing.Color.LightBlue;
+            this.btnViewMagazines.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewMagazines.ForeColor = System.Drawing.Color.White;
+            this.btnViewMagazines.HoverState.Parent = this.btnViewMagazines;
+            this.btnViewMagazines.Location = new System.Drawing.Point(410, 421);
+            this.btnViewMagazines.Name = "btnViewMagazines";
+            this.btnViewMagazines.ShadowDecoration.Parent = this.btnViewMagazines;
+            this.btnViewMagazines.Size = new System.Drawing.Size(148, 36);
+            this.btnViewMagazines.TabIndex = 35;
+            this.btnViewMagazines.Text = "View Magazinnes";
+            this.btnViewMagazines.Click += new System.EventHandler(this.btnViewMagazines_Click);
+            // 
+            // guna2HtmlLabel15
+            // 
+            this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(12, 188);
+            this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(92, 21);
+            this.guna2HtmlLabel15.TabIndex = 34;
+            this.guna2HtmlLabel15.Text = "Date Received";
+            // 
+            // guna2DateTimePicker12
+            // 
+            this.guna2DateTimePicker12.CheckedState.Parent = this.guna2DateTimePicker12;
+            this.guna2DateTimePicker12.FillColor = System.Drawing.Color.MistyRose;
+            this.guna2DateTimePicker12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker12.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker12.HoverState.Parent = this.guna2DateTimePicker12;
+            this.guna2DateTimePicker12.Location = new System.Drawing.Point(162, 185);
+            this.guna2DateTimePicker12.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker12.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker12.Name = "guna2DateTimePicker12";
+            this.guna2DateTimePicker12.ShadowDecoration.Parent = this.guna2DateTimePicker12;
+            this.guna2DateTimePicker12.Size = new System.Drawing.Size(222, 34);
+            this.guna2DateTimePicker12.TabIndex = 33;
+            this.guna2DateTimePicker12.Value = new System.DateTime(2021, 7, 13, 14, 4, 23, 161);
+            // 
+            // guna2HtmlLabel16
+            // 
+            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel16.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(8, 82);
+            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
+            this.guna2HtmlLabel16.Size = new System.Drawing.Size(109, 21);
+            this.guna2HtmlLabel16.TabIndex = 32;
+            this.guna2HtmlLabel16.Text = "Magazinne Name";
+            // 
+            // guna2HtmlLabel17
+            // 
+            this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(8, 133);
+            this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
+            this.guna2HtmlLabel17.Size = new System.Drawing.Size(72, 21);
+            this.guna2HtmlLabel17.TabIndex = 31;
+            this.guna2HtmlLabel17.Text = "Description";
+            // 
+            // txtMagazineDescription
+            // 
+            this.txtMagazineDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMagazineDescription.DefaultText = "";
+            this.txtMagazineDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMagazineDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMagazineDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMagazineDescription.DisabledState.Parent = this.txtMagazineDescription;
+            this.txtMagazineDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMagazineDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMagazineDescription.FocusedState.Parent = this.txtMagazineDescription;
+            this.txtMagazineDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMagazineDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMagazineDescription.HoverState.Parent = this.txtMagazineDescription;
+            this.txtMagazineDescription.Location = new System.Drawing.Point(161, 127);
+            this.txtMagazineDescription.Name = "txtMagazineDescription";
+            this.txtMagazineDescription.PasswordChar = '\0';
+            this.txtMagazineDescription.PlaceholderText = "Description";
+            this.txtMagazineDescription.SelectedText = "";
+            this.txtMagazineDescription.ShadowDecoration.Parent = this.txtMagazineDescription;
+            this.txtMagazineDescription.Size = new System.Drawing.Size(223, 36);
+            this.txtMagazineDescription.TabIndex = 30;
+            // 
+            // txtMagazine
+            // 
+            this.txtMagazine.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMagazine.DefaultText = "";
+            this.txtMagazine.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMagazine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMagazine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMagazine.DisabledState.Parent = this.txtMagazine;
+            this.txtMagazine.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMagazine.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMagazine.FocusedState.Parent = this.txtMagazine;
+            this.txtMagazine.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMagazine.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMagazine.HoverState.Parent = this.txtMagazine;
+            this.txtMagazine.Location = new System.Drawing.Point(161, 77);
+            this.txtMagazine.Name = "txtMagazine";
+            this.txtMagazine.PasswordChar = '\0';
+            this.txtMagazine.PlaceholderText = "Magazine Name";
+            this.txtMagazine.SelectedText = "";
+            this.txtMagazine.ShadowDecoration.Parent = this.txtMagazine;
+            this.txtMagazine.Size = new System.Drawing.Size(223, 36);
+            this.txtMagazine.TabIndex = 29;
+            // 
+            // btnMagazineSave
+            // 
+            this.btnMagazineSave.AutoRoundedCorners = true;
+            this.btnMagazineSave.BorderRadius = 17;
+            this.btnMagazineSave.CheckedState.Parent = this.btnMagazineSave;
+            this.btnMagazineSave.CustomImages.Parent = this.btnMagazineSave;
+            this.btnMagazineSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMagazineSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMagazineSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMagazineSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMagazineSave.DisabledState.Parent = this.btnMagazineSave;
+            this.btnMagazineSave.FillColor = System.Drawing.Color.LightBlue;
+            this.btnMagazineSave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMagazineSave.ForeColor = System.Drawing.Color.White;
+            this.btnMagazineSave.HoverState.Parent = this.btnMagazineSave;
+            this.btnMagazineSave.Location = new System.Drawing.Point(196, 421);
+            this.btnMagazineSave.Name = "btnMagazineSave";
+            this.btnMagazineSave.ShadowDecoration.Parent = this.btnMagazineSave;
+            this.btnMagazineSave.Size = new System.Drawing.Size(176, 36);
+            this.btnMagazineSave.TabIndex = 28;
+            this.btnMagazineSave.Text = "Save";
+            this.btnMagazineSave.Click += new System.EventHandler(this.btnMagazineSave_Click);
+            // 
+            // btnMagazineReset
+            // 
+            this.btnMagazineReset.AutoRoundedCorners = true;
+            this.btnMagazineReset.BorderRadius = 17;
+            this.btnMagazineReset.CheckedState.Parent = this.btnMagazineReset;
+            this.btnMagazineReset.CustomImages.Parent = this.btnMagazineReset;
+            this.btnMagazineReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMagazineReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMagazineReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMagazineReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMagazineReset.DisabledState.Parent = this.btnMagazineReset;
+            this.btnMagazineReset.FillColor = System.Drawing.Color.LightBlue;
+            this.btnMagazineReset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMagazineReset.ForeColor = System.Drawing.Color.White;
+            this.btnMagazineReset.HoverState.Parent = this.btnMagazineReset;
+            this.btnMagazineReset.Location = new System.Drawing.Point(12, 421);
+            this.btnMagazineReset.Name = "btnMagazineReset";
+            this.btnMagazineReset.ShadowDecoration.Parent = this.btnMagazineReset;
+            this.btnMagazineReset.Size = new System.Drawing.Size(165, 36);
+            this.btnMagazineReset.TabIndex = 27;
+            this.btnMagazineReset.Text = "Reset";
+            this.btnMagazineReset.Click += new System.EventHandler(this.btnMagazineReset_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel10.Controls.Add(this.guna2HtmlLabel18);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1153, 49);
+            this.panel10.TabIndex = 25;
+            // 
+            // guna2HtmlLabel18
+            // 
+            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(390, 10);
+            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
+            this.guna2HtmlLabel18.Size = new System.Drawing.Size(131, 21);
+            this.guna2HtmlLabel18.TabIndex = 0;
+            this.guna2HtmlLabel18.Text = "NEW MAGAZINE";
+            this.guna2HtmlLabel18.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // main
             // 
             this.main.Controls.Add(this.panelMedicines);
@@ -3250,262 +3506,6 @@
             this.button25.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button25.UseVisualStyleBackColor = false;
             // 
-            // RemoveShelves
-            // 
-            this.RemoveShelves.BackColor = System.Drawing.Color.White;
-            this.RemoveShelves.Controls.Add(this.txtShelfLocation);
-            this.RemoveShelves.Controls.Add(this.txtShelfName);
-            this.RemoveShelves.Controls.Add(this.txtShelfNumber);
-            this.RemoveShelves.Controls.Add(this.btnSearchShelf);
-            this.RemoveShelves.Controls.Add(this.txtShelfSearch);
-            this.RemoveShelves.Controls.Add(this.panel6);
-            this.RemoveShelves.Controls.Add(this.btnShelfRemove);
-            this.RemoveShelves.Controls.Add(this.btnShelfReset);
-            this.RemoveShelves.Controls.Add(this.label3);
-            this.RemoveShelves.Controls.Add(this.txtShelfDescription);
-            this.RemoveShelves.Controls.Add(this.label41);
-            this.RemoveShelves.Controls.Add(this.label45);
-            this.RemoveShelves.Controls.Add(this.label46);
-            this.RemoveShelves.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RemoveShelves.Location = new System.Drawing.Point(0, 0);
-            this.RemoveShelves.Name = "RemoveShelves";
-            this.RemoveShelves.Size = new System.Drawing.Size(1153, 664);
-            this.RemoveShelves.TabIndex = 4;
-            this.RemoveShelves.Paint += new System.Windows.Forms.PaintEventHandler(this.RemoveShelves_Paint);
-            // 
-            // txtShelfLocation
-            // 
-            this.txtShelfLocation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtShelfLocation.DefaultText = "";
-            this.txtShelfLocation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtShelfLocation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtShelfLocation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfLocation.DisabledState.Parent = this.txtShelfLocation;
-            this.txtShelfLocation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfLocation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfLocation.FocusedState.Parent = this.txtShelfLocation;
-            this.txtShelfLocation.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtShelfLocation.ForeColor = System.Drawing.Color.Blue;
-            this.txtShelfLocation.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfLocation.HoverState.Parent = this.txtShelfLocation;
-            this.txtShelfLocation.Location = new System.Drawing.Point(708, 178);
-            this.txtShelfLocation.Name = "txtShelfLocation";
-            this.txtShelfLocation.PasswordChar = '\0';
-            this.txtShelfLocation.PlaceholderText = "Location";
-            this.txtShelfLocation.SelectedText = "";
-            this.txtShelfLocation.ShadowDecoration.Parent = this.txtShelfLocation;
-            this.txtShelfLocation.Size = new System.Drawing.Size(200, 36);
-            this.txtShelfLocation.TabIndex = 54;
-            // 
-            // txtShelfName
-            // 
-            this.txtShelfName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtShelfName.DefaultText = "";
-            this.txtShelfName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtShelfName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtShelfName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfName.DisabledState.Parent = this.txtShelfName;
-            this.txtShelfName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfName.FocusedState.Parent = this.txtShelfName;
-            this.txtShelfName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtShelfName.ForeColor = System.Drawing.Color.Blue;
-            this.txtShelfName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfName.HoverState.Parent = this.txtShelfName;
-            this.txtShelfName.Location = new System.Drawing.Point(250, 181);
-            this.txtShelfName.Name = "txtShelfName";
-            this.txtShelfName.PasswordChar = '\0';
-            this.txtShelfName.PlaceholderText = "Shelf Name";
-            this.txtShelfName.SelectedText = "";
-            this.txtShelfName.ShadowDecoration.Parent = this.txtShelfName;
-            this.txtShelfName.Size = new System.Drawing.Size(200, 36);
-            this.txtShelfName.TabIndex = 53;
-            // 
-            // txtShelfNumber
-            // 
-            this.txtShelfNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtShelfNumber.DefaultText = "";
-            this.txtShelfNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtShelfNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtShelfNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfNumber.DisabledState.Parent = this.txtShelfNumber;
-            this.txtShelfNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfNumber.FocusedState.Parent = this.txtShelfNumber;
-            this.txtShelfNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtShelfNumber.ForeColor = System.Drawing.Color.Blue;
-            this.txtShelfNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfNumber.HoverState.Parent = this.txtShelfNumber;
-            this.txtShelfNumber.Location = new System.Drawing.Point(250, 116);
-            this.txtShelfNumber.Name = "txtShelfNumber";
-            this.txtShelfNumber.PasswordChar = '\0';
-            this.txtShelfNumber.PlaceholderText = "Shelf Number";
-            this.txtShelfNumber.SelectedText = "";
-            this.txtShelfNumber.ShadowDecoration.Parent = this.txtShelfNumber;
-            this.txtShelfNumber.Size = new System.Drawing.Size(200, 36);
-            this.txtShelfNumber.TabIndex = 52;
-            // 
-            // btnSearchShelf
-            // 
-            this.btnSearchShelf.BorderRadius = 20;
-            this.btnSearchShelf.CheckedState.Parent = this.btnSearchShelf;
-            this.btnSearchShelf.CustomImages.Parent = this.btnSearchShelf;
-            this.btnSearchShelf.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchShelf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchShelf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchShelf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchShelf.DisabledState.Parent = this.btnSearchShelf;
-            this.btnSearchShelf.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSearchShelf.ForeColor = System.Drawing.Color.White;
-            this.btnSearchShelf.HoverState.Parent = this.btnSearchShelf;
-            this.btnSearchShelf.Location = new System.Drawing.Point(261, 65);
-            this.btnSearchShelf.Name = "btnSearchShelf";
-            this.btnSearchShelf.ShadowDecoration.Parent = this.btnSearchShelf;
-            this.btnSearchShelf.Size = new System.Drawing.Size(180, 41);
-            this.btnSearchShelf.TabIndex = 51;
-            this.btnSearchShelf.Text = "Search Shelf";
-            this.btnSearchShelf.Click += new System.EventHandler(this.btnSearchShelf_Click);
-            // 
-            // txtShelfSearch
-            // 
-            this.txtShelfSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtShelfSearch.DefaultText = "";
-            this.txtShelfSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtShelfSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtShelfSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfSearch.DisabledState.Parent = this.txtShelfSearch;
-            this.txtShelfSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtShelfSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfSearch.FocusedState.Parent = this.txtShelfSearch;
-            this.txtShelfSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtShelfSearch.ForeColor = System.Drawing.Color.Blue;
-            this.txtShelfSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtShelfSearch.HoverState.Parent = this.txtShelfSearch;
-            this.txtShelfSearch.Location = new System.Drawing.Point(28, 70);
-            this.txtShelfSearch.Name = "txtShelfSearch";
-            this.txtShelfSearch.PasswordChar = '\0';
-            this.txtShelfSearch.PlaceholderText = "Search";
-            this.txtShelfSearch.SelectedText = "";
-            this.txtShelfSearch.ShadowDecoration.Parent = this.txtShelfSearch;
-            this.txtShelfSearch.Size = new System.Drawing.Size(200, 36);
-            this.txtShelfSearch.TabIndex = 50;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Controls.Add(this.guna2HtmlLabel9);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1153, 49);
-            this.panel6.TabIndex = 49;
-            // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(416, 18);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(128, 21);
-            this.guna2HtmlLabel9.TabIndex = 0;
-            this.guna2HtmlLabel9.Text = "REMOVE SHELF";
-            // 
-            // btnShelfRemove
-            // 
-            this.btnShelfRemove.AutoRoundedCorners = true;
-            this.btnShelfRemove.BorderRadius = 16;
-            this.btnShelfRemove.CheckedState.Parent = this.btnShelfRemove;
-            this.btnShelfRemove.CustomImages.Parent = this.btnShelfRemove;
-            this.btnShelfRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnShelfRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnShelfRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnShelfRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnShelfRemove.DisabledState.Parent = this.btnShelfRemove;
-            this.btnShelfRemove.FillColor = System.Drawing.Color.Red;
-            this.btnShelfRemove.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnShelfRemove.ForeColor = System.Drawing.Color.White;
-            this.btnShelfRemove.HoverState.Parent = this.btnShelfRemove;
-            this.btnShelfRemove.Location = new System.Drawing.Point(545, 292);
-            this.btnShelfRemove.Name = "btnShelfRemove";
-            this.btnShelfRemove.ShadowDecoration.Parent = this.btnShelfRemove;
-            this.btnShelfRemove.Size = new System.Drawing.Size(115, 35);
-            this.btnShelfRemove.TabIndex = 47;
-            this.btnShelfRemove.Text = "Remove";
-            this.btnShelfRemove.Click += new System.EventHandler(this.btnShelfRemove_Click);
-            // 
-            // btnShelfReset
-            // 
-            this.btnShelfReset.AutoRoundedCorners = true;
-            this.btnShelfReset.BorderRadius = 16;
-            this.btnShelfReset.CheckedState.Parent = this.btnShelfReset;
-            this.btnShelfReset.CustomImages.Parent = this.btnShelfReset;
-            this.btnShelfReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnShelfReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnShelfReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnShelfReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnShelfReset.DisabledState.Parent = this.btnShelfReset;
-            this.btnShelfReset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnShelfReset.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnShelfReset.ForeColor = System.Drawing.Color.White;
-            this.btnShelfReset.HoverState.Parent = this.btnShelfReset;
-            this.btnShelfReset.Location = new System.Drawing.Point(302, 292);
-            this.btnShelfReset.Name = "btnShelfReset";
-            this.btnShelfReset.ShadowDecoration.Parent = this.btnShelfReset;
-            this.btnShelfReset.Size = new System.Drawing.Size(115, 35);
-            this.btnShelfReset.TabIndex = 46;
-            this.btnShelfReset.Text = "Reset";
-            this.btnShelfReset.Click += new System.EventHandler(this.btnShelfReset_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(507, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 17);
-            this.label3.TabIndex = 42;
-            this.label3.Text = "Shelf Location";
-            // 
-            // txtShelfDescription
-            // 
-            this.txtShelfDescription.ForeColor = System.Drawing.Color.Blue;
-            this.txtShelfDescription.Location = new System.Drawing.Point(708, 92);
-            this.txtShelfDescription.Name = "txtShelfDescription";
-            this.txtShelfDescription.Size = new System.Drawing.Size(200, 54);
-            this.txtShelfDescription.TabIndex = 41;
-            this.txtShelfDescription.Text = "";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(512, 111);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(74, 17);
-            this.label41.TabIndex = 35;
-            this.label41.Text = "Description";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(57, 185);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(75, 17);
-            this.label45.TabIndex = 34;
-            this.label45.Text = "Shelf Name";
-            this.label45.Click += new System.EventHandler(this.label45_Click);
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(54, 123);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(88, 17);
-            this.label46.TabIndex = 33;
-            this.label46.Text = "Shelf Number";
-            // 
             // Shelves
             // 
             this.Shelves.BackColor = System.Drawing.Color.White;
@@ -3812,16 +3812,10 @@
             this.panelDropdownBooks.ResumeLayout(false);
             this.panelDropdownMagazines.ResumeLayout(false);
             this.MainDashboard.ResumeLayout(false);
-            this.magazines.ResumeLayout(false);
-            this.magazines.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.BorrowMagazines.ResumeLayout(false);
-            this.BorrowMagazines.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridmagazines)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.RemoveShelves.ResumeLayout(false);
+            this.RemoveShelves.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.Books.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.New_Books.ResumeLayout(false);
@@ -3842,6 +3836,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.LteachersGrid)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.magazines.ResumeLayout(false);
+            this.magazines.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.BorrowMagazines.ResumeLayout(false);
+            this.BorrowMagazines.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridmagazines)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.main.ResumeLayout(false);
             this.main.PerformLayout();
             this.panelMedicines.ResumeLayout(false);
@@ -3852,10 +3856,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.RemoveShelves.ResumeLayout(false);
-            this.RemoveShelves.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.Shelves.ResumeLayout(false);
             this.Shelves.PerformLayout();
             this.panel7.ResumeLayout(false);

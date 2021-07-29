@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.gridhostels = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.rooms = new System.Windows.Forms.Label();
             this.comboHostelCode = new Guna.UI2.WinForms.Guna2ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.currentstatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txtComboStudname = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,13 +54,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.gridhostels = new System.Windows.Forms.DataGridView();
-            this.currentstatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridhostels)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridhostels)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -83,9 +83,19 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1203, 563);
+            this.guna2Panel1.Size = new System.Drawing.Size(1202, 563);
             this.guna2Panel1.TabIndex = 4;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // gridhostels
+            // 
+            this.gridhostels.BackgroundColor = System.Drawing.Color.White;
+            this.gridhostels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridhostels.Location = new System.Drawing.Point(610, 98);
+            this.gridhostels.Name = "gridhostels";
+            this.gridhostels.Size = new System.Drawing.Size(569, 385);
+            this.gridhostels.TabIndex = 29;
+            this.gridhostels.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridhostels_CellContentClick);
             // 
             // label9
             // 
@@ -147,6 +157,39 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Assign Hostel ";
+            // 
+            // currentstatus
+            // 
+            this.currentstatus.BackColor = System.Drawing.Color.Transparent;
+            this.currentstatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.currentstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.currentstatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.currentstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.currentstatus.FocusedState.Parent = this.currentstatus;
+            this.currentstatus.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.currentstatus.ForeColor = System.Drawing.Color.DarkOrange;
+            this.currentstatus.HoverState.Parent = this.currentstatus;
+            this.currentstatus.ItemHeight = 30;
+            this.currentstatus.Items.AddRange(new object[] {
+            "ASSIGNED",
+            "CLEARED"});
+            this.currentstatus.ItemsAppearance.Parent = this.currentstatus;
+            this.currentstatus.Location = new System.Drawing.Point(187, 191);
+            this.currentstatus.Name = "currentstatus";
+            this.currentstatus.ShadowDecoration.Parent = this.currentstatus;
+            this.currentstatus.Size = new System.Drawing.Size(212, 36);
+            this.currentstatus.TabIndex = 43;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(6, 191);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 24);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Status";
             // 
             // txtComboStudname
             // 
@@ -417,7 +460,7 @@
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1203, 57);
+            this.panel1.Size = new System.Drawing.Size(1202, 57);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -430,54 +473,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Assign Hostel";
             // 
-            // gridhostels
-            // 
-            this.gridhostels.BackgroundColor = System.Drawing.Color.White;
-            this.gridhostels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridhostels.Location = new System.Drawing.Point(610, 98);
-            this.gridhostels.Name = "gridhostels";
-            this.gridhostels.Size = new System.Drawing.Size(569, 385);
-            this.gridhostels.TabIndex = 29;
-            this.gridhostels.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridhostels_CellContentClick);
-            // 
-            // currentstatus
-            // 
-            this.currentstatus.BackColor = System.Drawing.Color.Transparent;
-            this.currentstatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.currentstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.currentstatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.currentstatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.currentstatus.FocusedState.Parent = this.currentstatus;
-            this.currentstatus.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.currentstatus.ForeColor = System.Drawing.Color.DarkOrange;
-            this.currentstatus.HoverState.Parent = this.currentstatus;
-            this.currentstatus.ItemHeight = 30;
-            this.currentstatus.Items.AddRange(new object[] {
-            "ASSIGNED",
-            "CLEARED"});
-            this.currentstatus.ItemsAppearance.Parent = this.currentstatus;
-            this.currentstatus.Location = new System.Drawing.Point(187, 191);
-            this.currentstatus.Name = "currentstatus";
-            this.currentstatus.ShadowDecoration.Parent = this.currentstatus;
-            this.currentstatus.Size = new System.Drawing.Size(212, 36);
-            this.currentstatus.TabIndex = 43;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(6, 191);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 24);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Status";
-            // 
             // tab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 563);
+            this.ClientSize = new System.Drawing.Size(1202, 563);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "tab";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -485,11 +485,11 @@
             this.Load += new System.EventHandler(this.AssignHostel_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridhostels)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridhostels)).EndInit();
             this.ResumeLayout(false);
 
         }

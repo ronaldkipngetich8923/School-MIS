@@ -182,5 +182,14 @@ namespace Shule
             richTextBoxComplain.Clear();
             richTextBox2Medication.Clear(); 
         }
+
+        private void guna2Button1ViewMedicInfo_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM Dispensary ";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+            DataTable dt = new DataTable();
+            sqlDataAdapter.Fill(dt);
+            MedicDispensary.DataSource = dt;
+        }
     }
 }

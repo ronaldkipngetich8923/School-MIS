@@ -81,8 +81,16 @@ namespace Shule
 
         private void guna2Button9_Click(object sender, EventArgs e)
         {
-            AddFeeStructure afs = new AddFeeStructure();
-            afs.Show();
+            try
+            {
+                AddFeeStructure afs = new AddFeeStructure();
+                afs.Show();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+          
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -444,6 +452,11 @@ namespace Shule
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox18_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }
