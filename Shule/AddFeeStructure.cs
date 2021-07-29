@@ -22,8 +22,127 @@ namespace Shule
         public AddFeeStructure()
         {
             InitializeComponent();
+            ComboFillYear();
+            ComboFillTerm();
+            ComboFillStream();
+            ComboFillForm();
+            ComboFillVotes();
         }
-     
+
+        public void ComboFillYear()
+        {
+            string cmdStr = " SELECT *  FROM Year";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
+            try
+            {
+                con.Open();
+
+               SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                  //  comboBoxClass.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void ComboFillTerm()
+        {
+            string cmdStr = " SELECT *  FROM Year";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
+            try
+            {
+                con.Open();
+
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                    //  comboBoxClass.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void ComboFillForm()
+        {
+            string cmdStr = " SELECT *  FROM Year";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
+            try
+            {
+                con.Open();
+
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                    //  comboBoxClass.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void ComboFillStream()
+        {
+            string cmdStr = " SELECT *  FROM Year";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
+            try
+            {
+                con.Open();
+
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                    //  comboBoxClass.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void ComboFillVotes()
+        {
+            string cmdStr = " SELECT *  FROM Year";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
+            try
+            {
+                con.Open();
+
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Year"].ToString();
+
+                    //  comboBoxClass.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void AddFeeStructure_Load(object sender, EventArgs e)
         {
             //this.WindowState = FormWindowState.Maximized;
@@ -154,6 +273,11 @@ namespace Shule
             this.Hide();
             Fees_Structure fs = new Fees_Structure();
             fs.Show();
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

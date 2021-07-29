@@ -588,7 +588,7 @@ namespace Shule
                 da.Fill(ds);
                 ds.Tables.Add(dt);
                // ds.WriteXmlSchema("Fees_Statement.xml");
-                Fees_Statement fs = new Fees_Statement();
+                Fee_Statement fs = new Fee_Statement();
                 //Fees_Statement
                 fs.SetDataSource(ds);
                 crystalReportViewer1.ReportSource = fs;

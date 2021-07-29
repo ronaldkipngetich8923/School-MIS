@@ -37,7 +37,7 @@
             this.guna2Button18 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Fees_Statement1 = new Shule.Fees_Statement();
+            this.Fee_Statement1 = new Shule.Fee_Statement();
             this.feesreceiptpanel = new Guna.UI2.WinForms.Guna2Panel();
             this.gridReceipts = new System.Windows.Forms.DataGridView();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -2117,7 +2117,6 @@
         private System.Windows.Forms.Panel reports;
         private Guna.UI2.WinForms.Guna2Button printReceipt;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Fees_Statement Fees_Statement1;
         private Guna.UI2.WinForms.Guna2Button guna2Button18;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.LinkLabel linkLabel11;

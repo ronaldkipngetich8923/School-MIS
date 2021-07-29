@@ -6799,8 +6799,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.SetupParameter);
             this.Controls.Add(this.AdmissionPanel);
+            this.Controls.Add(this.SetupParameter);
             this.Controls.Add(this.Transport);
             this.Controls.Add(this.Dispensary);
             this.Controls.Add(this.Hostel);

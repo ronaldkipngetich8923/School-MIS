@@ -192,12 +192,6 @@
     <Compile Include="AttendancePortal.Designer.cs">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fees_Statement.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Fees_Statement.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Fees_Structure.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,10 +371,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AttendancePortal.resx">
       <DependentUpon>AttendancePortal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fees_Statement.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Fees_Statement.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Fees_Structure.resx">
       <DependentUpon>Fees_Structure.cs</DependentUpon>

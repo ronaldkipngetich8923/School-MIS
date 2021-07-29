@@ -54,6 +54,7 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ShadowPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -70,6 +71,7 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1197, 100);
             this.guna2ShadowPanel1.TabIndex = 0;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // label4
             // 
@@ -84,7 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(71, 177);
+            this.label1.Location = new System.Drawing.Point(71, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 13);
             this.label1.TabIndex = 1;
@@ -108,7 +110,7 @@
             "Form 3",
             "Form 4"});
             this.guna2ComboBoxForm.ItemsAppearance.Parent = this.guna2ComboBoxForm;
-            this.guna2ComboBoxForm.Location = new System.Drawing.Point(156, 165);
+            this.guna2ComboBoxForm.Location = new System.Drawing.Point(156, 210);
             this.guna2ComboBoxForm.Name = "guna2ComboBoxForm";
             this.guna2ComboBoxForm.ShadowDecoration.Parent = this.guna2ComboBoxForm;
             this.guna2ComboBoxForm.Size = new System.Drawing.Size(140, 36);
@@ -130,7 +132,7 @@
             "East",
             "West"});
             this.guna2ComboBoxStream.ItemsAppearance.Parent = this.guna2ComboBoxStream;
-            this.guna2ComboBoxStream.Location = new System.Drawing.Point(156, 213);
+            this.guna2ComboBoxStream.Location = new System.Drawing.Point(156, 258);
             this.guna2ComboBoxStream.Name = "guna2ComboBoxStream";
             this.guna2ComboBoxStream.ShadowDecoration.Parent = this.guna2ComboBoxStream;
             this.guna2ComboBoxStream.Size = new System.Drawing.Size(140, 36);
@@ -139,7 +141,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 227);
+            this.label2.Location = new System.Drawing.Point(71, 272);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 3;
@@ -245,7 +247,7 @@
             "Term 2",
             "Term 3"});
             this.guna2ComboBoxTerm.ItemsAppearance.Parent = this.guna2ComboBoxTerm;
-            this.guna2ComboBoxTerm.Location = new System.Drawing.Point(156, 270);
+            this.guna2ComboBoxTerm.Location = new System.Drawing.Point(156, 315);
             this.guna2ComboBoxTerm.Name = "guna2ComboBoxTerm";
             this.guna2ComboBoxTerm.ShadowDecoration.Parent = this.guna2ComboBoxTerm;
             this.guna2ComboBoxTerm.Size = new System.Drawing.Size(140, 36);
@@ -254,7 +256,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(71, 282);
+            this.label15.Location = new System.Drawing.Point(71, 327);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(31, 13);
             this.label15.TabIndex = 29;
@@ -398,11 +400,36 @@
             this.checkBox2.Text = "Increment";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Form 1",
+            "Form 2",
+            "Form 3",
+            "Form 4"});
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(156, 154);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
+            this.guna2ComboBox1.TabIndex = 41;
+            // 
             // AddFeeStructure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1197, 486);
+            this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.guna2Button4);
@@ -467,5 +494,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
     }
 }
