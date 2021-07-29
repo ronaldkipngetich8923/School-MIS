@@ -13,12 +13,9 @@ namespace Shule
 {
     public partial class AddHostel : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
-        SqlCommand cmd;
-        SqlConnection sqlConnection;
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+      
         SqlDataReader sqlDataReader;
-        SqlDataAdapter sqlDataAdapter;
-        DataSet ds;
 
         public AddHostel()
         {
@@ -28,12 +25,13 @@ namespace Shule
         }
         public void StudentFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
-            string cmdStr = " SELECT *  FROM StudentMaster";
-            SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            //sqlConnection = new SqlConnection(connStr);
+           
             try
             {
+                string cmdStr = " SELECT *  FROM StudentMaster";
+                SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
 
                 sqlConnection.Open();
 
@@ -52,15 +50,16 @@ namespace Shule
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+               // sqlConnection.Close();
             }
-            sqlConnection.Close();
+           
         }
 
 
         public void TeacherFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM TeachersTable";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -83,7 +82,8 @@ namespace Shule
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }sqlConnection.Close();
+            }
+            //sqlConnection.Close();
         }
 
 
@@ -176,15 +176,21 @@ namespace Shule
 
         private void guna2Button1ViewHostels_Click(object sender, EventArgs e)
         {
-
-           
-            sqlConnection.Open();
-            string query = "SELECT * FROM Hostels";
-            SqlDataAdapter d = new SqlDataAdapter(query, sqlConnection);
-            DataTable t = new DataTable();
-           d.Fill(t);
-            guna2DataGridView1Hostels.DataSource = t;
-            sqlConnection.Close();
+            try
+            {
+                sqlConnection.Open();
+                string query = "SELECT * FROM Hostels";
+                SqlDataAdapter d = new SqlDataAdapter(query, sqlConnection);
+                DataTable t = new DataTable();
+                d.Fill(t);
+                guna2DataGridView1Hostels.DataSource = t;
+                sqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            
         }
     }
 }

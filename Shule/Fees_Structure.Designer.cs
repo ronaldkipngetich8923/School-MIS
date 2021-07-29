@@ -45,17 +45,19 @@
             this.labelFID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.Student_Promotion = new System.Windows.Forms.Panel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(620, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(559, 57);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(348, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(566, 315);
             this.dataGridView1.TabIndex = 0;
             // 
             // guna2TextBoxTotalFee
@@ -73,14 +75,14 @@
             this.guna2TextBoxTotalFee.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBoxTotalFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxTotalFee.HoverState.Parent = this.guna2TextBoxTotalFee;
-            this.guna2TextBoxTotalFee.Location = new System.Drawing.Point(447, 78);
+            this.guna2TextBoxTotalFee.Location = new System.Drawing.Point(191, 208);
             this.guna2TextBoxTotalFee.Name = "guna2TextBoxTotalFee";
             this.guna2TextBoxTotalFee.PasswordChar = '\0';
             this.guna2TextBoxTotalFee.PlaceholderText = "";
             this.guna2TextBoxTotalFee.ReadOnly = true;
             this.guna2TextBoxTotalFee.SelectedText = "";
             this.guna2TextBoxTotalFee.ShadowDecoration.Parent = this.guna2TextBoxTotalFee;
-            this.guna2TextBoxTotalFee.Size = new System.Drawing.Size(121, 36);
+            this.guna2TextBoxTotalFee.Size = new System.Drawing.Size(155, 36);
             this.guna2TextBoxTotalFee.TabIndex = 1;
             // 
             // guna2ComboBoxClass
@@ -95,13 +97,8 @@
             this.guna2ComboBoxClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBoxClass.HoverState.Parent = this.guna2ComboBoxClass;
             this.guna2ComboBoxClass.ItemHeight = 30;
-            this.guna2ComboBoxClass.Items.AddRange(new object[] {
-            "Form 1",
-            "Form 2",
-            "Form 3",
-            "Form 4"});
             this.guna2ComboBoxClass.ItemsAppearance.Parent = this.guna2ComboBoxClass;
-            this.guna2ComboBoxClass.Location = new System.Drawing.Point(62, 78);
+            this.guna2ComboBoxClass.Location = new System.Drawing.Point(79, 78);
             this.guna2ComboBoxClass.Name = "guna2ComboBoxClass";
             this.guna2ComboBoxClass.ShadowDecoration.Parent = this.guna2ComboBoxClass;
             this.guna2ComboBoxClass.Size = new System.Drawing.Size(97, 36);
@@ -119,7 +116,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(407, 145);
+            this.guna2Button1.Location = new System.Drawing.Point(364, 78);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(107, 36);
@@ -139,7 +136,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(191, 294);
+            this.guna2Button2.Location = new System.Drawing.Point(207, 357);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(118, 36);
@@ -159,12 +156,8 @@
             this.guna2ComboBoxStream.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBoxStream.HoverState.Parent = this.guna2ComboBoxStream;
             this.guna2ComboBoxStream.ItemHeight = 30;
-            this.guna2ComboBoxStream.Items.AddRange(new object[] {
-            "East",
-            "West",
-            "North"});
             this.guna2ComboBoxStream.ItemsAppearance.Parent = this.guna2ComboBoxStream;
-            this.guna2ComboBoxStream.Location = new System.Drawing.Point(233, 78);
+            this.guna2ComboBoxStream.Location = new System.Drawing.Point(254, 78);
             this.guna2ComboBoxStream.Name = "guna2ComboBoxStream";
             this.guna2ComboBoxStream.ShadowDecoration.Parent = this.guna2ComboBoxStream;
             this.guna2ComboBoxStream.Size = new System.Drawing.Size(92, 36);
@@ -182,13 +175,8 @@
             this.guna2ComboBoxYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBoxYear.HoverState.Parent = this.guna2ComboBoxYear;
             this.guna2ComboBoxYear.ItemHeight = 30;
-            this.guna2ComboBoxYear.Items.AddRange(new object[] {
-            "2021",
-            "2022",
-            "2023",
-            "2024"});
             this.guna2ComboBoxYear.ItemsAppearance.Parent = this.guna2ComboBoxYear;
-            this.guna2ComboBoxYear.Location = new System.Drawing.Point(59, 145);
+            this.guna2ComboBoxYear.Location = new System.Drawing.Point(81, 145);
             this.guna2ComboBoxYear.Name = "guna2ComboBoxYear";
             this.guna2ComboBoxYear.ShadowDecoration.Parent = this.guna2ComboBoxYear;
             this.guna2ComboBoxYear.Size = new System.Drawing.Size(95, 36);
@@ -206,12 +194,8 @@
             this.guna2ComboBoxTerm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBoxTerm.HoverState.Parent = this.guna2ComboBoxTerm;
             this.guna2ComboBoxTerm.ItemHeight = 30;
-            this.guna2ComboBoxTerm.Items.AddRange(new object[] {
-            "Term 1",
-            "Term 2",
-            "Term 3"});
             this.guna2ComboBoxTerm.ItemsAppearance.Parent = this.guna2ComboBoxTerm;
-            this.guna2ComboBoxTerm.Location = new System.Drawing.Point(224, 145);
+            this.guna2ComboBoxTerm.Location = new System.Drawing.Point(245, 145);
             this.guna2ComboBoxTerm.Name = "guna2ComboBoxTerm";
             this.guna2ComboBoxTerm.ShadowDecoration.Parent = this.guna2ComboBoxTerm;
             this.guna2ComboBoxTerm.Size = new System.Drawing.Size(101, 36);
@@ -220,61 +204,67 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(28, 89);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(12, 88);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(28, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(53, 26);
             this.guna2HtmlLabel1.TabIndex = 8;
             this.guna2HtmlLabel1.Text = "Class";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(191, 154);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(27, 15);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(42, 20);
             this.guna2HtmlLabel2.TabIndex = 9;
             this.guna2HtmlLabel2.Text = "Term";
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(28, 154);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(12, 154);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(25, 15);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(37, 20);
             this.guna2HtmlLabel3.TabIndex = 10;
             this.guna2HtmlLabel3.Text = "Year";
             // 
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(191, 89);
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(191, 94);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(36, 15);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(57, 20);
             this.guna2HtmlLabel4.TabIndex = 11;
             this.guna2HtmlLabel4.Text = "Stream";
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(358, 89);
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 224);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(83, 15);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(134, 20);
             this.guna2HtmlLabel5.TabIndex = 12;
             this.guna2HtmlLabel5.Text = "Total Fees  (Ksh.)";
             // 
             // labelFIDL
             // 
             this.labelFIDL.BackColor = System.Drawing.Color.Transparent;
-            this.labelFIDL.Location = new System.Drawing.Point(28, 224);
+            this.labelFIDL.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFIDL.Location = new System.Drawing.Point(12, 288);
             this.labelFIDL.Name = "labelFIDL";
-            this.labelFIDL.Size = new System.Drawing.Size(81, 15);
+            this.labelFIDL.Size = new System.Drawing.Size(126, 20);
             this.labelFIDL.TabIndex = 13;
             this.labelFIDL.Text = "Fee Structure ID";
             // 
             // labelFID
             // 
             this.labelFID.BackColor = System.Drawing.Color.Transparent;
-            this.labelFID.Location = new System.Drawing.Point(191, 224);
+            this.labelFID.Location = new System.Drawing.Point(164, 288);
             this.labelFID.Name = "labelFID";
             this.labelFID.Size = new System.Drawing.Size(81, 15);
             this.labelFID.TabIndex = 14;
@@ -292,10 +282,10 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(461, 294);
+            this.guna2Button3.Location = new System.Drawing.Point(386, 357);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(71, 36);
+            this.guna2Button3.Size = new System.Drawing.Size(85, 36);
             this.guna2Button3.TabIndex = 15;
             this.guna2Button3.Text = "Exit";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -312,13 +302,24 @@
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(28, 294);
+            this.guna2Button4.Location = new System.Drawing.Point(44, 357);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
             this.guna2Button4.Size = new System.Drawing.Size(113, 36);
             this.guna2Button4.TabIndex = 16;
             this.guna2Button4.Text = "Set New Fees Vote";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(677, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(296, 26);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "VIEW FEES STRUCTURES";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2Button5
             // 
@@ -329,37 +330,65 @@
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button5.DisabledState.Parent = this.guna2Button5;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.FillColor = System.Drawing.Color.Red;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(334, 294);
+            this.guna2Button5.Location = new System.Drawing.Point(364, 145);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(97, 36);
-            this.guna2Button5.TabIndex = 17;
-            this.guna2Button5.Text = "Assign Fees Stucture";
-            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.guna2Button5.Size = new System.Drawing.Size(107, 36);
+            this.guna2Button5.TabIndex = 16;
+            this.guna2Button5.Text = "Delete ";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click_1);
             // 
-            // Student_Promotion
+            // guna2Button6
             // 
-            this.Student_Promotion.BackColor = System.Drawing.Color.Silver;
-            this.Student_Promotion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Student_Promotion.Location = new System.Drawing.Point(0, 0);
-            this.Student_Promotion.Name = "Student_Promotion";
-            this.Student_Promotion.Size = new System.Drawing.Size(1029, 462);
-            this.Student_Promotion.TabIndex = 18;
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button6.DisabledState.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Location = new System.Drawing.Point(364, 208);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(107, 36);
+            this.guna2Button6.TabIndex = 4;
+            this.guna2Button6.Text = "Refresh";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
+            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
+            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button7.DisabledState.Parent = this.guna2Button7;
+            this.guna2Button7.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button7.ForeColor = System.Drawing.Color.White;
+            this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Location = new System.Drawing.Point(364, 267);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
+            this.guna2Button7.Size = new System.Drawing.Size(107, 36);
+            this.guna2Button7.TabIndex = 17;
+            this.guna2Button7.Text = "Update";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // Fees_Structure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 462);
-            this.Controls.Add(this.guna2Button5);
-            this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.labelFID);
-            this.Controls.Add(this.labelFIDL);
-            this.Controls.Add(this.guna2HtmlLabel5);
+            this.ClientSize = new System.Drawing.Size(1090, 462);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -367,12 +396,20 @@
             this.Controls.Add(this.guna2ComboBoxTerm);
             this.Controls.Add(this.guna2ComboBoxYear);
             this.Controls.Add(this.guna2ComboBoxStream);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2ComboBoxClass);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.guna2HtmlLabel5);
+            this.Controls.Add(this.labelFID);
+            this.Controls.Add(this.labelFIDL);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2Button4);
+            this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2TextBoxTotalFee);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Student_Promotion);
+            this.Controls.Add(this.guna2Button7);
+            this.Controls.Add(this.guna2Button5);
+            this.Controls.Add(this.guna2Button6);
             this.Name = "Fees_Structure";
             this.Text = "Fees_Structure";
             this.Load += new System.EventHandler(this.Fees_Structure_Load);
@@ -401,7 +438,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel labelFID;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private System.Windows.Forms.Panel Student_Promotion;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button guna2Button7;
     }
 }

@@ -20,9 +20,9 @@ namespace Shule
             customizeDesign();
             CombosubjectFill();
             ComboclassFill();
+            ComboShelfFill();
         }
-
-        SqlConnection con = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
+        SqlConnection con = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
         public void CombosubjectFill()
         {
             // sqlConnection = new SqlConnection(connStr);
@@ -51,10 +51,34 @@ namespace Shule
             con.Close();
         }
 
+        public void ComboShelfFill()
+        {
+            // sqlConnection = new SqlConnection(connStr);
+            string cmdStr = " SELECT *  FROM Shelf";
+            SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
+            try
+            {
+
+                con.Open();
+
+                sqlDataReader = sqlCommand.ExecuteReader();
+
+                while (sqlDataReader.Read())
+                {
+                    string sName = sqlDataReader["Shelf_NO"].ToString();
+
+                    guna2ComboBoxshelf.Items.Add(sName);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Close();
+        }
+
         public void ComboclassFill()
         {
-            
-          
             string cmdStr = " SELECT *  FROM Classes";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, con);
             try
@@ -98,11 +122,7 @@ namespace Shule
                 panelDropdownBooks.Visible = false;
             if (panelDropdownMagazines.Visible == true)
                 panelDropdownMagazines.Visible = false;
-
-
-
-
-
+            
             //panelDropDown.Visible = false;
 
         }
@@ -117,12 +137,7 @@ namespace Shule
             else
                 subMenu.Visible = false;
         }
-
-
-
-
-
-
+        
 
         private void Header_Paint(object sender, PaintEventArgs e)
         {
@@ -176,6 +191,17 @@ namespace Shule
             magazines.Visible = false;
             RemoveShelves.Visible = false;
             BorrowMagazines.Visible = false;
+            Available_Shelfs.Visible = false;
+            ReturnMagazinne.Visible = false;
+
+
+            con.Open();
+            string query = "SELECT * FROM Assign_Books";
+            SqlDataAdapter d = new SqlDataAdapter(query, con);
+            DataTable t = new DataTable();
+            d.Fill(t);
+            LteachersGrid.DataSource = t.DefaultView;
+            con.Close();
 
         }
 
@@ -456,7 +482,7 @@ namespace Shule
 
         private void guna2Button13_Click(object sender, EventArgs e)
         {
-            if (guna2ComboBox2.SelectedIndex != 0 && txtlibrarySubjects.SelectedIndex != 0 && guna2TextBox16.Text != "" && guna2TextBox17.Text != "" && guna2TextBox20.Text != "" && guna2TextBox15.Text != "" && guna2DateTimePicker11.Text != "")
+            if (guna2ComboBox2.SelectedIndex != 0 && txtlibrarySubjects.SelectedIndex != 0 && guna2TextBox16.Text != "" && guna2TextBox17.Text != "" && guna2ComboBoxshelf.SelectedItem != null && guna2TextBox15.Text != "" && guna2DateTimePicker11.Text != "")
             {
                 String status = "Available";
                 SqlCommand cmd = new SqlCommand("insert into Books(Class,Subject,Tittle,Author,Edition,Publication_Year,Publisher,Date_Received,Shelf_No,Status) values (@Class,@Subject,@Tittle,@Author,@Edition,@Publication_Year,@Publisher,@Date_Received,@Shelf_No,@Status)", con);                               
@@ -469,7 +495,7 @@ namespace Shule
                 cmd.Parameters.AddWithValue("@Publication_Year", guna2DateTimePicker11.Text);
                 cmd.Parameters.AddWithValue("@Publisher", guna2TextBox21.Text);
                 cmd.Parameters.AddWithValue("@Date_Received", guna2DateTimePicker5.Value);
-                cmd.Parameters.AddWithValue("@Shelf_No", guna2TextBox20.Text);
+                cmd.Parameters.AddWithValue("@Shelf_No", guna2ComboBoxshelf.SelectedItem);
                 cmd.Parameters.AddWithValue("@Status", status);
                 cmd.ExecuteNonQuery();
 
@@ -662,7 +688,7 @@ namespace Shule
             SqlDataAdapter d = new SqlDataAdapter(query, con);
             DataTable t = new DataTable();
             d.Fill(t);
-            dataGridView2.DataSource = t;
+            LteachersGrid.DataSource = t.DefaultView;
             con.Close();
         }
 
@@ -684,6 +710,7 @@ namespace Shule
             Users.Visible = false;
             magazines.Visible = true;
             BorrowMagazines.Visible = false;
+            Available_Shelfs.Visible = false;
         }
 
         private void label41_Click(object sender, EventArgs e)
@@ -694,16 +721,14 @@ namespace Shule
             Users.Visible = false;
             magazines.Visible = true;
             BorrowMagazines.Visible = false;
+            Available_Shelfs.Visible = false;
+            ReturnMagazinne.Visible = false;
         }
 
         private void guna2GroupBox1_Click(object sender, EventArgs e)
         {
 
         }
-
-       
-        
-        
 
         private void guna2Button22_Click(object sender, EventArgs e)
         {
@@ -712,7 +737,7 @@ namespace Shule
             {
                 // Calculate what day of the week is 14 days from Today.
                 System.DateTime today = System.DateTime.Now;
-                System.TimeSpan duration = new System.TimeSpan( 5, 0, 0);
+                System.TimeSpan duration = new System.TimeSpan(5, 0, 0);
                 System.DateTime answer = today.Add(duration);
                 guna2DateTimePicker10.Value = answer;
                 guna2DateTimePicker9.Value = DateTime.Now;
@@ -741,7 +766,7 @@ namespace Shule
             }
             else
             {
-                MessageBox.Show("Enter Magazinne Number in Library");
+                MessageBox.Show("Enter Magazinne Number.");
             }
         }
 
@@ -761,6 +786,8 @@ namespace Shule
                     cmd.Parameters.AddWithValue("@Status", status);
                     cmd.ExecuteNonQuery();
 
+                    SqlCommand cmd1 = new SqlCommand("Update Magazinne SET Status='Borrowed' where Magazinne_NO='"+ guna2TextBox32.Text+ "'", con);
+                    cmd1.ExecuteNonQuery();
                     MessageBox.Show("Magazinne Borrowed Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     guna2TextBox31.Text = "";
                     guna2TextBox33.Text = "";
@@ -817,8 +844,6 @@ namespace Shule
 
         }
 
-        
-
         private void button2_Click(object sender, EventArgs e)
         {
             
@@ -865,7 +890,7 @@ namespace Shule
 
         private void guna2Button28_Click(object sender, EventArgs e)
         {
-
+           // btnAvailableShelves.Hide();
             showSubMenu(panelDropdownShelves);
             //Shelves.Visible = true;
             //Shelves.BringToFront();
@@ -884,7 +909,7 @@ namespace Shule
 
         private void guna2Button31_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelDropdownBooks);
+           // showSubMenu(panelDropdownBooks);
 
             Shelves.Visible = false;
             main.Visible = false;
@@ -893,6 +918,8 @@ namespace Shule
             magazines.Visible = false;
             RemoveShelves.Visible = false;
             BorrowMagazines.Visible = false;
+            Available_Shelfs.Visible = false;
+            ReturnMagazinne.Visible = false;
         }
 
         private void btnMagazines_Click(object sender, EventArgs e)
@@ -917,6 +944,8 @@ namespace Shule
             magazines.Visible = false;
             RemoveShelves.Visible = false;
             BorrowMagazines.Visible = false;
+            Available_Shelfs.Visible = false;
+            ReturnMagazinne.Visible = false;
         }
 
         private void button27_Click(object sender, EventArgs e)
@@ -930,17 +959,29 @@ namespace Shule
             magazines.Visible = false;
             RemoveShelves.Visible = false;
             BorrowMagazines.Visible = false;
+            Available_Shelfs.Visible = false;
+            ReturnMagazinne.Visible = false;
         }
 
         private void btnAvailableShelves_Click(object sender, EventArgs e)
         {
-           // panel5shelf.Visible = false;
+            Available_Shelfs.Visible = true;
+            Shelves.Visible = false;
+            main.Visible = false;
+            Books.Visible = false;
+            Users.Visible = false;
+            magazines.Visible = false;
+            RemoveShelves.Visible = false;
+            BorrowMagazines.Visible = false;
+            ReturnMagazinne.Visible = false;
+            crystalReportViewer1.Refresh();
             con.Open();
             string query = "SELECT * FROM Shelf ";
             SqlDataAdapter d = new SqlDataAdapter(query, con);
             DataTable t = new DataTable();
             d.Fill(t);
-            dataGridView4.DataSource = t;
+            //dataGridView1.DataSource = t.DefaultView;
+            
             con.Close();
         }
 
@@ -990,6 +1031,8 @@ namespace Shule
             magazines.Visible = false;
             RemoveShelves.Visible = false;
             BorrowMagazines.Visible = false;
+            BorrowMagazines.Visible = false;
+            ReturnMagazinne.Visible = false;
         }
 
         private void btnRemoveShelves_Click(object sender, EventArgs e)
@@ -1002,6 +1045,8 @@ namespace Shule
             magazines.Visible = false;
             Shelves.Visible = false;
             BorrowMagazines.Visible = false;
+           
+            ReturnMagazinne.Visible = false;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -1133,7 +1178,7 @@ namespace Shule
                 sqlDataReader = cmd.ExecuteReader();
                 if (sqlDataReader.Read())
                 {
-                    guna2TextBox20.Text = sqlDataReader["Shelf_No"].ToString();
+                    guna2ComboBoxshelf.Text = sqlDataReader["Shelf_No"].ToString();
                     
                 }
 
@@ -1152,11 +1197,14 @@ namespace Shule
             {
                 if (txtMagazine.Text != "" && txtMagazineDescription.Text != "")
                 {
-                    SqlCommand cmd = new SqlCommand("insert into Magazinne(Magazinne_Name,Magazinne_Description,Date_Received) values (@Magazinne_Name,@Magazinne_Description,@Date_Received)", con);
+                    string status;
+                    status = "Available";
+                    SqlCommand cmd = new SqlCommand("insert into Magazinne(Magazinne_Name,Magazinne_Description,Date_Received,Status) values (@Magazinne_Name,@Magazinne_Description,@Date_Received,@status)", con);
                     con.Open();
                     cmd.Parameters.AddWithValue("@Magazinne_Name", txtMagazine.Text);
                     cmd.Parameters.AddWithValue("@Magazinne_Description", txtMagazineDescription.Text);
                     cmd.Parameters.AddWithValue("@Date_Received", guna2DateTimePicker12.Value);
+                    cmd.Parameters.AddWithValue("@status",status);
                     cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Magazinne Received Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -1187,7 +1235,7 @@ namespace Shule
 
         private void guna2Button23_Click(object sender, EventArgs e)
         {
-
+            SqlCommand cmd = new SqlCommand("DELETE FROM Magazinne Where ",con);
         }
 
         private void BorrowMagazines_Paint(object sender, PaintEventArgs e)
@@ -1202,7 +1250,7 @@ namespace Shule
             SqlDataAdapter d = new SqlDataAdapter(query, con);
             DataTable t = new DataTable();
             d.Fill(t);
-            dataGridView3.DataSource = t;
+            gridmagazines.DataSource = t;
             con.Close();
         }
 
@@ -1221,10 +1269,125 @@ namespace Shule
             magazines.Visible = true;
             RemoveShelves.Visible = false;
             BorrowMagazines.Visible = false;
+            ReturnMagazinne.Visible = false;
         }
 
         private void magazines_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+            Shelves.Visible = false;
+            main.Visible = false;
+            Books.Visible = false;
+            Users.Visible = false;
+            magazines.Visible = false;
+            RemoveShelves.Visible = false;
+            BorrowMagazines.Visible = false;
+            ReturnMagazinne.Visible = true;
+        }
+
+        private void guna2Button21_Click(object sender, EventArgs e)
+        {
+            if (guna2TextBox14.Text!="")
+            {
+                try
+                {
+                    con.Open();
+                    String selectQuery = "SELECT Magazinne_NO,Magazinne_Name,Date_Borrow,Due_Date From Magazinne_Borrow where Magazinne_NO='" + guna2TextBox14.Text + "' ";
+                    SqlCommand cmd = new SqlCommand(selectQuery, con);
+                    SqlDataReader mdr = cmd.ExecuteReader();
+
+                    if (mdr.Read())
+                    {
+                        guna2TextBox18.Text = mdr.GetValue(0).ToString();
+                        guna2TextBox24.Text = mdr.GetValue(1).ToString();
+                        guna2DateTimePicker13.Text = mdr.GetValue(2).ToString();
+                        guna2DateTimePicker8.Text = mdr.GetValue(3).ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No such Magazinne in Library");
+                    }
+                }
+                catch (Exception emm)
+                {
+                    MessageBox.Show(emm.Message);
+                }
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Enter Magazinne Number");
+            }
+
+        }
+
+        private void guna2Button22_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "SELECT * FROM Magazinne_Borrow where  Status='Borrowed'";
+                SqlDataAdapter d = new SqlDataAdapter(query, con);
+                DataTable t = new DataTable();
+                d.Fill(t);
+                dataGridView1.DataSource = t.DefaultView;
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Message",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            if (guna2TextBox18.Text!="")
+            {
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("Update Magazinne_Borrow SET Status='Returned' Where Magazinne_NO='" + guna2TextBox18.Text + "'", con);
+                    cmd.ExecuteNonQuery();
+                    SqlCommand cmd1 = new SqlCommand("Update Magazinne SET Status='Available' where Magazinne_NO='" + guna2TextBox18.Text + "'", con);
+                    cmd1.ExecuteNonQuery();
+                    MessageBox.Show("Magazinne Successfully Returned", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    con.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Enter Magazinne Number.","Message",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "SELECT * FROM Magazinne";
+                SqlDataAdapter d = new SqlDataAdapter(query, con);
+                DataTable t = new DataTable();
+                d.Fill(t);
+                dataGridView1.DataSource = t.DefaultView;
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                con.Close();
+            }
 
         }
     }

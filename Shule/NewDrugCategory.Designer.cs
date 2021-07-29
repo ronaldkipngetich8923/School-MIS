@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.MedicineCategory = new System.Windows.Forms.DataGridView();
+            this.txtCategoryCode = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Button1ViewCategories = new Guna.UI2.WinForms.Guna2Button();
             this.btnMedicSave = new Guna.UI2.WinForms.Guna2Button();
@@ -37,12 +40,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCategoryCode = new Guna.UI2.WinForms.Guna2TextBox();
-            this.MedicineCategory = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MedicineCategory)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -64,6 +64,49 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1059, 476);
             this.guna2Panel1.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(659, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(202, 24);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Medicine Categories";
+            // 
+            // MedicineCategory
+            // 
+            this.MedicineCategory.BackgroundColor = System.Drawing.Color.White;
+            this.MedicineCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MedicineCategory.Location = new System.Drawing.Point(583, 95);
+            this.MedicineCategory.Name = "MedicineCategory";
+            this.MedicineCategory.Size = new System.Drawing.Size(464, 273);
+            this.MedicineCategory.TabIndex = 13;
+            // 
+            // txtCategoryCode
+            // 
+            this.txtCategoryCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCategoryCode.DefaultText = "";
+            this.txtCategoryCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCategoryCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCategoryCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoryCode.DisabledState.Parent = this.txtCategoryCode;
+            this.txtCategoryCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCategoryCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoryCode.FocusedState.Parent = this.txtCategoryCode;
+            this.txtCategoryCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCategoryCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCategoryCode.HoverState.Parent = this.txtCategoryCode;
+            this.txtCategoryCode.Location = new System.Drawing.Point(257, 130);
+            this.txtCategoryCode.Name = "txtCategoryCode";
+            this.txtCategoryCode.PasswordChar = '\0';
+            this.txtCategoryCode.PlaceholderText = "Medicine Code";
+            this.txtCategoryCode.SelectedText = "";
+            this.txtCategoryCode.ShadowDecoration.Parent = this.txtCategoryCode;
+            this.txtCategoryCode.Size = new System.Drawing.Size(212, 36);
+            this.txtCategoryCode.TabIndex = 12;
             // 
             // label2
             // 
@@ -185,52 +228,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(409, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 31);
+            this.label1.Size = new System.Drawing.Size(204, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Streams";
-            // 
-            // txtCategoryCode
-            // 
-            this.txtCategoryCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCategoryCode.DefaultText = "";
-            this.txtCategoryCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCategoryCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCategoryCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCategoryCode.DisabledState.Parent = this.txtCategoryCode;
-            this.txtCategoryCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCategoryCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCategoryCode.FocusedState.Parent = this.txtCategoryCode;
-            this.txtCategoryCode.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCategoryCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCategoryCode.HoverState.Parent = this.txtCategoryCode;
-            this.txtCategoryCode.Location = new System.Drawing.Point(257, 130);
-            this.txtCategoryCode.Name = "txtCategoryCode";
-            this.txtCategoryCode.PasswordChar = '\0';
-            this.txtCategoryCode.PlaceholderText = "Medicine Code";
-            this.txtCategoryCode.SelectedText = "";
-            this.txtCategoryCode.ShadowDecoration.Parent = this.txtCategoryCode;
-            this.txtCategoryCode.Size = new System.Drawing.Size(212, 36);
-            this.txtCategoryCode.TabIndex = 12;
-            // 
-            // MedicineCategory
-            // 
-            this.MedicineCategory.BackgroundColor = System.Drawing.Color.White;
-            this.MedicineCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MedicineCategory.Location = new System.Drawing.Point(583, 95);
-            this.MedicineCategory.Name = "MedicineCategory";
-            this.MedicineCategory.Size = new System.Drawing.Size(464, 273);
-            this.MedicineCategory.TabIndex = 13;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(659, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 24);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Medicine Categories";
+            this.label1.Text = "Drug Category";
             // 
             // NewDrugCategory
             // 
@@ -242,9 +242,9 @@
             this.Text = "NewDrugCategory";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MedicineCategory)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MedicineCategory)).EndInit();
             this.ResumeLayout(false);
 
         }

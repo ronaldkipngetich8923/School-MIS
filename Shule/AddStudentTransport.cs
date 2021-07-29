@@ -14,7 +14,7 @@ namespace Shule
 {
     public partial class AddStudentTransport : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
         SqlCommand cmd;
         //SqlConnection sqlConnection;
          SqlDataReader sqlDataReader;
@@ -28,8 +28,8 @@ namespace Shule
         }
         public void ComboRouteFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Routes";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -56,10 +56,10 @@ namespace Shule
             }
             sqlConnection.Close();
         }
-            public void ComboAdmNo()
+        public void ComboAdmNo()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM StudentMaster";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -74,7 +74,7 @@ namespace Shule
                     string sName = sqlDataReader["AdmNo"].ToString();
 
                     ComboStudentTransport.Items.Add(sName);
-                    
+
 
 
                 }
@@ -143,8 +143,8 @@ namespace Shule
 
         private void AddStudentTransport_Load(object sender, EventArgs e)
         {
-            comboRoute.SelectedIndex = 0;
-            ComboStudentTransport.SelectedIndex= 0;
+          //  comboRoute.SelectedIndex = 0;
+           // ComboStudentTransport.SelectedIndex= 0;
 
         }
     }

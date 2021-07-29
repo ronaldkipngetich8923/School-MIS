@@ -13,7 +13,9 @@ namespace Shule
 {
     public partial class AddSubjects : Form
     {
-        SqlConnection sqlConnection;
+        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
+
+       // SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
         public AddSubjects()
         {
@@ -23,8 +25,8 @@ namespace Shule
         }
         public void CombosubjectFill()
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+            //string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+           // sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Subject";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -79,8 +81,8 @@ namespace Shule
 
         private void AddSubjects_Load(object sender, EventArgs e)
         {
-            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
-            sqlConnection = new SqlConnection(connStr);
+           // string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+          //  sqlConnection = new SqlConnection(connStr);
         }
 
         private void btnSubjectSave_Click(object sender, EventArgs e)

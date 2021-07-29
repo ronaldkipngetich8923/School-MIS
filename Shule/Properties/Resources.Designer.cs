@@ -223,6 +223,16 @@ namespace Shule.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit11 {
+            get {
+                object obj = ResourceManager.GetObject("exit11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fee_Structure_gif {
             get {
                 object obj = ResourceManager.GetObject("Fee_Structure.gif", resourceCulture);
@@ -266,6 +276,16 @@ namespace Shule.Properties {
         internal static System.Drawing.Bitmap icon1 {
             get {
                 object obj = ResourceManager.GetObject("icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_exit_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exit-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
