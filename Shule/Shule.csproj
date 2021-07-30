@@ -174,12 +174,6 @@
     <Compile Include="AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddUsers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddUsers.Designer.cs">
-      <DependentUpon>AddUsers.cs</DependentUpon>
-    </Compile>
     <Compile Include="AssignFeesToClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,9 +356,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddUsers.resx">
-      <DependentUpon>AddUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AssignFeesToClass.resx">
       <DependentUpon>AssignFeesToClass.cs</DependentUpon>
@@ -652,7 +643,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
-    <Folder Include="iTextSharp\text\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
