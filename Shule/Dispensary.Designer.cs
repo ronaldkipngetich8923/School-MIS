@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSearchMedic = new Guna.UI2.WinForms.Guna2Button();
             this.txtMedicAdm = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,19 +48,20 @@
             this.guna2Button1ViewMedicInfo = new Guna.UI2.WinForms.Guna2Button();
             this.btnMedicSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnMedicReset = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridView1ClinicSection = new Guna.UI2.WinForms.Guna2DataGridView();
             this.txtMedicName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.MedicDispensary = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1ClinicSection)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MedicDispensary)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.MedicDispensary);
             this.guna2Panel1.Controls.Add(this.btnSearchMedic);
             this.guna2Panel1.Controls.Add(this.txtMedicAdm);
             this.guna2Panel1.Controls.Add(this.richTextBox2Medication);
@@ -83,7 +81,6 @@
             this.guna2Panel1.Controls.Add(this.guna2Button1ViewMedicInfo);
             this.guna2Panel1.Controls.Add(this.btnMedicSave);
             this.guna2Panel1.Controls.Add(this.btnMedicReset);
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1ClinicSection);
             this.guna2Panel1.Controls.Add(this.txtMedicName);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.panel1);
@@ -403,62 +400,6 @@
             this.btnMedicReset.Text = "Reset Fields";
             this.btnMedicReset.Click += new System.EventHandler(this.btnMedicReset_Click);
             // 
-            // guna2DataGridView1ClinicSection
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1ClinicSection.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1ClinicSection.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1ClinicSection.BackgroundColor = System.Drawing.Color.White;
-            this.guna2DataGridView1ClinicSection.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1ClinicSection.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1ClinicSection.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1ClinicSection.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1ClinicSection.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1ClinicSection.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1ClinicSection.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1ClinicSection.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1ClinicSection.Location = new System.Drawing.Point(795, 98);
-            this.guna2DataGridView1ClinicSection.Name = "guna2DataGridView1ClinicSection";
-            this.guna2DataGridView1ClinicSection.RowHeadersVisible = false;
-            this.guna2DataGridView1ClinicSection.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1ClinicSection.Size = new System.Drawing.Size(479, 420);
-            this.guna2DataGridView1ClinicSection.TabIndex = 6;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1ClinicSection.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1ClinicSection.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1ClinicSection.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1ClinicSection.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // txtMedicName
             // 
             this.txtMedicName.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -514,6 +455,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Clinic Section";
             // 
+            // MedicDispensary
+            // 
+            this.MedicDispensary.BackgroundColor = System.Drawing.Color.Snow;
+            this.MedicDispensary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MedicDispensary.Location = new System.Drawing.Point(810, 111);
+            this.MedicDispensary.Name = "MedicDispensary";
+            this.MedicDispensary.Size = new System.Drawing.Size(476, 350);
+            this.MedicDispensary.TabIndex = 38;
+            // 
             // Dispensary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -526,9 +476,9 @@
             this.Load += new System.EventHandler(this.Dispensary_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1ClinicSection)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MedicDispensary)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -555,10 +505,10 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1ViewMedicInfo;
         private Guna.UI2.WinForms.Guna2Button btnMedicSave;
         private Guna.UI2.WinForms.Guna2Button btnMedicReset;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1ClinicSection;
         private Guna.UI2.WinForms.Guna2TextBox txtMedicName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView MedicDispensary;
     }
 }

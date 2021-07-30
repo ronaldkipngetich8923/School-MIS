@@ -13,12 +13,12 @@ namespace Shule
 {
     public partial class tab : Form
     {
-        SqlConnection sqlConnection = new SqlConnection("Data Source=(localDB)\\MSSQLLocalDB;Initial Catalog=shule;Integrated Security=True;");
-       // SqlCommand cmd;
+        SqlConnection sqlConnection = new SqlConnection("Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True");
+        SqlCommand cmd;
         //SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-      //  SqlDataAdapter sqlDataAdapter;
-       // DataSet ds;
+        SqlDataAdapter sqlDataAdapter;
+        DataSet ds;
         int indexRow;
         public tab()
         {
@@ -28,10 +28,13 @@ namespace Shule
         }
         public void FillcomboHosteAdmNo()
         {
+            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM StudentMaster";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
             {
+
                 sqlConnection.Open();
 
                 sqlDataReader = sqlCommand.ExecuteReader();
@@ -41,9 +44,10 @@ namespace Shule
                     string sName = sqlDataReader["AdmNo"].ToString();
 
                     comboHosteAdmNo.Items.Add(sName);
-                    
+
+
+
                 }
-                sqlConnection.Close();
             }
             catch (Exception ex)
             {
@@ -52,8 +56,10 @@ namespace Shule
             sqlConnection.Close();
         }
 
-        public void HostelCodeFill()
-        { 
+            public void HostelCodeFill()
+        {
+            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
+            sqlConnection = new SqlConnection(connStr);
             string cmdStr = " SELECT *  FROM Hostels";
             SqlCommand sqlCommand = new SqlCommand(cmdStr, sqlConnection);
             try
@@ -68,7 +74,9 @@ namespace Shule
                     string sName = sqlDataReader["HostelCode"].ToString();
 
                     comboHostelCode.Items.Add(sName);
-                    
+
+
+
                 }
             }
             catch (Exception ex)
@@ -91,21 +99,22 @@ namespace Shule
 
         private void comboHostelCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboHostelCode.SelectedItem != null)
-            {
-                SqlCommand cmd1 = new SqlCommand("Select * From Hostels Where HostelCode='" + comboHostelCode.SelectedItem + "'", sqlConnection);
+            //if (comboHostelCode.SelectedItem !=null)
+            // { 
 
-                sqlConnection.Open();
-                sqlDataReader = cmd1.ExecuteReader();
-                if (sqlDataReader.Read())
-                {
-                    txtHostelName.Text = sqlDataReader["HostelName"].ToString();
-                    txtHostelCapacity.Text = sqlDataReader["Capacity"].ToString();
+            SqlCommand cmd1 = new SqlCommand("Select * From Hostels Where HostelCode='"+ comboHostelCode.SelectedItem + "'", sqlConnection);
+
+            sqlConnection.Open();
+            sqlDataReader = cmd1.ExecuteReader();
+            if (sqlDataReader.Read())
+            {
+                txtHostelName.Text = sqlDataReader["HostelName"].ToString();
+                txtHostelCapacity.Text = sqlDataReader["Capacity"].ToString();
                     rooms.Text = sqlDataReader["Rooms"].ToString();
 
-                }
-                sqlDataReader.Close();
             }
+
+            //}
 
             else
             {
@@ -132,9 +141,14 @@ namespace Shule
                 if (sqlDataReader.Read())
                 {
                     txtComboStudname.Text = sqlDataReader["Studname"].ToString();
-                
+                    //comboHosteAdmNo.Text = sqlDataReader["AdmNo"].ToString();
+                    
+
+
                 }
-                
+
+            //}
+
             else
             {
                 MessageBox.Show("Student Not Available !!");
@@ -151,6 +165,7 @@ namespace Shule
                 SqlCommand cmd = new SqlCommand(qur, sqlConnection);
                 try
                 {
+
                     sqlConnection.Open();
                     int rows = cmd.ExecuteNonQuery();
 
@@ -160,9 +175,14 @@ namespace Shule
                     string quer = "UPDATE Hostels SET Rooms = Rooms - 1  where HostelCode = '" + comboHostelCode.SelectedItem + "'";
                     SqlCommand cmdUpdate = new SqlCommand(quer,sqlConnection);
                     cmdUpdate.ExecuteNonQuery();
-                    
+
+                    this.Refresh();
+                    Refresh();
+
+
                 }
-                
+
+
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
@@ -177,13 +197,18 @@ namespace Shule
                 //if (sqlDataReader.Read())
                 //{
                 //    rooms.Text = sqlDataReader["Capacity"].ToString();
-                
+
+
+
                 //}
+
             }
             else
             {
                 MessageBox.Show(" Field HostelCode & AdmNo Cannot be Empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                
+
+
+
 
             }
             sqlConnection.Close();

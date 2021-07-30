@@ -49,7 +49,7 @@ namespace Shule
 
         private void AddClass_Load(object sender, EventArgs e)
         {
-            string connStr = "Data Source = (localDB)\\MSSQLLocalDB;Initial Catalog = shule; Integrated Security = True";
+            string connStr = "Data source=DESKTOP-AOUGB8E\\SQLEXPRESS;initial catalog=shule;integrated security=True";
             sqlConnection = new SqlConnection(connStr);
         }
 

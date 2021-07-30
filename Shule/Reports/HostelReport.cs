@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Shule
+namespace Shule.Reports
 {
-    public partial class AddUsers : Form
+    public partial class HostelReport : Form
     {
-        public AddUsers()
+        public HostelReport()
         {
             InitializeComponent();
         }
